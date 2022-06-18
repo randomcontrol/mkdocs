@@ -1,0 +1,6 @@
+site_name: Maverick Render Manual
+site_url: https://maverickrender.com/
+nav:
+    - Home: index.md
+    - About: about.md
+theme: readthedocs
