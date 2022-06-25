@@ -19,6 +19,6 @@ echo Compressing mk-docs files...
                                                              ^
     -ag" - yyyy.mm.dd - hh.mm" "RandomControl - mk-docs.zip" ^
                                                              ^
-    ".\01. lib\*"                                            ^
-    ".\02. api\*"                                            ^
-    ".\03. bat\*" win_activate.bat win_deactivate.bat >NUL
+    ".\manual\*"                                             ^
+    README.md                                                ^
+    win_activate.bat win_deactivate.bat >NUL
