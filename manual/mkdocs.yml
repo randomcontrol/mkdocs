@@ -1,6 +1,60 @@
 site_name: Maverick Render Manual
 site_url: https://maverickrender.com/
 nav:
-    - Home: index.md
-    - About: about.md
+  - Home: index.md
+  - About: about.md
+  - Globals:
+    - 'blend':            Materials/Main/blend.md
+    - 'shadow_catcher':   Materials/Main/shadow_catcher.md
+    - 'standard':         Materials/Main/standard.md
+  - Cameras:
+    - Main:
+      - 'blend':          Materials/Main/blend.md
+      - 'shadow_catcher': Materials/Main/shadow_catcher.md
+      - 'standard':       Materials/Main/standard.md
+    - Derived:
+      - 'emissive':       Materials/Common/emissive.md
+    - Special:
+      - 'cutaway':        Materials/Special/cutaway.md
+      - 'fog':            Materials/Special/fog.md
+  - Objects:
+    - Main:
+      - 'blend':          Materials/Main/blend.md
+      - 'shadow_catcher': Materials/Main/shadow_catcher.md
+      - 'standard':       Materials/Main/standard.md
+    - Derived:
+      - 'emissive':       Materials/Common/emissive.md
+    - Special:
+      - 'cutaway':        Materials/Special/cutaway.md
+      - 'fog':            Materials/Special/fog.md
+  - Modifiers:
+    - Main:
+      - 'blend':          Materials/Main/blend.md
+      - 'shadow_catcher': Materials/Main/shadow_catcher.md
+      - 'standard':       Materials/Main/standard.md
+    - Derived:
+      - 'emissive':       Materials/Common/emissive.md
+    - Special:
+      - 'cutaway':        Materials/Special/cutaway.md
+      - 'fog':            Materials/Special/fog.md
+  - Materials:
+    - Main:
+      - 'blend':          Materials/Main/blend.md
+      - 'shadow_catcher': Materials/Main/shadow_catcher.md
+      - 'standard':       Materials/Main/standard.md
+    - Derived:
+      - 'emissive':       Materials/Common/emissive.md
+    - Special:
+      - 'cutaway':        Materials/Special/cutaway.md
+      - 'fog':            Materials/Special/fog.md
+  - Maps:
+    - Main:
+      - 'blend':          Materials/Main/blend.md
+      - 'shadow_catcher': Materials/Main/shadow_catcher.md
+      - 'standard':       Materials/Main/standard.md
+    - Bump:
+      - 'round_edges':    Maps/Bump/Disp/round_edges.md
+    - Special:
+      - 'cutaway':        Materials/Special/cutaway.md
+      - 'fog':            Materials/Special/fog.md
 theme: readthedocs
