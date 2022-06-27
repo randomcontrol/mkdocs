@@ -1,46 +1,49 @@
 ## **xform_scattering**
 
-### @@
+@@
 #### Main
 
 > ##### Node alias
-> Human-readable node alias. 
+> Human-readable node alias.
 
 > ##### Alias color
-> Identificative node color. 
+> Identificative node color.
 
 > ##### Node UUID
-> Node UUID. 
+> Node UUID.
 
 > ##### Node metadata
-> User-set node metadata. 
+> User-set node metadata.
+
+> ##### Node tags
+> User-set node tags.
 
 #### Control
 
 > ##### Enable random offset
-> Internal use. 
+> Internal use.
 
 > ##### Offset U
-> Internal use. 
+> Internal use.
 
 > ##### Offset V
-> Internal use. 
+> Internal use.
 
 > ##### Randomize
-> Internal use. 
+> Internal use.
 
 > ##### Enable random tiling
-> Internal use. 
+> Internal use.
 
 > ##### Blend
-> Internal use. 
+> Internal use.
 
 > ##### U splits
-> Internal use. 
+> Internal use.
 
 > ##### V split
-> Internal use. 
+> Internal use.
 
 > ##### Rotate splits
-> Internal use. 
+> Internal use.
 

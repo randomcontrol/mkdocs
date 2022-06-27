@@ -1,67 +1,74 @@
 ## **multiclone**
 
-### @@
+@@
 #### Main
 
 > ##### Node alias
-> Human-readable node alias. 
+> Human-readable node alias.
 
 > ##### Alias color
-> Identificative node color. 
+> Identificative node color.
 
 > ##### Node UUID
-> Node UUID. 
+> Node UUID.
 
 > ##### Node metadata
-> User-set node metadata. 
+> User-set node metadata.
+
+> ##### Node tags
+> User-set node tags.
 
 > ##### Bypass modifier
-> Toggles this modifier on/off. 
+> Toggles this modifier on/off.
 
-#### Main
+#### Control
 
 > ##### Mode
-> Internal use. 
+> Internal use.
 
 > ##### Rotation
-> Internal use. 
+> Internal use.
 
 > ##### Noise
-> Internal use. 
+> Internal use.
+
+#### Linear
 
 > ##### Count X
-> Internal use. 
+> Internal use.
 
 > ##### Count Y
-> Internal use. 
+> Internal use.
 
 > ##### Count Z
-> Internal use. 
+> Internal use.
 
 > ##### Offset X
-> Internal use. 
+> Internal use.
 
 > ##### Offset Y
-> Internal use. 
+> Internal use.
 
 > ##### Offset Z
-> Internal use. 
+> Internal use.
 
 > ##### Stack
-> Internal use. 
+> Internal use.
+
+#### Circular
 
 > ##### Count
-> Internal use. 
+> Internal use.
 
 > ##### Offset X
-> Internal use. 
+> Internal use.
 
 > ##### Offset Y
-> Internal use. 
+> Internal use.
 
 > ##### Offset Z
-> Internal use. 
+> Internal use.
 
 > ##### Angle
-> Internal use. 
+> Internal use.
 

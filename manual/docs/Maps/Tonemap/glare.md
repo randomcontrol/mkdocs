@@ -1,79 +1,82 @@
 ## **glare**
 
-### Internal use.
+Internal use.
 #### Main
 
 > ##### Node alias
-> Human-readable node alias. 
+> Human-readable node alias.
 
 > ##### Alias color
-> Identificative node color. 
+> Identificative node color.
 
 > ##### Node UUID
-> Node UUID. 
+> Node UUID.
 
 > ##### Node metadata
-> User-set node metadata. 
+> User-set node metadata.
+
+> ##### Node tags
+> User-set node tags.
 
 #### Control
 
 > ##### Decay
-> Internal use. 
+> Internal use.
 
 > ##### Aspect
-> Internal use. 
+> Internal use.
 
 #### Corona flare lines
 
 > ##### Enable
-> Internal use. 
+> Internal use.
 
 > ##### Strength
-> Internal use. 
+> Internal use.
 
 > ##### Count
-> Internal use. 
+> Internal use.
 
 > ##### Radius
-> Internal use. 
+> Internal use.
 
 > ##### Seed
-> Internal use. 
+> Internal use.
 
 #### Special flare lines
 
 > ##### Enable
-> Internal use. 
+> Internal use.
 
 > ##### Strength
-> Internal use. 
+> Internal use.
 
 > ##### Count
-> Internal use. 
+> Internal use.
 
 > ##### Streaks
-> Internal use. 
+> Internal use.
 
 > ##### Spread
-> Internal use. 
+> Internal use.
 
 > ##### Rotate
-> Internal use. 
+> Internal use.
 
 > ##### Seed
-> Internal use. 
+> Internal use.
 
 #### Lenticular halo
 
 > ##### Enable
-> Internal use. 
+> Internal use.
 
 > ##### Strength
-> Internal use. 
+> Internal use.
 
 > ##### Inner radius
-> Internal use. 
+> Internal use.
 
 > ##### Outer radius
-> Internal use. 
+> Internal use.
 
