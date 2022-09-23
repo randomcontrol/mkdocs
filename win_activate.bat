@@ -1,6 +1,6 @@
 @echo off
 
-if "%1" == "clean" rmdir /s venv
+if "%1" equ "clean" rmdir /s venv
 
 if not exist "venv" (
   mkdir venv
