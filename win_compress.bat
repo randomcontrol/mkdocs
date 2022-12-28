@@ -5,7 +5,7 @@ rem #################################
 rem ## compress.bat | Chema Guerra ##
 rem #################################
 
-set __RAR=Z:\RandomControl - toolchain\winrar\winrar.exe
+set __RAR=Z:\RandomControl---toolchain\winrar\winrar.exe
 
 rem #####################
 rem ## Pick the files. ##
@@ -17,7 +17,7 @@ echo Compressing mk-docs files...
 
 "%__RAR%" a -r -afzip -m5                                    ^
                                                              ^
-    -ag" - yyyy.mm.dd - hh.mm" "RandomControl - mk-docs.zip" ^
+    -ag" - yyyy.mm.dd - hh.mm" "RandomControl---mk-docs.zip" ^
                                                              ^
     ".\manual\*"                                             ^
     README.md                                                ^
