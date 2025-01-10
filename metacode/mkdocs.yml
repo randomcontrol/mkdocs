@@ -1,0 +1,127 @@
+site_name: Maverick Render Manual
+site_url: https://maverickrender.com/
+nav:
+  - Home: index.md
+  - About: about.md
+  - Cameras:
+    - 'Persp':              Camera/persp.md
+    - 'VR':                 Camera/vr.md
+  - Objects:
+    - 'Assembly':           Object/assembly.md
+    - 'Assembly Light':     Object/assembly_light.md
+    - 'Curves':             Object/curves.md
+    - 'Group':              Object/group.md
+    - 'Light':              Object/light.md
+    - 'Nurbs':              Object/nurbs.md
+    - 'Points':             Object/points.md
+    - 'Polymesh':           Object/polymesh.md
+    - 'Primitive':          Object/primitive.md
+    - 'Target':             Object/target.md
+    - 'Volume':             Object/volume.md
+  - Modifiers:
+    - Main:
+      - 'Multiclone':       Modifier/Main/multiclone.md
+      - 'Sticker':          Modifier/Main/sticker.md
+      - 'UVmap':            Modifier/Main/uvmap.md
+    - Generator:
+      - 'Fur':              Modifier/Generator/fur.md
+      - 'Pattern':          Modifier/Generator/pattern.md
+      - 'Scatter':          Modifier/Generator/scatter.md
+    - Geometry:
+      - 'Mod Disp':         Modifier/Geometry/mod_disp.md
+      - 'Mod Subdiv':       Modifier/Geometry/mod_subdiv.md
+  - Materials:
+    - Main:
+      - 'Blend':            Material/Main/blend.md
+      - 'Shadow Catcher':   Material/Main/shadow_catcher.md
+      - 'Standard':         Material/Main/standard.md
+    - Derived:
+      - 'Emissive':         Material/Derived/emissive.md
+      - 'Emissive Coated':  Material/Derived/emissive_coated.md
+      - 'Gemstone':         Material/Derived/gemstone.md
+      - 'Glass':            Material/Derived/glass.md
+      - 'Glass Thin':       Material/Derived/glass_thin.md
+      - 'Liquid':           Material/Derived/liquid.md
+      - 'Metal':            Material/Derived/metal.md
+      - 'Metal Coated':     Material/Derived/metal_coated.md
+      - 'Plaster':          Material/Derived/plaster.md
+      - 'Plastic':          Material/Derived/plastic.md
+      - 'Plastic Advanced': Material/Derived/plastic_advanced.md
+      - 'Plastic Coated':   Material/Derived/plastic_coated.md
+      - 'Skin':             Material/Derived/skin.md
+      - 'Translucent':      Material/Derived/translucent.md
+    - Special:
+      - 'Cutaway':          Material/Special/cutaway.md
+      - 'Fog':              Material/Special/fog.md
+      - 'hair':             Material/Special/hair.md
+      - 'Mtl Mux':          Material/Special/mtl_mux.md
+      - 'Mtl Ray Switch':   Material/Special/mtl_ray_switch.md
+      - 'Mtl Switch':       Material/Special/mtl_switch.md
+      - 'Mtl Volume':       Material/Special/mtl_volume.md
+      - 'Twosided':         Material/Special/twosided.md
+  - Maps:
+    - Main:
+      - 'Checker':          Map/Main/checker.md
+      - 'Falloff':          Map/Main/falloff.md
+      - 'Filetex':          Map/Main/filetex.md
+      - 'Gradient':         Map/Main/gradient.md
+      - 'Gradient Color':   Map/Main/gradient_color.md
+      - 'Gradient Light':   Map/Main/gradient_light.md
+      - 'Shape':            Map/Main/shape.md
+      - 'Tiles':            Map/Main/tiles.md
+    - Noise:
+      - 'Brushed':          Map/Noise/brushed.md
+      - 'Cellular':         Map/Noise/cellular.md
+      - 'Dots':             Map/Noise/dots.md
+      - 'Flakes':           Map/Noise/flakes.md
+      - 'Grooves':          Map/Noise/grooves.md
+      - 'Noise':            Map/Noise/noise.md
+      - 'Scratches':        Map/Noise/scratches.md
+    - Bump:
+      - 'Bump':             Map/Bump Disp/bump.md
+      - 'Bump Blend':       Map/Bump Disp/bump_blend.md
+      - 'Disp':             Map/Bump Disp/disp.md
+      - 'Disp Blend':       Map/Bump Disp/disp_blend.md
+      - 'Round Edges':      Map/Bump Disp/round_edges.md
+    - Special:
+      - 'Cam Projection':   Map/Special/cam_projection.md
+      - 'Colorgen':         Map/Special/colorgen.md
+      - 'Composite':        Map/Special/composite.md
+      - 'Correction':       Map/Special/correction.md
+      - 'Curvature':        Map/Special/curvature.md
+      - 'IOR':              Map/Special/ior.md
+      - 'Lightbox':         Map/Special/lightbox.md
+      - 'Mix':              Map/Special/mix.md
+      - 'Mux':              Map/Special/mux.md
+      - 'Photometric':      Map/Special/photometric.md
+      - 'Primvar':          Map/Special/primvar.md
+      - 'Ray Switch':       Map/Special/ray_switch.md
+      - 'Switch':           Map/Special/switch.md
+      - 'Triplanar':        Map/Special/triplanar.md
+      - 'User Data':        Map/Special/user_data.md
+      - 'Wireframe':        Map/Special/wireframe.md
+    - Xform:
+      - 'Xform 2D':         Map/Xform/xform_2d.md
+      - 'Xform 3D':         Map/Xform/xform_3d.md
+      - 'Xform Distortion': Map/Xform/xform_distortion.md
+      - 'Xform Scattering': Map/Xform/xform_scattering.md
+      - 'Xform Spherical':  Map/Xform/xform_spherical.md
+    - Baked:
+      - 'Airflow':          Map/Baked/airflow.md
+      - 'Bake':             Map/Baked/bake.md
+      - 'Substance':        Map/Baked/substance.md
+    - Tonemap:
+      - 'Glare':            Map/Tonemap/glare.md
+      - 'LUT':              Map/Tonemap/lut.md
+  - Other:
+    - 'AOVs':               Global/aovs.md
+    - 'Globals':            Global/globals.md
+    - 'IBL':                Global/ibl.md
+    - 'Lightmixer':         Global/lightmixer.md
+    - 'Sky':                Global/sky.md
+    - 'Tonemap':            Global/tonemap.md
+    
+theme:
+  name: material
+  palette:
+    scheme: auto
