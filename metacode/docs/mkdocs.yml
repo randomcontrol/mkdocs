@@ -4,143 +4,143 @@ nav:
   - Home: index.md
   - About: about.md
   - Camera:
-      - 'cam_persp': Camera/cam_persp.md
-      - 'cam_vr': Camera/cam_vr.md
+      - 'Perspective': Camera/cam_persp.md
+      - 'VR': Camera/cam_vr.md
   - Object:
-      - 'obj_assembly': Object/obj_assembly.md
-      - 'obj_assembly_light': Object/obj_assembly_light.md
-      - 'obj_curves': Object/obj_curves.md
-      - 'obj_group': Object/obj_group.md
-      - 'obj_light': Object/obj_light.md
-      - 'obj_points': Object/obj_points.md
-      - 'obj_polymesh': Object/obj_polymesh.md
-      - 'obj_primitive': Object/obj_primitive.md
-      - 'obj_target': Object/obj_target.md
+      - 'Assembly': Object/obj_assembly.md
+      - 'Light assembly': Object/obj_assembly_light.md
+      - 'Curves': Object/obj_curves.md
+      - '@@': Object/obj_group.md
+      - 'Light': Object/obj_light.md
+      - 'Point Cloud': Object/obj_points.md
+      - 'Polygon Mesh': Object/obj_polymesh.md
+      - 'Primitive': Object/obj_primitive.md
+      - 'Target': Object/obj_target.md
   - Modifier:
-      - 'mod_fur': Modifier/mod_fur.md
-      - 'mod_multiclone': Modifier/mod_multiclone.md
-      - 'mod_scatter': Modifier/mod_scatter.md
-      - 'mod_sticker': Modifier/mod_sticker.md
-      - 'mod_uvmap': Modifier/mod_uvmap.md
+      - 'Fur': Modifier/mod_fur.md
+      - 'Multi-Clone': Modifier/mod_multiclone.md
+      - 'Scatter': Modifier/mod_scatter.md
+      - 'Sticker': Modifier/mod_sticker.md
+      - 'UV Map': Modifier/mod_uvmap.md
   - Material:
       - Main:
-        - 'mtl_standard': MaterialMain/mtl_standard.md
-        - 'mtl_blend': MaterialMain/mtl_blend.md
-        - 'mtl_shadow_catcher': MaterialMain/mtl_shadow_catcher.md
+        - 'Standard': MaterialMain/mtl_standard.md
+        - 'Blend': MaterialMain/mtl_blend.md
+        - 'Shadow Catcher': MaterialMain/mtl_shadow_catcher.md
         - Derived:
-          - 'mtl_emissive': MaterialDerived/mtl_emissive.md
-          - 'mtl_emissive_coated': MaterialDerived/mtl_emissive_coated.md
-          - 'mtl_gemstone': MaterialDerived/mtl_gemstone.md
-          - 'mtl_glass': MaterialDerived/mtl_glass.md
-          - 'mtl_glass_thin': MaterialDerived/mtl_glass_thin.md
-          - 'mtl_liquid': MaterialDerived/mtl_liquid.md
-          - 'mtl_metal': MaterialDerived/mtl_metal.md
-          - 'mtl_metal_coated': MaterialDerived/mtl_metal_coated.md
-          - 'mtl_plaster': MaterialDerived/mtl_plaster.md
-          - 'mtl_plastic': MaterialDerived/mtl_plastic.md
-          - 'mtl_plastic_advanced': MaterialDerived/mtl_plastic_advanced.md
-          - 'mtl_plastic_coated': MaterialDerived/mtl_plastic_coated.md
-          - 'mtl_skin': MaterialDerived/mtl_skin.md
-          - 'mtl_translucent': MaterialDerived/mtl_translucent.md
+          - 'Emissive': MaterialDerived/mtl_emissive.md
+          - 'Emissive (Coated)': MaterialDerived/mtl_emissive_coated.md
+          - 'Gemstone': MaterialDerived/mtl_gemstone.md
+          - 'Glass': MaterialDerived/mtl_glass.md
+          - 'Thin Glass': MaterialDerived/mtl_glass_thin.md
+          - 'Liquid': MaterialDerived/mtl_liquid.md
+          - 'Metal': MaterialDerived/mtl_metal.md
+          - 'Metal (Coated)': MaterialDerived/mtl_metal_coated.md
+          - 'Plaster': MaterialDerived/mtl_plaster.md
+          - 'Plastic': MaterialDerived/mtl_plastic.md
+          - 'Plastic (Advanced)': MaterialDerived/mtl_plastic_advanced.md
+          - 'Plastic (Coated)': MaterialDerived/mtl_plastic_coated.md
+          - 'Skin': MaterialDerived/mtl_skin.md
+          - 'Translucent': MaterialDerived/mtl_translucent.md
           - Special:
-            - 'mtl_fog': MaterialSpecial/mtl_fog.md
-            - 'mtl_hair': MaterialSpecial/mtl_hair.md
-            - 'mtl_mux': MaterialSpecial/mtl_mux.md
-            - 'mtl_ray_switch': MaterialSpecial/mtl_ray_switch.md
-            - 'mtl_switch': MaterialSpecial/mtl_switch.md
-            - 'mtl_twosided': MaterialSpecial/mtl_twosided.md
+            - 'Fog': MaterialSpecial/mtl_fog.md
+            - 'Hair': MaterialSpecial/mtl_hair.md
+            - 'Multiplexor': MaterialSpecial/mtl_mux.md
+            - 'Ray Switch': MaterialSpecial/mtl_ray_switch.md
+            - 'Switch': MaterialSpecial/mtl_switch.md
+            - '2-Sided': MaterialSpecial/mtl_twosided.md
   - Map:
       - Main:
-        - 'map_filetex': MapMain/map_filetex.md
-        - 'map_checker': MapMain/map_checker.md
-        - 'map_falloff': MapMain/map_falloff.md
-        - 'map_gradient': MapMain/map_gradient.md
-        - 'map_gradient_color': MapMain/map_gradient_color.md
-        - 'map_gradient_light': MapMain/map_gradient_light.md
-        - 'map_grooves': MapMain/map_grooves.md
-        - 'map_shape': MapMain/map_shape.md
-        - 'map_tiles': MapMain/map_tiles.md
+        - 'Bitmap (Filetex)': MapMain/map_filetex.md
+        - 'Checker': MapMain/map_checker.md
+        - 'Falloff': MapMain/map_falloff.md
+        - 'Gradient': MapMain/map_gradient.md
+        - 'Gradient (Color)': MapMain/map_gradient_color.md
+        - 'Gradient (Light)': MapMain/map_gradient_light.md
+        - 'Grooves': MapMain/map_grooves.md
+        - 'Shape': MapMain/map_shape.md
+        - 'Tiles': MapMain/map_tiles.md
         - Noise:
-          - 'map_brushed': MapNoise/map_brushed.md
-          - 'map_cellular': MapNoise/map_cellular.md
-          - 'map_dots': MapNoise/map_dots.md
-          - 'map_flakes': MapNoise/map_flakes.md
-          - 'map_noise': MapNoise/map_noise.md
-          - 'map_scratches': MapNoise/map_scratches.md
+          - 'Brushed': MapNoise/map_brushed.md
+          - 'Cellular': MapNoise/map_cellular.md
+          - 'Dots': MapNoise/map_dots.md
+          - 'Flakes': MapNoise/map_flakes.md
+          - 'Noise': MapNoise/map_noise.md
+          - 'Scratches': MapNoise/map_scratches.md
           - Bump:
-            - 'map_bump': MapBump/map_bump.md
-            - 'map_bump_blend': MapBump/map_bump_blend.md
-            - 'map_round_edges': MapBump/map_round_edges.md
+            - 'Bump': MapBump/map_bump.md
+            - 'Bump Blend': MapBump/map_bump_blend.md
+            - 'Round Edges': MapBump/map_round_edges.md
             - Special:
-              - 'map_cam_projection': MapSpecial/map_cam_projection.md
-              - 'map_colorgen': MapSpecial/map_colorgen.md
-              - 'map_composite': MapSpecial/map_composite.md
-              - 'map_correction': MapSpecial/map_correction.md
-              - 'map_curvature': MapSpecial/map_curvature.md
-              - 'map_ior': MapSpecial/map_ior.md
-              - 'map_lightbox': MapSpecial/map_lightbox.md
-              - 'map_mix': MapSpecial/map_mix.md
-              - 'map_mux': MapSpecial/map_mux.md
-              - 'map_photometric': MapSpecial/map_photometric.md
-              - 'map_primvar': MapSpecial/map_primvar.md
-              - 'map_ray_switch': MapSpecial/map_ray_switch.md
-              - 'map_remap': MapSpecial/map_remap.md
-              - 'map_switch': MapSpecial/map_switch.md
-              - 'map_triplanar': MapSpecial/map_triplanar.md
-              - 'map_user_data': MapSpecial/map_user_data.md
-              - 'map_wireframe': MapSpecial/map_wireframe.md
+              - 'Camera Projection': MapSpecial/map_cam_projection.md
+              - 'Color Generator': MapSpecial/map_colorgen.md
+              - 'Composite': MapSpecial/map_composite.md
+              - 'Color Correction': MapSpecial/map_correction.md
+              - 'Curvature': MapSpecial/map_curvature.md
+              - 'Custom IOR': MapSpecial/map_ior.md
+              - 'Lightbox': MapSpecial/map_lightbox.md
+              - 'Mix': MapSpecial/map_mix.md
+              - 'Multiplexor': MapSpecial/map_mux.md
+              - 'Photometric': MapSpecial/map_photometric.md
+              - 'Primvar': MapSpecial/map_primvar.md
+              - 'Ray Switch': MapSpecial/map_ray_switch.md
+              - 'Remap': MapSpecial/map_remap.md
+              - 'Switch': MapSpecial/map_switch.md
+              - 'Triplanar': MapSpecial/map_triplanar.md
+              - 'User Data': MapSpecial/map_user_data.md
+              - 'Wireframe': MapSpecial/map_wireframe.md
               - Xform:
-                - 'map_xform_2d': MapXform/map_xform_2d.md
-                - 'map_xform_3d': MapXform/map_xform_3d.md
-                - 'map_xform_distortion': MapXform/map_xform_distortion.md
-                - 'map_xform_scattering': MapXform/map_xform_scattering.md
-                - 'map_xform_spherical': MapXform/map_xform_spherical.md
+                - '2D Xform': MapXform/map_xform_2d.md
+                - '3D Xform': MapXform/map_xform_3d.md
+                - 'Distortion Xform': MapXform/map_xform_distortion.md
+                - 'Scattering Xform': MapXform/map_xform_scattering.md
+                - 'Spherical Xform': MapXform/map_xform_spherical.md
                 - Baked:
-                  - 'map_airflow': MapBaked/map_airflow.md
-                  - 'map_bakeobj': MapBaked/map_bakeobj.md
-                  - 'map_baketex': MapBaked/map_baketex.md
-                  - 'map_substance': MapBaked/map_substance.md
+                  - 'Airflow': MapBaked/map_airflow.md
+                  - 'Baked Object': MapBaked/map_bakeobj.md
+                  - 'Baked Texture': MapBaked/map_baketex.md
+                  - 'Substance': MapBaked/map_substance.md
                   - Tonemap:
-                    - 'map_glare': MapTonemap/map_glare.md
-                    - 'map_lut': MapTonemap/map_lut.md
+                    - 'Glare Pattern': MapTonemap/map_glare.md
+                    - 'LUT': MapTonemap/map_lut.md
   - Programming:
       - Int:
-        - 'pro_int_value': ProgrammingInt/pro_int_value.md
-        - 'pro_int_cast': ProgrammingInt/pro_int_cast.md
-        - 'pro_int_from_ctx': ProgrammingInt/pro_int_from_ctx.md
-        - 'pro_int_logic': ProgrammingInt/pro_int_logic.md
-        - 'pro_int_math': ProgrammingInt/pro_int_math.md
+        - 'Int': ProgrammingInt/pro_int_value.md
+        - 'Int Cast': ProgrammingInt/pro_int_cast.md
+        - 'Int (Context)': ProgrammingInt/pro_int_from_ctx.md
+        - 'Int Logic': ProgrammingInt/pro_int_logic.md
+        - 'Int Math': ProgrammingInt/pro_int_math.md
         - Float:
-          - 'pro_float_value': ProgrammingFloat/pro_float_value.md
-          - 'pro_float_cast': ProgrammingFloat/pro_float_cast.md
-          - 'pro_float_from_ctx': ProgrammingFloat/pro_float_from_ctx.md
-          - 'pro_float_math': ProgrammingFloat/pro_float_math.md
-          - 'pro_float_random': ProgrammingFloat/pro_float_random.md
-          - 'pro_float_remap': ProgrammingFloat/pro_float_remap.md
-          - 'pro_vector_split': ProgrammingFloat/pro_vector_split.md
+          - 'Float': ProgrammingFloat/pro_float_value.md
+          - 'Float Cast': ProgrammingFloat/pro_float_cast.md
+          - 'Float (Context)': ProgrammingFloat/pro_float_from_ctx.md
+          - 'Float Math': ProgrammingFloat/pro_float_math.md
+          - 'Float Random': ProgrammingFloat/pro_float_random.md
+          - 'Float Remap': ProgrammingFloat/pro_float_remap.md
+          - 'Vector Split': ProgrammingFloat/pro_vector_split.md
           - Vector:
-            - 'pro_vector_value': ProgrammingVector/pro_vector_value.md
-            - 'pro_vector_cast': ProgrammingVector/pro_vector_cast.md
-            - 'pro_vector_math': ProgrammingVector/pro_vector_math.md
-            - 'pro_vector_random': ProgrammingVector/pro_vector_random.md
-            - 'pro_matrix_split': ProgrammingVector/pro_matrix_split.md
+            - 'Vector': ProgrammingVector/pro_vector_value.md
+            - 'Vector Cast': ProgrammingVector/pro_vector_cast.md
+            - 'Vector Math': ProgrammingVector/pro_vector_math.md
+            - 'Vector Random': ProgrammingVector/pro_vector_random.md
+            - 'Matrix Split': ProgrammingVector/pro_matrix_split.md
             - Matrix:
-              - 'pro_matrix_value': ProgrammingMatrix/pro_matrix_value.md
-              - 'pro_matrix_cast': ProgrammingMatrix/pro_matrix_cast.md
-              - 'pro_matrix_from_ctx': ProgrammingMatrix/pro_matrix_from_ctx.md
-              - 'pro_matrix_from_obj': ProgrammingMatrix/pro_matrix_from_obj.md
-              - 'pro_matrix_math': ProgrammingMatrix/pro_matrix_math.md
+              - 'Matrix': ProgrammingMatrix/pro_matrix_value.md
+              - 'Matrix Cast': ProgrammingMatrix/pro_matrix_cast.md
+              - 'Matrix (Context)': ProgrammingMatrix/pro_matrix_from_ctx.md
+              - 'Matrix (Object)': ProgrammingMatrix/pro_matrix_from_obj.md
+              - 'Matrix Math': ProgrammingMatrix/pro_matrix_math.md
               - Profile:
-                - 'pro_float_profile': ProgrammingProfile/pro_float_profile.md
+                - 'Float Profile': ProgrammingProfile/pro_float_profile.md
                 - Compound:
-                  - 'pro_matrix_bullet': ProgrammingCompound/pro_matrix_bullet.md
+                  - 'Matrix Bullet': ProgrammingCompound/pro_matrix_bullet.md
   - Global:
-      - 'globals': Global/globals.md
-      - 'aovs': Global/aovs.md
-      - 'tonemap': Global/tonemap.md
-      - 'lightmixer': Global/lightmixer.md
-      - 'ibl': Global/ibl.md
-      - 'sky': Global/sky.md
+      - 'Globals': Global/globals.md
+      - 'AOVs': Global/aovs.md
+      - 'Tone mapping': Global/tonemap.md
+      - 'LightMixer': Global/lightmixer.md
+      - 'IBL': Global/ibl.md
+      - 'Sky': Global/sky.md
 
 theme:
   name: material
