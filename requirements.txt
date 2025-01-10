@@ -1,0 +1,7 @@
+mkdocs>=1.5.0                  # Core MkDocs package
+mkdocs-material>=9.1.0         # Popular theme for MkDocs
+mkdocs-mermaid2-plugin>=0.6.0  # Mermaid diagrams integration
+mkdocs-localsearch>=0.9.0      # Localized search support
+mkdocs-minify-plugin>=0.6.0    # Minify HTML for faster page loads
+mkdocs-redirects>=1.1.0        # Support for redirects
+mkdocs-exclude>=1.0.2          # Exclude files or directories from the build
