@@ -21,7 +21,6 @@ nav:
         - 'Primitive':           Object/obj_primitive.md
         - 'Target':              Object/obj_target.md
     - Modifier:
-        - 'Fur':                 Modifier/mod_fur.md
         - 'Multi-Clone':         Modifier/mod_multiclone.md
         - 'Scatter':             Modifier/mod_scatter.md
         - 'Sticker':             Modifier/mod_sticker.md
