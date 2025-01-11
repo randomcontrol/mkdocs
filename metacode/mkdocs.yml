@@ -12,7 +12,6 @@ nav:
         - 'VR':                  Camera/cam_vr.md
     - Object:
         - 'Assembly':            Object/obj_assembly.md
-        - 'Light assembly':      Object/obj_assembly_light.md
         - 'Light':               Object/obj_light.md
         - 'Point Cloud':         Object/obj_points.md
         - 'Polygon Mesh':        Object/obj_polymesh.md
@@ -78,7 +77,6 @@ nav:
         - 'Custom IOR':          Map/Special/map_ior.md
         - 'Lightbox':            Map/Special/map_lightbox.md
         - 'Mix':                 Map/Special/map_mix.md
-        - 'Multiplexor':         Map/Special/map_mux.md
         - 'Photometric':         Map/Special/map_photometric.md
         - 'Primvar':             Map/Special/map_primvar.md
         - 'Ray Switch':          Map/Special/map_ray_switch.md
@@ -98,6 +96,11 @@ nav:
       - Tonemap:
         - 'Glare Pattern':       Map/Tonemap/map_glare.md
         - 'LUT':                 Map/Tonemap/map_lut.md
+    - Motion Controller:
+        - 'Cam Switch':          Motion Controller/moc_cam_switch.md
+        - 'Explode':             Motion Controller/moc_explode.md
+        - 'Frontplate':          Motion Controller/moc_frontplate.md
+        - 'Transform':           Motion Controller/moc_transform.md
     - Programming:
       - Int:
         - 'Int':                 Programming/Int/pro_int_value.md

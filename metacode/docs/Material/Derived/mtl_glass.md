@@ -204,6 +204,11 @@ Enables chromatic dispersion. Note that dispersion is very computationally-inten
 
 Makes the surface cause no refraction and appear like an infinitely thin sheet of matter. This option is really convenient for architectural or automotive glass, such as windows, windshields, etc...
 
+
+![Glass example](mtl_standard_transmission_thin_enable.png "Glass example"){style="max-width: 320px;"}
+
+
+
 #### Enable interior roughness
 `Python: "mtl_standard_transmission_roughness_enable"`
 
@@ -334,6 +339,11 @@ Enables opacity mapping in the geometry the material is applied to. Note that op
 `Python: "mtl_opacity"`
 
 Defines the percentage of light rays that will be allowed to pass through the object not being affected by it in any way.
+
+
+![Glass example](mtl_opacity.png "Glass example"){style="max-width: 320px;"}
+
+
 
 #### Opacity map
 `Python: "mtl_opacity_map"`

@@ -172,6 +172,11 @@ Controls the Index Of Refraction of the coating. High values cause more reflecti
 
 Enables thin-film interference coating, responsible for the rainbow-like iridescence in some materials such as soap bubbles, pearls, spilled gasoline on a rainy road, etc...
 
+
+![Standard example](mtl_standard_coating_film_enable.png "Standard example"){style="max-width: 320px;"}
+
+
+
 #### Min coating thickness
 `Python: "mtl_standard_coating_film_thickness_min"`
 
@@ -353,6 +358,11 @@ Enables chromatic dispersion. Note that dispersion is very computationally-inten
 
 Makes the surface cause no refraction and appear like an infinitely thin sheet of matter. This option is really convenient for architectural or automotive glass, such as windows, windshields, etc...
 
+
+![Standard example](mtl_standard_transmission_thin_enable.png "Standard example"){style="max-width: 320px;"}
+
+
+
 #### Enable interior roughness
 `Python: "mtl_standard_transmission_roughness_enable"`
 
@@ -447,6 +457,11 @@ Controls how far deep the blue color scattering can reach. This is often used to
 
 Controls the weight of the translucency component. Translucency is when light bleeds to the other side of a very thin material, such as in a sheet of paper or in a tree leaf.
 
+
+![Standard example](mtl_standard_translucency_weight.png "Standard example"){style="max-width: 320px;"}
+
+
+
 #### Translucency weight map
 `Python: "mtl_standard_translucency_weight_map"`
 
@@ -510,6 +525,11 @@ Controls the color of the sheen component using texture map.
 `Python: "mtl_standard_emission_intensity"`
 
 Controls the intensity of the emission component. Note that standard emission must be preferably used for dim self-illuminating surfaces. For true light sources casting significant light into the scene, light or mesh objects are the correct option.
+
+
+![Standard example](mtl_standard_emission_intensity.png "Standard example"){style="max-width: 320px;"}
+
+
 
 #### Emission intensity map
 `Python: "mtl_standard_emission_intensity_map"`
@@ -631,6 +651,11 @@ Enables opacity mapping in the geometry the material is applied to. Note that op
 `Python: "mtl_opacity"`
 
 Defines the percentage of light rays that will be allowed to pass through the object not being affected by it in any way.
+
+
+![Standard example](mtl_opacity.png "Standard example"){style="max-width: 320px;"}
+
+
 
 #### Opacity map
 `Python: "mtl_opacity_map"`

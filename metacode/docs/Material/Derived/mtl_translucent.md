@@ -191,6 +191,11 @@ IOR (or complex IOR) files represent lab-measured data for various type of mater
 
 Controls the weight of the translucency component. Translucency is when light bleeds to the other side of a very thin material, such as in a sheet of paper or in a tree leaf.
 
+
+![Translucent example](mtl_standard_translucency_weight.png "Translucent example"){style="max-width: 320px;"}
+
+
+
 #### Translucency weight map
 `Python: "mtl_standard_translucency_weight_map"`
 
@@ -311,6 +316,11 @@ Enables opacity mapping in the geometry the material is applied to. Note that op
 `Python: "mtl_opacity"`
 
 Defines the percentage of light rays that will be allowed to pass through the object not being affected by it in any way.
+
+
+![Translucent example](mtl_opacity.png "Translucent example"){style="max-width: 320px;"}
+
+
 
 #### Opacity map
 `Python: "mtl_opacity_map"`

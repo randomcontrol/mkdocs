@@ -127,6 +127,11 @@ Rotates the projected UVW space about the Z/W axis. Positive values rotate count
 
 Controls the intensity of the emission component. Note that standard emission must be preferably used for dim self-illuminating surfaces. For true light sources casting significant light into the scene, light or mesh objects are the correct option.
 
+
+![Emissive example](mtl_standard_emission_intensity.png "Emissive example"){style="max-width: 320px;"}
+
+
+
 #### Emission intensity map
 `Python: "mtl_standard_emission_intensity_map"`
 
@@ -247,6 +252,11 @@ Enables opacity mapping in the geometry the material is applied to. Note that op
 `Python: "mtl_opacity"`
 
 Defines the percentage of light rays that will be allowed to pass through the object not being affected by it in any way.
+
+
+![Emissive example](mtl_opacity.png "Emissive example"){style="max-width: 320px;"}
+
+
 
 #### Opacity map
 `Python: "mtl_opacity_map"`

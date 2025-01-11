@@ -357,6 +357,11 @@ Enables opacity mapping in the geometry the material is applied to. Note that op
 
 Defines the percentage of light rays that will be allowed to pass through the object not being affected by it in any way.
 
+
+![Metal (Coated) example](mtl_opacity.png "Metal (Coated) example"){style="max-width: 320px;"}
+
+
+
 #### Opacity map
 `Python: "mtl_opacity_map"`
 
