@@ -2,7 +2,8 @@
 
 The flakes map produces a soup of flat tiny shards which can be used to simulate materials such as carpaint. The map issues multiple outputs suitable to control a standard material, all stemming from the same flakes distribution.
 
-![Sample 0](map_flakes_1.png "Sample 0"){ style="max-width: 300px;" }
+
+![Flakes example](map_flakes_1.png "Flakes example"){style="max-width: 320px;"}
 
 ## Common
 

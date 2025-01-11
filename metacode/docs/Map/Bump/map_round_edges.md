@@ -2,8 +2,12 @@
 
 The round_edges map is an extremely powerful yet easy way to automatically bevel the hard edges in your geometry. This map analyzes the curvature of contacting faces by proximity, and bends the normals of edges accordingly.
 
-![Sample 0](map_round_edges_1.gif "Sample 0"){ style="max-width: 300px;" }
-![Sample 1](map_round_edges_2.gif "Sample 1"){ style="max-width: 300px;" }
+
+![Round Edges example](map_round_edges_1.gif "Round Edges example"){style="max-width: 320px;"}
+![Round Edges example](map_round_edges_2.gif "Round Edges example"){style="max-width: 320px;"}
+
+
+[YouTube video tutorial](https://www.youtube.com/watch?v=YXfCOG1Yyys)
 
 ## Common
 
@@ -64,7 +68,8 @@ Controls the radius scale multiplier using a grayscale map. This is an excelent 
 
 Defines whether edges are rounded across different objects sharing the same material or not.
 
-![Sample 0](map_round_edges_include.gif "Sample 0"){ style="max-width: 300px;" }
+
+![Round Edges example](map_round_edges_include.gif "Round Edges example"){style="max-width: 320px;"}
 
 
 
