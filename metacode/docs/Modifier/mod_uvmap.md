@@ -1,94 +1,152 @@
-## **mod_uvmap**
+`Python: "mod_uvmap"`
 
 The uvmap modifier overrides the texture coordinates (UVs) of the object(s) it is connected to. The override is made by projecting the geometry of the object(s) onto a shape, such as a plane, a sphere, etc... Note that materials provide their own built-in UVW mapping system, which is enough for most uses. The uvmap node, however, provides some extended functionality, such as interactive positioning in the IPR.
-#### Common
+## Common
 
-> ##### Node alias
-> Human-readable node alias.
+#### Node alias
+`Python: "mod_alias"`
 
-> ##### Alias color
-> Identificative node color.
+Human-readable node alias.
 
-> ##### Node UUID
-> Node UUID.
+#### Alias color
+`Python: "mod_alias_color"`
 
-> ##### Node metadata
-> User-set node metadata.
+Identificative node color.
 
-> ##### Node tags
-> User-set node tags.
+#### Node UUID
+`Python: "mod_uuid"`
 
-> ##### Bypass modifier
-> Toggles this modifier on/off.
+Node UUID.
 
-> ##### Show viewport gizmo
-> Shows or hides this node's gizmo in the IPR/views. The gizmo is always visible when the node is selected, regardless of this toggle.
+#### Node metadata
+`Python: "mod_metadata"`
 
-#### UV mapping
+User-set node metadata.
 
-> ##### Align to camera
-> Aligns the xform of the modifier with the current viewport viewpoint.
+#### Node tags
+`Python: "mod_tags"`
 
-> ##### Fit to owner object(s)
-> Resizes the modifier to match the dimensions of its owner object(s).
+User-set node tags.
 
-> ##### Center at owner object(s)
-> Centers the modifier at the centroid of its owner object(s).
+#### Bypass modifier
+`Python: "mod_bypass"`
 
-> ##### Dock at owner object(s)
-> Repositions and reorients the modifier to match the frame of reference of its owner object(s).
+Toggles this modifier on/off.
 
-> ##### Explode modifier
-> Explodes the modifier so each of the owner object(s) receives its own individual modifier clone.
+#### Show viewport gizmo
+`Python: "mod_show_gizmo"`
 
-> ##### Copy from other node
-> Copies the modifier attributes from other node of the same class in the scene.
+Shows or hides this node's gizmo in the IPR/views. The gizmo is always visible when the node is selected, regardless of this toggle.
 
-> ##### Projection mode
-> Defines the UVW mapping projection mode.
+## UV mapping
 
-> ##### Triplanar blend
-> If the projection is triplanar, defines how much the three planar projections are blended onto each other.
+#### Align to camera
+`Python: "mod_align_to_cam"`
 
-> ##### Width
-> Real world size of the uvmap gizmo along the X axis.
+Aligns the xform of the modifier with the current viewport viewpoint.
 
-> ##### Height
-> Real world size of the uvmap gizmo along the Y axis.
+#### Fit to owner object(s)
+`Python: "mod_fit_to_owner_obj"`
 
-> ##### Depth
-> Real world size of the uvmap gizmo along the Z axis.
+Resizes the modifier to match the dimensions of its owner object(s).
 
-> ##### Real size link
-> Links the three real world dimensions so they are edited together.
+#### Center at owner object(s)
+`Python: "mod_center_at_owner_obj"`
 
-> ##### Width repeat
-> Repeats (i.e., tiles) the UVW mapping along the X axis the given number of times within the defined width.
+Centers the modifier at the centroid of its owner object(s).
 
-> ##### Height repeat
-> Repeats (i.e., tiles) the UVW mapping along the Y axis the given number of times within the defined height.
+#### Dock at owner object(s)
+`Python: "mod_dock_at_owner_obj"`
 
-> ##### Depth repeat
-> Repeats (i.e., tiles) the UVW mapping along the Z axis the given number of times within the defined depth.
+Repositions and reorients the modifier to match the frame of reference of its owner object(s).
 
-> ##### Repeat link
-> Links the three real size repeat values so they are edited together.
+#### Explode modifier
+`Python: "mod_explode"`
 
-> ##### Axis alignment
-> Reorients the projection towards the selected axis.
+Explodes the modifier so each of the owner object(s) receives its own individual modifier clone.
 
-> ##### Repeat X
-> Repeats the projected UVW space along the X/U axis. Increasing this value increases repetition.
+#### Copy from other node
+`Python: "mod_copy_from"`
 
-> ##### Repeat Y
-> Repeats the projected UVW space along the Y/V axis. Increasing this value increases repetition.
+Copies the modifier attributes from other node of the same class in the scene.
 
-> ##### Translate X
-> Offsets the projected UVW space along the X/U axis.
+#### Projection mode
+`Python: "mod_uvmap_projection"`
 
-> ##### Translate Y
-> Offsets the projected UVW space along the Y/V axis.
+Defines the UVW mapping projection mode.
 
-> ##### Rotate
-> Rotates the projected UVW space about the Z/W axis. Positive values rotate counter-clockwise.
+#### Triplanar blend
+`Python: "mod_uvmap_triplanar_blend"`
+
+If the projection is triplanar, defines how much the three planar projections are blended onto each other.
+
+#### Width
+`Python: "mod_uvmap_real_size_x"`
+
+Real world size of the uvmap gizmo along the X axis.
+
+#### Height
+`Python: "mod_uvmap_real_size_y"`
+
+Real world size of the uvmap gizmo along the Y axis.
+
+#### Depth
+`Python: "mod_uvmap_real_size_z"`
+
+Real world size of the uvmap gizmo along the Z axis.
+
+#### Real size link
+`Python: "mod_uvmap_real_size_link"`
+
+Links the three real world dimensions so they are edited together.
+
+#### Width repeat
+`Python: "mod_uvmap_real_size_repeat_x"`
+
+Repeats (i.e., tiles) the UVW mapping along the X axis the given number of times within the defined width.
+
+#### Height repeat
+`Python: "mod_uvmap_real_size_repeat_y"`
+
+Repeats (i.e., tiles) the UVW mapping along the Y axis the given number of times within the defined height.
+
+#### Depth repeat
+`Python: "mod_uvmap_real_size_repeat_z"`
+
+Repeats (i.e., tiles) the UVW mapping along the Z axis the given number of times within the defined depth.
+
+#### Repeat link
+`Python: "mod_uvmap_real_size_repeat_link"`
+
+Links the three real size repeat values so they are edited together.
+
+#### Axis alignment
+`Python: "mod_uvmap_axis_alignment"`
+
+Reorients the projection towards the selected axis.
+
+#### Repeat X
+`Python: "mod_uvmap_xform_repeat_x"`
+
+Repeats the projected UVW space along the X/U axis. Increasing this value increases repetition.
+
+#### Repeat Y
+`Python: "mod_uvmap_xform_repeat_y"`
+
+Repeats the projected UVW space along the Y/V axis. Increasing this value increases repetition.
+
+#### Translate X
+`Python: "mod_uvmap_xform_translate_x"`
+
+Offsets the projected UVW space along the X/U axis.
+
+#### Translate Y
+`Python: "mod_uvmap_xform_translate_y"`
+
+Offsets the projected UVW space along the Y/V axis.
+
+#### Rotate
+`Python: "mod_uvmap_xform_rotate_z"`
+
+Rotates the projected UVW space about the Z/W axis. Positive values rotate counter-clockwise.
 

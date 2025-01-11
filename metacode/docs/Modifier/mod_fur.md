@@ -1,351 +1,563 @@
-## **mod_fur**
+`Python: "mod_fur"`
 
 The fur modifier is used to grow hair/fur/grass/... strands on a base surface mesh. The randomness of the spawned strands as well as the physics acting on them are easily configurable by the user. Note that the hair/fur system in Maverick uses a special type of ray-tracing primitive which is far more performant and memory-conserving than regular triangle-based geometry.
-#### Common
+## Common
 
-> ##### Node alias
-> Human-readable node alias.
+#### Node alias
+`Python: "mod_alias"`
 
-> ##### Alias color
-> Identificative node color.
+Human-readable node alias.
 
-> ##### Node UUID
-> Node UUID.
+#### Alias color
+`Python: "mod_alias_color"`
 
-> ##### Node metadata
-> User-set node metadata.
+Identificative node color.
 
-> ##### Node tags
-> User-set node tags.
+#### Node UUID
+`Python: "mod_uuid"`
 
-> ##### Bypass modifier
-> Toggles this modifier on/off.
+Node UUID.
 
-#### Main
+#### Node metadata
+`Python: "mod_metadata"`
 
-> ##### Center at owner object(s)
-> Centers the modifier at the centroid of its owner object(s).
+User-set node metadata.
 
-> ##### Dock at owner object(s)
-> Repositions and reorients the modifier to match the frame of reference of its owner object(s).
+#### Node tags
+`Python: "mod_tags"`
 
-> ##### Surface side
-> Determines which side fur strands will grown on.
+User-set node tags.
 
-> ##### Count mode
-> Selects whether the target number of strands is given as a total count or as a density count per surface square in real world units. Additional modes for UV-based regular patterns are also provided.
+#### Bypass modifier
+`Python: "mod_bypass"`
 
-> ##### Number of strands
-> Target number of strands that will be generated.
+Toggles this modifier on/off.
 
-> ##### Strands per square
-> Target number of strands that will be generated per surface square in real world units.
+## Main
 
-> ##### Raster map
-> Each white pixel in this map will spawn an individual strand. This can be used to keep strands in a grid-like arrangement while being able to directly control their placement in UV space. It is recommended to disable interpolation (which is enabled by default) in the connected map, so pixelation as drawn in the image is preserved exactly.
+#### Center at owner object(s)
+`Python: "mod_center_at_owner_obj"`
 
-> ##### Randomize
-> Random number seed used to randomize the fur generation system. Each possible seed produces a distinct distribution of strands.
+Centers the modifier at the centroid of its owner object(s).
 
-> ##### Density map
-> The density map is a grayscale map that defines the distribution of strands over the surface of the base object. Black means 0 density, and white means full density.
+#### Dock at owner object(s)
+`Python: "mod_dock_at_owner_obj"`
 
-> ##### Material
-> Material used by the resulting curves object node.
+Repositions and reorients the modifier to match the frame of reference of its owner object(s).
 
-#### UV pattern / Raster
+#### Surface side
+`Python: "mod_fur_side"`
 
-> ##### Pattern mode
-> Selects one of the three 2D space regular fillings possible.
+Determines which side fur strands will grown on.
 
-> ##### Repeat X
-> Repeats the UV space along the X/U axis. Increasing this value increases repetition.
+#### Count mode
+`Python: "mod_fur_count_mode"`
 
-> ##### Repeat Y
-> Repeats the UV space along the Y/V axis. Increasing this value increases repetition.
+Selects whether the target number of strands is given as a total count or as a density count per surface square in real world units. Additional modes for UV-based regular patterns are also provided.
 
-> ##### Translate X
-> Offsets the UV space along the X/U axis.
+#### Number of strands
+`Python: "mod_fur_count"`
 
-> ##### Translate Y
-> Offsets the UV space along the Y/V axis.
+Target number of strands that will be generated.
 
-> ##### Rotate
-> Rotates the UV space about the Z/W axis. Positive values rotate counter-clockwise.
+#### Strands per square
+`Python: "mod_fur_count_per_square"`
 
-#### Constraints
+Target number of strands that will be generated per surface square in real world units.
 
-> ##### Frustum camera
-> Defines a camera outside which field of view strands are clipped away. This can be used to save memory and improve fur generation/editing time.
+#### Raster map
+`Python: "mod_fur_count_raster_map"`
 
-> ##### Frustum margin
-> Defines a margin outside the given camera's field of view inside which strands are still allowed.
+Each white pixel in this map will spawn an individual strand. This can be used to keep strands in a grid-like arrangement while being able to directly control their placement in UV space. It is recommended to disable interpolation (which is enabled by default) in the connected map, so pixelation as drawn in the image is preserved exactly.
 
-> ##### Enable frustum camera
-> Enables the ability to designate a camera that will be used to clip away fur strands that fall outside its field of view.
+#### Randomize
+`Python: "mod_fur_randomize"`
 
-> ##### Spacing between strands
-> Defines the minimum spacing (if positive) or maximum overlapping (if negative) between scattered strands. This can be used to cram strands in or to space them out. Note that collision detection is only performed at the root of each strand; i.e., not along their length.
+Random number seed used to randomize the fur generation system. Each possible seed produces a distinct distribution of strands.
 
-> ##### Enable collision detection
-> Enables collision detection at the root of fur strands. Note that this constraint is computationally-intensive, so the generation phase may take longer. Note also that collision detection generally makes it impossible to fully satisfy the target count.
+#### Density map
+`Python: "mod_fur_density_map"`
 
-> ##### Boundary margin
-> Defines an inlet gap at the boundary of the base surface polymesh where fur strands are not allowed to grow.
+The density map is a grayscale map that defines the distribution of strands over the surface of the base object. Black means 0 density, and white means full density.
 
-> ##### Enable boundary margin
-> Enables an empty inlet gap at the boundary of the base mesh.
+#### Material
+`Python: "mod_fur_mtl"`
 
-> ##### Enable ground collisions
-> Forbids strands to grow inwards the height level of their root. This can be particularly useful when gravity or fuzz are enabled, so hair is not allowed to curve down below the base mesh.
+Material used by the resulting curves object node.
 
-#### Radius
+## UV pattern / Raster
 
-> ##### Root radius
-> Strand radius at the root level.
+#### Pattern mode
+`Python: "mod_fur_pattern_mode"`
 
-> ##### Radius map
-> The radius map is a grayscale map which luminance multiplies the root/tip radius values.
+Selects one of the three 2D space regular fillings possible.
 
-> ##### Tip radius
-> Strand radius at the tip level.
+#### Repeat X
+`Python: "mod_fur_pattern_repeat_x"`
 
-> ##### Radius gradient
-> This gradient interpolates between the root/tip radii along the length of each strand.
+Repeats the UV space along the X/U axis. Increasing this value increases repetition.
 
-> ##### Enable gradient
-> Enables a gradient that interpolates between the root/tip radii along the length of each strand.
+#### Repeat Y
+`Python: "mod_fur_pattern_repeat_y"`
+
+Repeats the UV space along the Y/V axis. Increasing this value increases repetition.
+
+#### Translate X
+`Python: "mod_fur_pattern_translate_x"`
+
+Offsets the UV space along the X/U axis.
+
+#### Translate Y
+`Python: "mod_fur_pattern_translate_y"`
+
+Offsets the UV space along the Y/V axis.
+
+#### Rotate
+`Python: "mod_fur_pattern_rotate_z"`
+
+Rotates the UV space about the Z/W axis. Positive values rotate counter-clockwise.
+
+## Constraints
+
+#### Frustum camera
+`Python: "mod_fur_frustum_cam"`
+
+Defines a camera outside which field of view strands are clipped away. This can be used to save memory and improve fur generation/editing time.
+
+#### Frustum margin
+`Python: "mod_fur_frustum_margin"`
+
+Defines a margin outside the given camera's field of view inside which strands are still allowed.
+
+#### Enable frustum camera
+`Python: "mod_fur_frustum_enable"`
+
+Enables the ability to designate a camera that will be used to clip away fur strands that fall outside its field of view.
+
+#### Spacing between strands
+`Python: "mod_fur_collisions_spacing"`
+
+Defines the minimum spacing (if positive) or maximum overlapping (if negative) between scattered strands. This can be used to cram strands in or to space them out. Note that collision detection is only performed at the root of each strand; i.e., not along their length.
+
+#### Enable collision detection
+`Python: "mod_fur_collisions_enable"`
+
+Enables collision detection at the root of fur strands. Note that this constraint is computationally-intensive, so the generation phase may take longer. Note also that collision detection generally makes it impossible to fully satisfy the target count.
+
+#### Boundary margin
+`Python: "mod_fur_boundary_margin"`
+
+Defines an inlet gap at the boundary of the base surface polymesh where fur strands are not allowed to grow.
+
+#### Enable boundary margin
+`Python: "mod_fur_boundary_margin_enable"`
+
+Enables an empty inlet gap at the boundary of the base mesh.
+
+#### Enable ground collisions
+`Python: "mod_fur_ground_collisions_enable"`
+
+Forbids strands to grow inwards the height level of their root. This can be particularly useful when gravity or fuzz are enabled, so hair is not allowed to curve down below the base mesh.
+
+## Radius
+
+#### Root radius
+`Python: "mod_fur_radius_root"`
+
+Strand radius at the root level.
+
+#### Radius map
+`Python: "mod_fur_radius_map"`
+
+The radius map is a grayscale map which luminance multiplies the root/tip radius values.
+
+#### Tip radius
+`Python: "mod_fur_radius_tip"`
+
+Strand radius at the tip level.
+
+#### Radius gradient
+`Python: "mod_fur_radius_gradient"`
+
+This gradient interpolates between the root/tip radii along the length of each strand.
+
+#### Enable gradient
+`Python: "mod_fur_radius_gradient_enable"`
+
+Enables a gradient that interpolates between the root/tip radii along the length of each strand.
+
+## Length
 
 #### Length
+`Python: "mod_fur_length"`
 
-> ##### Length
-> Defines the average length of the spawned strands in real world units.
+Defines the average length of the spawned strands in real world units.
 
-> ##### Length map
-> The length map is a grayscale map which luminance multiplies the average strand length.
+#### Length map
+`Python: "mod_fur_length_map"`
 
-> ##### Length variance
-> Controls how homogeneous or heterogeneous the length distribution over the average is. Set this value to 0 for all strands to be the same length.
+The length map is a grayscale map which luminance multiplies the average strand length.
 
-> ##### Segments
-> Defines the number of segments per strand. This value has a direct impact on memory usage and render speed, so always try to use the lowest value possible that still looks good. e.g., low-curvature fur can get away with few segments.
+#### Length variance
+`Python: "mod_fur_length_variance"`
 
-#### Direction
+Controls how homogeneous or heterogeneous the length distribution over the average is. Set this value to 0 for all strands to be the same length.
 
-> ##### Tilt enable
-> By default fur grows along the surface normal of the base polymesh object. This toggle allows to explicitly tilt the initial growth direction.
+#### Segments
+`Python: "mod_fur_segments"`
 
-> ##### Tilt U (low)
-> Low end of the tilt range along the U direction in tangent space.
+Defines the number of segments per strand. This value has a direct impact on memory usage and render speed, so always try to use the lowest value possible that still looks good. e.g., low-curvature fur can get away with few segments.
 
-> ##### Tilt U (high)
-> High end of the tilt range along the U direction in tangent space.
+## Direction
 
-> ##### Tilt U map
-> The tilt U map is a grayscale map which luminance ...
+#### Tilt enable
+`Python: "mod_fur_tilt_enable"`
 
-> ##### Tilt V (low)
-> Low end of the tilt range along the V direction in tangent space.
+By default fur grows along the surface normal of the base polymesh object. This toggle allows to explicitly tilt the initial growth direction.
 
-> ##### Tilt V (high)
-> High end of the tilt range along the V direction in tangent space.
+#### Tilt U (low)
+`Python: "mod_fur_tilt_u_lo"`
 
-> ##### Tilt V map
-> The tilt V map is a grayscale map which luminance ...
+Low end of the tilt range along the U direction in tangent space.
 
-> ##### @@
-> @@
+#### Tilt U (high)
+`Python: "mod_fur_tilt_u_hi"`
 
-> ##### Normal map
-> By default curves grow along the surface normal of the base mesh. This map provides control over the curves initial growth direction in the same way that bump/normal mapping would for shading.
+High end of the tilt range along the U direction in tangent space.
 
-#### Clumping
+#### Tilt U map
+`Python: "mod_fur_tilt_u_map"`
 
-> ##### Enable clumping
-> Fur clumps are patches of strands that share a common directionality.
+The tilt U map is a grayscale map which luminance ...
 
-> ##### Average clump size
-> Determines how aggressively clumps are formed. This value acts as a multiplier for the clumping normal map.
+#### Tilt V (low)
+`Python: "mod_fur_tilt_v_lo"`
 
-> ##### @@
-> @@
+Low end of the tilt range along the V direction in tangent space.
 
-> ##### Clumping strength
-> Determines how aggressively clumps are formed. This value acts as a multiplier for the clumping normal map.
+#### Tilt V (high)
+`Python: "mod_fur_tilt_v_hi"`
 
-> ##### Clumping normal map
-> By default curves grow along the surface normal of the base mesh. This map provides control over the curves initial growth direction in the same way that bump/normal mapping would for shading.
+High end of the tilt range along the V direction in tangent space.
 
-> ##### Shape gradient
-> Controls the impact of the clumping feature along the length of each strand from root to tip.
+#### Tilt V map
+`Python: "mod_fur_tilt_v_map"`
 
-> ##### Enable shape gradient
-> Enables a gradient that controls the impact of clumping along the length of each strand.
+The tilt V map is a grayscale map which luminance ...
 
-#### Fuzz
+#### @@
+`Python: "mod_fur_normal_strength"`
 
-> ##### @@
-> @@
+@@
 
-> ##### @@
-> @@
+#### Normal map
+`Python: "mod_fur_normal_map"`
 
-> ##### @@
-> @@
+By default curves grow along the surface normal of the base mesh. This map provides control over the curves initial growth direction in the same way that bump/normal mapping would for shading.
 
-> ##### @@
-> @@
+## Clumping
 
-> ##### @@
-> @@
+#### Enable clumping
+`Python: "mod_fur_clumping_enable"`
 
-#### Frizz
+Fur clumps are patches of strands that share a common directionality.
 
-> ##### Enable frizz
-> Frizz evaluates noise lookups along the length of the whole length of each strand. The effect is similar to crimped hair.
+#### Average clump size
+`Python: "mod_fur_clumping_size"`
 
-> ##### Frizz strength
-> @@
+Determines how aggressively clumps are formed. This value acts as a multiplier for the clumping normal map.
 
-> ##### Strength map
-> @@
+#### @@
+`Python: "mod_fur_clumping_variance"`
 
-> ##### Frizz frequency U multiplier
-> @@
+@@
 
-> ##### Frizz frequency U multiplier map
-> @@
+#### Clumping strength
+`Python: "mod_fur_clumping_strength"`
 
-> ##### Frizz frequency V multiplier
-> @@
+Determines how aggressively clumps are formed. This value acts as a multiplier for the clumping normal map.
 
-> ##### Frizz frequency V multiplier map
-> @@
+#### Clumping normal map
+`Python: "mod_fur_clumping_strength_map"`
 
-> ##### Frizz frequency W multiplier
-> @@
+By default curves grow along the surface normal of the base mesh. This map provides control over the curves initial growth direction in the same way that bump/normal mapping would for shading.
 
-> ##### Frizz frequency W multiplier map
-> @@
+#### Shape gradient
+`Python: "mod_fur_clumping_shape_gradient"`
 
-> ##### Frizz strength gradient
-> @@
+Controls the impact of the clumping feature along the length of each strand from root to tip.
 
-> ##### Enable frizz strength gradient
-> @@
+#### Enable shape gradient
+`Python: "mod_fur_clumping_shape_gradient_enable"`
 
-#### Kink
+Enables a gradient that controls the impact of clumping along the length of each strand.
 
-> ##### Enable kink
-> Kink evaluates noise lookups along the length of the whole length of each strand. The effect is similar to crimped hair.
+## Fuzz
 
-> ##### Kink strength
-> @@
+#### @@
+`Python: "mod_fur_fuzz_enable"`
 
-> ##### Strength map
-> @@
+@@
 
-> ##### Kink frequency U multiplier
-> @@
+#### @@
+`Python: "mod_fur_fuzz_strength"`
 
-> ##### Kink frequency U multiplier map
-> @@
+@@
 
-> ##### Kink frequency V multiplier
-> @@
+#### @@
+`Python: "mod_fur_fuzz_octaves"`
 
-> ##### Kink frequency V multiplier map
-> @@
+@@
 
-> ##### Kink frequency W multiplier
-> @@
+#### @@
+`Python: "mod_fur_fuzz_gradient"`
 
-> ##### Kink frequency W multiplier map
-> @@
+@@
 
-> ##### Kink strength gradient
-> @@
+#### @@
+`Python: "mod_fur_fuzz_gradient_enable"`
 
-> ##### Enable kink strength gradient
-> @@
+@@
 
-#### Flyaway
+## Frizz
 
-> ##### @@
-> @@
+#### Enable frizz
+`Python: "mod_fur_frizz_enable"`
 
-> ##### @@
-> @@
+Frizz evaluates noise lookups along the length of the whole length of each strand. The effect is similar to crimped hair.
 
-> ##### @@
-> @@
+#### Frizz strength
+`Python: "mod_fur_frizz_strength"`
 
-> ##### @@
-> @@
+@@
 
-> ##### @@
-> @@
+#### Strength map
+`Python: "mod_fur_frizz_strength_map"`
 
-#### Curl
+@@
 
-> ##### @@
-> @@
+#### Frizz frequency U multiplier
+`Python: "mod_fur_frizz_frequency_u"`
 
-> ##### @@
-> @@
+@@
 
-> ##### @@
-> @@
+#### Frizz frequency U multiplier map
+`Python: "mod_fur_frizz_frequency_u_map"`
 
-> ##### @@
-> @@
+@@
 
-> ##### @@
-> @@
+#### Frizz frequency V multiplier
+`Python: "mod_fur_frizz_frequency_v"`
 
-#### Clustering
+@@
 
-> ##### @@
-> @@
+#### Frizz frequency V multiplier map
+`Python: "mod_fur_frizz_frequency_v_map"`
 
-> ##### @@
-> @@
+@@
 
-> ##### @@
-> @@
+#### Frizz frequency W multiplier
+`Python: "mod_fur_frizz_frequency_w"`
 
-> ##### @@
-> @@
+@@
 
-> ##### @@
-> @@
+#### Frizz frequency W multiplier map
+`Python: "mod_fur_frizz_frequency_w_map"`
 
-#### Gravity
+@@
 
-> ##### Enable gravity
-> By default fur strands grow in the void, unaffected by external forces. This toggle enables a directional force field which can be used to simulate gravity or wind. The force vector can be used to make strands tend to grow towards said direction.
+#### Frizz strength gradient
+`Python: "mod_fur_frizz_strength_gradient"`
 
-> ##### Gravity X
-> X component of the gravity force vector acting on the mass of the spawned strands.
+@@
 
-> ##### Gravity X multiplier map
-> The gravity X map is a grayscale map which luminance multiplies the X component of the gravity vector.
+#### Enable frizz strength gradient
+`Python: "mod_fur_frizz_strength_gradient_enable"`
 
-> ##### Gravity Y
-> Y component of the gravity force vector acting on the mass of the spawned strands.
+@@
 
-> ##### Gravity Y multiplier map
-> The gravity Y map is a grayscale map which luminance multiplies the Y component of the gravity vector.
+## Kink
 
-> ##### Gravity Z
-> Z component of the gravity force vector acting on the mass of the spawned strands.
+#### Enable kink
+`Python: "mod_fur_kink_enable"`
 
-> ##### Gravity Z multiplier map
-> The gravity Z map is a grayscale map which luminance multiplies the Z component of the gravity vector.
+Kink evaluates noise lookups along the length of the whole length of each strand. The effect is similar to crimped hair.
 
-> ##### @@
-> @@
+#### Kink strength
+`Python: "mod_fur_kink_strength"`
 
-> ##### @@
-> @@
+@@
+
+#### Strength map
+`Python: "mod_fur_kink_strength_map"`
+
+@@
+
+#### Kink frequency U multiplier
+`Python: "mod_fur_kink_frequency_u"`
+
+@@
+
+#### Kink frequency U multiplier map
+`Python: "mod_fur_kink_frequency_u_map"`
+
+@@
+
+#### Kink frequency V multiplier
+`Python: "mod_fur_kink_frequency_v"`
+
+@@
+
+#### Kink frequency V multiplier map
+`Python: "mod_fur_kink_frequency_v_map"`
+
+@@
+
+#### Kink frequency W multiplier
+`Python: "mod_fur_kink_frequency_w"`
+
+@@
+
+#### Kink frequency W multiplier map
+`Python: "mod_fur_kink_frequency_w_map"`
+
+@@
+
+#### Kink strength gradient
+`Python: "mod_fur_kink_strength_gradient"`
+
+@@
+
+#### Enable kink strength gradient
+`Python: "mod_fur_kink_strength_gradient_enable"`
+
+@@
+
+## Flyaway
+
+#### @@
+`Python: "mod_fur_flyaway_enable"`
+
+@@
+
+#### @@
+`Python: "mod_fur_flyaway_strength"`
+
+@@
+
+#### @@
+`Python: "mod_fur_flyaway_octaves"`
+
+@@
+
+#### @@
+`Python: "mod_fur_flyaway_gradient"`
+
+@@
+
+#### @@
+`Python: "mod_fur_flyaway_gradient_enable"`
+
+@@
+
+## Curl
+
+#### @@
+`Python: "mod_fur_curl_enable"`
+
+@@
+
+#### @@
+`Python: "mod_fur_curl_strength"`
+
+@@
+
+#### @@
+`Python: "mod_fur_curl_octaves"`
+
+@@
+
+#### @@
+`Python: "mod_fur_curl_gradient"`
+
+@@
+
+#### @@
+`Python: "mod_fur_curl_gradient_enable"`
+
+@@
+
+## Clustering
+
+#### @@
+`Python: "mod_fur_cluster_enable"`
+
+@@
+
+#### @@
+`Python: "mod_fur_cluster_strength"`
+
+@@
+
+#### @@
+`Python: "mod_fur_cluster_octaves"`
+
+@@
+
+#### @@
+`Python: "mod_fur_cluster_gradient"`
+
+@@
+
+#### @@
+`Python: "mod_fur_cluster_gradient_enable"`
+
+@@
+
+## Gravity
+
+#### Enable gravity
+`Python: "mod_fur_gravity_enable"`
+
+By default fur strands grow in the void, unaffected by external forces. This toggle enables a directional force field which can be used to simulate gravity or wind. The force vector can be used to make strands tend to grow towards said direction.
+
+#### Gravity X
+`Python: "mod_fur_gravity_x"`
+
+X component of the gravity force vector acting on the mass of the spawned strands.
+
+#### Gravity X multiplier map
+`Python: "mod_fur_gravity_x_map"`
+
+The gravity X map is a grayscale map which luminance multiplies the X component of the gravity vector.
+
+#### Gravity Y
+`Python: "mod_fur_gravity_y"`
+
+Y component of the gravity force vector acting on the mass of the spawned strands.
+
+#### Gravity Y multiplier map
+`Python: "mod_fur_gravity_y_map"`
+
+The gravity Y map is a grayscale map which luminance multiplies the Y component of the gravity vector.
+
+#### Gravity Z
+`Python: "mod_fur_gravity_z"`
+
+Z component of the gravity force vector acting on the mass of the spawned strands.
+
+#### Gravity Z multiplier map
+`Python: "mod_fur_gravity_z_map"`
+
+The gravity Z map is a grayscale map which luminance multiplies the Z component of the gravity vector.
+
+#### @@
+`Python: "mod_fur_stiffness_gradient"`
+
+@@
+
+#### @@
+`Python: "mod_fur_stiffness_gradient_enable"`
+
+@@
 

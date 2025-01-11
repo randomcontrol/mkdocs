@@ -1,48 +1,74 @@
-## **pro_vector_value**
+`Python: "pro_vector_value"`
 
 This programming node simply outputs a 3D vector value.
-#### Common
+## Common
 
-> ##### Node alias
-> Human-readable node alias.
+#### Node alias
+`Python: "pro_alias"`
 
-> ##### Alias color
-> Identificative node color.
+Human-readable node alias.
 
-> ##### Node UUID
-> Node UUID.
+#### Alias color
+`Python: "pro_alias_color"`
 
-> ##### Node metadata
-> User-set node metadata.
+Identificative node color.
 
-> ##### Node tags
-> User-set node tags.
+#### Node UUID
+`Python: "pro_uuid"`
 
-#### Main
+Node UUID.
 
-> ##### X component
-> X component of the vector value output by the node. This value is only used when no input programming node is provided.
+#### Node metadata
+`Python: "pro_metadata"`
 
-> ##### X component node
-> X component of the vector value output by the node.
+User-set node metadata.
 
-> ##### Y component
-> Y component of the vector value output by the node. This value is only used when no input programming node is provided.
+#### Node tags
+`Python: "pro_tags"`
 
-> ##### Y component node
-> Y component of the vector value output by the node.
+User-set node tags.
 
-> ##### Z component
-> Z component of the vector value output by the node. This value is only used when no input programming node is provided.
+## Main
 
-> ##### Z component node
-> Z component of the vector value output by the node.
+#### X component
+`Python: "pro_vector_value_x"`
 
-#### Output tuning
+X component of the vector value output by the node. This value is only used when no input programming node is provided.
 
-> ##### Value weight
-> The final value output by the node is, actually: value*weight+bias.
+#### X component node
+`Python: "pro_vector_value_x_pro"`
 
-> ##### Value bias
-> The final value output by the node is, actually: value*weight+bias.
+X component of the vector value output by the node.
+
+#### Y component
+`Python: "pro_vector_value_y"`
+
+Y component of the vector value output by the node. This value is only used when no input programming node is provided.
+
+#### Y component node
+`Python: "pro_vector_value_y_pro"`
+
+Y component of the vector value output by the node.
+
+#### Z component
+`Python: "pro_vector_value_z"`
+
+Z component of the vector value output by the node. This value is only used when no input programming node is provided.
+
+#### Z component node
+`Python: "pro_vector_value_z_pro"`
+
+Z component of the vector value output by the node.
+
+## Output tuning
+
+#### Value weight
+`Python: "pro_weight"`
+
+The final value output by the node is, actually: value*weight+bias.
+
+#### Value bias
+`Python: "pro_bias"`
+
+The final value output by the node is, actually: value*weight+bias.
 

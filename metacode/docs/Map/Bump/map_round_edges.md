@@ -1,40 +1,70 @@
-## **map_round_edges**
+`Python: "map_round_edges"`
 
 The round_edges map is an extremely powerful yet easy way to automatically bevel the hard edges in your geometry. This map analyzes the curvature of contacting faces by proximity, and bends the normals of edges accordingly.
-#### Common
 
-> ##### Node alias
-> Human-readable node alias.
+![Sample 0](map_round_edges_1.gif "Sample 0"){ style="max-width: 300px;" }
+![Sample 1](map_round_edges_2.gif "Sample 1"){ style="max-width: 300px;" }
 
-> ##### Alias color
-> Identificative node color.
+## Common
 
-> ##### Node UUID
-> Node UUID.
+#### Node alias
+`Python: "map_alias"`
 
-> ##### Node metadata
-> User-set node metadata.
+Human-readable node alias.
 
-> ##### Node tags
-> User-set node tags.
+#### Alias color
+`Python: "map_alias_color"`
 
-#### Main
+Identificative node color.
 
-> ##### Bypass
-> When this option is on, the map attributes are dismissed altogether and the input is passed-through to the output.
+#### Node UUID
+`Python: "map_uuid"`
 
-> ##### Samples
-> Number of samples used to compute the rounding effect. Higher values produce a more accurate result, but come at a price in performance.
+Node UUID.
 
-> ##### Radius
-> Controls the proximity range within the node looks for adjacent faces.
+#### Node metadata
+`Python: "map_metadata"`
 
-> ##### Scale
-> This value acts as a radius multiplier.
+User-set node metadata.
 
-> ##### Scale map
-> Controls the radius scale multiplier using a grayscale map. This is an excelent way to add irregularities and variation to the round_edges effect.
+#### Node tags
+`Python: "map_tags"`
 
-> ##### Include in calculations
-> Defines whether edges are rounded across different objects sharing the same material or not.
+User-set node tags.
+
+## Main
+
+#### Bypass
+`Python: "map_bypass"`
+
+When this option is on, the map attributes are dismissed altogether and the input is passed-through to the output.
+
+#### Samples
+`Python: "map_round_edges_samples"`
+
+Number of samples used to compute the rounding effect. Higher values produce a more accurate result, but come at a price in performance.
+
+#### Radius
+`Python: "map_round_edges_radius"`
+
+Controls the proximity range within the node looks for adjacent faces.
+
+#### Scale
+`Python: "map_round_edges_scale"`
+
+This value acts as a radius multiplier.
+
+#### Scale map
+`Python: "map_round_edges_scale_map"`
+
+Controls the radius scale multiplier using a grayscale map. This is an excelent way to add irregularities and variation to the round_edges effect.
+
+#### Include in calculations
+`Python: "map_round_edges_include"`
+
+Defines whether edges are rounded across different objects sharing the same material or not.
+
+![Sample 0](map_round_edges_include.gif "Sample 0"){ style="max-width: 300px;" }
+
+
 

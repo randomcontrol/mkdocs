@@ -1,213 +1,345 @@
-## **map_gradient_color**
+`Python: "map_gradient_color"`
 
 The gradient color map interpolates through a list of up to 5 colors along the U (horizontal) texture axis. This map is often used as input to the remap node for height-based coloring in materials such as wood, marble, ... or falloff-based effects such as iridiscence.
-#### Common
+## Common
 
-> ##### Node alias
-> Human-readable node alias.
+#### Node alias
+`Python: "map_alias"`
 
-> ##### Alias color
-> Identificative node color.
+Human-readable node alias.
 
-> ##### Node UUID
-> Node UUID.
+#### Alias color
+`Python: "map_alias_color"`
 
-> ##### Node metadata
-> User-set node metadata.
+Identificative node color.
 
-> ##### Node tags
-> User-set node tags.
+#### Node UUID
+`Python: "map_uuid"`
 
-#### Main
+Node UUID.
 
-> ##### Gradient type
-> Treatment performed on the horizontal direction the gradient runs along.
+#### Node metadata
+`Python: "map_metadata"`
 
-> ##### Stepped gradient
-> Toggles between stepped and smooth color interpolation.
+User-set node metadata.
 
-> ##### Equal area bands
-> Toggles between half or full size in the begin/end color bands. For stepped gradients equal-area bands is usually the desired behavior. Smooth gradients on the other hand are generally meant to interpolate between the midpoints of each color band.
+#### Node tags
+`Python: "map_tags"`
 
-> ##### Color 1
-> Defines the i-th input color.
+User-set node tags.
 
-> ##### Color 1 map
-> Defines the i-th input color using a texture map.
+## Main
 
-> ##### Enable color 1
-> Enables the i-th input color/map.
+#### Gradient type
+`Python: "map_gradient_color_type"`
 
-> ##### Color 2
-> Defines the i-th input color.
+Treatment performed on the horizontal direction the gradient runs along.
 
-> ##### Color 2 map
-> Defines the i-th input color using a texture map.
+#### Stepped gradient
+`Python: "map_gradient_color_stepped"`
 
-> ##### Enable color 2
-> Enables the i-th input color/map.
+Toggles between stepped and smooth color interpolation.
 
-> ##### Color 3
-> Defines the i-th input color.
+#### Equal area bands
+`Python: "map_gradient_color_equal_area"`
 
-> ##### Color 3 map
-> Defines the i-th input color using a texture map.
+Toggles between half or full size in the begin/end color bands. For stepped gradients equal-area bands is usually the desired behavior. Smooth gradients on the other hand are generally meant to interpolate between the midpoints of each color band.
 
-> ##### Enable color 3
-> Enables the i-th input color/map.
+#### Color 1
+`Python: "map_gradient_color_color_1"`
 
-> ##### Color 4
-> Defines the i-th input color.
+Defines the i-th input color.
 
-> ##### Color 4 map
-> Defines the i-th input color using a texture map.
+#### Color 1 map
+`Python: "map_gradient_color_color_1_map"`
 
-> ##### Enable color 4
-> Enables the i-th input color/map.
+Defines the i-th input color using a texture map.
 
-> ##### Color 5
-> Defines the i-th input color.
+#### Enable color 1
+`Python: "map_gradient_color_color_1_enable"`
 
-> ##### Color 5 map
-> Defines the i-th input color using a texture map.
+Enables the i-th input color/map.
 
-> ##### Enable color 5
-> Enables the i-th input color/map.
+#### Color 2
+`Python: "map_gradient_color_color_2"`
 
-> ##### Signal profile
-> Editable curve for the raw map signal.
+Defines the i-th input color.
 
-#### Noise
+#### Color 2 map
+`Python: "map_gradient_color_color_2_map"`
 
-> ##### Enable noise
-> Enables noise-based randomization of the gradient's resulting colors.
+Defines the i-th input color using a texture map.
 
-> ##### Hue variation
-> Amount of hue variation the interpolated colors will be randomized with.
+#### Enable color 2
+`Python: "map_gradient_color_color_2_enable"`
 
-> ##### Saturation variation
-> Amount of saturation variation the interpolated colors will be randomized with.
+Enables the i-th input color/map.
 
-> ##### Value variation
-> Amount of value (lightness) variation the interpolated colors will be randomized with.
+#### Color 3
+`Python: "map_gradient_color_color_3"`
 
-> ##### Noise octaves
-> Number of times the noise algorithm overlaps onto itself to add high-frequency details.
+Defines the i-th input color.
 
-> ##### Randomize
-> Random number seed used to randomize the map. Each possible seed produces a distinct version of the map.
+#### Color 3 map
+`Python: "map_gradient_color_color_3_map"`
 
-#### UV transform
+Defines the i-th input color using a texture map.
 
-> ##### Transform map
-> Allows to connect an xform_2d/3d/spherical map to control the texture tiling, position and rotation.
+#### Enable color 3
+`Python: "map_gradient_color_color_3_enable"`
 
-> ##### Coordinate space
-> Defines whether the map issues its own volumetric (object or world) mapping coordinates for seamless 3D tiling, or uses the existing object UVs. The instance UVs mode is applicable to instances (e.g., in scatter) and plucks the UVs of the base at the instancing point.
+Enables the i-th input color/map.
 
-> ##### Crop U (low)
-> Lower limit of the UVW space in the U direction.
+#### Color 4
+`Python: "map_gradient_color_color_4"`
 
-> ##### Crop U (high)
-> Upper limit of the UVW space in the U direction.
+Defines the i-th input color.
 
-> ##### Crop U direction
-> Shrinks the UVW space to a non-unitary interval along the U direction.
+#### Color 4 map
+`Python: "map_gradient_color_color_4_map"`
 
-> ##### Crop V (low)
-> Lower limit of the UVW space in the V direction.
+Defines the i-th input color using a texture map.
 
-> ##### Crop V (high)
-> Upper limit of the UVW space in the V direction.
+#### Enable color 4
+`Python: "map_gradient_color_color_4_enable"`
 
-> ##### Crop V direction
-> Shrinks the UVW space to a non-unitary interval along the V direction.
+Enables the i-th input color/map.
 
-> ##### Master repeat
-> Inverse scale the map is generated at. This parameter pre-multiplies the X/Y/Z repeat values. Note that local/world spaces tile at 1mx1mx1m by default.
+#### Color 5
+`Python: "map_gradient_color_color_5"`
 
-> ##### Repeat U
-> Repeats the map along the X/U axis. Increasing this value increases repetition.
+Defines the i-th input color.
 
-> ##### Enable U repetition
-> Allows map repetition along the X/U axis. When disallowed, the map becomes zero outside the [0..1] (or cropped) X/U interval.
+#### Color 5 map
+`Python: "map_gradient_color_color_5_map"`
 
-> ##### Clamp vs. repeat (U)
-> Toggles between clamped vs. repeated output outside the [0..1] (or cropped) X/U interval.
+Defines the i-th input color using a texture map.
 
-> ##### Repeat V
-> Repeats the map along the Y/V axis. Increasing this value increases repetition.
+#### Enable color 5
+`Python: "map_gradient_color_color_5_enable"`
 
-> ##### Enable V repetition
-> Allows map repetition along the Y/V axis. When disallowed, the map becomes zero outside the [0..1] (or cropped) Y/V interval.
+Enables the i-th input color/map.
 
-> ##### Clamp vs. repeat (V)
-> Toggles between clamped vs. repeated output outside the [0..1] (or cropped) X/V interval.
+#### Signal profile
+`Python: "map_profile"`
 
-> ##### Translate U
-> Offsets the map along the X/U axis.
+Editable curve for the raw map signal.
 
-> ##### Translate V
-> Offsets the map along the Y/V axis.
+## Noise
 
-> ##### Rotate
-> Rotates the map about the Z/W axis. Positive values rotate the map counter-clockwise.
+#### Enable noise
+`Python: "map_gradient_color_noise_enable"`
 
-#### UV distortion
+Enables noise-based randomization of the gradient's resulting colors.
 
-> ##### UV distortion map
-> Internal use.
+#### Hue variation
+`Python: "map_gradient_color_noise_h_var"`
 
-> ##### Enable UV noise
-> Toggles noise distortion in the UVW space on/off.
+Amount of hue variation the interpolated colors will be randomized with.
 
-> ##### Noise amount
-> Amount of noise distortion applied to the UVs before they are used.
+#### Saturation variation
+`Python: "map_gradient_color_noise_s_var"`
 
-> ##### Noise size
-> Amplitude of the noise distortion. This value is given in UVW space; e.g., 0.1 means that the maximum distortion is about 1/10th of a 1x1x1 texture tile.
+Amount of saturation variation the interpolated colors will be randomized with.
 
-> ##### Noise octaves
-> Number of times the noise algorithm overlaps onto itself to add high-frequency details.
+#### Value variation
+`Python: "map_gradient_color_noise_v_var"`
 
-> ##### Noise randomize
-> Random number seed used to randomize the distortion.
+Amount of value (lightness) variation the interpolated colors will be randomized with.
 
-> ##### Enable jitter blur
-> Toggles jitter blur in the UVW space on/off.
+#### Noise octaves
+`Python: "map_gradient_color_noise_octaves"`
 
-> ##### Jitter blur radius
-> Amount of 2D gaussian (jittering) blur applied to the UVs before they are used. This value is given in UVW space. Note that this type of blur may cause sampling noise that takes long to dissolve. Note also that jitter blur does not produce gamma-correct results, and can't be used for bump or displacement height maps.
+Number of times the noise algorithm overlaps onto itself to add high-frequency details.
 
-#### UV scattering
+#### Randomize
+`Python: "map_randomize"`
 
-> ##### UV scattering map
-> Internal use.
+Random number seed used to randomize the map. Each possible seed produces a distinct version of the map.
 
-> ##### Enable random offset
-> Internal use.
+## UV transform
 
-> ##### Offset U
-> Internal use.
+#### Transform map
+`Python: "map_xform_map"`
 
-> ##### Offset V
-> Internal use.
+Allows to connect an xform_2d/3d/spherical map to control the texture tiling, position and rotation.
 
-> ##### Randomize
-> Internal use.
+#### Coordinate space
+`Python: "map_xform_space"`
 
-> ##### Enable random tiling
-> Internal use.
+Defines whether the map issues its own volumetric (object or world) mapping coordinates for seamless 3D tiling, or uses the existing object UVs. The instance UVs mode is applicable to instances (e.g., in scatter) and plucks the UVs of the base at the instancing point.
 
-> ##### Blend
-> Internal use.
+#### Crop U (low)
+`Python: "map_xform_crop_x_lo"`
 
-> ##### U splits
-> Internal use.
+Lower limit of the UVW space in the U direction.
 
-> ##### V split
-> Internal use.
+#### Crop U (high)
+`Python: "map_xform_crop_x_hi"`
 
-> ##### Rotate splits
-> Internal use.
+Upper limit of the UVW space in the U direction.
+
+#### Crop U direction
+`Python: "map_xform_crop_x"`
+
+Shrinks the UVW space to a non-unitary interval along the U direction.
+
+#### Crop V (low)
+`Python: "map_xform_crop_y_lo"`
+
+Lower limit of the UVW space in the V direction.
+
+#### Crop V (high)
+`Python: "map_xform_crop_y_hi"`
+
+Upper limit of the UVW space in the V direction.
+
+#### Crop V direction
+`Python: "map_xform_crop_y"`
+
+Shrinks the UVW space to a non-unitary interval along the V direction.
+
+#### Master repeat
+`Python: "map_xform_repeat"`
+
+Inverse scale the map is generated at. This parameter pre-multiplies the X/Y/Z repeat values. Note that local/world spaces tile at 1mx1mx1m by default.
+
+#### Repeat U
+`Python: "map_xform_repeat_x"`
+
+Repeats the map along the X/U axis. Increasing this value increases repetition.
+
+#### Enable U repetition
+`Python: "map_xform_tile_x"`
+
+Allows map repetition along the X/U axis. When disallowed, the map becomes zero outside the [0..1] (or cropped) X/U interval.
+
+#### Clamp vs. repeat (U)
+`Python: "map_xform_clamp_x"`
+
+Toggles between clamped vs. repeated output outside the [0..1] (or cropped) X/U interval.
+
+#### Repeat V
+`Python: "map_xform_repeat_y"`
+
+Repeats the map along the Y/V axis. Increasing this value increases repetition.
+
+#### Enable V repetition
+`Python: "map_xform_tile_y"`
+
+Allows map repetition along the Y/V axis. When disallowed, the map becomes zero outside the [0..1] (or cropped) Y/V interval.
+
+#### Clamp vs. repeat (V)
+`Python: "map_xform_clamp_y"`
+
+Toggles between clamped vs. repeated output outside the [0..1] (or cropped) X/V interval.
+
+#### Translate U
+`Python: "map_xform_translate_x"`
+
+Offsets the map along the X/U axis.
+
+#### Translate V
+`Python: "map_xform_translate_y"`
+
+Offsets the map along the Y/V axis.
+
+#### Rotate
+`Python: "map_xform_rotate_z"`
+
+Rotates the map about the Z/W axis. Positive values rotate the map counter-clockwise.
+
+## UV distortion
+
+#### UV distortion map
+`Python: "map_distortion_map"`
+
+Internal use.
+
+#### Enable UV noise
+`Python: "map_distortion_noise_enable"`
+
+Toggles noise distortion in the UVW space on/off.
+
+#### Noise amount
+`Python: "map_distortion_noise"`
+
+Amount of noise distortion applied to the UVs before they are used.
+
+#### Noise size
+`Python: "map_distortion_noise_size"`
+
+Amplitude of the noise distortion. This value is given in UVW space; e.g., 0.1 means that the maximum distortion is about 1/10th of a 1x1x1 texture tile.
+
+#### Noise octaves
+`Python: "map_distortion_noise_octaves"`
+
+Number of times the noise algorithm overlaps onto itself to add high-frequency details.
+
+#### Noise randomize
+`Python: "map_distortion_noise_randomize"`
+
+Random number seed used to randomize the distortion.
+
+#### Enable jitter blur
+`Python: "map_distortion_blur_enable"`
+
+Toggles jitter blur in the UVW space on/off.
+
+#### Jitter blur radius
+`Python: "map_distortion_blur"`
+
+Amount of 2D gaussian (jittering) blur applied to the UVs before they are used. This value is given in UVW space. Note that this type of blur may cause sampling noise that takes long to dissolve. Note also that jitter blur does not produce gamma-correct results, and can't be used for bump or displacement height maps.
+
+## UV scattering
+
+#### UV scattering map
+`Python: "map_scattering_map"`
+
+Internal use.
+
+#### Enable random offset
+`Python: "map_scattering_offset_enable"`
+
+Internal use.
+
+#### Offset U
+`Python: "map_scattering_offset_x"`
+
+Internal use.
+
+#### Offset V
+`Python: "map_scattering_offset_y"`
+
+Internal use.
+
+#### Randomize
+`Python: "map_scattering_offset_randomize"`
+
+Internal use.
+
+#### Enable random tiling
+`Python: "map_scattering_tiling_enable"`
+
+Internal use.
+
+#### Blend
+`Python: "map_scattering_tiling_blend"`
+
+Internal use.
+
+#### U splits
+`Python: "map_scattering_tiling_x"`
+
+Internal use.
+
+#### V split
+`Python: "map_scattering_tiling_y"`
+
+Internal use.
+
+#### Rotate splits
+`Python: "map_scattering_tiling_rotate"`
+
+Internal use.
 

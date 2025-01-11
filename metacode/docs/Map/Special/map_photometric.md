@@ -1,28 +1,42 @@
-## **map_photometric**
+`Python: "map_photometric"`
 
 This light-specific node can be used to define the shape and spread of lamps and wallwashers. Luminaire manufacturers often release (.ies) files that capture the behavior of their products. Those files can be plugged directly into light objects in Maverick, via this map.
-#### Common
+## Common
 
-> ##### Node alias
-> Human-readable node alias.
+#### Node alias
+`Python: "map_alias"`
 
-> ##### Alias color
-> Identificative node color.
+Human-readable node alias.
 
-> ##### Node UUID
-> Node UUID.
+#### Alias color
+`Python: "map_alias_color"`
 
-> ##### Node metadata
-> User-set node metadata.
+Identificative node color.
 
-> ##### Node tags
-> User-set node tags.
+#### Node UUID
+`Python: "map_uuid"`
 
-#### Main
+Node UUID.
 
-> ##### IES profile filename
-> Selects and loads a .ies Photometric file from disk. Photometric files can be downloaded from the websites of various lights manufacturers. Maverick installs an assortment of .ies files in its Library.
+#### Node metadata
+`Python: "map_metadata"`
 
-> ##### Multiplier
-> Multiplies the original intensity in the Photometric file by this number. This can be used to adjust the emissive power of the light source.
+User-set node metadata.
+
+#### Node tags
+`Python: "map_tags"`
+
+User-set node tags.
+
+## Main
+
+#### IES profile filename
+`Python: "map_photometric_filename"`
+
+Selects and loads a .ies Photometric file from disk. Photometric files can be downloaded from the websites of various lights manufacturers. Maverick installs an assortment of .ies files in its Library.
+
+#### Multiplier
+`Python: "map_photometric_multiplier"`
+
+Multiplies the original intensity in the Photometric file by this number. This can be used to adjust the emissive power of the light source.
 

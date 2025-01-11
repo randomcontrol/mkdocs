@@ -1,194 +1,312 @@
-## **map_shape**
+`Python: "map_shape"`
 
 The shape node creates polygonal shapes with round corners. This node is particularly well-suited to create sticker masks.
-#### Common
+## Common
 
-> ##### Node alias
-> Human-readable node alias.
+#### Node alias
+`Python: "map_alias"`
 
-> ##### Alias color
-> Identificative node color.
+Human-readable node alias.
 
-> ##### Node UUID
-> Node UUID.
+#### Alias color
+`Python: "map_alias_color"`
 
-> ##### Node metadata
-> User-set node metadata.
+Identificative node color.
 
-> ##### Node tags
-> User-set node tags.
+#### Node UUID
+`Python: "map_uuid"`
 
-> ##### Swap colors
-> Swaps the primary and secondary colors.
+Node UUID.
 
-> ##### Primary color
-> Defines the primary (background) color. The lower end of the output signal range is remapped to this color.
+#### Node metadata
+`Python: "map_metadata"`
 
-> ##### Primary color map
-> Defines the primary color using a texture map.
+User-set node metadata.
 
-> ##### Secondary color
-> Defines the secondary (foreground) color. The upper end of the output signal range is remapped to this color.
+#### Node tags
+`Python: "map_tags"`
 
-> ##### Secondary color map
-> Defines the secondary color using a texture map.
+User-set node tags.
 
-#### Main
+#### Swap colors
+`Python: "map_color_swap"`
 
-> ##### Shape type
-> Specifies what shape to generate.
+Swaps the primary and secondary colors.
 
-> ##### Shape sides
-> Number of sides when the shape is a polygon.
+#### Primary color
+`Python: "map_color_1"`
 
-> ##### Corner roundness
-> Radius with which shape corners are rounded.
+Defines the primary (background) color. The lower end of the output signal range is remapped to this color.
 
-> ##### Shape radius
-> Sets the radius of the shape. At radius 1 the shape is exactly circumscribed in the unit UV square.
+#### Primary color map
+`Python: "map_color_1_map"`
 
-> ##### Shape rotation
-> Rotates the resulting shape in local space.
+Defines the primary color using a texture map.
 
-#### Blur (soften)
+#### Secondary color
+`Python: "map_color_2"`
 
-> ##### Enable softening
-> Enables softening at the edges of the shape. This is particularly important (necessary, even) to give thickness to the map when it is used for bump mapping such us when the shape map is used for a bumped sticker.
+Defines the secondary (foreground) color. The upper end of the output signal range is remapped to this color.
 
-> ##### Send to blur output plug
-> Sends the blurred pixels to the blur output plug (e.g., Nodal Editor) and leaves the main output plug unaffected. If this option is disabled, then the blur output plug becomes a copy of the blurred main output.
+#### Secondary color map
+`Python: "map_color_2_map"`
 
-> ##### Blur
-> Softens (blurs) the transition between the primary and secondary colors at the boundaries of the shape.
+Defines the secondary color using a texture map.
 
-#### Signal profile
+## Main
 
-> ##### Signal gamma
-> Gamma curve applied to the raw map signal before it is remapped to the final output color.
+#### Shape type
+`Python: "map_shape_type"`
 
-> ##### Signal gamma start
-> Left crop margin for the gamma curve applied to the raw map signal.
+Specifies what shape to generate.
 
-> ##### Signal gamma end
-> Right crop margin for the gamma curve applied to the raw map signal.
+#### Shape sides
+`Python: "map_shape_sides"`
 
-> ##### Signal gamma low
-> Lower crop margin for the gamma curve applied to the raw map signal.
+Number of sides when the shape is a polygon.
 
-> ##### Signal gamma high
-> Upper crop margin for the gamma curve applied to the raw map signal.
+#### Corner roundness
+`Python: "map_shape_roundness"`
 
-#### UV transform
+Radius with which shape corners are rounded.
 
-> ##### Transform map
-> Allows to connect an xform_2d/3d/spherical map to control the texture tiling, position and rotation.
+#### Shape radius
+`Python: "map_shape_radius"`
 
-> ##### Coordinate space
-> Defines whether the map issues its own volumetric (object or world) mapping coordinates for seamless 3D tiling, or uses the existing object UVs. The instance UVs mode is applicable to instances (e.g., in scatter) and plucks the UVs of the base at the instancing point.
+Sets the radius of the shape. At radius 1 the shape is exactly circumscribed in the unit UV square.
 
-> ##### Crop U (low)
-> Lower limit of the UVW space in the U direction.
+#### Shape rotation
+`Python: "map_shape_rotate"`
 
-> ##### Crop U (high)
-> Upper limit of the UVW space in the U direction.
+Rotates the resulting shape in local space.
 
-> ##### Crop U direction
-> Shrinks the UVW space to a non-unitary interval along the U direction.
+## Blur (soften)
 
-> ##### Crop V (low)
-> Lower limit of the UVW space in the V direction.
+#### Enable softening
+`Python: "map_shape_blur_enable"`
 
-> ##### Crop V (high)
-> Upper limit of the UVW space in the V direction.
+Enables softening at the edges of the shape. This is particularly important (necessary, even) to give thickness to the map when it is used for bump mapping such us when the shape map is used for a bumped sticker.
 
-> ##### Crop V direction
-> Shrinks the UVW space to a non-unitary interval along the V direction.
+#### Send to blur output plug
+`Python: "map_shape_blur_output"`
 
-> ##### Master repeat
-> Inverse scale the map is generated at. This parameter pre-multiplies the X/Y/Z repeat values. Note that local/world spaces tile at 1mx1mx1m by default.
+Sends the blurred pixels to the blur output plug (e.g., Nodal Editor) and leaves the main output plug unaffected. If this option is disabled, then the blur output plug becomes a copy of the blurred main output.
 
-> ##### Repeat U
-> Repeats the map along the X/U axis. Increasing this value increases repetition.
+#### Blur
+`Python: "map_shape_blur"`
 
-> ##### Enable U repetition
-> Allows map repetition along the X/U axis. When disallowed, the map becomes zero outside the [0..1] (or cropped) X/U interval.
+Softens (blurs) the transition between the primary and secondary colors at the boundaries of the shape.
 
-> ##### Clamp vs. repeat (U)
-> Toggles between clamped vs. repeated output outside the [0..1] (or cropped) X/U interval.
+## Signal profile
 
-> ##### Repeat V
-> Repeats the map along the Y/V axis. Increasing this value increases repetition.
+#### Signal gamma
+`Python: "map_profile_gamma"`
 
-> ##### Enable V repetition
-> Allows map repetition along the Y/V axis. When disallowed, the map becomes zero outside the [0..1] (or cropped) Y/V interval.
+Gamma curve applied to the raw map signal before it is remapped to the final output color.
 
-> ##### Clamp vs. repeat (V)
-> Toggles between clamped vs. repeated output outside the [0..1] (or cropped) X/V interval.
+#### Signal gamma start
+`Python: "map_profile_start"`
 
-> ##### Translate U
-> Offsets the map along the X/U axis.
+Left crop margin for the gamma curve applied to the raw map signal.
 
-> ##### Translate V
-> Offsets the map along the Y/V axis.
+#### Signal gamma end
+`Python: "map_profile_end"`
 
-> ##### Rotate
-> Rotates the map about the Z/W axis. Positive values rotate the map counter-clockwise.
+Right crop margin for the gamma curve applied to the raw map signal.
 
-#### UV distortion
+#### Signal gamma low
+`Python: "map_profile_lo"`
 
-> ##### UV distortion map
-> Internal use.
+Lower crop margin for the gamma curve applied to the raw map signal.
 
-> ##### Enable UV noise
-> Toggles noise distortion in the UVW space on/off.
+#### Signal gamma high
+`Python: "map_profile_hi"`
 
-> ##### Noise amount
-> Amount of noise distortion applied to the UVs before they are used.
+Upper crop margin for the gamma curve applied to the raw map signal.
 
-> ##### Noise size
-> Amplitude of the noise distortion. This value is given in UVW space; e.g., 0.1 means that the maximum distortion is about 1/10th of a 1x1x1 texture tile.
+## UV transform
 
-> ##### Noise octaves
-> Number of times the noise algorithm overlaps onto itself to add high-frequency details.
+#### Transform map
+`Python: "map_xform_map"`
 
-> ##### Noise randomize
-> Random number seed used to randomize the distortion.
+Allows to connect an xform_2d/3d/spherical map to control the texture tiling, position and rotation.
 
-> ##### Enable jitter blur
-> Toggles jitter blur in the UVW space on/off.
+#### Coordinate space
+`Python: "map_xform_space"`
 
-> ##### Jitter blur radius
-> Amount of 2D gaussian (jittering) blur applied to the UVs before they are used. This value is given in UVW space. Note that this type of blur may cause sampling noise that takes long to dissolve. Note also that jitter blur does not produce gamma-correct results, and can't be used for bump or displacement height maps.
+Defines whether the map issues its own volumetric (object or world) mapping coordinates for seamless 3D tiling, or uses the existing object UVs. The instance UVs mode is applicable to instances (e.g., in scatter) and plucks the UVs of the base at the instancing point.
 
-#### UV scattering
+#### Crop U (low)
+`Python: "map_xform_crop_x_lo"`
 
-> ##### UV scattering map
-> Internal use.
+Lower limit of the UVW space in the U direction.
 
-> ##### Enable random offset
-> Internal use.
+#### Crop U (high)
+`Python: "map_xform_crop_x_hi"`
 
-> ##### Offset U
-> Internal use.
+Upper limit of the UVW space in the U direction.
 
-> ##### Offset V
-> Internal use.
+#### Crop U direction
+`Python: "map_xform_crop_x"`
 
-> ##### Randomize
-> Internal use.
+Shrinks the UVW space to a non-unitary interval along the U direction.
 
-> ##### Enable random tiling
-> Internal use.
+#### Crop V (low)
+`Python: "map_xform_crop_y_lo"`
 
-> ##### Blend
-> Internal use.
+Lower limit of the UVW space in the V direction.
 
-> ##### U splits
-> Internal use.
+#### Crop V (high)
+`Python: "map_xform_crop_y_hi"`
 
-> ##### V split
-> Internal use.
+Upper limit of the UVW space in the V direction.
 
-> ##### Rotate splits
-> Internal use.
+#### Crop V direction
+`Python: "map_xform_crop_y"`
+
+Shrinks the UVW space to a non-unitary interval along the V direction.
+
+#### Master repeat
+`Python: "map_xform_repeat"`
+
+Inverse scale the map is generated at. This parameter pre-multiplies the X/Y/Z repeat values. Note that local/world spaces tile at 1mx1mx1m by default.
+
+#### Repeat U
+`Python: "map_xform_repeat_x"`
+
+Repeats the map along the X/U axis. Increasing this value increases repetition.
+
+#### Enable U repetition
+`Python: "map_xform_tile_x"`
+
+Allows map repetition along the X/U axis. When disallowed, the map becomes zero outside the [0..1] (or cropped) X/U interval.
+
+#### Clamp vs. repeat (U)
+`Python: "map_xform_clamp_x"`
+
+Toggles between clamped vs. repeated output outside the [0..1] (or cropped) X/U interval.
+
+#### Repeat V
+`Python: "map_xform_repeat_y"`
+
+Repeats the map along the Y/V axis. Increasing this value increases repetition.
+
+#### Enable V repetition
+`Python: "map_xform_tile_y"`
+
+Allows map repetition along the Y/V axis. When disallowed, the map becomes zero outside the [0..1] (or cropped) Y/V interval.
+
+#### Clamp vs. repeat (V)
+`Python: "map_xform_clamp_y"`
+
+Toggles between clamped vs. repeated output outside the [0..1] (or cropped) X/V interval.
+
+#### Translate U
+`Python: "map_xform_translate_x"`
+
+Offsets the map along the X/U axis.
+
+#### Translate V
+`Python: "map_xform_translate_y"`
+
+Offsets the map along the Y/V axis.
+
+#### Rotate
+`Python: "map_xform_rotate_z"`
+
+Rotates the map about the Z/W axis. Positive values rotate the map counter-clockwise.
+
+## UV distortion
+
+#### UV distortion map
+`Python: "map_distortion_map"`
+
+Internal use.
+
+#### Enable UV noise
+`Python: "map_distortion_noise_enable"`
+
+Toggles noise distortion in the UVW space on/off.
+
+#### Noise amount
+`Python: "map_distortion_noise"`
+
+Amount of noise distortion applied to the UVs before they are used.
+
+#### Noise size
+`Python: "map_distortion_noise_size"`
+
+Amplitude of the noise distortion. This value is given in UVW space; e.g., 0.1 means that the maximum distortion is about 1/10th of a 1x1x1 texture tile.
+
+#### Noise octaves
+`Python: "map_distortion_noise_octaves"`
+
+Number of times the noise algorithm overlaps onto itself to add high-frequency details.
+
+#### Noise randomize
+`Python: "map_distortion_noise_randomize"`
+
+Random number seed used to randomize the distortion.
+
+#### Enable jitter blur
+`Python: "map_distortion_blur_enable"`
+
+Toggles jitter blur in the UVW space on/off.
+
+#### Jitter blur radius
+`Python: "map_distortion_blur"`
+
+Amount of 2D gaussian (jittering) blur applied to the UVs before they are used. This value is given in UVW space. Note that this type of blur may cause sampling noise that takes long to dissolve. Note also that jitter blur does not produce gamma-correct results, and can't be used for bump or displacement height maps.
+
+## UV scattering
+
+#### UV scattering map
+`Python: "map_scattering_map"`
+
+Internal use.
+
+#### Enable random offset
+`Python: "map_scattering_offset_enable"`
+
+Internal use.
+
+#### Offset U
+`Python: "map_scattering_offset_x"`
+
+Internal use.
+
+#### Offset V
+`Python: "map_scattering_offset_y"`
+
+Internal use.
+
+#### Randomize
+`Python: "map_scattering_offset_randomize"`
+
+Internal use.
+
+#### Enable random tiling
+`Python: "map_scattering_tiling_enable"`
+
+Internal use.
+
+#### Blend
+`Python: "map_scattering_tiling_blend"`
+
+Internal use.
+
+#### U splits
+`Python: "map_scattering_tiling_x"`
+
+Internal use.
+
+#### V split
+`Python: "map_scattering_tiling_y"`
+
+Internal use.
+
+#### Rotate splits
+`Python: "map_scattering_tiling_rotate"`
+
+Internal use.
 

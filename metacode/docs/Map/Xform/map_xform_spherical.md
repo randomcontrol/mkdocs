@@ -1,40 +1,62 @@
-## **map_xform_spherical**
+`Python: "map_xform_spherical"`
 
 The xform_spherical map node warps the texture coordinates of the 2D map node(s) in a way compatible with an IBL latitude-longitude projection.
-#### Common
+## Common
 
-> ##### Node alias
-> Human-readable node alias.
+#### Node alias
+`Python: "map_alias"`
 
-> ##### Alias color
-> Identificative node color.
+Human-readable node alias.
 
-> ##### Node UUID
-> Node UUID.
+#### Alias color
+`Python: "map_alias_color"`
 
-> ##### Node metadata
-> User-set node metadata.
+Identificative node color.
 
-> ##### Node tags
-> User-set node tags.
+#### Node UUID
+`Python: "map_uuid"`
 
-#### Main
+Node UUID.
 
-> ##### Projection
-> Defines the way in which the mapping space is laid out on the sphere.
+#### Node metadata
+`Python: "map_metadata"`
 
-> ##### Theta
-> Angular size of the resulting mapping space about the azimuth angle.
+User-set node metadata.
 
-> ##### Phi
-> Angular size of the resulting mapping space about the altitude angle.
+#### Node tags
+`Python: "map_tags"`
 
-> ##### Azimuth
-> Angular position of the resulting mapping space about the azimuth angle.
+User-set node tags.
 
-> ##### Altitude
-> Angular position of the resulting mapping space about the altitude angle.
+## Main
 
-> ##### Rotate
-> Rotates the resulting mapping space.
+#### Projection
+`Python: "map_xform_spherical_projection"`
+
+Defines the way in which the mapping space is laid out on the sphere.
+
+#### Theta
+`Python: "map_xform_spherical_theta"`
+
+Angular size of the resulting mapping space about the azimuth angle.
+
+#### Phi
+`Python: "map_xform_spherical_phi"`
+
+Angular size of the resulting mapping space about the altitude angle.
+
+#### Azimuth
+`Python: "map_xform_spherical_azimuth"`
+
+Angular position of the resulting mapping space about the azimuth angle.
+
+#### Altitude
+`Python: "map_xform_spherical_altitude"`
+
+Angular position of the resulting mapping space about the altitude angle.
+
+#### Rotate
+`Python: "map_xform_spherical_rotate"`
+
+Rotates the resulting mapping space.
 

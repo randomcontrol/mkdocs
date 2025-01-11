@@ -1,33 +1,49 @@
-## **pro_int_cast**
+`Python: "pro_int_cast"`
 
 This node casts a fellow programming node to integer form. Floating-point values are downcast to integer via rounding. Vector and matrix values are downcast by losing coordinates, plus rounding.
-#### Common
+## Common
 
-> ##### Node alias
-> Human-readable node alias.
+#### Node alias
+`Python: "pro_alias"`
 
-> ##### Alias color
-> Identificative node color.
+Human-readable node alias.
 
-> ##### Node UUID
-> Node UUID.
+#### Alias color
+`Python: "pro_alias_color"`
 
-> ##### Node metadata
-> User-set node metadata.
+Identificative node color.
 
-> ##### Node tags
-> User-set node tags.
+#### Node UUID
+`Python: "pro_uuid"`
 
-#### Main
+Node UUID.
 
-> ##### Input value
-> Input value that will be cast to integer form.
+#### Node metadata
+`Python: "pro_metadata"`
 
-#### Output tuning
+User-set node metadata.
 
-> ##### Value weight
-> The final value output by the node is, actually: value*weight+bias.
+#### Node tags
+`Python: "pro_tags"`
 
-> ##### Value bias
-> The final value output by the node is, actually: value*weight+bias.
+User-set node tags.
+
+## Main
+
+#### Input value
+`Python: "pro_int_cast_input_pro"`
+
+Input value that will be cast to integer form.
+
+## Output tuning
+
+#### Value weight
+`Python: "pro_weight"`
+
+The final value output by the node is, actually: value*weight+bias.
+
+#### Value bias
+`Python: "pro_bias"`
+
+The final value output by the node is, actually: value*weight+bias.
 

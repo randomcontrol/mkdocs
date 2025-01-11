@@ -1,100 +1,162 @@
-## **map_xform_3d**
+`Python: "map_xform_3d"`
 
 The xform_3d map node transforms (e.g., offset, scale, rotate, ...) the texture coordinates of the 3D map node(s) it is connected to.
-#### Common
+## Common
 
-> ##### Node alias
-> Human-readable node alias.
+#### Node alias
+`Python: "map_alias"`
 
-> ##### Alias color
-> Identificative node color.
+Human-readable node alias.
 
-> ##### Node UUID
-> Node UUID.
+#### Alias color
+`Python: "map_alias_color"`
 
-> ##### Node metadata
-> User-set node metadata.
+Identificative node color.
 
-> ##### Node tags
-> User-set node tags.
+#### Node UUID
+`Python: "map_uuid"`
 
-#### Main
+Node UUID.
 
-> ##### Coordinate space
-> Defines whether the map issues its own volumetric (object or world) mapping coordinates for seamless 3D tiling, or uses the existing object UVs. The instance UVs mode is applicable to instances (e.g., in scatter) and plucks the UVs of the base at the instancing point.
+#### Node metadata
+`Python: "map_metadata"`
 
-> ##### Crop U (low)
-> Lower limit of the UVW space in the U direction.
+User-set node metadata.
 
-> ##### Crop U (high)
-> Upper limit of the UVW space in the U direction.
+#### Node tags
+`Python: "map_tags"`
 
-> ##### Crop U direction
-> Shrinks the UVW space to a non-unitary interval along the U direction.
+User-set node tags.
 
-> ##### Crop V (low)
-> Lower limit of the UVW space in the V direction.
+## Main
 
-> ##### Crop V (high)
-> Upper limit of the UVW space in the V direction.
+#### Coordinate space
+`Python: "map_xform_space"`
 
-> ##### Crop V direction
-> Shrinks the UVW space to a non-unitary interval along the V direction.
+Defines whether the map issues its own volumetric (object or world) mapping coordinates for seamless 3D tiling, or uses the existing object UVs. The instance UVs mode is applicable to instances (e.g., in scatter) and plucks the UVs of the base at the instancing point.
 
-> ##### Crop W (low)
-> Lower limit of the UVW space in the W direction.
+#### Crop U (low)
+`Python: "map_xform_crop_x_lo"`
 
-> ##### Crop W (high)
-> Upper limit of the UVW space in the W direction.
+Lower limit of the UVW space in the U direction.
 
-> ##### Crop W direction
-> Shrinks the UVW space to a non-unitary interval along the W direction.
+#### Crop U (high)
+`Python: "map_xform_crop_x_hi"`
 
-> ##### Master repeat
-> Inverse scale the map is generated at. This parameter pre-multiplies the X/Y/Z repeat values. Note that local/world spaces tile at 1mx1mx1m by default.
+Upper limit of the UVW space in the U direction.
 
-> ##### Repeat U
-> Repeats the map along the X/U axis. Increasing this value increases repetition.
+#### Crop U direction
+`Python: "map_xform_crop_x"`
 
-> ##### Enable U repetition
-> Allows map repetition along the X/U axis. When disallowed, the map becomes zero outside the [0..1] (or cropped) X/U interval.
+Shrinks the UVW space to a non-unitary interval along the U direction.
 
-> ##### Clamp vs. repeat (U)
-> Toggles between clamped vs. repeated output outside the [0..1] (or cropped) X/U interval.
+#### Crop V (low)
+`Python: "map_xform_crop_y_lo"`
 
-> ##### Repeat V
-> Repeats the map along the Y/V axis. Increasing this value increases repetition.
+Lower limit of the UVW space in the V direction.
 
-> ##### Enable V repetition
-> Allows map repetition along the Y/V axis. When disallowed, the map becomes zero outside the [0..1] (or cropped) Y/V interval.
+#### Crop V (high)
+`Python: "map_xform_crop_y_hi"`
 
-> ##### Clamp vs. repeat (V)
-> Toggles between clamped vs. repeated output outside the [0..1] (or cropped) X/V interval.
+Upper limit of the UVW space in the V direction.
 
-> ##### Repeat W
-> Repeats the map along the Z/W axis. Increasing this value increases repetition.
+#### Crop V direction
+`Python: "map_xform_crop_y"`
 
-> ##### Enable W repetition
-> Allows map repetition along the Z/W axis. When disallowed, the map becomes zero outside the [0..1] (or cropped) Z/W interval.
+Shrinks the UVW space to a non-unitary interval along the V direction.
 
-> ##### Clamp vs. repeat (W)
-> Toggles between clamped vs. repeated output outside the [0..1] (or cropped) X/W interval.
+#### Crop W (low)
+`Python: "map_xform_crop_z_lo"`
 
-> ##### Translate U
-> Offsets the map along the X/U axis.
+Lower limit of the UVW space in the W direction.
 
-> ##### Translate V
-> Offsets the map along the Y/V axis.
+#### Crop W (high)
+`Python: "map_xform_crop_z_hi"`
 
-> ##### Translate W
-> Offsets the map along the Z/W axis.
+Upper limit of the UVW space in the W direction.
 
-> ##### Rotate U
-> Rotates the map about the X/U axis. Positive values rotate the map counter-clockwise.
+#### Crop W direction
+`Python: "map_xform_crop_z"`
 
-> ##### Rotate V
-> Rotates the map about the Y/V axis. Positive values rotate the map counter-clockwise.
+Shrinks the UVW space to a non-unitary interval along the W direction.
 
-> ##### Rotate
-> Rotates the map about the Z/W axis. Positive values rotate the map counter-clockwise.
+#### Master repeat
+`Python: "map_xform_repeat"`
+
+Inverse scale the map is generated at. This parameter pre-multiplies the X/Y/Z repeat values. Note that local/world spaces tile at 1mx1mx1m by default.
+
+#### Repeat U
+`Python: "map_xform_repeat_x"`
+
+Repeats the map along the X/U axis. Increasing this value increases repetition.
+
+#### Enable U repetition
+`Python: "map_xform_tile_x"`
+
+Allows map repetition along the X/U axis. When disallowed, the map becomes zero outside the [0..1] (or cropped) X/U interval.
+
+#### Clamp vs. repeat (U)
+`Python: "map_xform_clamp_x"`
+
+Toggles between clamped vs. repeated output outside the [0..1] (or cropped) X/U interval.
+
+#### Repeat V
+`Python: "map_xform_repeat_y"`
+
+Repeats the map along the Y/V axis. Increasing this value increases repetition.
+
+#### Enable V repetition
+`Python: "map_xform_tile_y"`
+
+Allows map repetition along the Y/V axis. When disallowed, the map becomes zero outside the [0..1] (or cropped) Y/V interval.
+
+#### Clamp vs. repeat (V)
+`Python: "map_xform_clamp_y"`
+
+Toggles between clamped vs. repeated output outside the [0..1] (or cropped) X/V interval.
+
+#### Repeat W
+`Python: "map_xform_repeat_z"`
+
+Repeats the map along the Z/W axis. Increasing this value increases repetition.
+
+#### Enable W repetition
+`Python: "map_xform_tile_z"`
+
+Allows map repetition along the Z/W axis. When disallowed, the map becomes zero outside the [0..1] (or cropped) Z/W interval.
+
+#### Clamp vs. repeat (W)
+`Python: "map_xform_clamp_z"`
+
+Toggles between clamped vs. repeated output outside the [0..1] (or cropped) X/W interval.
+
+#### Translate U
+`Python: "map_xform_translate_x"`
+
+Offsets the map along the X/U axis.
+
+#### Translate V
+`Python: "map_xform_translate_y"`
+
+Offsets the map along the Y/V axis.
+
+#### Translate W
+`Python: "map_xform_translate_z"`
+
+Offsets the map along the Z/W axis.
+
+#### Rotate U
+`Python: "map_xform_rotate_x"`
+
+Rotates the map about the X/U axis. Positive values rotate the map counter-clockwise.
+
+#### Rotate V
+`Python: "map_xform_rotate_y"`
+
+Rotates the map about the Y/V axis. Positive values rotate the map counter-clockwise.
+
+#### Rotate
+`Python: "map_xform_rotate_z"`
+
+Rotates the map about the Z/W axis. Positive values rotate the map counter-clockwise.
 

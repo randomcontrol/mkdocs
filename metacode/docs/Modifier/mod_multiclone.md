@@ -1,299 +1,483 @@
-## **mod_multiclone**
+`Python: "mod_multiclone"`
 
 The multiclone modifier is a specialized variant of the scatter feature that, once attached to an object, spawns a number of instanced clones and arranges them in a linear or polar lattice. This is ideal to elegantly showcase multiple products in a single shot, create piles of items, etc... This modifier can also be regarded as a much more feature-rich companion to the regular clone operation in Maverick.
-#### Common
+## Common
 
-> ##### Node alias
-> Human-readable node alias.
+#### Node alias
+`Python: "mod_alias"`
 
-> ##### Alias color
-> Identificative node color.
+Human-readable node alias.
 
-> ##### Node UUID
-> Node UUID.
+#### Alias color
+`Python: "mod_alias_color"`
 
-> ##### Node metadata
-> User-set node metadata.
+Identificative node color.
 
-> ##### Node tags
-> User-set node tags.
+#### Node UUID
+`Python: "mod_uuid"`
 
-> ##### Bypass modifier
-> Toggles this modifier on/off.
+Node UUID.
 
-#### Main
+#### Node metadata
+`Python: "mod_metadata"`
 
-> ##### Convert instances to polymesh
-> This operation turns the spawned instances into real geometry. This way each individual clone becomes a real object that can be edited, moved, deleted, ... independently. Note that instanced clones do not really exist in memory, but real clones do. So this operation can be very costly or even exceed your available memory if the lattice features many instances or if the source object is geometry-heavy.
+User-set node metadata.
 
-> ##### Dock at owner object(s)
-> Repositions and reorients the modifier to match the frame of reference of its owner object(s).
+#### Node tags
+`Python: "mod_tags"`
 
-> ##### Rotate X
-> The lattice of instanced clones is aligned with the xform of the owner object(s) by default. This attribute allows to rotate this frame of reference about the X axis.
+User-set node tags.
 
-> ##### Rotate Y
-> The lattice of instanced clones is aligned with the xform of the owner object(s) by default. This attribute allows to rotate this frame of reference about the Y axis.
+#### Bypass modifier
+`Python: "mod_bypass"`
 
-> ##### Rotate Z
-> The lattice of instanced clones is aligned with the xform of the owner object(s) by default. This attribute allows to rotate this frame of reference about the Z axis.
+Toggles this modifier on/off.
 
-> ##### Rotate X
-> This attribute rotates the instanced clones about the X axis with respect to their own xform.
+## Main
 
-> ##### Rotate Y
-> This attribute rotates the instanced clones about the Y axis with respect to their own xform.
+#### Convert instances to polymesh
+`Python: "mod_multiclone_convert"`
 
-> ##### Rotate Z
-> This attribute rotates the instanced clones about the Z axis with respect to their own xform.
+This operation turns the spawned instances into real geometry. This way each individual clone becomes a real object that can be edited, moved, deleted, ... independently. Note that instanced clones do not really exist in memory, but real clones do. So this operation can be very costly or even exceed your available memory if the lattice features many instances or if the source object is geometry-heavy.
 
-> ##### Randomize
-> Random number seed used to randomize the instancing system. Each possible seed produces a distinct distribution of instances.
+#### Dock at owner object(s)
+`Python: "mod_dock_at_owner_obj"`
 
-> ##### Overlap owner object
-> Tells whether an instanced clone must be spawned at the owner's very object position or not. When this option is enabled you may want to hide the owner's visibility to avoid overlapping geometry.
+Repositions and reorients the modifier to match the frame of reference of its owner object(s).
 
-#### Lattice
+#### Rotate X
+`Python: "mod_multiclone_lattice_rotate_x"`
 
-> ##### Count X (low)
-> Low end of the number of instances that will be spawned along the X axis.
+The lattice of instanced clones is aligned with the xform of the owner object(s) by default. This attribute allows to rotate this frame of reference about the X axis.
 
-> ##### Count X (high)
-> High end of the number of instances that will be spawned along the X axis.
+#### Rotate Y
+`Python: "mod_multiclone_lattice_rotate_y"`
 
-> ##### Enable count X
-> When disabled, the X range becomes [0..0].
+The lattice of instanced clones is aligned with the xform of the owner object(s) by default. This attribute allows to rotate this frame of reference about the Y axis.
 
-> ##### Count Y (low)
-> Low end of the number of instances that will be spawned along the Y axis.
+#### Rotate Z
+`Python: "mod_multiclone_lattice_rotate_z"`
 
-> ##### Count Y (high)
-> High end of the number of instances that will be spawned along the Y axis.
+The lattice of instanced clones is aligned with the xform of the owner object(s) by default. This attribute allows to rotate this frame of reference about the Z axis.
 
-> ##### Enable count Y
-> When disabled, the Y range becomes [0..0].
+#### Rotate X
+`Python: "mod_multiclone_xform_rotate_x"`
 
-> ##### Count Z (low)
-> Low end of the number of instances that will be spawned along the Z axis.
+This attribute rotates the instanced clones about the X axis with respect to their own xform.
 
-> ##### Count Z (high)
-> High end of the number of instances that will be spawned along the Z axis.
+#### Rotate Y
+`Python: "mod_multiclone_xform_rotate_y"`
 
-> ##### Enable count Z
-> When disabled, the Z range becomes [0..0].
+This attribute rotates the instanced clones about the Y axis with respect to their own xform.
 
-> ##### Offset X
-> Position increment in the X axis from one instance to the next.
+#### Rotate Z
+`Python: "mod_multiclone_xform_rotate_z"`
 
-> ##### Stack X
-> When enabled, the X offset is automatically set to match the size of the base object's AABB along the X axis. Note that this option may not work as expected if the object is rotated.
+This attribute rotates the instanced clones about the Z axis with respect to their own xform.
 
-> ##### Offset Y
-> Position increment in the Y axis from one instance to the next.
+#### Randomize
+`Python: "mod_multiclone_randomize"`
 
-> ##### Stack Y
-> When enabled, the Y offset is automatically set to match the size of the base object's AABB along the Y axis. Note that this option may not work as expected if the object is rotated.
+Random number seed used to randomize the instancing system. Each possible seed produces a distinct distribution of instances.
 
-> ##### Offset Z
-> Position increment in the Z axis from one instance to the next.
+#### Overlap owner object
+`Python: "mod_multiclone_overlap_owner_obj"`
 
-> ##### Stack Z
-> When enabled, the Z offset is automatically set to match the size of the base object's AABB along the Z axis. Note that this option may not work as expected if the object is rotated.
+Tells whether an instanced clone must be spawned at the owner's very object position or not. When this option is enabled you may want to hide the owner's visibility to avoid overlapping geometry.
 
-#### Polar
+## Lattice
 
-> ##### Polar mode
-> Toggles between linear (box) and polar (cylindrical sector) lattice.
+#### Count X (low)
+`Python: "mod_multiclone_count_x_lo"`
 
-> ##### Remapped axes
-> Remaps the axes in the cylindrical sector within the base object's frame of reference.
+Low end of the number of instances that will be spawned along the X axis.
 
-> ##### Angle mode
-> Tells whether the angle value must be interpreted as the rotation increment from one instance to the next (relative), or as the total sector angle (total).
+#### Count X (high)
+`Python: "mod_multiclone_count_x_hi"`
 
-> ##### Angle
-> Angle increment from one instance to the next.
+High end of the number of instances that will be spawned along the X axis.
 
-> ##### Angle
-> Total angle of the cylindrical sector.
+#### Enable count X
+`Python: "mod_multiclone_count_x_enable"`
 
-> ##### Radius
-> Radius of the cylindrical sector.
+When disabled, the X range becomes [0..0].
 
-> ##### Flip radius
-> Flips the radius of the cylindrical sector, spawning axially-symmetric instances.
+#### Count Y (low)
+`Python: "mod_multiclone_count_y_lo"`
 
-> ##### Spiral offset
-> Radius increment from one instance to the next.
+Low end of the number of instances that will be spawned along the Y axis.
 
-> ##### Helicoidal offset
-> Position increment in the Z axis from one instance to the next.
+#### Count Y (high)
+`Python: "mod_multiclone_count_y_hi"`
 
-> ##### Reorient instances towards center
-> Reorients instances towards the rotation center within the floor plane.
+High end of the number of instances that will be spawned along the Y axis.
 
-#### Hollow
+#### Enable count Y
+`Python: "mod_multiclone_count_y_enable"`
 
-> ##### Hollow count X (low)
-> Low end of the number of instances that will be trimmed out along the X axis.
+When disabled, the Y range becomes [0..0].
 
-> ##### Hollow count X (high)
-> High end of the number of instances that will be trimmed out along the X axis.
+#### Count Z (low)
+`Python: "mod_multiclone_count_z_lo"`
 
-> ##### Enable hollow X
-> When disabled, nothing is hollowed out in the X direction.
+Low end of the number of instances that will be spawned along the Z axis.
 
-> ##### Hollow count Y (low)
-> Low end of the number of instances that will be trimmed out along the Y axis.
+#### Count Z (high)
+`Python: "mod_multiclone_count_z_hi"`
 
-> ##### Hollow count Y (high)
-> High end of the number of instances that will be trimmed out along the Y axis.
+High end of the number of instances that will be spawned along the Z axis.
 
-> ##### Enable hollow Y
-> When disabled, nothing is hollowed out in the Y direction.
+#### Enable count Z
+`Python: "mod_multiclone_count_z_enable"`
 
-> ##### Hollow count Z (low)
-> Low end of the number of instances that will be trimmed out along the Z axis.
+When disabled, the Z range becomes [0..0].
 
-> ##### Hollow count Z (high)
-> High end of the number of instances that will be trimmed out along the Z axis.
+#### Offset X
+`Python: "mod_multiclone_offset_x"`
 
-> ##### Enable hollow Z
-> When disabled, nothing is hollowed out in the Z direction.
+Position increment in the X axis from one instance to the next.
 
-> ##### Box frame mode
-> Toggles between box and box frame mode. Box mode trims XxYxZ instances out of the arrangement, effectively producing a hollow box. The box frame mode extends the trimming, effectively producing a hollow box frame.
+#### Stack X
+`Python: "mod_multiclone_stack_x"`
 
-#### Skew
+When enabled, the X offset is automatically set to match the size of the base object's AABB along the X axis. Note that this option may not work as expected if the object is rotated.
 
-> ##### Lattice skewing
-> Skews (decreases) the instances count in one or two directions based on the steps taken in the other direction. This can be used to create pyramid/wedge-shaped arrangements.
+#### Offset Y
+`Python: "mod_multiclone_offset_y"`
 
-> ##### Axis C
-> Skews (decreases) the instances count in the A/B axes with each step along the C axis.
+Position increment in the Y axis from one instance to the next.
 
-> ##### Skew clip A
-> Skews (decreases) the instances count in the A axis with each step along the C axis.
+#### Stack Y
+`Python: "mod_multiclone_stack_y"`
 
-> ##### Skew offset A
-> Shifts the offset in the A axis with each step along the C axis.
+When enabled, the Y offset is automatically set to match the size of the base object's AABB along the Y axis. Note that this option may not work as expected if the object is rotated.
 
-> ##### Skew clip B
-> Skews (decreases) the instances count in the B axis with each step along the C axis.
+#### Offset Z
+`Python: "mod_multiclone_offset_z"`
 
-> ##### Skew offset B
-> Shifts the offset in the B axis with each step along the C axis.
+Position increment in the Z axis from one instance to the next.
 
-#### Zipper
+#### Stack Z
+`Python: "mod_multiclone_stack_z"`
 
-> ##### Zipper mode
-> When enabled, consecutive rows in the B axis are shifted to end up interleaved along the A axis. This creates a zipper-like effect.
+When enabled, the Z offset is automatically set to match the size of the base object's AABB along the Z axis. Note that this option may not work as expected if the object is rotated.
 
-> ##### Zipper plane
-> Defines the A/B axes that form the plane the zipper effect happens in.
+## Polar
 
-> ##### Zipper offset X
-> Additional offset in the X direction for instances in zipper-shifted rows.
+#### Polar mode
+`Python: "mod_multiclone_polar_enable"`
 
-> ##### Zipper offset Y
-> Additional offset in the Y direction for instances in zipper-shifted rows.
+Toggles between linear (box) and polar (cylindrical sector) lattice.
 
-> ##### Zipper offset Z
-> Additional offset in the Z direction for instances in zipper-shifted rows.
+#### Remapped axes
+`Python: "mod_multiclone_polar_plane"`
 
-> ##### Zipper rotate X
-> Additional rotation about the X axis for instances in zipper-shifted rows.
+Remaps the axes in the cylindrical sector within the base object's frame of reference.
 
-> ##### Zipper rotate Y
-> Additional rotation about the Y axis for instances in zipper-shifted rows.
+#### Angle mode
+`Python: "mod_multiclone_polar_angle_mode"`
 
-> ##### Zipper rotate Z
-> Additional rotation about the Z axis for instances in zipper-shifted rows.
+Tells whether the angle value must be interpreted as the rotation increment from one instance to the next (relative), or as the total sector angle (total).
 
-> ##### Zipper scale
-> Additional uniform scale for instances in zipper-shifted rows.
+#### Angle
+`Python: "mod_multiclone_polar_angle_offset"`
 
-#### Translate
+Angle increment from one instance to the next.
 
-> ##### Translate X (low)
-> Low end of the random range for translation along the X axis.
+#### Angle
+`Python: "mod_multiclone_polar_angle_total"`
 
-> ##### Translate X (high)
-> High end of the random range for translation along the X axis.
+Total angle of the cylindrical sector.
 
-> ##### Translate Y (low)
-> Low end of the random range for translation along the Y axis.
+#### Radius
+`Python: "mod_multiclone_polar_radius"`
 
-> ##### Translate Y (high)
-> High end of the random range for translation along the Y axis.
+Radius of the cylindrical sector.
 
-> ##### Translate Z (low)
-> Low end of the random range for translation along the Z axis.
+#### Flip radius
+`Python: "mod_multiclone_polar_radius_flip"`
 
-> ##### Translate Z (high)
-> High end of the random range for translation along the Z axis.
+Flips the radius of the cylindrical sector, spawning axially-symmetric instances.
 
-#### Rotate
+#### Spiral offset
+`Python: "mod_multiclone_polar_spiral"`
 
-> ##### Rotate X (low)
-> Low end of the random range for rotation along the X axis.
+Radius increment from one instance to the next.
 
-> ##### Rotate X (high)
-> High end of the random range for rotation along the X axis.
+#### Helicoidal offset
+`Python: "mod_multiclone_polar_helicoidal"`
 
-> ##### Rotate Y (low)
-> Low end of the random range for rotation along the Y axis.
+Position increment in the Z axis from one instance to the next.
 
-> ##### Rotate Y (high)
-> High end of the random range for rotation along the Y axis.
+#### Reorient instances towards center
+`Python: "mod_multiclone_polar_reorient"`
 
-> ##### Rotate Z (low)
-> Low end of the random range for rotation along the Z axis.
+Reorients instances towards the rotation center within the floor plane.
 
-> ##### Rotate Z (high)
-> High end of the random range for rotation along the Z axis.
+## Hollow
 
-> ##### X step
-> This value discretizes the randomized X angle so it ends up being a multiple of the given step.
+#### Hollow count X (low)
+`Python: "mod_multiclone_hollow_count_x_lo"`
 
-> ##### Enable X step
-> Enables the X angle discretization step.
+Low end of the number of instances that will be trimmed out along the X axis.
 
-> ##### Y step
-> This value discretizes the randomized Y angle so it ends up being a multiple of the given step.
+#### Hollow count X (high)
+`Python: "mod_multiclone_hollow_count_x_hi"`
 
-> ##### Enable Y step
-> Enables the Y angle discretization step.
+High end of the number of instances that will be trimmed out along the X axis.
 
-> ##### Z step
-> This value discretizes the randomized Z angle so it ends up being a multiple of the given step.
+#### Enable hollow X
+`Python: "mod_multiclone_hollow_count_x_enable"`
 
-> ##### Enable Z step
-> Enables the Z angle discretization step.
+When disabled, nothing is hollowed out in the X direction.
 
-#### Scale
+#### Hollow count Y (low)
+`Python: "mod_multiclone_hollow_count_y_lo"`
 
-> ##### Uniform scale
-> Applies the same random scale factor to the three axes at once.
+Low end of the number of instances that will be trimmed out along the Y axis.
 
-> ##### Global scale
-> Applies a global scale factor to the three axes at once.
+#### Hollow count Y (high)
+`Python: "mod_multiclone_hollow_count_y_hi"`
 
-> ##### Scale X (low)
-> Low end of the random range for scaling along the X axis.
+High end of the number of instances that will be trimmed out along the Y axis.
 
-> ##### Scale X (high)
-> High end of the random range for scaling along the X axis.
+#### Enable hollow Y
+`Python: "mod_multiclone_hollow_count_y_enable"`
 
-> ##### Scale Y (low)
-> Low end of the random range for scaling along the Y axis.
+When disabled, nothing is hollowed out in the Y direction.
 
-> ##### Scale Y (high)
-> High end of the random range for scaling along the Y axis.
+#### Hollow count Z (low)
+`Python: "mod_multiclone_hollow_count_z_lo"`
 
-> ##### Scale Z (low)
-> Low end of the random range for scaling along the Z axis.
+Low end of the number of instances that will be trimmed out along the Z axis.
 
-> ##### Scale Z (high)
-> High end of the random range for scaling along the Z axis.
+#### Hollow count Z (high)
+`Python: "mod_multiclone_hollow_count_z_hi"`
+
+High end of the number of instances that will be trimmed out along the Z axis.
+
+#### Enable hollow Z
+`Python: "mod_multiclone_hollow_count_z_enable"`
+
+When disabled, nothing is hollowed out in the Z direction.
+
+#### Box frame mode
+`Python: "mod_multiclone_hollow_box_frame_mode"`
+
+Toggles between box and box frame mode. Box mode trims XxYxZ instances out of the arrangement, effectively producing a hollow box. The box frame mode extends the trimming, effectively producing a hollow box frame.
+
+## Skew
+
+#### Lattice skewing
+`Python: "mod_multiclone_skew_enable"`
+
+Skews (decreases) the instances count in one or two directions based on the steps taken in the other direction. This can be used to create pyramid/wedge-shaped arrangements.
+
+#### Axis C
+`Python: "mod_multiclone_skew_axis"`
+
+Skews (decreases) the instances count in the A/B axes with each step along the C axis.
+
+#### Skew clip A
+`Python: "mod_multiclone_skew_clip_a"`
+
+Skews (decreases) the instances count in the A axis with each step along the C axis.
+
+#### Skew offset A
+`Python: "mod_multiclone_skew_offset_a"`
+
+Shifts the offset in the A axis with each step along the C axis.
+
+#### Skew clip B
+`Python: "mod_multiclone_skew_clip_b"`
+
+Skews (decreases) the instances count in the B axis with each step along the C axis.
+
+#### Skew offset B
+`Python: "mod_multiclone_skew_offset_b"`
+
+Shifts the offset in the B axis with each step along the C axis.
+
+## Zipper
+
+#### Zipper mode
+`Python: "mod_multiclone_zipper_enable"`
+
+When enabled, consecutive rows in the B axis are shifted to end up interleaved along the A axis. This creates a zipper-like effect.
+
+#### Zipper plane
+`Python: "mod_multiclone_zipper_plane"`
+
+Defines the A/B axes that form the plane the zipper effect happens in.
+
+#### Zipper offset X
+`Python: "mod_multiclone_zipper_offset_x"`
+
+Additional offset in the X direction for instances in zipper-shifted rows.
+
+#### Zipper offset Y
+`Python: "mod_multiclone_zipper_offset_y"`
+
+Additional offset in the Y direction for instances in zipper-shifted rows.
+
+#### Zipper offset Z
+`Python: "mod_multiclone_zipper_offset_z"`
+
+Additional offset in the Z direction for instances in zipper-shifted rows.
+
+#### Zipper rotate X
+`Python: "mod_multiclone_zipper_rotate_x"`
+
+Additional rotation about the X axis for instances in zipper-shifted rows.
+
+#### Zipper rotate Y
+`Python: "mod_multiclone_zipper_rotate_y"`
+
+Additional rotation about the Y axis for instances in zipper-shifted rows.
+
+#### Zipper rotate Z
+`Python: "mod_multiclone_zipper_rotate_z"`
+
+Additional rotation about the Z axis for instances in zipper-shifted rows.
+
+#### Zipper scale
+`Python: "mod_multiclone_zipper_scale"`
+
+Additional uniform scale for instances in zipper-shifted rows.
+
+## Translate
+
+#### Translate X (low)
+`Python: "mod_multiclone_translate_x_lo"`
+
+Low end of the random range for translation along the X axis.
+
+#### Translate X (high)
+`Python: "mod_multiclone_translate_x_hi"`
+
+High end of the random range for translation along the X axis.
+
+#### Translate Y (low)
+`Python: "mod_multiclone_translate_y_lo"`
+
+Low end of the random range for translation along the Y axis.
+
+#### Translate Y (high)
+`Python: "mod_multiclone_translate_y_hi"`
+
+High end of the random range for translation along the Y axis.
+
+#### Translate Z (low)
+`Python: "mod_multiclone_translate_z_lo"`
+
+Low end of the random range for translation along the Z axis.
+
+#### Translate Z (high)
+`Python: "mod_multiclone_translate_z_hi"`
+
+High end of the random range for translation along the Z axis.
+
+## Rotate
+
+#### Rotate X (low)
+`Python: "mod_multiclone_rotate_x_lo"`
+
+Low end of the random range for rotation along the X axis.
+
+#### Rotate X (high)
+`Python: "mod_multiclone_rotate_x_hi"`
+
+High end of the random range for rotation along the X axis.
+
+#### Rotate Y (low)
+`Python: "mod_multiclone_rotate_y_lo"`
+
+Low end of the random range for rotation along the Y axis.
+
+#### Rotate Y (high)
+`Python: "mod_multiclone_rotate_y_hi"`
+
+High end of the random range for rotation along the Y axis.
+
+#### Rotate Z (low)
+`Python: "mod_multiclone_rotate_z_lo"`
+
+Low end of the random range for rotation along the Z axis.
+
+#### Rotate Z (high)
+`Python: "mod_multiclone_rotate_z_hi"`
+
+High end of the random range for rotation along the Z axis.
+
+#### X step
+`Python: "mod_multiclone_rotate_x_step"`
+
+This value discretizes the randomized X angle so it ends up being a multiple of the given step.
+
+#### Enable X step
+`Python: "mod_multiclone_rotate_x_step_enable"`
+
+Enables the X angle discretization step.
+
+#### Y step
+`Python: "mod_multiclone_rotate_y_step"`
+
+This value discretizes the randomized Y angle so it ends up being a multiple of the given step.
+
+#### Enable Y step
+`Python: "mod_multiclone_rotate_y_step_enable"`
+
+Enables the Y angle discretization step.
+
+#### Z step
+`Python: "mod_multiclone_rotate_z_step"`
+
+This value discretizes the randomized Z angle so it ends up being a multiple of the given step.
+
+#### Enable Z step
+`Python: "mod_multiclone_rotate_z_step_enable"`
+
+Enables the Z angle discretization step.
+
+## Scale
+
+#### Uniform scale
+`Python: "mod_multiclone_uniform_scale"`
+
+Applies the same random scale factor to the three axes at once.
+
+#### Global scale
+`Python: "mod_multiclone_scale"`
+
+Applies a global scale factor to the three axes at once.
+
+#### Scale X (low)
+`Python: "mod_multiclone_scale_x_lo"`
+
+Low end of the random range for scaling along the X axis.
+
+#### Scale X (high)
+`Python: "mod_multiclone_scale_x_hi"`
+
+High end of the random range for scaling along the X axis.
+
+#### Scale Y (low)
+`Python: "mod_multiclone_scale_y_lo"`
+
+Low end of the random range for scaling along the Y axis.
+
+#### Scale Y (high)
+`Python: "mod_multiclone_scale_y_hi"`
+
+High end of the random range for scaling along the Y axis.
+
+#### Scale Z (low)
+`Python: "mod_multiclone_scale_z_lo"`
+
+Low end of the random range for scaling along the Z axis.
+
+#### Scale Z (high)
+`Python: "mod_multiclone_scale_z_hi"`
+
+High end of the random range for scaling along the Z axis.
 

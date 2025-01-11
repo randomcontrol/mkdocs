@@ -1,97 +1,153 @@
-## **obj_curves**
+`Python: "obj_curves"`
 
 The curves object node manages a collection of curved strands, typically used to simulate hair, fur, grass, ...
-#### Common
+## Common
 
-> ##### Node alias
-> Human-readable node alias.
+#### Node alias
+`Python: "obj_alias"`
 
-> ##### Alias color
-> Identificative node color.
+Human-readable node alias.
 
-> ##### Node UUID
-> Node UUID.
+#### Alias color
+`Python: "obj_alias_color"`
 
-> ##### Node metadata
-> User-set node metadata.
+Identificative node color.
 
-> ##### Node tags
-> User-set node tags.
+#### Node UUID
+`Python: "obj_uuid"`
 
-> ##### Object visibility
-> Determines whether the object is visible, hidden from the camera, or hidden completely (invisible).
+Node UUID.
 
-#### Radius
+#### Node metadata
+`Python: "obj_metadata"`
 
-> ##### Root/tip radius override
-> Allows to define a custom root and tip radius value.
+User-set node metadata.
 
-> ##### Root radius
-> Strand radius at the root level.
+#### Node tags
+`Python: "obj_tags"`
 
-> ##### Tip radius
-> Strand radius at the tip level.
+User-set node tags.
 
-#### Trace sets
+#### Object visibility
+`Python: "obj_visibility"`
 
-> ##### Inherit trace set settings
-> Makes the object inherit the trace set settings from its parent assembly, if there is one. Objects without a parent (and also objects with this flag turned off) use their own trace set settings.
+Determines whether the object is visible, hidden from the camera, or hidden completely (invisible).
 
-> ##### Trace set ID
-> Trace set this object belongs to. Trace sets can be used to form groups of mutual visibility between cameras, objects, and light sources.
+## Radius
 
-> ##### Include list
-> List of comma or space-separated trace set IDs. If the list starts by - then the list is inverted (i.e., all IDs except for the listed ones). Light paths bouncing at the object will interact with (at least) the objects or lights that belong to the listed trace sets. For example, you can use this list to re-include a trace set that was excluded at a previous GI bounce.
+#### Root/tip radius override
+`Python: "obj_curves_radius_override_enable"`
 
-> ##### Enable include list
-> Enables or disables the trace sets include list.
+Allows to define a custom root and tip radius value.
 
-> ##### Exclude list
-> List of comma or space-separated trace set IDs. If the list starts by - then the list is inverted (i.e., all IDs except for the listed ones). Light paths bouncing at the object will not interact with the objects or lights that belong to the listed trace sets. For example, you can use this to make an object exclude the shadows produced by other particular object.
+#### Root radius
+`Python: "obj_curves_radius_override_root"`
 
-> ##### Enable exclude list
-> Enables or disables the trace sets exclude list.
+Strand radius at the root level.
 
-#### Compositing
+#### Tip radius
+`Python: "obj_curves_radius_override_tip"`
 
-> ##### Inherit compositing settings
-> Makes the object inherit the compositing settings from its parent assembly, if there is one. Objects without a parent (and also objects with this flag turned off) use their own compositing settings.
+Strand radius at the tip level.
 
-> ##### Material ID mask color
-> Custom mask color for the material ID AOV.
+## Trace sets
 
-> ##### Enable mask color
-> Enables the custom mask color for the material ID AOV.
+#### Inherit trace set settings
+`Python: "obj_inherit_trace_sets"`
 
-> ##### Tag object as backdrop
-> Flags the object to be treated as a backdrop in the render sets system. Note that for this flag to work, render sets must be enabled in the Render panel.
+Makes the object inherit the trace set settings from its parent assembly, if there is one. Objects without a parent (and also objects with this flag turned off) use their own trace set settings.
 
-> ##### Render set ID
-> Defines what render set this object will be render in. The list of render sets to be rendered can be enabled and defined in the Render panel.
+#### Trace set ID
+`Python: "obj_trace_set_id"`
 
-#### Custom attributes
+Trace set this object belongs to. Trace sets can be used to form groups of mutual visibility between cameras, objects, and light sources.
 
-> ##### Custom attrib 1
-> Custom attribute 1. Typically used as input to a context programming node in a nodal tree.
+#### Include list
+`Python: "obj_trace_set_include"`
 
-> ##### Custom attrib 2
-> Custom attribute 2. Typically used as input to a context programming node in a nodal tree.
+List of comma or space-separated trace set IDs. If the list starts by - then the list is inverted (i.e., all IDs except for the listed ones). Light paths bouncing at the object will interact with (at least) the objects or lights that belong to the listed trace sets. For example, you can use this list to re-include a trace set that was excluded at a previous GI bounce.
 
-> ##### Custom attrib 3
-> Custom attribute 3. Typically used as input to a context programming node in a nodal tree.
+#### Enable include list
+`Python: "obj_trace_set_include_enable"`
 
-> ##### Custom attrib 4
-> Custom attribute 4. Typically used as input to a context programming node in a nodal tree.
+Enables or disables the trace sets include list.
 
-> ##### Custom attrib 5
-> Custom attribute 5. Typically used as input to a context programming node in a nodal tree.
+#### Exclude list
+`Python: "obj_trace_set_exclude"`
 
-> ##### Custom attrib 6
-> Custom attribute 6. Typically used as input to a context programming node in a nodal tree.
+List of comma or space-separated trace set IDs. If the list starts by - then the list is inverted (i.e., all IDs except for the listed ones). Light paths bouncing at the object will not interact with the objects or lights that belong to the listed trace sets. For example, you can use this to make an object exclude the shadows produced by other particular object.
 
-> ##### Custom attrib 7
-> Custom attribute 7. Typically used as input to a context programming node in a nodal tree.
+#### Enable exclude list
+`Python: "obj_trace_set_exclude_enable"`
 
-> ##### Custom attrib 8
-> Custom attribute 8. Typically used as input to a context programming node in a nodal tree.
+Enables or disables the trace sets exclude list.
+
+## Compositing
+
+#### Inherit compositing settings
+`Python: "obj_inherit_compositing"`
+
+Makes the object inherit the compositing settings from its parent assembly, if there is one. Objects without a parent (and also objects with this flag turned off) use their own compositing settings.
+
+#### Material ID mask color
+`Python: "obj_mask_color"`
+
+Custom mask color for the material ID AOV.
+
+#### Enable mask color
+`Python: "obj_mask_color_enable"`
+
+Enables the custom mask color for the material ID AOV.
+
+#### Tag object as backdrop
+`Python: "obj_render_set_backdrop_enable"`
+
+Flags the object to be treated as a backdrop in the render sets system. Note that for this flag to work, render sets must be enabled in the Render panel.
+
+#### Render set ID
+`Python: "obj_render_set_id"`
+
+Defines what render set this object will be render in. The list of render sets to be rendered can be enabled and defined in the Render panel.
+
+## Custom attributes
+
+#### Custom attrib 1
+`Python: "obj_custom_attribute_1"`
+
+Custom attribute 1. Typically used as input to a context programming node in a nodal tree.
+
+#### Custom attrib 2
+`Python: "obj_custom_attribute_2"`
+
+Custom attribute 2. Typically used as input to a context programming node in a nodal tree.
+
+#### Custom attrib 3
+`Python: "obj_custom_attribute_3"`
+
+Custom attribute 3. Typically used as input to a context programming node in a nodal tree.
+
+#### Custom attrib 4
+`Python: "obj_custom_attribute_4"`
+
+Custom attribute 4. Typically used as input to a context programming node in a nodal tree.
+
+#### Custom attrib 5
+`Python: "obj_custom_attribute_5"`
+
+Custom attribute 5. Typically used as input to a context programming node in a nodal tree.
+
+#### Custom attrib 6
+`Python: "obj_custom_attribute_6"`
+
+Custom attribute 6. Typically used as input to a context programming node in a nodal tree.
+
+#### Custom attrib 7
+`Python: "obj_custom_attribute_7"`
+
+Custom attribute 7. Typically used as input to a context programming node in a nodal tree.
+
+#### Custom attrib 8
+`Python: "obj_custom_attribute_8"`
+
+Custom attribute 8. Typically used as input to a context programming node in a nodal tree.
 

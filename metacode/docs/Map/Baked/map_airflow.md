@@ -1,168 +1,270 @@
-## **map_airflow**
+`Python: "map_airflow"`
 
 Self-baked windtunnel-like airflow simulation node.
-#### Common
+## Common
 
-> ##### Node alias
-> Human-readable node alias.
+#### Node alias
+`Python: "map_alias"`
 
-> ##### Alias color
-> Identificative node color.
+Human-readable node alias.
 
-> ##### Node UUID
-> Node UUID.
+#### Alias color
+`Python: "map_alias_color"`
 
-> ##### Node metadata
-> User-set node metadata.
+Identificative node color.
 
-> ##### Node tags
-> User-set node tags.
+#### Node UUID
+`Python: "map_uuid"`
 
-#### Main
+Node UUID.
 
-> ##### Bake resolution
-> Rasterization resolution at which the contents of the map will be baked.
+#### Node metadata
+`Python: "map_metadata"`
 
-> ##### Bake supersampling
-> Array of samples taken from the input map to fill up each rasterized pixel in the output baked map. This value increases warm-up time, but produces better results if the input map presents with high-frequency details.
+User-set node metadata.
 
-> ##### Frame offset
-> Offset between timeline frames and filename suffixes. e.g., if this value is 0 then the timeline frame 27 will pick the filename suffix ...0027. This can be used to slide the filename animation left/right along the timeline.
+#### Node tags
+`Python: "map_tags"`
 
-> ##### Randomize
-> Random number seed used to randomize the map. Each possible seed produces a distinct version of the map.
+User-set node tags.
 
-#### Waves
+## Main
 
-> ##### Depth
-> Depth into the screen.
+#### Bake resolution
+`Python: "map_filetex_bake_resolution"`
 
-> ##### Cycle
-> Sinusoidal cycle
+Rasterization resolution at which the contents of the map will be baked.
 
-> ##### Scale
-> Baking resolution scale multiplier.
+#### Bake supersampling
+`Python: "map_filetex_bake_supersampling"`
 
-> ##### Frequency
-> Frequency multiplier.
+Array of samples taken from the input map to fill up each rasterized pixel in the output baked map. This value increases warm-up time, but produces better results if the input map presents with high-frequency details.
 
-> ##### Amplitude
-> Amplitude multiplier.
+#### Frame offset
+`Python: "map_filetex_sequence_offset"`
 
-> ##### Delta
-> Wind direction.
+Offset between timeline frames and filename suffixes. e.g., if this value is 0 then the timeline frame 27 will pick the filename suffix ...0027. This can be used to slide the filename animation left/right along the timeline.
 
-#### UV transform
+#### Randomize
+`Python: "map_randomize"`
 
-> ##### Transform map
-> Allows to connect an xform_2d/3d/spherical map to control the texture tiling, position and rotation.
+Random number seed used to randomize the map. Each possible seed produces a distinct version of the map.
 
-> ##### Coordinate space
-> Defines whether the map issues its own volumetric (object or world) mapping coordinates for seamless 3D tiling, or uses the existing object UVs. The instance UVs mode is applicable to instances (e.g., in scatter) and plucks the UVs of the base at the instancing point.
+## Waves
 
-> ##### Crop U (low)
-> Lower limit of the UVW space in the U direction.
+#### Depth
+`Python: "map_airflow_depth"`
 
-> ##### Crop U (high)
-> Upper limit of the UVW space in the U direction.
+Depth into the screen.
 
-> ##### Crop U direction
-> Shrinks the UVW space to a non-unitary interval along the U direction.
+#### Cycle
+`Python: "map_airflow_cycle"`
 
-> ##### Crop V (low)
-> Lower limit of the UVW space in the V direction.
+Sinusoidal cycle
 
-> ##### Crop V (high)
-> Upper limit of the UVW space in the V direction.
+#### Scale
+`Python: "map_airflow_scale"`
 
-> ##### Crop V direction
-> Shrinks the UVW space to a non-unitary interval along the V direction.
+Baking resolution scale multiplier.
 
-> ##### Master repeat
-> Inverse scale the map is generated at. This parameter pre-multiplies the X/Y/Z repeat values. Note that local/world spaces tile at 1mx1mx1m by default.
+#### Frequency
+`Python: "map_airflow_frequency"`
 
-> ##### Repeat U
-> Repeats the map along the X/U axis. Increasing this value increases repetition.
+Frequency multiplier.
 
-> ##### Enable U repetition
-> Allows map repetition along the X/U axis. When disallowed, the map becomes zero outside the [0..1] (or cropped) X/U interval.
+#### Amplitude
+`Python: "map_airflow_amplitude"`
 
-> ##### Clamp vs. repeat (U)
-> Toggles between clamped vs. repeated output outside the [0..1] (or cropped) X/U interval.
+Amplitude multiplier.
 
-> ##### Repeat V
-> Repeats the map along the Y/V axis. Increasing this value increases repetition.
+#### Delta
+`Python: "map_airflow_delta"`
 
-> ##### Enable V repetition
-> Allows map repetition along the Y/V axis. When disallowed, the map becomes zero outside the [0..1] (or cropped) Y/V interval.
+Wind direction.
 
-> ##### Clamp vs. repeat (V)
-> Toggles between clamped vs. repeated output outside the [0..1] (or cropped) X/V interval.
+## UV transform
 
-> ##### Translate U
-> Offsets the map along the X/U axis.
+#### Transform map
+`Python: "map_xform_map"`
 
-> ##### Translate V
-> Offsets the map along the Y/V axis.
+Allows to connect an xform_2d/3d/spherical map to control the texture tiling, position and rotation.
 
-> ##### Rotate
-> Rotates the map about the Z/W axis. Positive values rotate the map counter-clockwise.
+#### Coordinate space
+`Python: "map_xform_space"`
 
-#### UV distortion
+Defines whether the map issues its own volumetric (object or world) mapping coordinates for seamless 3D tiling, or uses the existing object UVs. The instance UVs mode is applicable to instances (e.g., in scatter) and plucks the UVs of the base at the instancing point.
 
-> ##### UV distortion map
-> Internal use.
+#### Crop U (low)
+`Python: "map_xform_crop_x_lo"`
 
-> ##### Enable UV noise
-> Toggles noise distortion in the UVW space on/off.
+Lower limit of the UVW space in the U direction.
 
-> ##### Noise amount
-> Amount of noise distortion applied to the UVs before they are used.
+#### Crop U (high)
+`Python: "map_xform_crop_x_hi"`
 
-> ##### Noise size
-> Amplitude of the noise distortion. This value is given in UVW space; e.g., 0.1 means that the maximum distortion is about 1/10th of a 1x1x1 texture tile.
+Upper limit of the UVW space in the U direction.
 
-> ##### Noise octaves
-> Number of times the noise algorithm overlaps onto itself to add high-frequency details.
+#### Crop U direction
+`Python: "map_xform_crop_x"`
 
-> ##### Noise randomize
-> Random number seed used to randomize the distortion.
+Shrinks the UVW space to a non-unitary interval along the U direction.
 
-> ##### Enable jitter blur
-> Toggles jitter blur in the UVW space on/off.
+#### Crop V (low)
+`Python: "map_xform_crop_y_lo"`
 
-> ##### Jitter blur radius
-> Amount of 2D gaussian (jittering) blur applied to the UVs before they are used. This value is given in UVW space. Note that this type of blur may cause sampling noise that takes long to dissolve. Note also that jitter blur does not produce gamma-correct results, and can't be used for bump or displacement height maps.
+Lower limit of the UVW space in the V direction.
 
-#### UV scattering
+#### Crop V (high)
+`Python: "map_xform_crop_y_hi"`
 
-> ##### UV scattering map
-> Internal use.
+Upper limit of the UVW space in the V direction.
 
-> ##### Enable random offset
-> Internal use.
+#### Crop V direction
+`Python: "map_xform_crop_y"`
 
-> ##### Offset U
-> Internal use.
+Shrinks the UVW space to a non-unitary interval along the V direction.
 
-> ##### Offset V
-> Internal use.
+#### Master repeat
+`Python: "map_xform_repeat"`
 
-> ##### Randomize
-> Internal use.
+Inverse scale the map is generated at. This parameter pre-multiplies the X/Y/Z repeat values. Note that local/world spaces tile at 1mx1mx1m by default.
 
-> ##### Enable random tiling
-> Internal use.
+#### Repeat U
+`Python: "map_xform_repeat_x"`
 
-> ##### Blend
-> Internal use.
+Repeats the map along the X/U axis. Increasing this value increases repetition.
 
-> ##### U splits
-> Internal use.
+#### Enable U repetition
+`Python: "map_xform_tile_x"`
 
-> ##### V split
-> Internal use.
+Allows map repetition along the X/U axis. When disallowed, the map becomes zero outside the [0..1] (or cropped) X/U interval.
 
-> ##### Rotate splits
-> Internal use.
+#### Clamp vs. repeat (U)
+`Python: "map_xform_clamp_x"`
+
+Toggles between clamped vs. repeated output outside the [0..1] (or cropped) X/U interval.
+
+#### Repeat V
+`Python: "map_xform_repeat_y"`
+
+Repeats the map along the Y/V axis. Increasing this value increases repetition.
+
+#### Enable V repetition
+`Python: "map_xform_tile_y"`
+
+Allows map repetition along the Y/V axis. When disallowed, the map becomes zero outside the [0..1] (or cropped) Y/V interval.
+
+#### Clamp vs. repeat (V)
+`Python: "map_xform_clamp_y"`
+
+Toggles between clamped vs. repeated output outside the [0..1] (or cropped) X/V interval.
+
+#### Translate U
+`Python: "map_xform_translate_x"`
+
+Offsets the map along the X/U axis.
+
+#### Translate V
+`Python: "map_xform_translate_y"`
+
+Offsets the map along the Y/V axis.
+
+#### Rotate
+`Python: "map_xform_rotate_z"`
+
+Rotates the map about the Z/W axis. Positive values rotate the map counter-clockwise.
+
+## UV distortion
+
+#### UV distortion map
+`Python: "map_distortion_map"`
+
+Internal use.
+
+#### Enable UV noise
+`Python: "map_distortion_noise_enable"`
+
+Toggles noise distortion in the UVW space on/off.
+
+#### Noise amount
+`Python: "map_distortion_noise"`
+
+Amount of noise distortion applied to the UVs before they are used.
+
+#### Noise size
+`Python: "map_distortion_noise_size"`
+
+Amplitude of the noise distortion. This value is given in UVW space; e.g., 0.1 means that the maximum distortion is about 1/10th of a 1x1x1 texture tile.
+
+#### Noise octaves
+`Python: "map_distortion_noise_octaves"`
+
+Number of times the noise algorithm overlaps onto itself to add high-frequency details.
+
+#### Noise randomize
+`Python: "map_distortion_noise_randomize"`
+
+Random number seed used to randomize the distortion.
+
+#### Enable jitter blur
+`Python: "map_distortion_blur_enable"`
+
+Toggles jitter blur in the UVW space on/off.
+
+#### Jitter blur radius
+`Python: "map_distortion_blur"`
+
+Amount of 2D gaussian (jittering) blur applied to the UVs before they are used. This value is given in UVW space. Note that this type of blur may cause sampling noise that takes long to dissolve. Note also that jitter blur does not produce gamma-correct results, and can't be used for bump or displacement height maps.
+
+## UV scattering
+
+#### UV scattering map
+`Python: "map_scattering_map"`
+
+Internal use.
+
+#### Enable random offset
+`Python: "map_scattering_offset_enable"`
+
+Internal use.
+
+#### Offset U
+`Python: "map_scattering_offset_x"`
+
+Internal use.
+
+#### Offset V
+`Python: "map_scattering_offset_y"`
+
+Internal use.
+
+#### Randomize
+`Python: "map_scattering_offset_randomize"`
+
+Internal use.
+
+#### Enable random tiling
+`Python: "map_scattering_tiling_enable"`
+
+Internal use.
+
+#### Blend
+`Python: "map_scattering_tiling_blend"`
+
+Internal use.
+
+#### U splits
+`Python: "map_scattering_tiling_x"`
+
+Internal use.
+
+#### V split
+`Python: "map_scattering_tiling_y"`
+
+Internal use.
+
+#### Rotate splits
+`Python: "map_scattering_tiling_rotate"`
+
+Internal use.
 

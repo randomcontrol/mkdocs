@@ -1,36 +1,54 @@
-## **pro_matrix_from_obj**
+`Python: "pro_matrix_from_obj"`
 
 This programming node takes an input object and extracts one of its intrinsic matrix values. For example, this node can be used to retrieve the world xform of a target object.
-#### Common
+## Common
 
-> ##### Node alias
-> Human-readable node alias.
+#### Node alias
+`Python: "pro_alias"`
 
-> ##### Alias color
-> Identificative node color.
+Human-readable node alias.
 
-> ##### Node UUID
-> Node UUID.
+#### Alias color
+`Python: "pro_alias_color"`
 
-> ##### Node metadata
-> User-set node metadata.
+Identificative node color.
 
-> ##### Node tags
-> User-set node tags.
+#### Node UUID
+`Python: "pro_uuid"`
 
-#### Main
+Node UUID.
 
-> ##### Intrinsic property
-> Selects the intrinsic property to be queried from the input object.
+#### Node metadata
+`Python: "pro_metadata"`
 
-> ##### Input object
-> Selects the input object which intrinsic properties are queried by this node.
+User-set node metadata.
 
-#### Output tuning
+#### Node tags
+`Python: "pro_tags"`
 
-> ##### Pre-mul node
-> If connected, this plug's matrix is used to pre-multiply the node's output. This comes handy when chaining consecutive matrix transforms to save one matrix_math node.
+User-set node tags.
 
-> ##### Post-mul node
-> If connected, this plug's matrix is used to post-multiply the node's output. This comes handy when chaining consecutive matrix transforms to save one matrix_math node.
+## Main
+
+#### Intrinsic property
+`Python: "pro_matrix_from_obj_intrinsic"`
+
+Selects the intrinsic property to be queried from the input object.
+
+#### Input object
+`Python: "pro_matrix_from_obj_input_obj"`
+
+Selects the input object which intrinsic properties are queried by this node.
+
+## Output tuning
+
+#### Pre-mul node
+`Python: "pro_pre_mul_pro"`
+
+If connected, this plug's matrix is used to pre-multiply the node's output. This comes handy when chaining consecutive matrix transforms to save one matrix_math node.
+
+#### Post-mul node
+`Python: "pro_post_mul_pro"`
+
+If connected, this plug's matrix is used to post-multiply the node's output. This comes handy when chaining consecutive matrix transforms to save one matrix_math node.
 

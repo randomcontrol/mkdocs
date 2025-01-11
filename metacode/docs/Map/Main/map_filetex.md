@@ -1,185 +1,297 @@
-## **map_filetex**
+`Python: "map_filetex"`
 
 File textures are the most common map type in Maverick. A filetex node references an image (a bitmap) that physically sits on the disk.
-#### Common
+## Common
 
-> ##### Node alias
-> Human-readable node alias.
+#### Node alias
+`Python: "map_alias"`
 
-> ##### Alias color
-> Identificative node color.
+Human-readable node alias.
 
-> ##### Node UUID
-> Node UUID.
+#### Alias color
+`Python: "map_alias_color"`
 
-> ##### Node metadata
-> User-set node metadata.
+Identificative node color.
 
-> ##### Node tags
-> User-set node tags.
+#### Node UUID
+`Python: "map_uuid"`
 
-#### Main
+Node UUID.
 
-> ##### Bitmap filename
-> Defines the filename of the bitmap texture, pointing to its physical location in the disk.
+#### Node metadata
+`Python: "map_metadata"`
 
-> ##### Filtering
-> Specifies the texture filtering algorithm. Filtering is useful when the texture resolution is low or when the camera is close enough for pixelation to become evident.
+User-set node metadata.
 
-> ##### Invert color
-> Inverts the color channel information in the loaded image file. Alpha information remains unaffected.
+#### Node tags
+`Python: "map_tags"`
 
-> ##### Invert alpha
-> Inverts the alpha channel information in the loaded image file. Color information remains unaffected.
+User-set node tags.
 
-#### Frame sequence
+## Main
 
-> ##### Enable frame sequence
-> Treats the provided filename as a suffixed frame sequence. When rendering an animation in Maverick, each rendered frame will pull the proper filetex frame file.
+#### Bitmap filename
+`Python: "map_filetex_filename"`
 
-> ##### Frame offset
-> Offset between timeline frames and filename suffixes. e.g., if this value is 0 then the timeline frame 27 will pick the filename suffix ...0027. This can be used to slide the filename animation left/right along the timeline.
+Defines the filename of the bitmap texture, pointing to its physical location in the disk.
 
-> ##### Start frame file
-> First frame in the suffixed frame sequence. The animation will cycle between the start/end frames. Use start>end to revert the direction of the frame sequence.
+#### Filtering
+`Python: "map_filetex_filtering"`
 
-> ##### End frame file
-> Last frame in the suffixed frame sequence. The animation will cycle between the start/end frames. Use start>end to revert the direction of the frame sequence.
+Specifies the texture filtering algorithm. Filtering is useful when the texture resolution is low or when the camera is close enough for pixelation to become evident.
 
-> ##### Skip frames file
-> Makes consecutive animation frames in Maverick skip over the given number of physical frame files. Use 0 for a normal frame-by-frame sequence.
+#### Invert color
+`Python: "map_filetex_invert"`
 
-> ##### Repeat frame files
-> Makes consecutive animation frames in Maverick repeat the given number of physical frame files. Use 0 for a normal frame-by-frame sequence.
+Inverts the color channel information in the loaded image file. Alpha information remains unaffected.
 
-#### Pixel blur
+#### Invert alpha
+`Python: "map_filetex_invert_alpha"`
 
-> ##### Enable pixel blur
-> Enables gaussian blur on the pixels pf the texture. Pixel blur is different from jitter blur in that pixels are gaussian-blurred directly instead of by accumulation over time. This blurs the texture in a consistent and gamma-correct way that is compatible with all of Maverick's features, including bump and displacement height maps.
+Inverts the alpha channel information in the loaded image file. Color information remains unaffected.
 
-> ##### Send to blur output plug
-> Sends the blurred pixels to the blur output plug (e.g., Nodal Editor) and leaves the rest of output plugs unaffected. If this option is disabled, then the blur output plug is merely a copy of the blurred target channel.
+## Frame sequence
 
-> ##### Pixel blur source
-> Constrains pixel blur to the selected output channel(s).
+#### Enable frame sequence
+`Python: "map_filetex_sequence_enable"`
 
-> ##### Blur samples
-> Number of actual texture readouts performed per map sample. Performance may take a noticeable hit depending on this value. However, a rather high number of samples may be necessary if a large blur radius is used.
+Treats the provided filename as a suffixed frame sequence. When rendering an animation in Maverick, each rendered frame will pull the proper filetex frame file.
 
-> ##### Blur radius
-> Gaussian blur radius given in texture pixels.
+#### Frame offset
+`Python: "map_filetex_sequence_offset"`
 
-#### UV transform
+Offset between timeline frames and filename suffixes. e.g., if this value is 0 then the timeline frame 27 will pick the filename suffix ...0027. This can be used to slide the filename animation left/right along the timeline.
 
-> ##### Transform map
-> Allows to connect an xform_2d/3d/spherical map to control the texture tiling, position and rotation.
+#### Start frame file
+`Python: "map_filetex_sequence_start"`
 
-> ##### Coordinate space
-> Defines whether the map issues its own volumetric (object or world) mapping coordinates for seamless 3D tiling, or uses the existing object UVs. The instance UVs mode is applicable to instances (e.g., in scatter) and plucks the UVs of the base at the instancing point.
+First frame in the suffixed frame sequence. The animation will cycle between the start/end frames. Use start>end to revert the direction of the frame sequence.
 
-> ##### Crop U (low)
-> Lower limit of the UVW space in the U direction.
+#### End frame file
+`Python: "map_filetex_sequence_end"`
 
-> ##### Crop U (high)
-> Upper limit of the UVW space in the U direction.
+Last frame in the suffixed frame sequence. The animation will cycle between the start/end frames. Use start>end to revert the direction of the frame sequence.
 
-> ##### Crop U direction
-> Shrinks the UVW space to a non-unitary interval along the U direction.
+#### Skip frames file
+`Python: "map_filetex_sequence_skip"`
 
-> ##### Crop V (low)
-> Lower limit of the UVW space in the V direction.
+Makes consecutive animation frames in Maverick skip over the given number of physical frame files. Use 0 for a normal frame-by-frame sequence.
 
-> ##### Crop V (high)
-> Upper limit of the UVW space in the V direction.
+#### Repeat frame files
+`Python: "map_filetex_sequence_repeat"`
 
-> ##### Crop V direction
-> Shrinks the UVW space to a non-unitary interval along the V direction.
+Makes consecutive animation frames in Maverick repeat the given number of physical frame files. Use 0 for a normal frame-by-frame sequence.
 
-> ##### Master repeat
-> Inverse scale the map is generated at. This parameter pre-multiplies the X/Y/Z repeat values. Note that local/world spaces tile at 1mx1mx1m by default.
+## Pixel blur
 
-> ##### Repeat U
-> Repeats the map along the X/U axis. Increasing this value increases repetition.
+#### Enable pixel blur
+`Python: "map_filetex_blur_enable"`
 
-> ##### Enable U repetition
-> Allows map repetition along the X/U axis. When disallowed, the map becomes zero outside the [0..1] (or cropped) X/U interval.
+Enables gaussian blur on the pixels pf the texture. Pixel blur is different from jitter blur in that pixels are gaussian-blurred directly instead of by accumulation over time. This blurs the texture in a consistent and gamma-correct way that is compatible with all of Maverick's features, including bump and displacement height maps.
 
-> ##### Clamp vs. repeat (U)
-> Toggles between clamped vs. repeated output outside the [0..1] (or cropped) X/U interval.
+#### Send to blur output plug
+`Python: "map_filetex_blur_output"`
 
-> ##### Repeat V
-> Repeats the map along the Y/V axis. Increasing this value increases repetition.
+Sends the blurred pixels to the blur output plug (e.g., Nodal Editor) and leaves the rest of output plugs unaffected. If this option is disabled, then the blur output plug is merely a copy of the blurred target channel.
 
-> ##### Enable V repetition
-> Allows map repetition along the Y/V axis. When disallowed, the map becomes zero outside the [0..1] (or cropped) Y/V interval.
+#### Pixel blur source
+`Python: "map_filetex_blur_source"`
 
-> ##### Clamp vs. repeat (V)
-> Toggles between clamped vs. repeated output outside the [0..1] (or cropped) X/V interval.
+Constrains pixel blur to the selected output channel(s).
 
-> ##### Translate U
-> Offsets the map along the X/U axis.
+#### Blur samples
+`Python: "map_filetex_blur_samples"`
 
-> ##### Translate V
-> Offsets the map along the Y/V axis.
+Number of actual texture readouts performed per map sample. Performance may take a noticeable hit depending on this value. However, a rather high number of samples may be necessary if a large blur radius is used.
 
-> ##### Rotate
-> Rotates the map about the Z/W axis. Positive values rotate the map counter-clockwise.
+#### Blur radius
+`Python: "map_filetex_blur_radius"`
 
-#### UV distortion
+Gaussian blur radius given in texture pixels.
 
-> ##### UV distortion map
-> Internal use.
+## UV transform
 
-> ##### Enable UV noise
-> Toggles noise distortion in the UVW space on/off.
+#### Transform map
+`Python: "map_xform_map"`
 
-> ##### Noise amount
-> Amount of noise distortion applied to the UVs before they are used.
+Allows to connect an xform_2d/3d/spherical map to control the texture tiling, position and rotation.
 
-> ##### Noise size
-> Amplitude of the noise distortion. This value is given in UVW space; e.g., 0.1 means that the maximum distortion is about 1/10th of a 1x1x1 texture tile.
+#### Coordinate space
+`Python: "map_xform_space"`
 
-> ##### Noise octaves
-> Number of times the noise algorithm overlaps onto itself to add high-frequency details.
+Defines whether the map issues its own volumetric (object or world) mapping coordinates for seamless 3D tiling, or uses the existing object UVs. The instance UVs mode is applicable to instances (e.g., in scatter) and plucks the UVs of the base at the instancing point.
 
-> ##### Noise randomize
-> Random number seed used to randomize the distortion.
+#### Crop U (low)
+`Python: "map_xform_crop_x_lo"`
 
-> ##### Enable jitter blur
-> Toggles jitter blur in the UVW space on/off.
+Lower limit of the UVW space in the U direction.
 
-> ##### Jitter blur radius
-> Amount of 2D gaussian (jittering) blur applied to the UVs before they are used. This value is given in UVW space. Note that this type of blur may cause sampling noise that takes long to dissolve. Note also that jitter blur does not produce gamma-correct results, and can't be used for bump or displacement height maps.
+#### Crop U (high)
+`Python: "map_xform_crop_x_hi"`
 
-#### UV scattering
+Upper limit of the UVW space in the U direction.
 
-> ##### UV scattering map
-> Internal use.
+#### Crop U direction
+`Python: "map_xform_crop_x"`
 
-> ##### Enable random offset
-> Internal use.
+Shrinks the UVW space to a non-unitary interval along the U direction.
 
-> ##### Offset U
-> Internal use.
+#### Crop V (low)
+`Python: "map_xform_crop_y_lo"`
 
-> ##### Offset V
-> Internal use.
+Lower limit of the UVW space in the V direction.
 
-> ##### Randomize
-> Internal use.
+#### Crop V (high)
+`Python: "map_xform_crop_y_hi"`
 
-> ##### Enable random tiling
-> Internal use.
+Upper limit of the UVW space in the V direction.
 
-> ##### Blend
-> Internal use.
+#### Crop V direction
+`Python: "map_xform_crop_y"`
 
-> ##### U splits
-> Internal use.
+Shrinks the UVW space to a non-unitary interval along the V direction.
 
-> ##### V split
-> Internal use.
+#### Master repeat
+`Python: "map_xform_repeat"`
 
-> ##### Rotate splits
-> Internal use.
+Inverse scale the map is generated at. This parameter pre-multiplies the X/Y/Z repeat values. Note that local/world spaces tile at 1mx1mx1m by default.
+
+#### Repeat U
+`Python: "map_xform_repeat_x"`
+
+Repeats the map along the X/U axis. Increasing this value increases repetition.
+
+#### Enable U repetition
+`Python: "map_xform_tile_x"`
+
+Allows map repetition along the X/U axis. When disallowed, the map becomes zero outside the [0..1] (or cropped) X/U interval.
+
+#### Clamp vs. repeat (U)
+`Python: "map_xform_clamp_x"`
+
+Toggles between clamped vs. repeated output outside the [0..1] (or cropped) X/U interval.
+
+#### Repeat V
+`Python: "map_xform_repeat_y"`
+
+Repeats the map along the Y/V axis. Increasing this value increases repetition.
+
+#### Enable V repetition
+`Python: "map_xform_tile_y"`
+
+Allows map repetition along the Y/V axis. When disallowed, the map becomes zero outside the [0..1] (or cropped) Y/V interval.
+
+#### Clamp vs. repeat (V)
+`Python: "map_xform_clamp_y"`
+
+Toggles between clamped vs. repeated output outside the [0..1] (or cropped) X/V interval.
+
+#### Translate U
+`Python: "map_xform_translate_x"`
+
+Offsets the map along the X/U axis.
+
+#### Translate V
+`Python: "map_xform_translate_y"`
+
+Offsets the map along the Y/V axis.
+
+#### Rotate
+`Python: "map_xform_rotate_z"`
+
+Rotates the map about the Z/W axis. Positive values rotate the map counter-clockwise.
+
+## UV distortion
+
+#### UV distortion map
+`Python: "map_distortion_map"`
+
+Internal use.
+
+#### Enable UV noise
+`Python: "map_distortion_noise_enable"`
+
+Toggles noise distortion in the UVW space on/off.
+
+#### Noise amount
+`Python: "map_distortion_noise"`
+
+Amount of noise distortion applied to the UVs before they are used.
+
+#### Noise size
+`Python: "map_distortion_noise_size"`
+
+Amplitude of the noise distortion. This value is given in UVW space; e.g., 0.1 means that the maximum distortion is about 1/10th of a 1x1x1 texture tile.
+
+#### Noise octaves
+`Python: "map_distortion_noise_octaves"`
+
+Number of times the noise algorithm overlaps onto itself to add high-frequency details.
+
+#### Noise randomize
+`Python: "map_distortion_noise_randomize"`
+
+Random number seed used to randomize the distortion.
+
+#### Enable jitter blur
+`Python: "map_distortion_blur_enable"`
+
+Toggles jitter blur in the UVW space on/off.
+
+#### Jitter blur radius
+`Python: "map_distortion_blur"`
+
+Amount of 2D gaussian (jittering) blur applied to the UVs before they are used. This value is given in UVW space. Note that this type of blur may cause sampling noise that takes long to dissolve. Note also that jitter blur does not produce gamma-correct results, and can't be used for bump or displacement height maps.
+
+## UV scattering
+
+#### UV scattering map
+`Python: "map_scattering_map"`
+
+Internal use.
+
+#### Enable random offset
+`Python: "map_scattering_offset_enable"`
+
+Internal use.
+
+#### Offset U
+`Python: "map_scattering_offset_x"`
+
+Internal use.
+
+#### Offset V
+`Python: "map_scattering_offset_y"`
+
+Internal use.
+
+#### Randomize
+`Python: "map_scattering_offset_randomize"`
+
+Internal use.
+
+#### Enable random tiling
+`Python: "map_scattering_tiling_enable"`
+
+Internal use.
+
+#### Blend
+`Python: "map_scattering_tiling_blend"`
+
+Internal use.
+
+#### U splits
+`Python: "map_scattering_tiling_x"`
+
+Internal use.
+
+#### V split
+`Python: "map_scattering_tiling_y"`
+
+Internal use.
+
+#### Rotate splits
+`Python: "map_scattering_tiling_rotate"`
+
+Internal use.
 

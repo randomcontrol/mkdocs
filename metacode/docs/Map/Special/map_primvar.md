@@ -1,31 +1,47 @@
-## **map_primvar**
+`Python: "map_primvar"`
 
 The primvar node allows to reveal as color certain primitive variables used internally by the core rendering engine. This can be used, for example, to visualize the normals of an object. This node is provided mostly for debugging and analysis purposes.
-#### Common
+## Common
 
-> ##### Node alias
-> Human-readable node alias.
+#### Node alias
+`Python: "map_alias"`
 
-> ##### Alias color
-> Identificative node color.
+Human-readable node alias.
 
-> ##### Node UUID
-> Node UUID.
+#### Alias color
+`Python: "map_alias_color"`
 
-> ##### Node metadata
-> User-set node metadata.
+Identificative node color.
 
-> ##### Node tags
-> User-set node tags.
+#### Node UUID
+`Python: "map_uuid"`
 
-#### Main
+Node UUID.
 
-> ##### Input
-> Selects what primitive variable will be revealed as color.
+#### Node metadata
+`Python: "map_metadata"`
 
-> ##### Multiplier
-> The color produced is multiplied by this value.
+User-set node metadata.
 
-> ##### Bias
-> The color produced is offset by this value.
+#### Node tags
+`Python: "map_tags"`
+
+User-set node tags.
+
+## Main
+
+#### Input
+`Python: "map_primvar_input"`
+
+Selects what primitive variable will be revealed as color.
+
+#### Multiplier
+`Python: "map_primvar_multiplier"`
+
+The color produced is multiplied by this value.
+
+#### Bias
+`Python: "map_primvar_bias"`
+
+The color produced is offset by this value.
 

@@ -1,333 +1,541 @@
-## **mod_scatter**
+`Python: "mod_scatter"`
 
 The scatter modifier lays instances of one or more objects on the surface of a base polymesh object. This can be used to place droplets of water on a soda can, coffee beans on a table, glitter on a Christmas decoration ball, etc...
-#### Common
+## Common
 
-> ##### Node alias
-> Human-readable node alias.
+#### Node alias
+`Python: "mod_alias"`
 
-> ##### Alias color
-> Identificative node color.
+Human-readable node alias.
 
-> ##### Node UUID
-> Node UUID.
+#### Alias color
+`Python: "mod_alias_color"`
 
-> ##### Node metadata
-> User-set node metadata.
+Identificative node color.
 
-> ##### Node tags
-> User-set node tags.
+#### Node UUID
+`Python: "mod_uuid"`
 
-> ##### Bypass modifier
-> Toggles this modifier on/off.
+Node UUID.
 
-#### Main
+#### Node metadata
+`Python: "mod_metadata"`
 
-> ##### Center at owner object(s)
-> Centers the modifier at the centroid of its owner object(s).
+User-set node metadata.
 
-> ##### Dock at owner object(s)
-> Repositions and reorients the modifier to match the frame of reference of its owner object(s).
+#### Node tags
+`Python: "mod_tags"`
 
-> ##### Count mode
-> Selects whether the target number of instances is given as a total count or as a density count per surface square in real world units. Additional modes for UV-based regular patterns are also provided.
+User-set node tags.
 
-> ##### Number of instances
-> Target number of instances that will be generated.
+#### Bypass modifier
+`Python: "mod_bypass"`
 
-> ##### Instances per square
-> Target number of instances that will be generated per surface square in real world units.
+Toggles this modifier on/off.
 
-> ##### Raster map
-> Each white pixel in this map will spawn an individual instance. This can be used to keep instances in a grid-like arrangement while being able to directly control their placement in UV space. It is recommended to disable interpolation (which is enabled by default) in the connected map, so pixelation as drawn in the image is preserved exactly.
+## Main
 
-> ##### Randomize
-> Random number seed used to randomize the instancing system. Each possible seed produces a distinct distribution of instances.
+#### Center at owner object(s)
+`Python: "mod_center_at_owner_obj"`
 
-#### UV pattern / Raster
+Centers the modifier at the centroid of its owner object(s).
 
-> ##### Pattern mode
-> Selects one of the three 2D space regular fillings possible.
+#### Dock at owner object(s)
+`Python: "mod_dock_at_owner_obj"`
 
-> ##### Repeat X
-> Repeats the UV space along the X/U axis. Increasing this value increases repetition.
+Repositions and reorients the modifier to match the frame of reference of its owner object(s).
 
-> ##### Repeat Y
-> Repeats the UV space along the Y/V axis. Increasing this value increases repetition.
+#### Count mode
+`Python: "mod_scatter_count_mode"`
 
-> ##### Translate X
-> Offsets the UV space along the X/U axis.
+Selects whether the target number of instances is given as a total count or as a density count per surface square in real world units. Additional modes for UV-based regular patterns are also provided.
 
-> ##### Translate Y
-> Offsets the UV space along the Y/V axis.
+#### Number of instances
+`Python: "mod_scatter_count"`
 
-> ##### Rotate
-> Rotates the UV space about the Z/W axis. Positive values rotate counter-clockwise.
+Target number of instances that will be generated.
 
-#### Constraints
+#### Instances per square
+`Python: "mod_scatter_count_per_square"`
 
-> ##### Frustum camera
-> Defines a camera outside which field of view instances are clipped away. This can be used to save memory and improve scatter generation/editing time.
+Target number of instances that will be generated per surface square in real world units.
 
-> ##### Frustum margin
-> Defines a margin outside the given camera's field of view inside which instances are still allowed.
+#### Raster map
+`Python: "mod_scatter_count_raster_map"`
 
-> ##### Enable frustum camera
-> Enables the ability to designate a camera that will be used to clip away instances that fall outside its field of view.
+Each white pixel in this map will spawn an individual instance. This can be used to keep instances in a grid-like arrangement while being able to directly control their placement in UV space. It is recommended to disable interpolation (which is enabled by default) in the connected map, so pixelation as drawn in the image is preserved exactly.
 
-> ##### Spacing between strands
-> Defines the minimum spacing (if positive) or maximum overlapping (if negative) between scattered instances. This can be used to cram instances in or to space them out.
+#### Randomize
+`Python: "mod_scatter_randomize"`
 
-> ##### Enable collision detection
-> Enables collision detection between instances. Note that this constraint is computationally-intensive, so the generation phase may take longer. Note also that collision detection generally makes it impossible to fully satisfy the target count.
+Random number seed used to randomize the instancing system. Each possible seed produces a distinct distribution of instances.
 
-> ##### Boundary margin
-> Defines an inlet gap at the boundary of the base surface polymesh where instances are not allowed to spawn.
+## UV pattern / Raster
 
-> ##### Enable boundary margin
-> Enables an empty inlet gap at the boundary of the base mesh.
+#### Pattern mode
+`Python: "mod_scatter_pattern_mode"`
 
-#### Source objects
+Selects one of the three 2D space regular fillings possible.
 
-> ##### Source object 1
-> Defines the i-th source object.
+#### Repeat X
+`Python: "mod_scatter_pattern_repeat_x"`
 
-> ##### Frequency 1
-> Relative frequency of the i-th source object over the rest of sources.
+Repeats the UV space along the X/U axis. Increasing this value increases repetition.
 
-> ##### Enable source 1
-> Enables the i-th source object.
+#### Repeat Y
+`Python: "mod_scatter_pattern_repeat_y"`
 
-> ##### Source object 2
-> Defines the i-th source object.
+Repeats the UV space along the Y/V axis. Increasing this value increases repetition.
 
-> ##### Frequency 2
-> Relative frequency of the i-th source object over the rest of sources.
+#### Translate X
+`Python: "mod_scatter_pattern_translate_x"`
 
-> ##### Enable source 2
-> Enables the i-th source object.
+Offsets the UV space along the X/U axis.
 
-> ##### Source object 3
-> Defines the i-th source object.
+#### Translate Y
+`Python: "mod_scatter_pattern_translate_y"`
 
-> ##### Frequency 3
-> Relative frequency of the i-th source object over the rest of sources.
-
-> ##### Enable source 3
-> Enables the i-th source object.
-
-> ##### Source object 4
-> Defines the i-th source object.
-
-> ##### Frequency 4
-> Relative frequency of the i-th source object over the rest of sources.
-
-> ##### Enable source 4
-> Enables the i-th source object.
-
-> ##### Source object 5
-> Defines the i-th source object.
-
-> ##### Frequency 5
-> Relative frequency of the i-th source object over the rest of sources.
-
-> ##### Enable source 5
-> Enables the i-th source object.
-
-> ##### Source object 6
-> Defines the i-th source object.
-
-> ##### Frequency 6
-> Relative frequency of the i-th source object over the rest of sources.
-
-> ##### Enable source 6
-> Enables the i-th source object.
-
-> ##### Source object 7
-> Defines the i-th source object.
-
-> ##### Frequency 7
-> Relative frequency of the i-th source object over the rest of sources.
-
-> ##### Enable source 7
-> Enables the i-th source object.
-
-> ##### Source object 8
-> Defines the i-th source object.
-
-> ##### Frequency 8
-> Relative frequency of the i-th source object over the rest of sources.
-
-> ##### Enable source 8
-> Enables the i-th source object.
-
-#### Density maps
-
-> ##### Global density map
-> The density map is a grayscale map that defines the distribution of instances over the surface of the base object. Black means 0 density, and white means full density.
-
-> ##### Density map 1
-> Density map of the i-th source object. The density map is a grayscale map that defines the distribution of instances over the surface of the base object. Black means 0 density, and white means full density.
-
-> ##### Enable density map 1
-> Enables the density map of the i-th source object.
-
-> ##### Density map 2
-> Density map of the i-th source object. The density map is a grayscale map that defines the distribution of instances over the surface of the base object. Black means 0 density, and white means full density.
-
-> ##### Enable density map 2
-> Enables the density map of the i-th source object.
-
-> ##### Density map 3
-> Density map of the i-th source object. The density map is a grayscale map that defines the distribution of instances over the surface of the base object. Black means 0 density, and white means full density.
-
-> ##### Enable density map 3
-> Enables the density map of the i-th source object.
-
-> ##### Density map 4
-> Density map of the i-th source object. The density map is a grayscale map that defines the distribution of instances over the surface of the base object. Black means 0 density, and white means full density.
-
-> ##### Enable density map 4
-> Enables the density map of the i-th source object.
-
-> ##### Density map 5
-> Density map of the i-th source object. The density map is a grayscale map that defines the distribution of instances over the surface of the base object. Black means 0 density, and white means full density.
-
-> ##### Enable density map 5
-> Enables the density map of the i-th source object.
-
-> ##### Density map 6
-> Density map of the i-th source object. The density map is a grayscale map that defines the distribution of instances over the surface of the base object. Black means 0 density, and white means full density.
-
-> ##### Enable density map 6
-> Enables the density map of the i-th source object.
-
-> ##### Density map 7
-> Density map of the i-th source object. The density map is a grayscale map that defines the distribution of instances over the surface of the base object. Black means 0 density, and white means full density.
-
-> ##### Enable density map 7
-> Enables the density map of the i-th source object.
-
-> ##### Density map 8
-> Density map of the i-th source object. The density map is a grayscale map that defines the distribution of instances over the surface of the base object. Black means 0 density, and white means full density.
-
-> ##### Enable density map 8
-> Enables the density map of the i-th source object.
-
-#### Translate
-
-> ##### Translate X (low)
-> Low end of the random range for translation along the X axis.
-
-> ##### Translate X (high)
-> High end of the random range for translation along the X axis.
-
-> ##### Translate X map
-> The translate map is a grayscale map which luminance interpolates between both ends of the random range for translation.
-
-> ##### Translate Y (low)
-> Low end of the random range for translation along the Y axis.
-
-> ##### Translate Y (high)
-> High end of the random range for translation along the Y axis.
-
-> ##### Translate Y map
-> The translate map is a grayscale map which luminance interpolates between both ends of the random range for translation.
-
-> ##### Translate Z (low)
-> Low end of the random range for translation along the Z axis.
-
-> ##### Translate Z (high)
-> High end of the random range for translation along the Z axis.
-
-> ##### Translate Z map
-> The translate map is a grayscale map which luminance interpolates between both ends of the random range for translation.
+Offsets the UV space along the Y/V axis.
 
 #### Rotate
+`Python: "mod_scatter_pattern_rotate_z"`
 
-> ##### Align to normal
-> Defines how much instances are oriented towards the normal of the surface of the base object vs. the base object's Z axis.
+Rotates the UV space about the Z/W axis. Positive values rotate counter-clockwise.
 
-> ##### Rotate X (low)
-> Low end of the random range for rotation along the X axis.
+## Constraints
 
-> ##### Rotate X (high)
-> High end of the random range for rotation along the X axis.
+#### Frustum camera
+`Python: "mod_scatter_frustum_cam"`
 
-> ##### Rotate X map
-> The rotate map is a grayscale map which luminance interpolates between both ends of the random range for rotation.
+Defines a camera outside which field of view instances are clipped away. This can be used to save memory and improve scatter generation/editing time.
 
-> ##### Rotate Y (low)
-> Low end of the random range for rotation along the Y axis.
+#### Frustum margin
+`Python: "mod_scatter_frustum_margin"`
 
-> ##### Rotate Y (high)
-> High end of the random range for rotation along the Y axis.
+Defines a margin outside the given camera's field of view inside which instances are still allowed.
 
-> ##### Rotate Y map
-> The rotate map is a grayscale map which luminance interpolates between both ends of the random range for rotation.
+#### Enable frustum camera
+`Python: "mod_scatter_frustum_enable"`
 
-> ##### Rotate Z (low)
-> Low end of the random range for rotation along the Z axis.
+Enables the ability to designate a camera that will be used to clip away instances that fall outside its field of view.
 
-> ##### Rotate Z (high)
-> High end of the random range for rotation along the Z axis.
+#### Spacing between strands
+`Python: "mod_scatter_collisions_spacing"`
 
-> ##### Rotate Z map
-> The rotate map is a grayscale map which luminance interpolates between both ends of the random range for rotation.
+Defines the minimum spacing (if positive) or maximum overlapping (if negative) between scattered instances. This can be used to cram instances in or to space them out.
 
-> ##### X step
-> This value discretizes the randomized X angle so it ends up being a multiple of the given step.
+#### Enable collision detection
+`Python: "mod_scatter_collisions_enable"`
 
-> ##### Enable X step
-> Enables the X angle discretization step.
+Enables collision detection between instances. Note that this constraint is computationally-intensive, so the generation phase may take longer. Note also that collision detection generally makes it impossible to fully satisfy the target count.
 
-> ##### Y step
-> This value discretizes the randomized Y angle so it ends up being a multiple of the given step.
+#### Boundary margin
+`Python: "mod_scatter_boundary_margin"`
 
-> ##### Enable Y step
-> Enables the Y angle discretization step.
+Defines an inlet gap at the boundary of the base surface polymesh where instances are not allowed to spawn.
 
-> ##### Z step
-> This value discretizes the randomized Z angle so it ends up being a multiple of the given step.
+#### Enable boundary margin
+`Python: "mod_scatter_boundary_margin_enable"`
 
-> ##### Enable Z step
-> Enables the Z angle discretization step.
+Enables an empty inlet gap at the boundary of the base mesh.
 
-#### Scale
+## Source objects
 
-> ##### Uniform scale
-> Applies the same random scale factor to the three axes at once.
+#### Source object 1
+`Python: "mod_scatter_source_1_obj"`
 
-> ##### Global scale
-> Applies a global scale factor to the three axes at once.
+Defines the i-th source object.
 
-> ##### Global scale map
-> Modulates the global scale factor by the given grayscale map.
+#### Frequency 1
+`Python: "mod_scatter_source_1_frequency"`
 
-> ##### Scale X (low)
-> Low end of the random range for scaling along the X axis.
+Relative frequency of the i-th source object over the rest of sources.
 
-> ##### Scale X (high)
-> High end of the random range for scaling along the X axis.
+#### Enable source 1
+`Python: "mod_scatter_source_1_enable"`
 
-> ##### Scale X map
-> The scale map is a grayscale map which luminance interpolates between both ends of the random range for scaling.
+Enables the i-th source object.
 
-> ##### Scale Y (low)
-> Low end of the random range for scaling along the Y axis.
+#### Source object 2
+`Python: "mod_scatter_source_2_obj"`
 
-> ##### Scale Y (high)
-> High end of the random range for scaling along the Y axis.
+Defines the i-th source object.
 
-> ##### Scale Y map
-> The scale map is a grayscale map which luminance interpolates between both ends of the random range for scaling.
+#### Frequency 2
+`Python: "mod_scatter_source_2_frequency"`
 
-> ##### Scale Z (low)
-> Low end of the random range for scaling along the Z axis.
+Relative frequency of the i-th source object over the rest of sources.
 
-> ##### Scale Z (high)
-> High end of the random range for scaling along the Z axis.
+#### Enable source 2
+`Python: "mod_scatter_source_2_enable"`
 
-> ##### Scale Z map
-> The scale map is a grayscale map which luminance interpolates between both ends of the random range for scaling.
+Enables the i-th source object.
+
+#### Source object 3
+`Python: "mod_scatter_source_3_obj"`
+
+Defines the i-th source object.
+
+#### Frequency 3
+`Python: "mod_scatter_source_3_frequency"`
+
+Relative frequency of the i-th source object over the rest of sources.
+
+#### Enable source 3
+`Python: "mod_scatter_source_3_enable"`
+
+Enables the i-th source object.
+
+#### Source object 4
+`Python: "mod_scatter_source_4_obj"`
+
+Defines the i-th source object.
+
+#### Frequency 4
+`Python: "mod_scatter_source_4_frequency"`
+
+Relative frequency of the i-th source object over the rest of sources.
+
+#### Enable source 4
+`Python: "mod_scatter_source_4_enable"`
+
+Enables the i-th source object.
+
+#### Source object 5
+`Python: "mod_scatter_source_5_obj"`
+
+Defines the i-th source object.
+
+#### Frequency 5
+`Python: "mod_scatter_source_5_frequency"`
+
+Relative frequency of the i-th source object over the rest of sources.
+
+#### Enable source 5
+`Python: "mod_scatter_source_5_enable"`
+
+Enables the i-th source object.
+
+#### Source object 6
+`Python: "mod_scatter_source_6_obj"`
+
+Defines the i-th source object.
+
+#### Frequency 6
+`Python: "mod_scatter_source_6_frequency"`
+
+Relative frequency of the i-th source object over the rest of sources.
+
+#### Enable source 6
+`Python: "mod_scatter_source_6_enable"`
+
+Enables the i-th source object.
+
+#### Source object 7
+`Python: "mod_scatter_source_7_obj"`
+
+Defines the i-th source object.
+
+#### Frequency 7
+`Python: "mod_scatter_source_7_frequency"`
+
+Relative frequency of the i-th source object over the rest of sources.
+
+#### Enable source 7
+`Python: "mod_scatter_source_7_enable"`
+
+Enables the i-th source object.
+
+#### Source object 8
+`Python: "mod_scatter_source_8_obj"`
+
+Defines the i-th source object.
+
+#### Frequency 8
+`Python: "mod_scatter_source_8_frequency"`
+
+Relative frequency of the i-th source object over the rest of sources.
+
+#### Enable source 8
+`Python: "mod_scatter_source_8_enable"`
+
+Enables the i-th source object.
+
+## Density maps
+
+#### Global density map
+`Python: "mod_scatter_density_map"`
+
+The density map is a grayscale map that defines the distribution of instances over the surface of the base object. Black means 0 density, and white means full density.
+
+#### Density map 1
+`Python: "mod_scatter_source_1_density_map"`
+
+Density map of the i-th source object. The density map is a grayscale map that defines the distribution of instances over the surface of the base object. Black means 0 density, and white means full density.
+
+#### Enable density map 1
+`Python: "mod_scatter_source_1_density_map_enable"`
+
+Enables the density map of the i-th source object.
+
+#### Density map 2
+`Python: "mod_scatter_source_2_density_map"`
+
+Density map of the i-th source object. The density map is a grayscale map that defines the distribution of instances over the surface of the base object. Black means 0 density, and white means full density.
+
+#### Enable density map 2
+`Python: "mod_scatter_source_2_density_map_enable"`
+
+Enables the density map of the i-th source object.
+
+#### Density map 3
+`Python: "mod_scatter_source_3_density_map"`
+
+Density map of the i-th source object. The density map is a grayscale map that defines the distribution of instances over the surface of the base object. Black means 0 density, and white means full density.
+
+#### Enable density map 3
+`Python: "mod_scatter_source_3_density_map_enable"`
+
+Enables the density map of the i-th source object.
+
+#### Density map 4
+`Python: "mod_scatter_source_4_density_map"`
+
+Density map of the i-th source object. The density map is a grayscale map that defines the distribution of instances over the surface of the base object. Black means 0 density, and white means full density.
+
+#### Enable density map 4
+`Python: "mod_scatter_source_4_density_map_enable"`
+
+Enables the density map of the i-th source object.
+
+#### Density map 5
+`Python: "mod_scatter_source_5_density_map"`
+
+Density map of the i-th source object. The density map is a grayscale map that defines the distribution of instances over the surface of the base object. Black means 0 density, and white means full density.
+
+#### Enable density map 5
+`Python: "mod_scatter_source_5_density_map_enable"`
+
+Enables the density map of the i-th source object.
+
+#### Density map 6
+`Python: "mod_scatter_source_6_density_map"`
+
+Density map of the i-th source object. The density map is a grayscale map that defines the distribution of instances over the surface of the base object. Black means 0 density, and white means full density.
+
+#### Enable density map 6
+`Python: "mod_scatter_source_6_density_map_enable"`
+
+Enables the density map of the i-th source object.
+
+#### Density map 7
+`Python: "mod_scatter_source_7_density_map"`
+
+Density map of the i-th source object. The density map is a grayscale map that defines the distribution of instances over the surface of the base object. Black means 0 density, and white means full density.
+
+#### Enable density map 7
+`Python: "mod_scatter_source_7_density_map_enable"`
+
+Enables the density map of the i-th source object.
+
+#### Density map 8
+`Python: "mod_scatter_source_8_density_map"`
+
+Density map of the i-th source object. The density map is a grayscale map that defines the distribution of instances over the surface of the base object. Black means 0 density, and white means full density.
+
+#### Enable density map 8
+`Python: "mod_scatter_source_8_density_map_enable"`
+
+Enables the density map of the i-th source object.
+
+## Translate
+
+#### Translate X (low)
+`Python: "mod_scatter_translate_x_lo"`
+
+Low end of the random range for translation along the X axis.
+
+#### Translate X (high)
+`Python: "mod_scatter_translate_x_hi"`
+
+High end of the random range for translation along the X axis.
+
+#### Translate X map
+`Python: "mod_scatter_translate_x_map"`
+
+The translate map is a grayscale map which luminance interpolates between both ends of the random range for translation.
+
+#### Translate Y (low)
+`Python: "mod_scatter_translate_y_lo"`
+
+Low end of the random range for translation along the Y axis.
+
+#### Translate Y (high)
+`Python: "mod_scatter_translate_y_hi"`
+
+High end of the random range for translation along the Y axis.
+
+#### Translate Y map
+`Python: "mod_scatter_translate_y_map"`
+
+The translate map is a grayscale map which luminance interpolates between both ends of the random range for translation.
+
+#### Translate Z (low)
+`Python: "mod_scatter_translate_z_lo"`
+
+Low end of the random range for translation along the Z axis.
+
+#### Translate Z (high)
+`Python: "mod_scatter_translate_z_hi"`
+
+High end of the random range for translation along the Z axis.
+
+#### Translate Z map
+`Python: "mod_scatter_translate_z_map"`
+
+The translate map is a grayscale map which luminance interpolates between both ends of the random range for translation.
+
+## Rotate
+
+#### Align to normal
+`Python: "mod_scatter_align_to_normal"`
+
+Defines how much instances are oriented towards the normal of the surface of the base object vs. the base object's Z axis.
+
+#### Rotate X (low)
+`Python: "mod_scatter_rotate_x_lo"`
+
+Low end of the random range for rotation along the X axis.
+
+#### Rotate X (high)
+`Python: "mod_scatter_rotate_x_hi"`
+
+High end of the random range for rotation along the X axis.
+
+#### Rotate X map
+`Python: "mod_scatter_rotate_x_map"`
+
+The rotate map is a grayscale map which luminance interpolates between both ends of the random range for rotation.
+
+#### Rotate Y (low)
+`Python: "mod_scatter_rotate_y_lo"`
+
+Low end of the random range for rotation along the Y axis.
+
+#### Rotate Y (high)
+`Python: "mod_scatter_rotate_y_hi"`
+
+High end of the random range for rotation along the Y axis.
+
+#### Rotate Y map
+`Python: "mod_scatter_rotate_y_map"`
+
+The rotate map is a grayscale map which luminance interpolates between both ends of the random range for rotation.
+
+#### Rotate Z (low)
+`Python: "mod_scatter_rotate_z_lo"`
+
+Low end of the random range for rotation along the Z axis.
+
+#### Rotate Z (high)
+`Python: "mod_scatter_rotate_z_hi"`
+
+High end of the random range for rotation along the Z axis.
+
+#### Rotate Z map
+`Python: "mod_scatter_rotate_z_map"`
+
+The rotate map is a grayscale map which luminance interpolates between both ends of the random range for rotation.
+
+#### X step
+`Python: "mod_scatter_rotate_x_step"`
+
+This value discretizes the randomized X angle so it ends up being a multiple of the given step.
+
+#### Enable X step
+`Python: "mod_scatter_rotate_x_step_enable"`
+
+Enables the X angle discretization step.
+
+#### Y step
+`Python: "mod_scatter_rotate_y_step"`
+
+This value discretizes the randomized Y angle so it ends up being a multiple of the given step.
+
+#### Enable Y step
+`Python: "mod_scatter_rotate_y_step_enable"`
+
+Enables the Y angle discretization step.
+
+#### Z step
+`Python: "mod_scatter_rotate_z_step"`
+
+This value discretizes the randomized Z angle so it ends up being a multiple of the given step.
+
+#### Enable Z step
+`Python: "mod_scatter_rotate_z_step_enable"`
+
+Enables the Z angle discretization step.
+
+## Scale
+
+#### Uniform scale
+`Python: "mod_scatter_uniform_scale"`
+
+Applies the same random scale factor to the three axes at once.
+
+#### Global scale
+`Python: "mod_scatter_scale"`
+
+Applies a global scale factor to the three axes at once.
+
+#### Global scale map
+`Python: "mod_scatter_scale_map"`
+
+Modulates the global scale factor by the given grayscale map.
+
+#### Scale X (low)
+`Python: "mod_scatter_scale_x_lo"`
+
+Low end of the random range for scaling along the X axis.
+
+#### Scale X (high)
+`Python: "mod_scatter_scale_x_hi"`
+
+High end of the random range for scaling along the X axis.
+
+#### Scale X map
+`Python: "mod_scatter_scale_x_map"`
+
+The scale map is a grayscale map which luminance interpolates between both ends of the random range for scaling.
+
+#### Scale Y (low)
+`Python: "mod_scatter_scale_y_lo"`
+
+Low end of the random range for scaling along the Y axis.
+
+#### Scale Y (high)
+`Python: "mod_scatter_scale_y_hi"`
+
+High end of the random range for scaling along the Y axis.
+
+#### Scale Y map
+`Python: "mod_scatter_scale_y_map"`
+
+The scale map is a grayscale map which luminance interpolates between both ends of the random range for scaling.
+
+#### Scale Z (low)
+`Python: "mod_scatter_scale_z_lo"`
+
+Low end of the random range for scaling along the Z axis.
+
+#### Scale Z (high)
+`Python: "mod_scatter_scale_z_hi"`
+
+High end of the random range for scaling along the Z axis.
+
+#### Scale Z map
+`Python: "mod_scatter_scale_z_map"`
+
+The scale map is a grayscale map which luminance interpolates between both ends of the random range for scaling.
 

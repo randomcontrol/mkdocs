@@ -1,33 +1,49 @@
-## **pro_matrix_cast**
+`Python: "pro_matrix_cast"`
 
 This node casts a fellow programming node to matrix form. Non-matrix types are all upcast by duplicating their first coordinate into matrix form.
-#### Common
+## Common
 
-> ##### Node alias
-> Human-readable node alias.
+#### Node alias
+`Python: "pro_alias"`
 
-> ##### Alias color
-> Identificative node color.
+Human-readable node alias.
 
-> ##### Node UUID
-> Node UUID.
+#### Alias color
+`Python: "pro_alias_color"`
 
-> ##### Node metadata
-> User-set node metadata.
+Identificative node color.
 
-> ##### Node tags
-> User-set node tags.
+#### Node UUID
+`Python: "pro_uuid"`
 
-#### Main
+Node UUID.
 
-> ##### Input value
-> Input value that will be cast to matrix form.
+#### Node metadata
+`Python: "pro_metadata"`
 
-#### Output tuning
+User-set node metadata.
 
-> ##### Pre-mul node
-> If connected, this plug's matrix is used to pre-multiply the node's output. This comes handy when chaining consecutive matrix transforms to save one matrix_math node.
+#### Node tags
+`Python: "pro_tags"`
 
-> ##### Post-mul node
-> If connected, this plug's matrix is used to post-multiply the node's output. This comes handy when chaining consecutive matrix transforms to save one matrix_math node.
+User-set node tags.
+
+## Main
+
+#### Input value
+`Python: "pro_matrix_cast_input_pro"`
+
+Input value that will be cast to matrix form.
+
+## Output tuning
+
+#### Pre-mul node
+`Python: "pro_pre_mul_pro"`
+
+If connected, this plug's matrix is used to pre-multiply the node's output. This comes handy when chaining consecutive matrix transforms to save one matrix_math node.
+
+#### Post-mul node
+`Python: "pro_post_mul_pro"`
+
+If connected, this plug's matrix is used to post-multiply the node's output. This comes handy when chaining consecutive matrix transforms to save one matrix_math node.
 

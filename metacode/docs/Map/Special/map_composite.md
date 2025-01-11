@@ -1,85 +1,137 @@
-## **map_composite**
+`Python: "map_composite"`
 
 The composite map provides a mechanism to combine different inputs in a way that resembles layers in Adobe Photoshop. Input layers are combined from bottom-to-top, with layer 1 being the base.
-#### Common
+## Common
 
-> ##### Node alias
-> Human-readable node alias.
+#### Node alias
+`Python: "map_alias"`
 
-> ##### Alias color
-> Identificative node color.
+Human-readable node alias.
 
-> ##### Node UUID
-> Node UUID.
+#### Alias color
+`Python: "map_alias_color"`
 
-> ##### Node metadata
-> User-set node metadata.
+Identificative node color.
 
-> ##### Node tags
-> User-set node tags.
+#### Node UUID
+`Python: "map_uuid"`
 
-#### Main
+Node UUID.
 
-> ##### HDR mode
-> This toggle must be enabled if the input maps provided are High Dynamic Range. HDR mode preserves the dynamic range of the output all the way through.
+#### Node metadata
+`Python: "map_metadata"`
 
-> ##### Mode
-> Selects the blending mode for the i-th layer. Their counterparts in Adobe Photoshop are: Normal, Screen (add), Difference (sub), Multiply, Darkest (min), Lightest (max), and Overlay
+User-set node metadata.
 
-> ##### Color
-> Defines the i-th composite input color.
+#### Node tags
+`Python: "map_tags"`
 
-> ##### Color map
-> Defines the i-th composite input color using a texture map.
+User-set node tags.
 
-> ##### Weight
-> Weight of the i-th input layer.
+## Main
 
-> ##### Weight map
-> Weight of the i-th input layer using a grayscale map.
+#### HDR mode
+`Python: "map_composite_hdr"`
 
-> ##### Mode
-> Selects the blending mode for the i-th layer. Their counterparts in Adobe Photoshop are: Normal, Screen (add), Difference (sub), Multiply, Darkest (min), Lightest (max), and Overlay
+This toggle must be enabled if the input maps provided are High Dynamic Range. HDR mode preserves the dynamic range of the output all the way through.
 
-> ##### Color
-> Defines the i-th composite input color.
+#### Mode
+`Python: "map_composite_mode_1"`
 
-> ##### Color map
-> Defines the i-th composite input color using a texture map.
+Selects the blending mode for the i-th layer. Their counterparts in Adobe Photoshop are: Normal, Screen (add), Difference (sub), Multiply, Darkest (min), Lightest (max), and Overlay
 
-> ##### Weight
-> Weight of the i-th input layer.
+#### Color
+`Python: "map_composite_color_1"`
 
-> ##### Weight map
-> Weight of the i-th input layer using a grayscale map.
+Defines the i-th composite input color.
 
-> ##### Mode
-> Selects the blending mode for the i-th layer. Their counterparts in Adobe Photoshop are: Normal, Screen (add), Difference (sub), Multiply, Darkest (min), Lightest (max), and Overlay
+#### Color map
+`Python: "map_composite_color_1_map"`
 
-> ##### Color
-> Defines the i-th composite input color.
+Defines the i-th composite input color using a texture map.
 
-> ##### Color map
-> Defines the i-th composite input color using a texture map.
+#### Weight
+`Python: "map_composite_weight_1"`
 
-> ##### Weight
-> Weight of the i-th input layer.
+Weight of the i-th input layer.
 
-> ##### Weight map
-> Weight of the i-th input layer using a grayscale map.
+#### Weight map
+`Python: "map_composite_weight_1_map"`
 
-> ##### Mode
-> Selects the blending mode for the i-th layer. Their counterparts in Adobe Photoshop are: Normal, Screen (add), Difference (sub), Multiply, Darkest (min), Lightest (max), and Overlay
+Weight of the i-th input layer using a grayscale map.
 
-> ##### Color
-> Defines the i-th composite input color.
+#### Mode
+`Python: "map_composite_mode_2"`
 
-> ##### Color map
-> Defines the i-th composite input color using a texture map.
+Selects the blending mode for the i-th layer. Their counterparts in Adobe Photoshop are: Normal, Screen (add), Difference (sub), Multiply, Darkest (min), Lightest (max), and Overlay
 
-> ##### Weight
-> Weight of the i-th input layer.
+#### Color
+`Python: "map_composite_color_2"`
 
-> ##### Weight map
-> Weight of the i-th input layer using a grayscale map.
+Defines the i-th composite input color.
+
+#### Color map
+`Python: "map_composite_color_2_map"`
+
+Defines the i-th composite input color using a texture map.
+
+#### Weight
+`Python: "map_composite_weight_2"`
+
+Weight of the i-th input layer.
+
+#### Weight map
+`Python: "map_composite_weight_2_map"`
+
+Weight of the i-th input layer using a grayscale map.
+
+#### Mode
+`Python: "map_composite_mode_3"`
+
+Selects the blending mode for the i-th layer. Their counterparts in Adobe Photoshop are: Normal, Screen (add), Difference (sub), Multiply, Darkest (min), Lightest (max), and Overlay
+
+#### Color
+`Python: "map_composite_color_3"`
+
+Defines the i-th composite input color.
+
+#### Color map
+`Python: "map_composite_color_3_map"`
+
+Defines the i-th composite input color using a texture map.
+
+#### Weight
+`Python: "map_composite_weight_3"`
+
+Weight of the i-th input layer.
+
+#### Weight map
+`Python: "map_composite_weight_3_map"`
+
+Weight of the i-th input layer using a grayscale map.
+
+#### Mode
+`Python: "map_composite_mode_4"`
+
+Selects the blending mode for the i-th layer. Their counterparts in Adobe Photoshop are: Normal, Screen (add), Difference (sub), Multiply, Darkest (min), Lightest (max), and Overlay
+
+#### Color
+`Python: "map_composite_color_4"`
+
+Defines the i-th composite input color.
+
+#### Color map
+`Python: "map_composite_color_4_map"`
+
+Defines the i-th composite input color using a texture map.
+
+#### Weight
+`Python: "map_composite_weight_4"`
+
+Weight of the i-th input layer.
+
+#### Weight map
+`Python: "map_composite_weight_4_map"`
+
+Weight of the i-th input layer using a grayscale map.
 

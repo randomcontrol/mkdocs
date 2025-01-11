@@ -1,63 +1,99 @@
-## **pro_float_remap**
+`Python: "pro_float_remap"`
 
 This programming node takes a floating-point value and remaps its input range to a new output range. Optionally, the resulting slope can be remapped itself with a profile curve.
-#### Common
+## Common
 
-> ##### Node alias
-> Human-readable node alias.
+#### Node alias
+`Python: "pro_alias"`
 
-> ##### Alias color
-> Identificative node color.
+Human-readable node alias.
 
-> ##### Node UUID
-> Node UUID.
+#### Alias color
+`Python: "pro_alias_color"`
 
-> ##### Node metadata
-> User-set node metadata.
+Identificative node color.
 
-> ##### Node tags
-> User-set node tags.
+#### Node UUID
+`Python: "pro_uuid"`
 
-> ##### Bypass node
-> Toggles this programming node on/off.
+Node UUID.
 
-#### Main
+#### Node metadata
+`Python: "pro_metadata"`
 
-> ##### Input signal
-> Selects the input node which output value will be remapped. If necessary, said value will be upcast to a floating-point scalar before the remapping is applied.
+User-set node metadata.
 
-> ##### Profile gradient
-> Editable profile curve. The X axis remaps the input [start..end] range. The Y axis remaps the output [lo..hi] range.
+#### Node tags
+`Python: "pro_tags"`
 
-> ##### Profile node
-> Selects a gradient-type programming node to override the inner profile curve.
+User-set node tags.
 
-> ##### Input start
-> Lower bound of the input range. Input values below start are clamped.
+#### Bypass node
+`Python: "pro_bypass"`
 
-> ##### Input end
-> Upper bound of the input range. Input values above end are clamped.
+Toggles this programming node on/off.
 
-> ##### Take sub-interval
-> Picks a sub-interval in the [start..end] input range.
+## Main
 
-> ##### Number of bins
-> Defines the number of sub-intervals (bins) the input range will be split into.
+#### Input signal
+`Python: "pro_float_remap_signal_pro"`
 
-> ##### Bin
-> Takes as input range the sub-interval (bin) specified by this value.
+Selects the input node which output value will be remapped. If necessary, said value will be upcast to a floating-point scalar before the remapping is applied.
 
-> ##### Output low
-> Lower bound of the output range.
+#### Profile gradient
+`Python: "pro_float_remap_profile"`
 
-> ##### Output high
-> Upper bound of the output range.
+Editable profile curve. The X axis remaps the input [start..end] range. The Y axis remaps the output [lo..hi] range.
 
-#### Output tuning
+#### Profile node
+`Python: "pro_float_remap_profile_pro"`
 
-> ##### Value weight
-> The final value output by the node is, actually: value*weight+bias.
+Selects a gradient-type programming node to override the inner profile curve.
 
-> ##### Value bias
-> The final value output by the node is, actually: value*weight+bias.
+#### Input start
+`Python: "pro_float_remap_profile_start"`
+
+Lower bound of the input range. Input values below start are clamped.
+
+#### Input end
+`Python: "pro_float_remap_profile_end"`
+
+Upper bound of the input range. Input values above end are clamped.
+
+#### Take sub-interval
+`Python: "pro_float_remap_profile_bins_enable"`
+
+Picks a sub-interval in the [start..end] input range.
+
+#### Number of bins
+`Python: "pro_float_remap_profile_bins"`
+
+Defines the number of sub-intervals (bins) the input range will be split into.
+
+#### Bin
+`Python: "pro_float_remap_profile_bin"`
+
+Takes as input range the sub-interval (bin) specified by this value.
+
+#### Output low
+`Python: "pro_float_remap_profile_lo"`
+
+Lower bound of the output range.
+
+#### Output high
+`Python: "pro_float_remap_profile_hi"`
+
+Upper bound of the output range.
+
+## Output tuning
+
+#### Value weight
+`Python: "pro_weight"`
+
+The final value output by the node is, actually: value*weight+bias.
+
+#### Value bias
+`Python: "pro_bias"`
+
+The final value output by the node is, actually: value*weight+bias.
 

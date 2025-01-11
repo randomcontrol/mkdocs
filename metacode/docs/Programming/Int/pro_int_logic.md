@@ -1,37 +1,57 @@
-## **pro_int_logic**
+`Python: "pro_int_logic"`
 
 This node performs a logic operation between two given programming nodes. The result of the operation is always an integer scalar where the only possible values are 0 (false) or 1 (true).
-#### Common
+## Common
 
-> ##### Node alias
-> Human-readable node alias.
+#### Node alias
+`Python: "pro_alias"`
 
-> ##### Alias color
-> Identificative node color.
+Human-readable node alias.
 
-> ##### Node UUID
-> Node UUID.
+#### Alias color
+`Python: "pro_alias_color"`
 
-> ##### Node metadata
-> User-set node metadata.
+Identificative node color.
 
-> ##### Node tags
-> User-set node tags.
+#### Node UUID
+`Python: "pro_uuid"`
 
-#### Main
+Node UUID.
 
-> ##### Operator
-> Selects the operation to be performed between both operands.
+#### Node metadata
+`Python: "pro_metadata"`
 
-> ##### A operand
-> Operation's first operand, when no input programming node is provided.
+User-set node metadata.
 
-> ##### A operand node
-> Operation's first operand.
+#### Node tags
+`Python: "pro_tags"`
 
-> ##### B operand
-> Operation's second operand, when no input programming node is provided.
+User-set node tags.
 
-> ##### B operand node
-> Operation's second operand.
+## Main
+
+#### Operator
+`Python: "pro_int_logic_operator"`
+
+Selects the operation to be performed between both operands.
+
+#### A operand
+`Python: "pro_int_logic_operand_a"`
+
+Operation's first operand, when no input programming node is provided.
+
+#### A operand node
+`Python: "pro_int_logic_operand_a_pro"`
+
+Operation's first operand.
+
+#### B operand
+`Python: "pro_int_logic_operand_b"`
+
+Operation's second operand, when no input programming node is provided.
+
+#### B operand node
+`Python: "pro_int_logic_operand_b_pro"`
+
+Operation's second operand.
 

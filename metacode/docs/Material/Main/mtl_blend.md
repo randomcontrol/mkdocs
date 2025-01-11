@@ -1,151 +1,243 @@
-## **mtl_blend**
+`Python: "mtl_blend"`
 
 With the blend material one can create compound materials. Compound materials can be alloys, where each submaterial contributes a percentage to the total, or mask-based blends where one or more mask maps determine which parts of the object reveal which submaterial.
-#### Common
+## Common
 
-> ##### Node alias
-> Human-readable node alias.
+#### Node alias
+`Python: "mtl_alias"`
 
-> ##### Alias color
-> Identificative node color.
+Human-readable node alias.
 
-> ##### Node UUID
-> Node UUID.
+#### Alias color
+`Python: "mtl_alias_color"`
 
-> ##### Node metadata
-> User-set node metadata.
+Identificative node color.
 
-> ##### Node tags
-> User-set node tags.
+#### Node UUID
+`Python: "mtl_uuid"`
 
-#### UV mapping
+Node UUID.
 
-> ##### Projection mode
-> Defines the UVW mapping projection mode.
+#### Node metadata
+`Python: "mtl_metadata"`
 
-> ##### Override uvmap
-> Uses the inner material UVW mapping controls, overriding the uvmap modifier(s) of the host object, if any.
+User-set node metadata.
 
-> ##### Triplanar blend
-> If the projection is triplanar, defines how much the three planar projections are blended onto each other.
+#### Node tags
+`Python: "mtl_tags"`
 
-> ##### Width
-> Real world size of the material along the X axis.
+User-set node tags.
 
-> ##### Height
-> Real world size of the material along the Y axis.
+## UV mapping
 
-> ##### Depth
-> Real world size of the material along the Z axis.
+#### Projection mode
+`Python: "mtl_uvmap_projection"`
 
-> ##### Real size link
-> Links the three real world dimensions so they are edited together.
+Defines the UVW mapping projection mode.
 
-> ##### Width repeat
-> Repeats (i.e., tiles) the UVW mapping along the X axis the given number of times within the defined width.
+#### Override uvmap
+`Python: "mtl_uvmap_override"`
 
-> ##### Height repeat
-> Repeats (i.e., tiles) the UVW mapping along the Y axis the given number of times within the defined height.
+Uses the inner material UVW mapping controls, overriding the uvmap modifier(s) of the host object, if any.
 
-> ##### Depth repeat
-> Repeats (i.e., tiles) the UVW mapping along the Z axis the given number of times within the defined depth.
+#### Triplanar blend
+`Python: "mtl_uvmap_triplanar_blend"`
 
-> ##### Repeat link
-> Links the three real size repeat values so they are edited together.
+If the projection is triplanar, defines how much the three planar projections are blended onto each other.
 
-> ##### Axis alignment
-> Reorients the projection towards the selected axis.
+#### Width
+`Python: "mtl_uvmap_real_size_x"`
 
-> ##### Convert to uvmap modifier
-> Creates a uvmap modifier node and transfers the material's UVW mapping attributes. The new uvmap node is applied to the host object.
+Real world size of the material along the X axis.
 
-> ##### Repeat X
-> Repeats the projected UVW space along the X/U axis. Increasing this value increases repetition.
+#### Height
+`Python: "mtl_uvmap_real_size_y"`
 
-> ##### Repeat Y
-> Repeats the projected UVW space along the Y/V axis. Increasing this value increases repetition.
+Real world size of the material along the Y axis.
 
-> ##### Translate X
-> Offsets the projected UVW space along the X/U axis.
+#### Depth
+`Python: "mtl_uvmap_real_size_z"`
 
-> ##### Translate Y
-> Offsets the projected UVW space along the Y/V axis.
+Real world size of the material along the Z axis.
 
-> ##### Rotate
-> Rotates the projected UVW space about the Z/W axis. Positive values rotate counter-clockwise.
+#### Real size link
+`Python: "mtl_uvmap_real_size_link"`
 
-#### Submaterials
+Links the three real world dimensions so they are edited together.
 
-> ##### Additive
-> Changes the blending mode to Additive.
+#### Width repeat
+`Python: "mtl_uvmap_real_size_repeat_x"`
 
-> ##### Material
-> Defines the base material. Blend materials can be nested to extend the maximum number of blended materials.
+Repeats (i.e., tiles) the UVW mapping along the X axis the given number of times within the defined width.
 
-> ##### Material weight
-> Blend amount for the base material.
+#### Height repeat
+`Python: "mtl_uvmap_real_size_repeat_y"`
 
-> ##### Material weight map
-> Grayscale texture map which luminance controls the blend amount for the base material.
+Repeats (i.e., tiles) the UVW mapping along the Y axis the given number of times within the defined height.
 
-> ##### Material
-> Defines the i-th material layer. Additional layers are stacked on top of the base material.
+#### Depth repeat
+`Python: "mtl_uvmap_real_size_repeat_z"`
 
-> ##### Material weight
-> Blend amount for the i-th material layer.
+Repeats (i.e., tiles) the UVW mapping along the Z axis the given number of times within the defined depth.
 
-> ##### Material weight map
-> Grayscale texture map which luminance controls the blend amount for the i-th material layer.
+#### Repeat link
+`Python: "mtl_uvmap_real_size_repeat_link"`
 
-> ##### Material
-> Defines the i-th material layer. Additional layers are stacked on top of the base material.
+Links the three real size repeat values so they are edited together.
 
-> ##### Material weight
-> Blend amount for the i-th material layer.
+#### Axis alignment
+`Python: "mtl_uvmap_axis_alignment"`
 
-> ##### Material weight map
-> Grayscale texture map which luminance controls the blend amount for the i-th material layer.
+Reorients the projection towards the selected axis.
 
-> ##### Material
-> Defines the i-th material layer. Additional layers are stacked on top of the base material.
+#### Convert to uvmap modifier
+`Python: "mtl_uvmap_convert"`
 
-> ##### Material weight
-> Blend amount for the i-th material layer.
+Creates a uvmap modifier node and transfers the material's UVW mapping attributes. The new uvmap node is applied to the host object.
 
-> ##### Material weight map
-> Grayscale texture map which luminance controls the blend amount for the i-th material layer.
+#### Repeat X
+`Python: "mtl_uvmap_xform_repeat_x"`
 
-#### Displacement (Micro-Patch)
+Repeats the projected UVW space along the X/U axis. Increasing this value increases repetition.
 
-> ##### Enable displacement
-> Enables micro-polygon (micro-patch) displacement mapping (a.k.a., MPDM) in the object the material is applied to. Unlike brute-force subdiv+displacement, MPDM spawns micro-geometry on path-tracing time only, and hence is capable of delivering virtually unlimited amounts of detail with a negligible memory footprint.
+#### Repeat Y
+`Python: "mtl_uvmap_xform_repeat_y"`
 
-> ##### Displacement height
-> Determines, in real world units, how high the spawned micro-geometry will be pushed away from the base mesh. This value acts as a multiplier for the height map.
+Repeats the projected UVW space along the Y/V axis. Increasing this value increases repetition.
 
-> ##### Displacement height map
-> Sets the displacement height texture map. Every single texel in the height map will spawn a virtual micro-patch (a bilinear quad patch) in path-tracing time.
+#### Translate X
+`Python: "mtl_uvmap_xform_translate_x"`
 
-> ##### Midpoint
-> Defines the displacement baseline. Setting this value to 0.5 will displace half the height inwards and half outwards. The right setting for this value depends on the DCC app used to produce the displacement map. e.g., 32-bit .exr maps exported from ZBrush expect a midpoint value of 0.0.
+Offsets the projected UVW space along the X/U axis.
 
-> ##### Waterlevel (lo)
-> Defines a height map value below which displaced geometry is clipped out. The default value (0) clips no geometry at all.
+#### Translate Y
+`Python: "mtl_uvmap_xform_translate_y"`
 
-> ##### Waterlevel (hi)
-> Defines a height map value above which displaced geometry is clipped out. The default value (1) clips no geometry at all.
+Offsets the projected UVW space along the Y/V axis.
+
+#### Rotate
+`Python: "mtl_uvmap_xform_rotate_z"`
+
+Rotates the projected UVW space about the Z/W axis. Positive values rotate counter-clockwise.
+
+## Submaterials
+
+#### Additive
+`Python: "mtl_blend_additive"`
+
+Changes the blending mode to Additive.
+
+#### Material
+`Python: "mtl_blend_mtl_1"`
+
+Defines the base material. Blend materials can be nested to extend the maximum number of blended materials.
+
+#### Material weight
+`Python: "mtl_blend_weight_1"`
+
+Blend amount for the base material.
+
+#### Material weight map
+`Python: "mtl_blend_weight_1_map"`
+
+Grayscale texture map which luminance controls the blend amount for the base material.
+
+#### Material
+`Python: "mtl_blend_mtl_2"`
+
+Defines the i-th material layer. Additional layers are stacked on top of the base material.
+
+#### Material weight
+`Python: "mtl_blend_weight_2"`
+
+Blend amount for the i-th material layer.
+
+#### Material weight map
+`Python: "mtl_blend_weight_2_map"`
+
+Grayscale texture map which luminance controls the blend amount for the i-th material layer.
+
+#### Material
+`Python: "mtl_blend_mtl_3"`
+
+Defines the i-th material layer. Additional layers are stacked on top of the base material.
+
+#### Material weight
+`Python: "mtl_blend_weight_3"`
+
+Blend amount for the i-th material layer.
+
+#### Material weight map
+`Python: "mtl_blend_weight_3_map"`
+
+Grayscale texture map which luminance controls the blend amount for the i-th material layer.
+
+#### Material
+`Python: "mtl_blend_mtl_4"`
+
+Defines the i-th material layer. Additional layers are stacked on top of the base material.
+
+#### Material weight
+`Python: "mtl_blend_weight_4"`
+
+Blend amount for the i-th material layer.
+
+#### Material weight map
+`Python: "mtl_blend_weight_4_map"`
+
+Grayscale texture map which luminance controls the blend amount for the i-th material layer.
+
+## Displacement (Micro-Patch)
+
+#### Enable displacement
+`Python: "mtl_mpdm_enable"`
+
+Enables micro-polygon (micro-patch) displacement mapping (a.k.a., MPDM) in the object the material is applied to. Unlike brute-force subdiv+displacement, MPDM spawns micro-geometry on path-tracing time only, and hence is capable of delivering virtually unlimited amounts of detail with a negligible memory footprint.
+
+#### Displacement height
+`Python: "mtl_mpdm_height"`
+
+Determines, in real world units, how high the spawned micro-geometry will be pushed away from the base mesh. This value acts as a multiplier for the height map.
+
+#### Displacement height map
+`Python: "mtl_mpdm_height_map"`
+
+Sets the displacement height texture map. Every single texel in the height map will spawn a virtual micro-patch (a bilinear quad patch) in path-tracing time.
+
+#### Midpoint
+`Python: "mtl_mpdm_midpoint"`
+
+Defines the displacement baseline. Setting this value to 0.5 will displace half the height inwards and half outwards. The right setting for this value depends on the DCC app used to produce the displacement map. e.g., 32-bit .exr maps exported from ZBrush expect a midpoint value of 0.0.
+
+#### Waterlevel (lo)
+`Python: "mtl_mpdm_waterlevel_lo"`
+
+Defines a height map value below which displaced geometry is clipped out. The default value (0) clips no geometry at all.
+
+#### Waterlevel (hi)
+`Python: "mtl_mpdm_waterlevel_hi"`
+
+Defines a height map value above which displaced geometry is clipped out. The default value (1) clips no geometry at all.
+
+## Opacity
+
+#### Enable opacity
+`Python: "mtl_opacity_enable"`
+
+Enables opacity mapping in the geometry the material is applied to. Note that opacity mapping is computationally-intensive.
 
 #### Opacity
+`Python: "mtl_opacity"`
 
-> ##### Enable opacity
-> Enables opacity mapping in the geometry the material is applied to. Note that opacity mapping is computationally-intensive.
+Defines the percentage of light rays that will be allowed to pass through the object not being affected by it in any way.
 
-> ##### Opacity
-> Defines the percentage of light rays that will be allowed to pass through the object not being affected by it in any way.
+#### Opacity map
+`Python: "mtl_opacity_map"`
 
-> ##### Opacity map
-> Defines the opacity level of the object with a grayscale texture map. Opacity maps are interpreted so dark colors make the surface more translucent; i.e., black completely clips the geometry away, whereas white produces fully solid geometry. This map gets multiplied by the numerical opacity value.
+Defines the opacity level of the object with a grayscale texture map. Opacity maps are interpreted so dark colors make the surface more translucent; i.e., black completely clips the geometry away, whereas white produces fully solid geometry. This map gets multiplied by the numerical opacity value.
 
-> ##### Single-sided geometry
-> When enabled, object(s) this material is applied to will be visible from their front side, but invisible from their back side.
+#### Single-sided geometry
+`Python: "mtl_single_sided"`
+
+When enabled, object(s) this material is applied to will be visible from their front side, but invisible from their back side.
 

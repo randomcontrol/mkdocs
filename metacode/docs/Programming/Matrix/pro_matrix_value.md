@@ -1,45 +1,69 @@
-## **pro_matrix_value**
+`Python: "pro_matrix_value"`
 
 This programming node outputs a 4x4 matrix value for typical uses such as translation, rotation and scaling.
-#### Common
+## Common
 
-> ##### Node alias
-> Human-readable node alias.
+#### Node alias
+`Python: "pro_alias"`
 
-> ##### Alias color
-> Identificative node color.
+Human-readable node alias.
 
-> ##### Node UUID
-> Node UUID.
+#### Alias color
+`Python: "pro_alias_color"`
 
-> ##### Node metadata
-> User-set node metadata.
+Identificative node color.
 
-> ##### Node tags
-> User-set node tags.
+#### Node UUID
+`Python: "pro_uuid"`
 
-#### Main
+Node UUID.
 
-> ##### Matrix type
-> Type of matrix built and output by the node.
+#### Node metadata
+`Python: "pro_metadata"`
 
-> ##### A input node
-> The meaning of this input is determined by the matrix type selected. For example, for a rotation matrix, A is used as the spin axis.
+User-set node metadata.
 
-> ##### B input node
-> The meaning of this input is determined by the matrix type selected. For example, for a rotation matrix, B is used as the center of rotation.
+#### Node tags
+`Python: "pro_tags"`
 
-> ##### C input
-> The meaning of this input is determined by the matrix type selected. For example, for a rotation matrix, C is the rotation angle.
+User-set node tags.
 
-> ##### C input node
-> The meaning of this input is determined by the matrix type selected. For example, for a rotation matrix, C is the rotation angle, provided in node form.
+## Main
 
-#### Output tuning
+#### Matrix type
+`Python: "pro_matrix_value_type"`
 
-> ##### Pre-mul node
-> If connected, this plug's matrix is used to pre-multiply the node's output. This comes handy when chaining consecutive matrix transforms to save one matrix_math node.
+Type of matrix built and output by the node.
 
-> ##### Post-mul node
-> If connected, this plug's matrix is used to post-multiply the node's output. This comes handy when chaining consecutive matrix transforms to save one matrix_math node.
+#### A input node
+`Python: "pro_matrix_value_input_a_pro"`
+
+The meaning of this input is determined by the matrix type selected. For example, for a rotation matrix, A is used as the spin axis.
+
+#### B input node
+`Python: "pro_matrix_value_input_b_pro"`
+
+The meaning of this input is determined by the matrix type selected. For example, for a rotation matrix, B is used as the center of rotation.
+
+#### C input
+`Python: "pro_matrix_value_input_c"`
+
+The meaning of this input is determined by the matrix type selected. For example, for a rotation matrix, C is the rotation angle.
+
+#### C input node
+`Python: "pro_matrix_value_input_c_pro"`
+
+The meaning of this input is determined by the matrix type selected. For example, for a rotation matrix, C is the rotation angle, provided in node form.
+
+## Output tuning
+
+#### Pre-mul node
+`Python: "pro_pre_mul_pro"`
+
+If connected, this plug's matrix is used to pre-multiply the node's output. This comes handy when chaining consecutive matrix transforms to save one matrix_math node.
+
+#### Post-mul node
+`Python: "pro_post_mul_pro"`
+
+If connected, this plug's matrix is used to post-multiply the node's output. This comes handy when chaining consecutive matrix transforms to save one matrix_math node.
 

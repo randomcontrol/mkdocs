@@ -1,76 +1,118 @@
-## **cam_vr**
+`Python: "cam_vr"`
 
 The vr camera node is used for non-conventional projection types such as spherical (panoramic) views, or to generate stereoscopic content for VR.
-#### Common
+## Common
 
-> ##### Node alias
-> Human-readable node alias.
+#### Node alias
+`Python: "cam_alias"`
 
-> ##### Alias color
-> Identificative node color.
+Human-readable node alias.
 
-> ##### Node UUID
-> Node UUID.
+#### Alias color
+`Python: "cam_alias_color"`
 
-> ##### Node metadata
-> User-set node metadata.
+Identificative node color.
 
-> ##### Node tags
-> User-set node tags.
+#### Node UUID
+`Python: "cam_uuid"`
 
-> ##### ISO speed
-> Controls the camera's sensitivity to light. Unlike film or digital sensors, this setting does not introduce any additional noise and acts as a linear multiplier.
+Node UUID.
 
-> ##### Canonical axes
-> Makes the camera ignore the orientation of its xform and auto-align itself to the canonical X/Y/Z world axes.
+#### Node metadata
+`Python: "cam_metadata"`
 
-#### Stereoscopy
+User-set node metadata.
 
-> ##### Stereoscopy eye
-> Selects which eye to render for stereoscopic display.
+#### Node tags
+`Python: "cam_tags"`
 
-> ##### Inter-Pupillary distance
-> Defines the separation between both eyes in a stereoscopic render. The default value matches an average adult human.
+User-set node tags.
 
-#### Film
+#### ISO speed
+`Python: "cam_iso"`
 
-> ##### Film docking
-> Controls how the selected film (or sensor) size is docked into the render resolution. The film can be docked to fit horizontally, vertically or diagonally in the rendered image.
+Controls the camera's sensitivity to light. Unlike film or digital sensors, this setting does not introduce any additional noise and acts as a linear multiplier.
 
-> ##### Film width
-> Sets the camera's film or sensor width. The default value matches a full-frame camera (36mm).
+#### Canonical axes
+`Python: "cam_vr_canonical_axes"`
 
-> ##### Film height
-> Sets the camera's film or sensor height. The default value matches a full-frame camera (24mm).
+Makes the camera ignore the orientation of its xform and auto-align itself to the canonical X/Y/Z world axes.
 
-#### Lens
+## Stereoscopy
 
-> ##### Focal length
-> Sets the focal length of the camera lens. Smaller values correspond to wide angle lenses, while higher values correspond to tele-photo lenses.
+#### Stereoscopy eye
+`Python: "cam_vr_eye"`
 
-> ##### Zoom (crop factor)
-> The Zoom (or crop) factor increases or decreases the Field of View without affecting the rest of optics settings.
+Selects which eye to render for stereoscopic display.
 
-> ##### Aperture (f-stop)
-> Controls the camera's aperture (i.e., diaphragm opening). The value represents a fraction of the maximum physical opening of the lens, so a smaller value represents a larger opening allowing more light to enter the lens. This results in brighter images and shallower Depth Of Field (more blur). Likewise, a higher aperture value represents a smaller opening and produces darker images with a deeper Depth Of Field (less blur).
+#### Inter-Pupillary distance
+`Python: "cam_vr_ipd"`
 
-> ##### Lock exposure
-> When enabled, the camera exposure will be locked to the equivalent of an f:8 aperture. This allows to control Depth Of Field without affecting the brightness of the image.
+Defines the separation between both eyes in a stereoscopic render. The default value matches an average adult human.
 
-> ##### Shutter speed
-> Sets the exposure time. The value is expressed as a fraction of a second. Lower values will result in a longer exposure time and brighter images. Higher values will result in a shorter exposure time and darker images.
+## Film
 
-#### Trace sets
+#### Film docking
+`Python: "cam_film_docking"`
 
-> ##### Include list
-> List of comma or space-separated trace set IDs. If the list starts by - then the list is inverted (i.e., all IDs except for the listed ones). Light paths (which spawn at the camera) are initialized with this include list of trace set IDs.
+Controls how the selected film (or sensor) size is docked into the render resolution. The film can be docked to fit horizontally, vertically or diagonally in the rendered image.
 
-> ##### Enable include list
-> Enables or disables the trace sets include list.
+#### Film width
+`Python: "cam_film_w"`
 
-> ##### Exclude list
-> List of comma or space-separated trace set IDs. If the list starts by - then the list is inverted (i.e., all IDs except for the listed ones). Light paths (which spawn at the camera) are initialized with this exclude list of trace set IDs.
+Sets the camera's film or sensor width. The default value matches a full-frame camera (36mm).
 
-> ##### Enable exclude list
-> Enables or disables the trace sets exclude list.
+#### Film height
+`Python: "cam_film_h"`
+
+Sets the camera's film or sensor height. The default value matches a full-frame camera (24mm).
+
+## Lens
+
+#### Focal length
+`Python: "cam_focal"`
+
+Sets the focal length of the camera lens. Smaller values correspond to wide angle lenses, while higher values correspond to tele-photo lenses.
+
+#### Zoom (crop factor)
+`Python: "cam_zoom"`
+
+The Zoom (or crop) factor increases or decreases the Field of View without affecting the rest of optics settings.
+
+#### Aperture (f-stop)
+`Python: "cam_fstop"`
+
+Controls the camera's aperture (i.e., diaphragm opening). The value represents a fraction of the maximum physical opening of the lens, so a smaller value represents a larger opening allowing more light to enter the lens. This results in brighter images and shallower Depth Of Field (more blur). Likewise, a higher aperture value represents a smaller opening and produces darker images with a deeper Depth Of Field (less blur).
+
+#### Lock exposure
+`Python: "cam_lock_exposure"`
+
+When enabled, the camera exposure will be locked to the equivalent of an f:8 aperture. This allows to control Depth Of Field without affecting the brightness of the image.
+
+#### Shutter speed
+`Python: "cam_shutter"`
+
+Sets the exposure time. The value is expressed as a fraction of a second. Lower values will result in a longer exposure time and brighter images. Higher values will result in a shorter exposure time and darker images.
+
+## Trace sets
+
+#### Include list
+`Python: "cam_trace_set_include"`
+
+List of comma or space-separated trace set IDs. If the list starts by - then the list is inverted (i.e., all IDs except for the listed ones). Light paths (which spawn at the camera) are initialized with this include list of trace set IDs.
+
+#### Enable include list
+`Python: "cam_trace_set_include_enable"`
+
+Enables or disables the trace sets include list.
+
+#### Exclude list
+`Python: "cam_trace_set_exclude"`
+
+List of comma or space-separated trace set IDs. If the list starts by - then the list is inverted (i.e., all IDs except for the listed ones). Light paths (which spawn at the camera) are initialized with this exclude list of trace set IDs.
+
+#### Enable exclude list
+`Python: "cam_trace_set_exclude_enable"`
+
+Enables or disables the trace sets exclude list.
 

@@ -1,110 +1,176 @@
-## **mtl_switch**
+`Python: "mtl_switch"`
 
 The mtl_switch node scatters up to 8 materials among the objects it is assigned to. For instance, you might use this node to randomize the color of leaves in a plant.
-#### Common
+## Common
 
-> ##### Node alias
-> Human-readable node alias.
+#### Node alias
+`Python: "mtl_alias"`
 
-> ##### Alias color
-> Identificative node color.
+Human-readable node alias.
 
-> ##### Node UUID
-> Node UUID.
+#### Alias color
+`Python: "mtl_alias_color"`
 
-> ##### Node metadata
-> User-set node metadata.
+Identificative node color.
 
-> ##### Node tags
-> User-set node tags.
+#### Node UUID
+`Python: "mtl_uuid"`
 
-#### Submaterials
+Node UUID.
 
-> ##### Input
-> Determines what primvar the node uses to scatter materials.
+#### Node metadata
+`Python: "mtl_metadata"`
 
-> ##### Randomize
-> Random number seed used to scatter the list of materials.
+User-set node metadata.
 
-> ##### Material 1
-> Defines the i-th material.
+#### Node tags
+`Python: "mtl_tags"`
 
-> ##### Enable material 1
-> Enables or disables the i-th material. Only materials which are both plugged and enabled are scattered.
+User-set node tags.
 
-> ##### Material 2
-> Defines the i-th material.
+## Submaterials
 
-> ##### Enable material 2
-> Enables or disables the i-th material. Only materials which are both plugged and enabled are scattered.
+#### Input
+`Python: "mtl_switch_input"`
 
-> ##### Material 3
-> Defines the i-th material.
+Determines what primvar the node uses to scatter materials.
 
-> ##### Enable material 3
-> Enables or disables the i-th material. Only materials which are both plugged and enabled are scattered.
+#### Randomize
+`Python: "mtl_switch_randomize"`
 
-> ##### Material 4
-> Defines the i-th material.
+Random number seed used to scatter the list of materials.
 
-> ##### Enable material 4
-> Enables or disables the i-th material. Only materials which are both plugged and enabled are scattered.
+#### Material 1
+`Python: "mtl_switch_input_1_mtl"`
 
-> ##### Material 5
-> Defines the i-th material.
+Defines the i-th material.
 
-> ##### Enable material 5
-> Enables or disables the i-th material. Only materials which are both plugged and enabled are scattered.
+#### Enable material 1
+`Python: "mtl_switch_input_1_mtl_enable"`
 
-> ##### Material 6
-> Defines the i-th material.
+Enables or disables the i-th material. Only materials which are both plugged and enabled are scattered.
 
-> ##### Enable material 6
-> Enables or disables the i-th material. Only materials which are both plugged and enabled are scattered.
+#### Material 2
+`Python: "mtl_switch_input_2_mtl"`
 
-> ##### Material 7
-> Defines the i-th material.
+Defines the i-th material.
 
-> ##### Enable material 7
-> Enables or disables the i-th material. Only materials which are both plugged and enabled are scattered.
+#### Enable material 2
+`Python: "mtl_switch_input_2_mtl_enable"`
 
-> ##### Material 8
-> Defines the i-th material.
+Enables or disables the i-th material. Only materials which are both plugged and enabled are scattered.
 
-> ##### Enable material 8
-> Enables or disables the i-th material. Only materials which are both plugged and enabled are scattered.
+#### Material 3
+`Python: "mtl_switch_input_3_mtl"`
 
-#### Displacement (Micro-Patch)
+Defines the i-th material.
 
-> ##### Enable displacement
-> Enables micro-polygon (micro-patch) displacement mapping (a.k.a., MPDM) in the object the material is applied to. Unlike brute-force subdiv+displacement, MPDM spawns micro-geometry on path-tracing time only, and hence is capable of delivering virtually unlimited amounts of detail with a negligible memory footprint.
+#### Enable material 3
+`Python: "mtl_switch_input_3_mtl_enable"`
 
-> ##### Displacement height
-> Determines, in real world units, how high the spawned micro-geometry will be pushed away from the base mesh. This value acts as a multiplier for the height map.
+Enables or disables the i-th material. Only materials which are both plugged and enabled are scattered.
 
-> ##### Displacement height map
-> Sets the displacement height texture map. Every single texel in the height map will spawn a virtual micro-patch (a bilinear quad patch) in path-tracing time.
+#### Material 4
+`Python: "mtl_switch_input_4_mtl"`
 
-> ##### Midpoint
-> Defines the displacement baseline. Setting this value to 0.5 will displace half the height inwards and half outwards. The right setting for this value depends on the DCC app used to produce the displacement map. e.g., 32-bit .exr maps exported from ZBrush expect a midpoint value of 0.0.
+Defines the i-th material.
 
-> ##### Waterlevel (lo)
-> Defines a height map value below which displaced geometry is clipped out. The default value (0) clips no geometry at all.
+#### Enable material 4
+`Python: "mtl_switch_input_4_mtl_enable"`
 
-> ##### Waterlevel (hi)
-> Defines a height map value above which displaced geometry is clipped out. The default value (1) clips no geometry at all.
+Enables or disables the i-th material. Only materials which are both plugged and enabled are scattered.
+
+#### Material 5
+`Python: "mtl_switch_input_5_mtl"`
+
+Defines the i-th material.
+
+#### Enable material 5
+`Python: "mtl_switch_input_5_mtl_enable"`
+
+Enables or disables the i-th material. Only materials which are both plugged and enabled are scattered.
+
+#### Material 6
+`Python: "mtl_switch_input_6_mtl"`
+
+Defines the i-th material.
+
+#### Enable material 6
+`Python: "mtl_switch_input_6_mtl_enable"`
+
+Enables or disables the i-th material. Only materials which are both plugged and enabled are scattered.
+
+#### Material 7
+`Python: "mtl_switch_input_7_mtl"`
+
+Defines the i-th material.
+
+#### Enable material 7
+`Python: "mtl_switch_input_7_mtl_enable"`
+
+Enables or disables the i-th material. Only materials which are both plugged and enabled are scattered.
+
+#### Material 8
+`Python: "mtl_switch_input_8_mtl"`
+
+Defines the i-th material.
+
+#### Enable material 8
+`Python: "mtl_switch_input_8_mtl_enable"`
+
+Enables or disables the i-th material. Only materials which are both plugged and enabled are scattered.
+
+## Displacement (Micro-Patch)
+
+#### Enable displacement
+`Python: "mtl_mpdm_enable"`
+
+Enables micro-polygon (micro-patch) displacement mapping (a.k.a., MPDM) in the object the material is applied to. Unlike brute-force subdiv+displacement, MPDM spawns micro-geometry on path-tracing time only, and hence is capable of delivering virtually unlimited amounts of detail with a negligible memory footprint.
+
+#### Displacement height
+`Python: "mtl_mpdm_height"`
+
+Determines, in real world units, how high the spawned micro-geometry will be pushed away from the base mesh. This value acts as a multiplier for the height map.
+
+#### Displacement height map
+`Python: "mtl_mpdm_height_map"`
+
+Sets the displacement height texture map. Every single texel in the height map will spawn a virtual micro-patch (a bilinear quad patch) in path-tracing time.
+
+#### Midpoint
+`Python: "mtl_mpdm_midpoint"`
+
+Defines the displacement baseline. Setting this value to 0.5 will displace half the height inwards and half outwards. The right setting for this value depends on the DCC app used to produce the displacement map. e.g., 32-bit .exr maps exported from ZBrush expect a midpoint value of 0.0.
+
+#### Waterlevel (lo)
+`Python: "mtl_mpdm_waterlevel_lo"`
+
+Defines a height map value below which displaced geometry is clipped out. The default value (0) clips no geometry at all.
+
+#### Waterlevel (hi)
+`Python: "mtl_mpdm_waterlevel_hi"`
+
+Defines a height map value above which displaced geometry is clipped out. The default value (1) clips no geometry at all.
+
+## Opacity
+
+#### Enable opacity
+`Python: "mtl_opacity_enable"`
+
+Enables opacity mapping in the geometry the material is applied to. Note that opacity mapping is computationally-intensive.
 
 #### Opacity
+`Python: "mtl_opacity"`
 
-> ##### Enable opacity
-> Enables opacity mapping in the geometry the material is applied to. Note that opacity mapping is computationally-intensive.
+Defines the percentage of light rays that will be allowed to pass through the object not being affected by it in any way.
 
-> ##### Opacity
-> Defines the percentage of light rays that will be allowed to pass through the object not being affected by it in any way.
+#### Opacity map
+`Python: "mtl_opacity_map"`
 
-> ##### Opacity map
-> Defines the opacity level of the object with a grayscale texture map. Opacity maps are interpreted so dark colors make the surface more translucent; i.e., black completely clips the geometry away, whereas white produces fully solid geometry. This map gets multiplied by the numerical opacity value.
+Defines the opacity level of the object with a grayscale texture map. Opacity maps are interpreted so dark colors make the surface more translucent; i.e., black completely clips the geometry away, whereas white produces fully solid geometry. This map gets multiplied by the numerical opacity value.
 
-> ##### Single-sided geometry
-> When enabled, object(s) this material is applied to will be visible from their front side, but invisible from their back side.
+#### Single-sided geometry
+`Python: "mtl_single_sided"`
+
+When enabled, object(s) this material is applied to will be visible from their front side, but invisible from their back side.
 

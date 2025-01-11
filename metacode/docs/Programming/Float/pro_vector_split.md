@@ -1,33 +1,49 @@
-## **pro_vector_split**
+`Python: "pro_vector_split"`
 
 This node unlocks access to the (x,y,z) coordinates of an input vector through its output plugs.
-#### Common
+## Common
 
-> ##### Node alias
-> Human-readable node alias.
+#### Node alias
+`Python: "pro_alias"`
 
-> ##### Alias color
-> Identificative node color.
+Human-readable node alias.
 
-> ##### Node UUID
-> Node UUID.
+#### Alias color
+`Python: "pro_alias_color"`
 
-> ##### Node metadata
-> User-set node metadata.
+Identificative node color.
 
-> ##### Node tags
-> User-set node tags.
+#### Node UUID
+`Python: "pro_uuid"`
 
-#### Main
+Node UUID.
 
-> ##### Input vector
-> Input vector which coordinates are split through the output plugs of this node.
+#### Node metadata
+`Python: "pro_metadata"`
 
-#### Output tuning
+User-set node metadata.
 
-> ##### Value weight
-> The final value output by the node is, actually: value*weight+bias.
+#### Node tags
+`Python: "pro_tags"`
 
-> ##### Value bias
-> The final value output by the node is, actually: value*weight+bias.
+User-set node tags.
+
+## Main
+
+#### Input vector
+`Python: "pro_vector_split_input_pro"`
+
+Input vector which coordinates are split through the output plugs of this node.
+
+## Output tuning
+
+#### Value weight
+`Python: "pro_weight"`
+
+The final value output by the node is, actually: value*weight+bias.
+
+#### Value bias
+`Python: "pro_bias"`
+
+The final value output by the node is, actually: value*weight+bias.
 

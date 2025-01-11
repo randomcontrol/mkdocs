@@ -1,174 +1,280 @@
-## **ibl**
+`Python: "ibl"`
 
 IBL stands for Image-Based Lighting. The ibl node defines the environment dome that surrounds the scene. Often times, IBL is configured by providing an HDR map such as a landscape in panoramic (latitude-longitude) format.
-#### Image-Based Lighting
+## Image-Based Lighting
 
-> ##### Enable IBL
-> Enables the IBL (environment). The IBL acts as a light source placed at the skydome.
+#### Enable IBL
+`Python: "ibl_enable"`
 
-> ##### Projection
-> Changes how the IBL texture is projected onto the skydome. Most .hdr and .exr IBL maps are suitable for spherical (latitude-longitude) projection.
+Enables the IBL (environment). The IBL acts as a light source placed at the skydome.
 
-> ##### Trace set ID
-> Trace set the IBL belongs to. For example, you can use this in combination with an object's exclude list to make the IBL not affect that particular object.
+#### Projection
+`Python: "ibl_projection"`
 
-> ##### Resample supersampling
-> INTERNAL: Maximum supersampling level used when the IBL map is resampled to compute its importance sampling table. Interpreted as [px,px].
+Changes how the IBL texture is projected onto the skydome. Most .hdr and .exr IBL maps are suitable for spherical (latitude-longitude) projection.
 
-> ##### Samples
-> Controls the amount of samples used for the IBL. More samples will reduce IBL noise at the expense of some performance. This should only be used if the IBL-induced noise is visibly worse than the noise induced by other light sources.
+#### Trace set ID
+`Python: "ibl_trace_set_id"`
 
-> ##### IBL defocus
-> Simulates Depth Of Field by blurring the IBL in the same way that camera Depth Of Field would.
+Trace set the IBL belongs to. For example, you can use this in combination with an object's exclude list to make the IBL not affect that particular object.
 
-> ##### Angle
-> Controls the orientation of the IBL.
+#### Resample supersampling
+`Python: "ibl_resample_ss"`
 
-> ##### Link to view
-> Links the IBL rotation to the camera orientation, so it will appear to be static as the camera moves around.
+INTERNAL: Maximum supersampling level used when the IBL map is resampled to compute its importance sampling table. Interpreted as [px,px].
 
-> ##### Intensity
-> IBL light intensity (or power). This value is given in kilo-candelas per square meter (kcd/m2). A value of 10 therefore corresponds to 10,000 candelas per square meter, which is roughly the brightness of an overcast sky.
+#### Samples
+`Python: "ibl_samples"`
 
-> ##### Desaturation
-> Modulates the saturation of the IBL color/map. This avoids the use of a color correction map node in those cases where the original hues of the IBL need some neutralization.
+Controls the amount of samples used for the IBL. More samples will reduce IBL noise at the expense of some performance. This should only be used if the IBL-induced noise is visibly worse than the noise induced by other light sources.
 
-> ##### Color
-> Custom solid color for the environment illumination.
+#### IBL defocus
+`Python: "ibl_defocus"`
 
-> ##### Color texture map
-> Custom texture map for the environment illumination. High Dynamic Range (32-bit) images should be used if possible.
+Simulates Depth Of Field by blurring the IBL in the same way that camera Depth Of Field would.
 
-> ##### Input colorspace
-> Interprets the input emission color/image as regular sRGB (gamma=2.2), as linear (no gamma), or as raw (gamma=1/2.2). e.g., most images are in sRGB, but .hdr/.exr images generally expect to be interpreted as linear. When in doubt, cycle through the options, as one will clearly look good and the other two will look washed out or burned out in direct vision.
+#### Angle
+`Python: "ibl_angle"`
 
-#### Parametric lightbox
+Controls the orientation of the IBL.
 
-> ##### Enable lightbox
-> Enables the parametric lightbox overlay. The IBL lightbox is a geometry-less parametric room meant to be overlaid on the IBL for extremely efficient renders. The IBL lightbox is typically used in conjunction with a shadow catcher floor.
+#### Link to view
+`Python: "ibl_link_to_view"`
 
-> ##### Lightbox intensity
-> Intensity of the parametric lightbox, in the same units as the IBL.
+Links the IBL rotation to the camera orientation, so it will appear to be static as the camera moves around.
 
-> ##### Parametric lightbox map
-> The parametric lightbox is configured through the lightbox map plugged to this slot.
+#### Intensity
+`Python: "ibl_intensity"`
 
-> ##### Lightbox angle
-> Controls the orientation of the parametric lightbox.
+IBL light intensity (or power). This value is given in kilo-candelas per square meter (kcd/m2). A value of 10 therefore corresponds to 10,000 candelas per square meter, which is roughly the brightness of an overcast sky.
+
+#### Desaturation
+`Python: "ibl_desaturation"`
+
+Modulates the saturation of the IBL color/map. This avoids the use of a color correction map node in those cases where the original hues of the IBL need some neutralization.
+
+#### Color
+`Python: "ibl_color"`
+
+Custom solid color for the environment illumination.
+
+#### Color texture map
+`Python: "ibl_color_map"`
+
+Custom texture map for the environment illumination. High Dynamic Range (32-bit) images should be used if possible.
+
+#### Input colorspace
+`Python: "ibl_color_inv_gamma"`
+
+Interprets the input emission color/image as regular sRGB (gamma=2.2), as linear (no gamma), or as raw (gamma=1/2.2). e.g., most images are in sRGB, but .hdr/.exr images generally expect to be interpreted as linear. When in doubt, cycle through the options, as one will clearly look good and the other two will look washed out or burned out in direct vision.
+
+## Parametric lightbox
+
+#### Enable lightbox
+`Python: "ibl_lightbox_enable"`
+
+Enables the parametric lightbox overlay. The IBL lightbox is a geometry-less parametric room meant to be overlaid on the IBL for extremely efficient renders. The IBL lightbox is typically used in conjunction with a shadow catcher floor.
+
+#### Lightbox intensity
+`Python: "ibl_lightbox_intensity"`
+
+Intensity of the parametric lightbox, in the same units as the IBL.
+
+#### Parametric lightbox map
+`Python: "ibl_lightbox_map"`
+
+The parametric lightbox is configured through the lightbox map plugged to this slot.
+
+#### Lightbox angle
+`Python: "ibl_lightbox_angle"`
+
+Controls the orientation of the parametric lightbox.
+
+## Reflection override
 
 #### Reflection override
+`Python: "ibl_refl_enable"`
 
-> ##### Reflection override
-> Enables the IBL reflection override. This will act as a replacement for the regular IBL but only for reflective bounces. You can use this to preserve IBL illumination while making reflective materials such as metals reflect a different IBL image.
+Enables the IBL reflection override. This will act as a replacement for the regular IBL but only for reflective bounces. You can use this to preserve IBL illumination while making reflective materials such as metals reflect a different IBL image.
 
-> ##### Override per material
-> When this option is set materials will reflect (or ignore) the IBL override depending on their trace sets flags.
+#### Override per material
+`Python: "ibl_refl_per_mtl_enable"`
 
-> ##### Projection
-> Changes how the IBL reflection override is projected onto the skydome.
+When this option is set materials will reflect (or ignore) the IBL override depending on their trace sets flags.
 
-> ##### Angle
-> Controls the orientation of the IBL reflection override.
+#### Projection
+`Python: "ibl_refl_projection"`
 
-> ##### Intensity
-> Intensity of the IBL reflection override, in the same units as the IBL.
+Changes how the IBL reflection override is projected onto the skydome.
 
-> ##### Desaturation
-> Modulates the saturation of the IBL reflection override.
+#### Angle
+`Python: "ibl_refl_angle"`
 
-> ##### Reflection color
-> Custom solid color for the IBL reflection override.
+Controls the orientation of the IBL reflection override.
 
-> ##### Color texture map
-> Custom texture map for the IBL reflection override.
+#### Intensity
+`Python: "ibl_refl_intensity"`
 
-> ##### Input colorspace
-> Interprets the input emission color/image as regular sRGB (gamma=2.2), as linear (no gamma), or as raw (gamma=1/2.2). e.g., most images are in sRGB, but .hdr/.exr images generally expect to be interpreted as linear. When in doubt, cycle through the options, as one will clearly look good and the other two will look washed out or burned out in direct vision.
+Intensity of the IBL reflection override, in the same units as the IBL.
+
+#### Desaturation
+`Python: "ibl_refl_desaturation"`
+
+Modulates the saturation of the IBL reflection override.
+
+#### Reflection color
+`Python: "ibl_refl_color"`
+
+Custom solid color for the IBL reflection override.
+
+#### Color texture map
+`Python: "ibl_refl_color_map"`
+
+Custom texture map for the IBL reflection override.
+
+#### Input colorspace
+`Python: "ibl_refl_color_inv_gamma"`
+
+Interprets the input emission color/image as regular sRGB (gamma=2.2), as linear (no gamma), or as raw (gamma=1/2.2). e.g., most images are in sRGB, but .hdr/.exr images generally expect to be interpreted as linear. When in doubt, cycle through the options, as one will clearly look good and the other two will look washed out or burned out in direct vision.
+
+## Refraction override
 
 #### Refraction override
+`Python: "ibl_refr_enable"`
 
-> ##### Refraction override
-> Enables the IBL refraction override. This will act as a replacement for the regular IBL but only for refractive bounces. You can use this to preserve IBL illumination while making refractive materials such as glass refract a different IBL image.
+Enables the IBL refraction override. This will act as a replacement for the regular IBL but only for refractive bounces. You can use this to preserve IBL illumination while making refractive materials such as glass refract a different IBL image.
 
-> ##### Override per material
-> When this option is set materials will refract (or ignore) the IBL override depending on their trace sets flags.
+#### Override per material
+`Python: "ibl_refr_per_mtl_enable"`
 
-> ##### Projection
-> Changes how the IBL refraction override is projected onto the skydome.
+When this option is set materials will refract (or ignore) the IBL override depending on their trace sets flags.
 
-> ##### Angle
-> Controls the orientation of the IBL refraction override.
+#### Projection
+`Python: "ibl_refr_projection"`
 
-> ##### Intensity
-> Intensity of the IBL refraction override, in the same units as the IBL.
+Changes how the IBL refraction override is projected onto the skydome.
 
-> ##### Desaturation
-> Modulates the saturation of the IBL reflection override.
+#### Angle
+`Python: "ibl_refr_angle"`
 
-> ##### Refraction color
-> Custom solid color for the IBL refraction override.
+Controls the orientation of the IBL refraction override.
 
-> ##### Color texture map
-> Custom texture map for the IBL refraction override.
+#### Intensity
+`Python: "ibl_refr_intensity"`
 
-> ##### Input colorspace
-> Interprets the input emission color/image as regular sRGB (gamma=2.2), as linear (no gamma), or as raw (gamma=1/2.2). e.g., most images are in sRGB, but .hdr/.exr images generally expect to be interpreted as linear. When in doubt, cycle through the options, as one will clearly look good and the other two will look washed out or burned out in direct vision.
+Intensity of the IBL refraction override, in the same units as the IBL.
 
-#### Dome
+#### Desaturation
+`Python: "ibl_refr_desaturation"`
 
-> ##### Enable dome radius
-> By default the IBL color map is projected at infinity (i.e., in a sphere with infinite radius). This feature turns the IBL into a sphere with a definite center and a finite radius.
+Modulates the saturation of the IBL reflection override.
 
-> ##### Dome radius
-> Defines a finite radius for the IBL dome.
+#### Refraction color
+`Python: "ibl_refr_color"`
 
-> ##### Dome center X
-> Places the X coordinate of the IBL dome's center.
+Custom solid color for the IBL refraction override.
 
-> ##### Dome center Y
-> Places the Y coordinate of the IBL dome's center.
+#### Color texture map
+`Python: "ibl_refr_color_map"`
 
-> ##### Dome center Z
-> Places the Z coordinate of the IBL dome's center.
+Custom texture map for the IBL refraction override.
 
-> ##### Enable dome floor
-> Cuts the IBL sphere by a plane centered at the dome's center. The bottom of the IBL map is reprojected on the dome's floor, grounding objects and allowing to control DOF.
+#### Input colorspace
+`Python: "ibl_refr_color_inv_gamma"`
 
-> ##### Dome floor Z offset
-> Offsets the dome floor above (+) or below (-) the dome's center.
+Interprets the input emission color/image as regular sRGB (gamma=2.2), as linear (no gamma), or as raw (gamma=1/2.2). e.g., most images are in sRGB, but .hdr/.exr images generally expect to be interpreted as linear. When in doubt, cycle through the options, as one will clearly look good and the other two will look washed out or burned out in direct vision.
 
-#### Backplate (direct vision)
+## Dome
 
-> ##### Enable backplate
-> Enables the backplate. Note that unlike the IBL itself, the backplate does not contribute to the illumination of the scene. The backplate is only visible in the background of the rendered image.
+#### Enable dome radius
+`Python: "ibl_dome_radius_enable"`
 
-> ##### Projection
-> Changes how the backplate texture is projected onto the skydome. Most .hdr and .exr IBL maps are suitable for spherical (latitude-longitude) projection. Most .jpg or .png photographs are meant to be camera/screen-mapped.
+By default the IBL color map is projected at infinity (i.e., in a sphere with infinite radius). This feature turns the IBL into a sphere with a definite center and a finite radius.
 
-> ##### Aspect
-> Stretches the backplate horizontally or vertically while keeping its short edge docked to the render frame. For a filetex map, the value that keeps pixels in a 1:1 ratio is width/height.
+#### Dome radius
+`Python: "ibl_dome_radius"`
 
-> ##### Angle
-> Controls the orientation of the backplate.
+Defines a finite radius for the IBL dome.
 
-> ##### Link angle
-> Keeps the backplate rotation anchored to the IBL orientation.
+#### Dome center X
+`Python: "ibl_dome_center_x"`
 
-> ##### Intensity
-> Backplate intensity, in the same units as the IBL intensity. The backplate intensity is independent from the IBL to allow for background-only exposure adjustments when needed.
+Places the X coordinate of the IBL dome's center.
 
-> ##### Lock exposure
-> Locks the backplate exposure to its default value, ignoring the camera's settings.
+#### Dome center Y
+`Python: "ibl_dome_center_y"`
 
-> ##### Color
-> Custom solid color for the backplate.
+Places the Y coordinate of the IBL dome's center.
 
-> ##### Texture
-> Custom texture map for the backplate. A backplate texture may be a regular (non-HDR) photograph. HDR images are supported, regardless.
+#### Dome center Z
+`Python: "ibl_dome_center_z"`
 
-> ##### Input colorspace
-> Interprets the input emission color/image as regular sRGB (gamma=2.2), as linear (no gamma), or as raw (gamma=1/2.2). e.g., most images are in sRGB, but .hdr/.exr images generally expect to be interpreted as linear. When in doubt, cycle through the options, as one will clearly look good and the other two will look washed out or burned out in direct vision.
+Places the Z coordinate of the IBL dome's center.
 
-> ##### Send filetex resolution
-> Sends the resolution of the connected filetex to the still frame tab in the batcher.
+#### Enable dome floor
+`Python: "ibl_dome_floor_enable"`
+
+Cuts the IBL sphere by a plane centered at the dome's center. The bottom of the IBL map is reprojected on the dome's floor, grounding objects and allowing to control DOF.
+
+#### Dome floor Z offset
+`Python: "ibl_dome_floor_z"`
+
+Offsets the dome floor above (+) or below (-) the dome's center.
+
+## Backplate (direct vision)
+
+#### Enable backplate
+`Python: "backplate_enable"`
+
+Enables the backplate. Note that unlike the IBL itself, the backplate does not contribute to the illumination of the scene. The backplate is only visible in the background of the rendered image.
+
+#### Projection
+`Python: "backplate_projection"`
+
+Changes how the backplate texture is projected onto the skydome. Most .hdr and .exr IBL maps are suitable for spherical (latitude-longitude) projection. Most .jpg or .png photographs are meant to be camera/screen-mapped.
+
+#### Aspect
+`Python: "backplate_aspect"`
+
+Stretches the backplate horizontally or vertically while keeping its short edge docked to the render frame. For a filetex map, the value that keeps pixels in a 1:1 ratio is width/height.
+
+#### Angle
+`Python: "backplate_angle"`
+
+Controls the orientation of the backplate.
+
+#### Link angle
+`Python: "backplate_link_angle"`
+
+Keeps the backplate rotation anchored to the IBL orientation.
+
+#### Intensity
+`Python: "backplate_intensity"`
+
+Backplate intensity, in the same units as the IBL intensity. The backplate intensity is independent from the IBL to allow for background-only exposure adjustments when needed.
+
+#### Lock exposure
+`Python: "backplate_lock_exposure"`
+
+Locks the backplate exposure to its default value, ignoring the camera's settings.
+
+#### Color
+`Python: "backplate_color"`
+
+Custom solid color for the backplate.
+
+#### Texture
+`Python: "backplate_color_map"`
+
+Custom texture map for the backplate. A backplate texture may be a regular (non-HDR) photograph. HDR images are supported, regardless.
+
+#### Input colorspace
+`Python: "backplate_color_inv_gamma"`
+
+Interprets the input emission color/image as regular sRGB (gamma=2.2), as linear (no gamma), or as raw (gamma=1/2.2). e.g., most images are in sRGB, but .hdr/.exr images generally expect to be interpreted as linear. When in doubt, cycle through the options, as one will clearly look good and the other two will look washed out or burned out in direct vision.
+
+#### Send filetex resolution
+`Python: "backplate_send_resolution"`
+
+Sends the resolution of the connected filetex to the still frame tab in the batcher.
 

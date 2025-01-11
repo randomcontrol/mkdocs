@@ -1,69 +1,109 @@
-## **map_falloff**
+`Python: "map_falloff"`
 
 The falloff map interpolates between two colors based on some surface property of the host object, such as its position or its orientation. A typical use of this map is to simulate the characteristic appearance of fabric, satin and velvet at grazing angles.
-#### Common
+## Common
 
-> ##### Node alias
-> Human-readable node alias.
+#### Node alias
+`Python: "map_alias"`
 
-> ##### Alias color
-> Identificative node color.
+Human-readable node alias.
 
-> ##### Node UUID
-> Node UUID.
+#### Alias color
+`Python: "map_alias_color"`
 
-> ##### Node metadata
-> User-set node metadata.
+Identificative node color.
 
-> ##### Node tags
-> User-set node tags.
+#### Node UUID
+`Python: "map_uuid"`
 
-> ##### Swap colors
-> Swaps the primary and secondary colors.
+Node UUID.
 
-> ##### Primary color
-> Defines the primary (background) color. The lower end of the output signal range is remapped to this color.
+#### Node metadata
+`Python: "map_metadata"`
 
-> ##### Primary color map
-> Defines the primary color using a texture map.
+User-set node metadata.
 
-> ##### Secondary color
-> Defines the secondary (foreground) color. The upper end of the output signal range is remapped to this color.
+#### Node tags
+`Python: "map_tags"`
 
-> ##### Secondary color map
-> Defines the secondary color using a texture map.
+User-set node tags.
 
-#### Main
+#### Swap colors
+`Python: "map_color_swap"`
 
-> ##### Input
-> Characteristic (vector) of the surface in the host object that will be used to drive the interpolation between both map colors/maps.
+Swaps the primary and secondary colors.
 
-> ##### Sign
-> Direction in which the characteristic vector axis is interpreted.
+#### Primary color
+`Python: "map_color_1"`
 
-> ##### Axis
-> Coordinate (and space) of the characteristic vector to be used for output interpolation.
+Defines the primary (background) color. The lower end of the output signal range is remapped to this color.
 
-> ##### IOR
-> Index Of Refraction used for interpolation following the Fresnel reflection curve.
+#### Primary color map
+`Python: "map_color_1_map"`
 
-> ##### Enable IOR
-> Enables Fresnel-like interpolation. This feature, combined with Normal and Camera Z simulates a Fresnel reflection curve at grazing angles. By default interpolation is linear.
+Defines the primary color using a texture map.
 
-#### Signal profile
+#### Secondary color
+`Python: "map_color_2"`
 
-> ##### Signal gamma
-> Gamma curve applied to the raw map signal before it is remapped to the final output color.
+Defines the secondary (foreground) color. The upper end of the output signal range is remapped to this color.
 
-> ##### Signal gamma start
-> Left crop margin for the gamma curve applied to the raw map signal.
+#### Secondary color map
+`Python: "map_color_2_map"`
 
-> ##### Signal gamma end
-> Right crop margin for the gamma curve applied to the raw map signal.
+Defines the secondary color using a texture map.
 
-> ##### Signal gamma low
-> Lower crop margin for the gamma curve applied to the raw map signal.
+## Main
 
-> ##### Signal gamma high
-> Upper crop margin for the gamma curve applied to the raw map signal.
+#### Input
+`Python: "map_falloff_input"`
+
+Characteristic (vector) of the surface in the host object that will be used to drive the interpolation between both map colors/maps.
+
+#### Sign
+`Python: "map_falloff_sign"`
+
+Direction in which the characteristic vector axis is interpreted.
+
+#### Axis
+`Python: "map_falloff_axis"`
+
+Coordinate (and space) of the characteristic vector to be used for output interpolation.
+
+#### IOR
+`Python: "map_falloff_ior"`
+
+Index Of Refraction used for interpolation following the Fresnel reflection curve.
+
+#### Enable IOR
+`Python: "map_falloff_ior_enable"`
+
+Enables Fresnel-like interpolation. This feature, combined with Normal and Camera Z simulates a Fresnel reflection curve at grazing angles. By default interpolation is linear.
+
+## Signal profile
+
+#### Signal gamma
+`Python: "map_profile_gamma"`
+
+Gamma curve applied to the raw map signal before it is remapped to the final output color.
+
+#### Signal gamma start
+`Python: "map_profile_start"`
+
+Left crop margin for the gamma curve applied to the raw map signal.
+
+#### Signal gamma end
+`Python: "map_profile_end"`
+
+Right crop margin for the gamma curve applied to the raw map signal.
+
+#### Signal gamma low
+`Python: "map_profile_lo"`
+
+Lower crop margin for the gamma curve applied to the raw map signal.
+
+#### Signal gamma high
+`Python: "map_profile_hi"`
+
+Upper crop margin for the gamma curve applied to the raw map signal.
 

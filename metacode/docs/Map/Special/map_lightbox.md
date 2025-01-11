@@ -1,190 +1,304 @@
-## **map_lightbox**
+`Python: "map_lightbox"`
 
 The lightbox map provides an easy way to overlay a geometry-less box on the IBL map. IBL lightboxes can be configured parametrically. Combined with a shadow catcher floor, they generally lead to significantly faster renders compared to an equivalent room modeled with true geometry.
-#### Common
+## Common
 
-> ##### Node alias
-> Human-readable node alias.
+#### Node alias
+`Python: "map_alias"`
 
-> ##### Alias color
-> Identificative node color.
+Human-readable node alias.
 
-> ##### Node UUID
-> Node UUID.
+#### Alias color
+`Python: "map_alias_color"`
 
-> ##### Node metadata
-> User-set node metadata.
+Identificative node color.
 
-> ##### Node tags
-> User-set node tags.
+#### Node UUID
+`Python: "map_uuid"`
 
-#### Main
+Node UUID.
 
-> ##### Exposure
-> Controls the global exposure of the lightbox.
+#### Node metadata
+`Python: "map_metadata"`
 
-> ##### Ambient Occlusion radius
-> Defines the AO radius used to approximate diffuse illumination inside the lightbox.
+User-set node metadata.
 
-> ##### Enable Ambient Occlusion
-> Globally enables/disables AO in the lightbox walls. AO is used to produce an approximation to diffuse illumination inside the lightbox.
+#### Node tags
+`Python: "map_tags"`
 
-> ##### Transparent
-> Globally enables/disables transparency in the lightbox walls. Transparency lets the IBL shine through (i.e., in addition to) the lightbox.
+User-set node tags.
 
-#### Ceiling
+## Main
 
-> ##### Enable ceiling
-> Enables the ceiling lightbox plane.
+#### Exposure
+`Python: "map_lightbox_exposure"`
 
-> ##### Enable Ambient Occlusion
-> Toggles on/off AO in the ceiling lightbox plane.
+Controls the global exposure of the lightbox.
 
-> ##### Enable transparency
-> Toggles on/off transparency in the ceiling lightbox plane.
+#### Ambient Occlusion radius
+`Python: "map_lightbox_ao_radius"`
 
-> ##### Color
-> Defines the color of the ceiling lightbox plane.
+Defines the AO radius used to approximate diffuse illumination inside the lightbox.
 
-> ##### Color map
-> Controls the color of the ceiling lightbox plane using a texture map.
+#### Enable Ambient Occlusion
+`Python: "map_lightbox_ao_enable"`
 
-> ##### Intensity
-> Defines the intensity multiplier of the ceiling lightbox plane.
+Globally enables/disables AO in the lightbox walls. AO is used to produce an approximation to diffuse illumination inside the lightbox.
 
-> ##### Distance
-> Controls the distance between the ceiling lightbox plane and the origin of coordinates.
+#### Transparent
+`Python: "map_lightbox_transparent"`
 
-> ##### Input colorspace
-> Interprets the input emission color/image as regular sRGB (gamma=2.2), as linear (no gamma), or as raw (gamma=1/2.2). e.g., most images are in sRGB, but .hdr/.exr images generally expect to be interpreted as linear. When in doubt, cycle through the options, as one will clearly look good and the other two will look washed out or burned out in direct vision.
+Globally enables/disables transparency in the lightbox walls. Transparency lets the IBL shine through (i.e., in addition to) the lightbox.
 
-#### Floor
+## Ceiling
 
-> ##### Enable floor
-> Enables the floor lightbox plane.
+#### Enable ceiling
+`Python: "map_lightbox_ceiling_enable"`
 
-> ##### Enable Ambient Occlusion
-> Toggles on/off AO in the floor lightbox plane.
+Enables the ceiling lightbox plane.
 
-> ##### Enable transparency
-> Toggles on/off transparency in the floor lightbox plane.
+#### Enable Ambient Occlusion
+`Python: "map_lightbox_ceiling_ao_enable"`
 
-> ##### Color
-> Defines the color of the floor lightbox plane.
+Toggles on/off AO in the ceiling lightbox plane.
 
-> ##### Color map
-> Controls the color of the floor lightbox plane using a texture map.
+#### Enable transparency
+`Python: "map_lightbox_ceiling_transparent"`
 
-> ##### Intensity
-> Defines the intensity multiplier of the floor lightbox plane.
+Toggles on/off transparency in the ceiling lightbox plane.
 
-> ##### Distance
-> Controls the distance between the floor lightbox plane toandhe origin of coordinates.
+#### Color
+`Python: "map_lightbox_ceiling_color"`
 
-> ##### Input colorspace
-> Interprets the input emission color/image as regular sRGB (gamma=2.2), as linear (no gamma), or as raw (gamma=1/2.2). e.g., most images are in sRGB, but .hdr/.exr images generally expect to be interpreted as linear. When in doubt, cycle through the options, as one will clearly look good and the other two will look washed out or burned out in direct vision.
+Defines the color of the ceiling lightbox plane.
 
-#### Left wall
+#### Color map
+`Python: "map_lightbox_ceiling_color_map"`
 
-> ##### Enable left
-> Enables the left lightbox plane.
+Controls the color of the ceiling lightbox plane using a texture map.
 
-> ##### Enable Ambient Occlusion
-> Toggles on/off AO in the left lightbox plane.
+#### Intensity
+`Python: "map_lightbox_ceiling_intensity"`
 
-> ##### Enable transparency
-> Toggles on/off transparency in the left lightbox plane.
+Defines the intensity multiplier of the ceiling lightbox plane.
 
-> ##### Color
-> Defines the color of the left lightbox plane.
+#### Distance
+`Python: "map_lightbox_ceiling_dist"`
 
-> ##### Color map
-> Controls the color of the left lightbox plane using a texture map.
+Controls the distance between the ceiling lightbox plane and the origin of coordinates.
 
-> ##### Intensity
-> Defines the intensity multiplier of the left lightbox plane.
+#### Input colorspace
+`Python: "map_lightbox_ceiling_color_inv_gamma"`
 
-> ##### Distance
-> Controls the distance between the left lightbox plane to ande origin of coordinates.
+Interprets the input emission color/image as regular sRGB (gamma=2.2), as linear (no gamma), or as raw (gamma=1/2.2). e.g., most images are in sRGB, but .hdr/.exr images generally expect to be interpreted as linear. When in doubt, cycle through the options, as one will clearly look good and the other two will look washed out or burned out in direct vision.
 
-> ##### Input colorspace
-> Interprets the input emission color/image as regular sRGB (gamma=2.2), as linear (no gamma), or as raw (gamma=1/2.2). e.g., most images are in sRGB, but .hdr/.exr images generally expect to be interpreted as linear. When in doubt, cycle through the options, as one will clearly look good and the other two will look washed out or burned out in direct vision.
+## Floor
 
-#### Right wall
+#### Enable floor
+`Python: "map_lightbox_floor_enable"`
 
-> ##### Enable right
-> Enables the right lightbox plane.
+Enables the floor lightbox plane.
 
-> ##### Enable Ambient Occlusion
-> Toggles on/off AO in the right lightbox plane.
+#### Enable Ambient Occlusion
+`Python: "map_lightbox_floor_ao_enable"`
 
-> ##### Enable transparency
-> Toggles on/off transparency in the right lightbox plane.
+Toggles on/off AO in the floor lightbox plane.
 
-> ##### Color
-> Defines the color of the right lightbox plane.
+#### Enable transparency
+`Python: "map_lightbox_floor_transparent"`
 
-> ##### Color map
-> Controls the color of the right lightbox plane using a texture map.
+Toggles on/off transparency in the floor lightbox plane.
 
-> ##### Intensity
-> Defines the intensity multiplier of the right lightbox plane.
+#### Color
+`Python: "map_lightbox_floor_color"`
 
-> ##### Distance
-> Controls the distance between the right lightbox plane toandhe origin of coordinates.
+Defines the color of the floor lightbox plane.
 
-> ##### Input colorspace
-> Interprets the input emission color/image as regular sRGB (gamma=2.2), as linear (no gamma), or as raw (gamma=1/2.2). e.g., most images are in sRGB, but .hdr/.exr images generally expect to be interpreted as linear. When in doubt, cycle through the options, as one will clearly look good and the other two will look washed out or burned out in direct vision.
+#### Color map
+`Python: "map_lightbox_floor_color_map"`
 
-#### Front wall
+Controls the color of the floor lightbox plane using a texture map.
 
-> ##### Enable front
-> Enables the front lightbox plane.
+#### Intensity
+`Python: "map_lightbox_floor_intensity"`
 
-> ##### Enable Ambient Occlusion
-> Toggles on/off AO in the front lightbox plane.
+Defines the intensity multiplier of the floor lightbox plane.
 
-> ##### Enable transparency
-> Toggles on/off transparency in the front lightbox plane.
+#### Distance
+`Python: "map_lightbox_floor_dist"`
 
-> ##### Color
-> Defines the color of the front lightbox plane.
+Controls the distance between the floor lightbox plane toandhe origin of coordinates.
 
-> ##### Color map
-> Controls the color of the front lightbox plane using a texture map.
+#### Input colorspace
+`Python: "map_lightbox_floor_color_inv_gamma"`
 
-> ##### Intensity
-> Defines the intensity multiplier of the front lightbox plane.
+Interprets the input emission color/image as regular sRGB (gamma=2.2), as linear (no gamma), or as raw (gamma=1/2.2). e.g., most images are in sRGB, but .hdr/.exr images generally expect to be interpreted as linear. When in doubt, cycle through the options, as one will clearly look good and the other two will look washed out or burned out in direct vision.
 
-> ##### Distance
-> Controls the distance between the front lightbox plane toandhe origin of coordinates.
+## Left wall
 
-> ##### Input colorspace
-> Interprets the input emission color/image as regular sRGB (gamma=2.2), as linear (no gamma), or as raw (gamma=1/2.2). e.g., most images are in sRGB, but .hdr/.exr images generally expect to be interpreted as linear. When in doubt, cycle through the options, as one will clearly look good and the other two will look washed out or burned out in direct vision.
+#### Enable left
+`Python: "map_lightbox_left_enable"`
 
-#### Back wall
+Enables the left lightbox plane.
 
-> ##### Enable back
-> Enables the back lightbox plane.
+#### Enable Ambient Occlusion
+`Python: "map_lightbox_left_ao_enable"`
 
-> ##### Enable Ambient Occlusion
-> Toggles on/off AO in the back lightbox plane.
+Toggles on/off AO in the left lightbox plane.
 
-> ##### Enable transparency
-> Toggles on/off transparency in the back lightbox plane.
+#### Enable transparency
+`Python: "map_lightbox_left_transparent"`
 
-> ##### Color
-> Defines the color of the back lightbox plane.
+Toggles on/off transparency in the left lightbox plane.
 
-> ##### Color map
-> Controls the color of the back lightbox plane using a texture map.
+#### Color
+`Python: "map_lightbox_left_color"`
 
-> ##### Intensity
-> Defines the intensity multiplier of the back lightbox plane.
+Defines the color of the left lightbox plane.
 
-> ##### Distance
-> Controls the distance between the back lightbox plane to ande origin of coordinates.
+#### Color map
+`Python: "map_lightbox_left_color_map"`
 
-> ##### Input colorspace
-> Interprets the input emission color/image as regular sRGB (gamma=2.2), as linear (no gamma), or as raw (gamma=1/2.2). e.g., most images are in sRGB, but .hdr/.exr images generally expect to be interpreted as linear. When in doubt, cycle through the options, as one will clearly look good and the other two will look washed out or burned out in direct vision.
+Controls the color of the left lightbox plane using a texture map.
+
+#### Intensity
+`Python: "map_lightbox_left_intensity"`
+
+Defines the intensity multiplier of the left lightbox plane.
+
+#### Distance
+`Python: "map_lightbox_left_dist"`
+
+Controls the distance between the left lightbox plane to ande origin of coordinates.
+
+#### Input colorspace
+`Python: "map_lightbox_left_color_inv_gamma"`
+
+Interprets the input emission color/image as regular sRGB (gamma=2.2), as linear (no gamma), or as raw (gamma=1/2.2). e.g., most images are in sRGB, but .hdr/.exr images generally expect to be interpreted as linear. When in doubt, cycle through the options, as one will clearly look good and the other two will look washed out or burned out in direct vision.
+
+## Right wall
+
+#### Enable right
+`Python: "map_lightbox_right_enable"`
+
+Enables the right lightbox plane.
+
+#### Enable Ambient Occlusion
+`Python: "map_lightbox_right_ao_enable"`
+
+Toggles on/off AO in the right lightbox plane.
+
+#### Enable transparency
+`Python: "map_lightbox_right_transparent"`
+
+Toggles on/off transparency in the right lightbox plane.
+
+#### Color
+`Python: "map_lightbox_right_color"`
+
+Defines the color of the right lightbox plane.
+
+#### Color map
+`Python: "map_lightbox_right_color_map"`
+
+Controls the color of the right lightbox plane using a texture map.
+
+#### Intensity
+`Python: "map_lightbox_right_intensity"`
+
+Defines the intensity multiplier of the right lightbox plane.
+
+#### Distance
+`Python: "map_lightbox_right_dist"`
+
+Controls the distance between the right lightbox plane toandhe origin of coordinates.
+
+#### Input colorspace
+`Python: "map_lightbox_right_color_inv_gamma"`
+
+Interprets the input emission color/image as regular sRGB (gamma=2.2), as linear (no gamma), or as raw (gamma=1/2.2). e.g., most images are in sRGB, but .hdr/.exr images generally expect to be interpreted as linear. When in doubt, cycle through the options, as one will clearly look good and the other two will look washed out or burned out in direct vision.
+
+## Front wall
+
+#### Enable front
+`Python: "map_lightbox_front_enable"`
+
+Enables the front lightbox plane.
+
+#### Enable Ambient Occlusion
+`Python: "map_lightbox_front_ao_enable"`
+
+Toggles on/off AO in the front lightbox plane.
+
+#### Enable transparency
+`Python: "map_lightbox_front_transparent"`
+
+Toggles on/off transparency in the front lightbox plane.
+
+#### Color
+`Python: "map_lightbox_front_color"`
+
+Defines the color of the front lightbox plane.
+
+#### Color map
+`Python: "map_lightbox_front_color_map"`
+
+Controls the color of the front lightbox plane using a texture map.
+
+#### Intensity
+`Python: "map_lightbox_front_intensity"`
+
+Defines the intensity multiplier of the front lightbox plane.
+
+#### Distance
+`Python: "map_lightbox_front_dist"`
+
+Controls the distance between the front lightbox plane toandhe origin of coordinates.
+
+#### Input colorspace
+`Python: "map_lightbox_front_color_inv_gamma"`
+
+Interprets the input emission color/image as regular sRGB (gamma=2.2), as linear (no gamma), or as raw (gamma=1/2.2). e.g., most images are in sRGB, but .hdr/.exr images generally expect to be interpreted as linear. When in doubt, cycle through the options, as one will clearly look good and the other two will look washed out or burned out in direct vision.
+
+## Back wall
+
+#### Enable back
+`Python: "map_lightbox_back_enable"`
+
+Enables the back lightbox plane.
+
+#### Enable Ambient Occlusion
+`Python: "map_lightbox_back_ao_enable"`
+
+Toggles on/off AO in the back lightbox plane.
+
+#### Enable transparency
+`Python: "map_lightbox_back_transparent"`
+
+Toggles on/off transparency in the back lightbox plane.
+
+#### Color
+`Python: "map_lightbox_back_color"`
+
+Defines the color of the back lightbox plane.
+
+#### Color map
+`Python: "map_lightbox_back_color_map"`
+
+Controls the color of the back lightbox plane using a texture map.
+
+#### Intensity
+`Python: "map_lightbox_back_intensity"`
+
+Defines the intensity multiplier of the back lightbox plane.
+
+#### Distance
+`Python: "map_lightbox_back_dist"`
+
+Controls the distance between the back lightbox plane to ande origin of coordinates.
+
+#### Input colorspace
+`Python: "map_lightbox_back_color_inv_gamma"`
+
+Interprets the input emission color/image as regular sRGB (gamma=2.2), as linear (no gamma), or as raw (gamma=1/2.2). e.g., most images are in sRGB, but .hdr/.exr images generally expect to be interpreted as linear. When in doubt, cycle through the options, as one will clearly look good and the other two will look washed out or burned out in direct vision.
 

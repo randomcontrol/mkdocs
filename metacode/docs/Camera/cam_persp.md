@@ -1,119 +1,187 @@
-## **cam_persp**
+`Python: "cam_persp"`
 
 The perspective camera node reproduces the behavior of real-life photographic camera optics.
-#### Common
+## Common
 
-> ##### Node alias
-> Human-readable node alias.
+#### Node alias
+`Python: "cam_alias"`
 
-> ##### Alias color
-> Identificative node color.
+Human-readable node alias.
 
-> ##### Node UUID
-> Node UUID.
+#### Alias color
+`Python: "cam_alias_color"`
 
-> ##### Node metadata
-> User-set node metadata.
+Identificative node color.
 
-> ##### Node tags
-> User-set node tags.
+#### Node UUID
+`Python: "cam_uuid"`
 
-> ##### ISO speed
-> Controls the camera's sensitivity to light. Unlike film or digital sensors, this setting does not introduce any additional noise and acts as a linear multiplier.
+Node UUID.
 
-> ##### Roll
-> Rotates (ccw) the camera about its roll axis. The roll axis is perpendicular to the focus plane. i.e., the direction the camera is looking at.
+#### Node metadata
+`Python: "cam_metadata"`
 
-> ##### Focus distance
-> Focus distance, measured from the camera.
+User-set node metadata.
 
-#### Film
+#### Node tags
+`Python: "cam_tags"`
 
-> ##### Film docking
-> Controls how the selected film (or sensor) size is docked into the render resolution. The film can be docked to fit horizontally, vertically or diagonally in the rendered image.
+User-set node tags.
 
-> ##### Film width
-> Sets the camera's film or sensor width. The default value matches a full-frame camera (36mm).
+#### ISO speed
+`Python: "cam_iso"`
 
-> ##### Film height
-> Sets the camera's film or sensor height. The default value matches a full-frame camera (24mm).
+Controls the camera's sensitivity to light. Unlike film or digital sensors, this setting does not introduce any additional noise and acts as a linear multiplier.
 
-> ##### Horizontal shift
-> Positive values shift to the left while negative values shift to the right. This emulates the shift function of a tilt-shift lens.
+#### Roll
+`Python: "cam_persp_roll"`
 
-> ##### Vertical shift
-> Positive values shift upwards while negative values shift downwards. This emulates the shift function of a tilt-shift lens.
+Rotates (ccw) the camera about its roll axis. The roll axis is perpendicular to the focus plane. i.e., the direction the camera is looking at.
 
-#### Lens
+#### Focus distance
+`Python: "cam_focus_dist"`
 
-> ##### Focal length
-> Sets the focal length of the camera lens. Smaller values correspond to wide angle lenses, while higher values correspond to tele-photo lenses.
+Focus distance, measured from the camera.
 
-> ##### Zoom (crop factor)
-> The Zoom (or crop) factor increases or decreases the Field of View without affecting the rest of optics settings.
+## Film
 
-> ##### Aperture (f-stop)
-> Controls the camera's aperture (i.e., diaphragm opening). The value represents a fraction of the maximum physical opening of the lens, so a smaller value represents a larger opening allowing more light to enter the lens. This results in brighter images and shallower Depth Of Field (more blur). Likewise, a higher aperture value represents a smaller opening and produces darker images with a deeper Depth Of Field (less blur).
+#### Film docking
+`Python: "cam_film_docking"`
 
-> ##### Lock exposure
-> When enabled, the camera exposure will be locked to the equivalent of an f:8 aperture. This allows to control Depth Of Field without affecting the brightness of the image.
+Controls how the selected film (or sensor) size is docked into the render resolution. The film can be docked to fit horizontally, vertically or diagonally in the rendered image.
 
-> ##### Shutter speed
-> Sets the exposure time. The value is expressed as a fraction of a second. Lower values will result in a longer exposure time and brighter images. Higher values will result in a shorter exposure time and darker images.
+#### Film width
+`Python: "cam_film_w"`
 
-#### Perspective
+Sets the camera's film or sensor width. The default value matches a full-frame camera (36mm).
 
-> ##### Orthographic projection
-> Toggles the camera projection mode between perspective and orthographic.
+#### Film height
+`Python: "cam_film_h"`
 
-> ##### @@
-> @@
+Sets the camera's film or sensor height. The default value matches a full-frame camera (24mm).
 
-> ##### Lens distortion
-> Controls the amount of lens distortion. Use positive values for barrel distortion and negative values for pin-cushion distortion.
+#### Horizontal shift
+`Python: "cam_persp_shift_x"`
 
-> ##### Horizontal tilt
-> Positive values tilt the lens counter-clockwise while negative values tilt clockwise. This emulates the tilt function of a tilt-shift lens.
+Positive values shift to the left while negative values shift to the right. This emulates the shift function of a tilt-shift lens.
 
-> ##### Vertical tilt
-> Positive values tilt the lens downwards while negative values tilt upwards. This emulates the tilt function of a tilt-shift lens.
+#### Vertical shift
+`Python: "cam_persp_shift_y"`
 
-#### Depth Of Field
+Positive values shift upwards while negative values shift downwards. This emulates the shift function of a tilt-shift lens.
 
-> ##### Enable Depth Of Field
-> Enables or disables Depth Of Field rendering. When disabled, the entirety of the scene is in focus.
+## Lens
 
-> ##### Iris shape
-> Selects the number of blades the virtual iris (diaphragm) is made of. The default setting is a perfectly circular aperture (i.e., no blades).
+#### Focal length
+`Python: "cam_focal"`
 
-> ##### Iris angle
-> Rotates the iris. Positive values rotate the iris shape counter-clockwise.
+Sets the focal length of the camera lens. Smaller values correspond to wide angle lenses, while higher values correspond to tele-photo lenses.
 
-#### Z-clip
+#### Zoom (crop factor)
+`Python: "cam_zoom"`
 
-> ##### Z-near distance
-> Any geometry closer than this distance will be trimmed out.
+The Zoom (or crop) factor increases or decreases the Field of View without affecting the rest of optics settings.
 
-> ##### Enable z-near distance
-> Enables the near z-clip distance.
+#### Aperture (f-stop)
+`Python: "cam_fstop"`
 
-> ##### Z-far distance
-> Any geometry farer than this distance will be trimmed out.
+Controls the camera's aperture (i.e., diaphragm opening). The value represents a fraction of the maximum physical opening of the lens, so a smaller value represents a larger opening allowing more light to enter the lens. This results in brighter images and shallower Depth Of Field (more blur). Likewise, a higher aperture value represents a smaller opening and produces darker images with a deeper Depth Of Field (less blur).
 
-> ##### Enable z-far distance
-> Enables the far z-clip distance.
+#### Lock exposure
+`Python: "cam_lock_exposure"`
 
-#### Trace sets
+When enabled, the camera exposure will be locked to the equivalent of an f:8 aperture. This allows to control Depth Of Field without affecting the brightness of the image.
 
-> ##### Include list
-> List of comma or space-separated trace set IDs. If the list starts by - then the list is inverted (i.e., all IDs except for the listed ones). Light paths (which spawn at the camera) are initialized with this include list of trace set IDs.
+#### Shutter speed
+`Python: "cam_shutter"`
 
-> ##### Enable include list
-> Enables or disables the trace sets include list.
+Sets the exposure time. The value is expressed as a fraction of a second. Lower values will result in a longer exposure time and brighter images. Higher values will result in a shorter exposure time and darker images.
 
-> ##### Exclude list
-> List of comma or space-separated trace set IDs. If the list starts by - then the list is inverted (i.e., all IDs except for the listed ones). Light paths (which spawn at the camera) are initialized with this exclude list of trace set IDs.
+## Perspective
 
-> ##### Enable exclude list
-> Enables or disables the trace sets exclude list.
+#### Orthographic projection
+`Python: "cam_persp_orthographic"`
+
+Toggles the camera projection mode between perspective and orthographic.
+
+#### @@
+`Python: "cam_persp_frustum"`
+
+@@
+
+#### Lens distortion
+`Python: "cam_persp_distortion"`
+
+Controls the amount of lens distortion. Use positive values for barrel distortion and negative values for pin-cushion distortion.
+
+#### Horizontal tilt
+`Python: "cam_persp_tilt_x"`
+
+Positive values tilt the lens counter-clockwise while negative values tilt clockwise. This emulates the tilt function of a tilt-shift lens.
+
+#### Vertical tilt
+`Python: "cam_persp_tilt_y"`
+
+Positive values tilt the lens downwards while negative values tilt upwards. This emulates the tilt function of a tilt-shift lens.
+
+## Depth Of Field
+
+#### Enable Depth Of Field
+`Python: "cam_persp_dof_enable"`
+
+Enables or disables Depth Of Field rendering. When disabled, the entirety of the scene is in focus.
+
+#### Iris shape
+`Python: "cam_persp_iris"`
+
+Selects the number of blades the virtual iris (diaphragm) is made of. The default setting is a perfectly circular aperture (i.e., no blades).
+
+#### Iris angle
+`Python: "cam_persp_iris_angle"`
+
+Rotates the iris. Positive values rotate the iris shape counter-clockwise.
+
+## Z-clip
+
+#### Z-near distance
+`Python: "cam_persp_z_near"`
+
+Any geometry closer than this distance will be trimmed out.
+
+#### Enable z-near distance
+`Python: "cam_persp_z_near_enable"`
+
+Enables the near z-clip distance.
+
+#### Z-far distance
+`Python: "cam_persp_z_far"`
+
+Any geometry farer than this distance will be trimmed out.
+
+#### Enable z-far distance
+`Python: "cam_persp_z_far_enable"`
+
+Enables the far z-clip distance.
+
+## Trace sets
+
+#### Include list
+`Python: "cam_trace_set_include"`
+
+List of comma or space-separated trace set IDs. If the list starts by - then the list is inverted (i.e., all IDs except for the listed ones). Light paths (which spawn at the camera) are initialized with this include list of trace set IDs.
+
+#### Enable include list
+`Python: "cam_trace_set_include_enable"`
+
+Enables or disables the trace sets include list.
+
+#### Exclude list
+`Python: "cam_trace_set_exclude"`
+
+List of comma or space-separated trace set IDs. If the list starts by - then the list is inverted (i.e., all IDs except for the listed ones). Light paths (which spawn at the camera) are initialized with this exclude list of trace set IDs.
+
+#### Enable exclude list
+`Python: "cam_trace_set_exclude_enable"`
+
+Enables or disables the trace sets exclude list.
 

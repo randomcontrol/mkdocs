@@ -1,84 +1,134 @@
-## **map_correction**
+`Python: "map_correction"`
 
 The correction node performs color correction operations on the input map.
-#### Common
+## Common
 
-> ##### Node alias
-> Human-readable node alias.
+#### Node alias
+`Python: "map_alias"`
 
-> ##### Alias color
-> Identificative node color.
+Human-readable node alias.
 
-> ##### Node UUID
-> Node UUID.
+#### Alias color
+`Python: "map_alias_color"`
 
-> ##### Node metadata
-> User-set node metadata.
+Identificative node color.
 
-> ##### Node tags
-> User-set node tags.
+#### Node UUID
+`Python: "map_uuid"`
 
-#### Main
+Node UUID.
 
-> ##### Bypass
-> When this option is on, the map attributes are dismissed altogether and the input is passed-through to the output.
+#### Node metadata
+`Python: "map_metadata"`
 
-> ##### HDR mode
-> This toggle must be enabled if the input map provided is High Dynamic Range. HDR mode preserves the dynamic range of the output all the way through. Note that not all operators are available in HDR mode.
+User-set node metadata.
 
-> ##### Color
-> Defines the input color.
+#### Node tags
+`Python: "map_tags"`
 
-> ##### Color map
-> Defines the input color as a texture map.
+User-set node tags.
 
-#### RGB modifiers
+## Main
 
-> ##### Invert input
-> Inverts the input before the color correction toolchain is applied.
+#### Bypass
+`Python: "map_bypass"`
 
-> ##### Invert output
-> Inverts the output after the color correction toolchain is applied.
+When this option is on, the map attributes are dismissed altogether and the input is passed-through to the output.
 
-> ##### Multiplier
-> Applies a global multiplier to the input.
+#### HDR mode
+`Python: "map_correction_hdr"`
 
-> ##### Offset
-> Applies a global luminance offset to the input.
+This toggle must be enabled if the input map provided is High Dynamic Range. HDR mode preserves the dynamic range of the output all the way through. Note that not all operators are available in HDR mode.
 
-> ##### Gamma
-> Applies a gamma correction curve to the input.
+#### Color
+`Python: "map_correction_color"`
 
-> ##### Hue
-> Shifts the hue of the input in the HSV wheel.
+Defines the input color.
 
-> ##### Saturation
-> Modulates the saturation of the input.
+#### Color map
+`Python: "map_correction_color_map"`
 
-> ##### Brightness
-> Modulates the brightness of the input. In HDR mode, brightness acts as a global multiplier.
+Defines the input color as a texture map.
 
-> ##### Contrast
-> Modulates the contrast of the input.
+## RGB modifiers
 
-> ##### Red channel
-> Modulates the red color channel of the input.
+#### Invert input
+`Python: "map_correction_invert_in"`
 
-> ##### Green channel
-> Modulates the green color channel of the input.
+Inverts the input before the color correction toolchain is applied.
 
-> ##### Blue channel
-> Modulates the blue color channel of the input.
+#### Invert output
+`Python: "map_correction_invert_out"`
 
-> ##### Clamp low
-> Clamps dark values below the specified threshold value, which represents a fraction of the RGB range. For example 0.25 means RGB 64,64,64.
+Inverts the output after the color correction toolchain is applied.
 
-> ##### Enable clamp low
-> Enables clamping of dark values.
+#### Multiplier
+`Python: "map_correction_multiplier"`
 
-> ##### Clamp high
-> Clamps bright colors above the specified threshold value, which represents a fraction of the RGB range. For example 0.75 means RGB 192,192,192.
+Applies a global multiplier to the input.
 
-> ##### Enable clamp high
-> Enables clamping of bright values.
+#### Offset
+`Python: "map_correction_offset"`
+
+Applies a global luminance offset to the input.
+
+#### Gamma
+`Python: "map_correction_gamma"`
+
+Applies a gamma correction curve to the input.
+
+#### Hue
+`Python: "map_correction_hue"`
+
+Shifts the hue of the input in the HSV wheel.
+
+#### Saturation
+`Python: "map_correction_saturation"`
+
+Modulates the saturation of the input.
+
+#### Brightness
+`Python: "map_correction_brightness"`
+
+Modulates the brightness of the input. In HDR mode, brightness acts as a global multiplier.
+
+#### Contrast
+`Python: "map_correction_contrast"`
+
+Modulates the contrast of the input.
+
+#### Red channel
+`Python: "map_correction_r"`
+
+Modulates the red color channel of the input.
+
+#### Green channel
+`Python: "map_correction_g"`
+
+Modulates the green color channel of the input.
+
+#### Blue channel
+`Python: "map_correction_b"`
+
+Modulates the blue color channel of the input.
+
+#### Clamp low
+`Python: "map_correction_clamp_lo"`
+
+Clamps dark values below the specified threshold value, which represents a fraction of the RGB range. For example 0.25 means RGB 64,64,64.
+
+#### Enable clamp low
+`Python: "map_correction_clamp_lo_enable"`
+
+Enables clamping of dark values.
+
+#### Clamp high
+`Python: "map_correction_clamp_hi"`
+
+Clamps bright colors above the specified threshold value, which represents a fraction of the RGB range. For example 0.75 means RGB 192,192,192.
+
+#### Enable clamp high
+`Python: "map_correction_clamp_hi_enable"`
+
+Enables clamping of bright values.
 

@@ -1,215 +1,343 @@
-## **mtl_shadow_catcher**
+`Python: "mtl_shadow_catcher"`
 
 The shadow_catcher node behaves as a see-through surface that won't occlude the IBL/backplate but will capture shadows and reflections cast by the objects placed above it. This type of material is typically used for the floor object in product shots where the object must be integrated in a photographic background, or where the backdrop must appear to be a perfectly flat color.
-#### Common
+## Common
 
-> ##### Node alias
-> Human-readable node alias.
+#### Node alias
+`Python: "mtl_alias"`
 
-> ##### Alias color
-> Identificative node color.
+Human-readable node alias.
 
-> ##### Node UUID
-> Node UUID.
+#### Alias color
+`Python: "mtl_alias_color"`
 
-> ##### Node metadata
-> User-set node metadata.
+Identificative node color.
 
-> ##### Node tags
-> User-set node tags.
+#### Node UUID
+`Python: "mtl_uuid"`
 
-#### UV mapping
+Node UUID.
 
-> ##### Projection mode
-> Defines the UVW mapping projection mode.
+#### Node metadata
+`Python: "mtl_metadata"`
 
-> ##### Override uvmap
-> Uses the inner material UVW mapping controls, overriding the uvmap modifier(s) of the host object, if any.
+User-set node metadata.
 
-> ##### Triplanar blend
-> If the projection is triplanar, defines how much the three planar projections are blended onto each other.
+#### Node tags
+`Python: "mtl_tags"`
 
-> ##### Width
-> Real world size of the material along the X axis.
+User-set node tags.
 
-> ##### Height
-> Real world size of the material along the Y axis.
+## UV mapping
 
-> ##### Depth
-> Real world size of the material along the Z axis.
+#### Projection mode
+`Python: "mtl_uvmap_projection"`
 
-> ##### Real size link
-> Links the three real world dimensions so they are edited together.
+Defines the UVW mapping projection mode.
 
-> ##### Width repeat
-> Repeats (i.e., tiles) the UVW mapping along the X axis the given number of times within the defined width.
+#### Override uvmap
+`Python: "mtl_uvmap_override"`
 
-> ##### Height repeat
-> Repeats (i.e., tiles) the UVW mapping along the Y axis the given number of times within the defined height.
+Uses the inner material UVW mapping controls, overriding the uvmap modifier(s) of the host object, if any.
 
-> ##### Depth repeat
-> Repeats (i.e., tiles) the UVW mapping along the Z axis the given number of times within the defined depth.
+#### Triplanar blend
+`Python: "mtl_uvmap_triplanar_blend"`
 
-> ##### Repeat link
-> Links the three real size repeat values so they are edited together.
+If the projection is triplanar, defines how much the three planar projections are blended onto each other.
 
-> ##### Axis alignment
-> Reorients the projection towards the selected axis.
+#### Width
+`Python: "mtl_uvmap_real_size_x"`
 
-> ##### Convert to uvmap modifier
-> Creates a uvmap modifier node and transfers the material's UVW mapping attributes. The new uvmap node is applied to the host object.
+Real world size of the material along the X axis.
 
-> ##### Repeat X
-> Repeats the projected UVW space along the X/U axis. Increasing this value increases repetition.
+#### Height
+`Python: "mtl_uvmap_real_size_y"`
 
-> ##### Repeat Y
-> Repeats the projected UVW space along the Y/V axis. Increasing this value increases repetition.
+Real world size of the material along the Y axis.
 
-> ##### Translate X
-> Offsets the projected UVW space along the X/U axis.
+#### Depth
+`Python: "mtl_uvmap_real_size_z"`
 
-> ##### Translate Y
-> Offsets the projected UVW space along the Y/V axis.
+Real world size of the material along the Z axis.
 
-> ##### Rotate
-> Rotates the projected UVW space about the Z/W axis. Positive values rotate counter-clockwise.
+#### Real size link
+`Python: "mtl_uvmap_real_size_link"`
 
-#### Global Illumination
+Links the three real world dimensions so they are edited together.
 
-> ##### Override GI color
-> By default the shadow catcher takes the color of the IBL/backplate via camera photoprojection. This toggle enables a flat color override.
+#### Width repeat
+`Python: "mtl_uvmap_real_size_repeat_x"`
 
-> ##### Color
-> Flat color used to override the natural IBL/backplate photoprojected color on the shadow catcher.
+Repeats (i.e., tiles) the UVW mapping along the X axis the given number of times within the defined width.
 
-> ##### Multiplier
-> Dims the GI cast by the shadow catcher. This can be extremely useful to set proper IBL/backplate exposure for direct vision, and then modulate down the brightness of the illumination cast by the shadow catcher on the scene.
+#### Height repeat
+`Python: "mtl_uvmap_real_size_repeat_y"`
 
-#### Shadows
+Repeats (i.e., tiles) the UVW mapping along the Y axis the given number of times within the defined height.
 
-> ##### Weight
-> Modulates the opacity of the shadows captured by the shadow catcher.
+#### Depth repeat
+`Python: "mtl_uvmap_real_size_repeat_z"`
 
-> ##### Color
-> Tints the shadows captured by the given color.
+Repeats (i.e., tiles) the UVW mapping along the Z axis the given number of times within the defined depth.
 
-#### Reflection
+#### Repeat link
+`Python: "mtl_uvmap_real_size_repeat_link"`
 
-> ##### Weight
-> Controls the amount of reflection captured by the shadow catcher.
+Links the three real size repeat values so they are edited together.
 
-> ##### Weight map
-> Controls the amount of reflection using a grayscale texture map where bright/dark values increase/decrease reflectivity.
+#### Axis alignment
+`Python: "mtl_uvmap_axis_alignment"`
 
-> ##### Roughness
-> Controls the blurriness of the reflection in the shadow catcher.
+Reorients the projection towards the selected axis.
 
-> ##### Roughness map
-> Controls the blurriness of the reflection in the shadow catcher using a grayscale texture map where bright/dark values produce blurrier/sharper reflection.
+#### Convert to uvmap modifier
+`Python: "mtl_uvmap_convert"`
 
-> ##### Enable indirect reflection
-> Enables specular reflection in indirect light path bounces. When disabled, objects only reflect the diffuse component of the shadow catcher.
+Creates a uvmap modifier node and transfers the material's UVW mapping attributes. The new uvmap node is applied to the host object.
 
-#### Region of interest
+#### Repeat X
+`Python: "mtl_uvmap_xform_repeat_x"`
 
-> ##### Affect shadows
-> Enables a disk (a.k.a., ROI) outside which the shadow catcher no longer captures shadows. The ROI can be useful to confine the reach of floor shadows within the boundaries of the frame being rendered.
+Repeats the projected UVW space along the X/U axis. Increasing this value increases repetition.
 
-> ##### Affect reflection
-> Enables a disk (a.k.a., ROI) outside which the shadow catcher no longer captures reflection. The ROI can be useful to confine the reach of floor reflection within the boundaries of the frame being rendered.
+#### Repeat Y
+`Python: "mtl_uvmap_xform_repeat_y"`
 
-> ##### ROI radius
-> Defines the physical radius of the ROI disk. Note that the ROI is centered at the origin of the xform of the object the shadow catcher material is applied to.
+Repeats the projected UVW space along the Y/V axis. Increasing this value increases repetition.
 
-> ##### Show clipping
-> Reveals the outer rim of the ROI disk/ellipsoid. This allows the user to easily tell whether the ROI falls within the boundaries of the frame.
+#### Translate X
+`Python: "mtl_uvmap_xform_translate_x"`
 
-> ##### ROI decay
-> Defines the speed at which the captured shadows fade away near the boundaries of the ROI disk.
+Offsets the projected UVW space along the X/U axis.
 
-> ##### ROI aspect
-> Squeezes the ROI disk along one of its major axes so it becomes an ellipsoid. The main axes of the ROI are parallel/perpendicular to the render camera.
+#### Translate Y
+`Python: "mtl_uvmap_xform_translate_y"`
 
-> ##### ROI rotation
-> Rotates the ROI disk/ellipsoid around the origin of the (xform of the) object the shadow catcher material is applied to.
+Offsets the projected UVW space along the Y/V axis.
 
-#### Bump (Normal/Height)
+#### Rotate
+`Python: "mtl_uvmap_xform_rotate_z"`
 
-> ##### Enable bump mapping
-> Enables bump mapping, which can be controlled with a normal map or a height map.
+Rotates the projected UVW space about the Z/W axis. Positive values rotate counter-clockwise.
 
-> ##### Strength
-> Defines the bump strength. A value of 1 in a normal map renders the actual normals as they are represented in the texture. This is particularly relevant for maps that were baked in sculpting software. On the other hand, strength in grayscale height maps is somewhat resolution-dependent and must be adjusted manually.
+## Global Illumination
 
-> ##### Normal/Height map
-> Perturbs the surface normals with a bump (normal or height) map. Bump mapping is universally much cheaper than displacement mapping, and often looks as visually convincing. For extreme relief details, or close ups, displacement may be better suited.
+#### Override GI color
+`Python: "mtl_shadow_catcher_gi_color_enable"`
 
-> ##### Mode
-> Establishes whether the texture must be interpreted as a height map (gray levels) or a normal map (rgb-encoded normals).
+By default the shadow catcher takes the color of the IBL/backplate via camera photoprojection. This toggle enables a flat color override.
 
-> ##### Height map epsilon
-> When a procedural (non-filetex) height map is used, normals are computed on the fly by taking enough map samples to estimate the surface slope on the neighborhood of the pixel being shaded. Bump mapping crispness and proper capture of detail is very sensitive to this value.
+#### Color
+`Python: "mtl_shadow_catcher_gi_color"`
 
-> ##### Invert direction
-> Flips inwards-and-outwards the resulting normals, which is equivalent to negating the strength value. In the case of a height map, this is also equivalent to inverting black-and-white in the input map.
+Flat color used to override the natural IBL/backplate photoprojected color on the shadow catcher.
 
-> ##### Flip X
-> Flips the X (U) direction of the input normal map.
+#### Multiplier
+`Python: "mtl_shadow_catcher_gi_multiplier"`
 
-> ##### Swap X/Y
-> Swaps the X/Y (U/V) directions of the input normal map.
+Dims the GI cast by the shadow catcher. This can be extremely useful to set proper IBL/backplate exposure for direct vision, and then modulate down the brightness of the illumination cast by the shadow catcher on the scene.
 
-> ##### Flip Y
-> Flips the Y (V) direction of the input normal map.
+## Shadows
+
+#### Weight
+`Python: "mtl_shadow_catcher_shadows_weight"`
+
+Modulates the opacity of the shadows captured by the shadow catcher.
+
+#### Color
+`Python: "mtl_shadow_catcher_shadows_color"`
+
+Tints the shadows captured by the given color.
+
+## Reflection
+
+#### Weight
+`Python: "mtl_shadow_catcher_reflection_weight"`
+
+Controls the amount of reflection captured by the shadow catcher.
+
+#### Weight map
+`Python: "mtl_shadow_catcher_reflection_weight_map"`
+
+Controls the amount of reflection using a grayscale texture map where bright/dark values increase/decrease reflectivity.
+
+#### Roughness
+`Python: "mtl_shadow_catcher_reflection_roughness"`
+
+Controls the blurriness of the reflection in the shadow catcher.
+
+#### Roughness map
+`Python: "mtl_shadow_catcher_reflection_roughness_map"`
+
+Controls the blurriness of the reflection in the shadow catcher using a grayscale texture map where bright/dark values produce blurrier/sharper reflection.
+
+#### Enable indirect reflection
+`Python: "mtl_shadow_catcher_reflection_indirect_mode"`
+
+Enables specular reflection in indirect light path bounces. When disabled, objects only reflect the diffuse component of the shadow catcher.
+
+## Region of interest
+
+#### Affect shadows
+`Python: "mtl_shadow_catcher_roi_affect_shadows"`
+
+Enables a disk (a.k.a., ROI) outside which the shadow catcher no longer captures shadows. The ROI can be useful to confine the reach of floor shadows within the boundaries of the frame being rendered.
+
+#### Affect reflection
+`Python: "mtl_shadow_catcher_roi_affect_reflection"`
+
+Enables a disk (a.k.a., ROI) outside which the shadow catcher no longer captures reflection. The ROI can be useful to confine the reach of floor reflection within the boundaries of the frame being rendered.
+
+#### ROI radius
+`Python: "mtl_shadow_catcher_roi_radius"`
+
+Defines the physical radius of the ROI disk. Note that the ROI is centered at the origin of the xform of the object the shadow catcher material is applied to.
+
+#### Show clipping
+`Python: "mtl_shadow_catcher_roi_show_clipping"`
+
+Reveals the outer rim of the ROI disk/ellipsoid. This allows the user to easily tell whether the ROI falls within the boundaries of the frame.
+
+#### ROI decay
+`Python: "mtl_shadow_catcher_roi_decay"`
+
+Defines the speed at which the captured shadows fade away near the boundaries of the ROI disk.
+
+#### ROI aspect
+`Python: "mtl_shadow_catcher_roi_aspect"`
+
+Squeezes the ROI disk along one of its major axes so it becomes an ellipsoid. The main axes of the ROI are parallel/perpendicular to the render camera.
+
+#### ROI rotation
+`Python: "mtl_shadow_catcher_roi_rotate"`
+
+Rotates the ROI disk/ellipsoid around the origin of the (xform of the) object the shadow catcher material is applied to.
+
+## Bump (Normal/Height)
+
+#### Enable bump mapping
+`Python: "mtl_normal_enable"`
+
+Enables bump mapping, which can be controlled with a normal map or a height map.
+
+#### Strength
+`Python: "mtl_normal_strength"`
+
+Defines the bump strength. A value of 1 in a normal map renders the actual normals as they are represented in the texture. This is particularly relevant for maps that were baked in sculpting software. On the other hand, strength in grayscale height maps is somewhat resolution-dependent and must be adjusted manually.
+
+#### Normal/Height map
+`Python: "mtl_normal_map"`
+
+Perturbs the surface normals with a bump (normal or height) map. Bump mapping is universally much cheaper than displacement mapping, and often looks as visually convincing. For extreme relief details, or close ups, displacement may be better suited.
+
+#### Mode
+`Python: "mtl_normal_mode"`
+
+Establishes whether the texture must be interpreted as a height map (gray levels) or a normal map (rgb-encoded normals).
+
+#### Height map epsilon
+`Python: "mtl_normal_epsilon"`
+
+When a procedural (non-filetex) height map is used, normals are computed on the fly by taking enough map samples to estimate the surface slope on the neighborhood of the pixel being shaded. Bump mapping crispness and proper capture of detail is very sensitive to this value.
+
+#### Invert direction
+`Python: "mtl_normal_invert"`
+
+Flips inwards-and-outwards the resulting normals, which is equivalent to negating the strength value. In the case of a height map, this is also equivalent to inverting black-and-white in the input map.
+
+#### Flip X
+`Python: "mtl_normal_flip_x"`
+
+Flips the X (U) direction of the input normal map.
+
+#### Swap X/Y
+`Python: "mtl_normal_swap_xy"`
+
+Swaps the X/Y (U/V) directions of the input normal map.
+
+#### Flip Y
+`Python: "mtl_normal_flip_y"`
+
+Flips the Y (V) direction of the input normal map.
+
+## Opacity
+
+#### Enable opacity
+`Python: "mtl_opacity_enable"`
+
+Enables opacity mapping in the geometry the material is applied to. Note that opacity mapping is computationally-intensive.
 
 #### Opacity
+`Python: "mtl_opacity"`
 
-> ##### Enable opacity
-> Enables opacity mapping in the geometry the material is applied to. Note that opacity mapping is computationally-intensive.
+Defines the percentage of light rays that will be allowed to pass through the object not being affected by it in any way.
 
-> ##### Opacity
-> Defines the percentage of light rays that will be allowed to pass through the object not being affected by it in any way.
+#### Opacity map
+`Python: "mtl_opacity_map"`
 
-> ##### Opacity map
-> Defines the opacity level of the object with a grayscale texture map. Opacity maps are interpreted so dark colors make the surface more translucent; i.e., black completely clips the geometry away, whereas white produces fully solid geometry. This map gets multiplied by the numerical opacity value.
+Defines the opacity level of the object with a grayscale texture map. Opacity maps are interpreted so dark colors make the surface more translucent; i.e., black completely clips the geometry away, whereas white produces fully solid geometry. This map gets multiplied by the numerical opacity value.
 
-> ##### Single-sided geometry
-> When enabled, object(s) this material is applied to will be visible from their front side, but invisible from their back side.
+#### Single-sided geometry
+`Python: "mtl_single_sided"`
 
-#### Trace sets
+When enabled, object(s) this material is applied to will be visible from their front side, but invisible from their back side.
 
-> ##### Include list
-> List of comma or space-separated trace set IDs. If the list starts by - then the list is inverted (i.e., all IDs except for the listed ones). Light paths bouncing at the material will interact with (at least) the objects or lights that belong to the listed trace sets. For example, you can use this list to re-include a trace set that was excluded at a previous GI bounce.
+## Trace sets
 
-> ##### Enable include list
-> Enables or disables the trace sets include list. If enabled, the list is appended to the include list at the object(s) the material is applied to.
+#### Include list
+`Python: "mtl_trace_set_include"`
 
-> ##### Exclude list
-> List of comma or space-separated trace set IDs. If the list starts by - then the list is inverted (i.e., all IDs except for the listed ones). Light paths bouncing at the material will not interact with the objects or lights that belong to the listed trace sets. For example, you can use this to make an object exclude the shadows produced by other particular object.
+List of comma or space-separated trace set IDs. If the list starts by - then the list is inverted (i.e., all IDs except for the listed ones). Light paths bouncing at the material will interact with (at least) the objects or lights that belong to the listed trace sets. For example, you can use this list to re-include a trace set that was excluded at a previous GI bounce.
 
-> ##### Enable exclude list
-> Enables or disables the trace sets exclude list. If enabled, the list is appended to the exclude list at the object(s) the material is applied to.
+#### Enable include list
+`Python: "mtl_trace_set_include_enable"`
 
-> ##### Affect diffuse
-> Makes the include/exclude lists be used for bounces at the diffuse component(s) of the material.
+Enables or disables the trace sets include list. If enabled, the list is appended to the include list at the object(s) the material is applied to.
 
-> ##### Affect specular
-> Makes the include/exclude lists be used for bounces at the reflective component(s) of the material.
+#### Exclude list
+`Python: "mtl_trace_set_exclude"`
 
-> ##### Affect transmission
-> Makes the include/exclude lists be used for bounces at the refractive component(s) of the material.
+List of comma or space-separated trace set IDs. If the list starts by - then the list is inverted (i.e., all IDs except for the listed ones). Light paths bouncing at the material will not interact with the objects or lights that belong to the listed trace sets. For example, you can use this to make an object exclude the shadows produced by other particular object.
 
-> ##### Include IBL refl/refr overrides
-> Flags the material in the trace sets system to include the IBL refl/refr overrides regardless of the constraints set in the IBL node.
+#### Enable exclude list
+`Python: "mtl_trace_set_exclude_enable"`
 
-#### Compositing
+Enables or disables the trace sets exclude list. If enabled, the list is appended to the exclude list at the object(s) the material is applied to.
 
-> ##### Material ID color
-> Choose a custom color for the material ID AOV.
+#### Affect diffuse
+`Python: "mtl_trace_set_affect_dif"`
 
-> ##### Enable material ID color
-> Allows to choose a custom color for the material ID AOV. This color is used when the material AOV is set to custom color mode.
+Makes the include/exclude lists be used for bounces at the diffuse component(s) of the material.
 
-> ##### Render set ID
-> Defines what render set objects using this material will be render in. The list of render sets to be rendered can be enabled and defined in the Render panel.
+#### Affect specular
+`Python: "mtl_trace_set_affect_spc"`
+
+Makes the include/exclude lists be used for bounces at the reflective component(s) of the material.
+
+#### Affect transmission
+`Python: "mtl_trace_set_affect_trm"`
+
+Makes the include/exclude lists be used for bounces at the refractive component(s) of the material.
+
+#### Include IBL refl/refr overrides
+`Python: "mtl_include_ibl_overrides"`
+
+Flags the material in the trace sets system to include the IBL refl/refr overrides regardless of the constraints set in the IBL node.
+
+## Compositing
+
+#### Material ID color
+`Python: "mtl_mask_color"`
+
+Choose a custom color for the material ID AOV.
+
+#### Enable material ID color
+`Python: "mtl_mask_color_enable"`
+
+Allows to choose a custom color for the material ID AOV. This color is used when the material AOV is set to custom color mode.
+
+#### Render set ID
+`Python: "mtl_render_set_id"`
+
+Defines what render set objects using this material will be render in. The list of render sets to be rendered can be enabled and defined in the Render panel.
 

@@ -1,45 +1,69 @@
-## **pro_int_math**
+`Python: "pro_int_math"`
 
 This node performs an algebraic operation between two given programming nodes. The result of the operation is always an integer scalar value.
-#### Common
+## Common
 
-> ##### Node alias
-> Human-readable node alias.
+#### Node alias
+`Python: "pro_alias"`
 
-> ##### Alias color
-> Identificative node color.
+Human-readable node alias.
 
-> ##### Node UUID
-> Node UUID.
+#### Alias color
+`Python: "pro_alias_color"`
 
-> ##### Node metadata
-> User-set node metadata.
+Identificative node color.
 
-> ##### Node tags
-> User-set node tags.
+#### Node UUID
+`Python: "pro_uuid"`
 
-#### Main
+Node UUID.
 
-> ##### Operator
-> Selects the operation to be performed between both operands.
+#### Node metadata
+`Python: "pro_metadata"`
 
-> ##### A operand
-> Operation's first operand, when no input programming node is provided.
+User-set node metadata.
 
-> ##### A operand node
-> Operation's first operand.
+#### Node tags
+`Python: "pro_tags"`
 
-> ##### B operand
-> Operation's second operand, when no input programming node is provided.
+User-set node tags.
 
-> ##### B operand node
-> Operation's second operand.
+## Main
 
-#### Output tuning
+#### Operator
+`Python: "pro_int_math_operator"`
 
-> ##### Value weight
-> The final value output by the node is, actually: value*weight+bias.
+Selects the operation to be performed between both operands.
 
-> ##### Value bias
-> The final value output by the node is, actually: value*weight+bias.
+#### A operand
+`Python: "pro_int_math_operand_a"`
+
+Operation's first operand, when no input programming node is provided.
+
+#### A operand node
+`Python: "pro_int_math_operand_a_pro"`
+
+Operation's first operand.
+
+#### B operand
+`Python: "pro_int_math_operand_b"`
+
+Operation's second operand, when no input programming node is provided.
+
+#### B operand node
+`Python: "pro_int_math_operand_b_pro"`
+
+Operation's second operand.
+
+## Output tuning
+
+#### Value weight
+`Python: "pro_weight"`
+
+The final value output by the node is, actually: value*weight+bias.
+
+#### Value bias
+`Python: "pro_bias"`
+
+The final value output by the node is, actually: value*weight+bias.
 

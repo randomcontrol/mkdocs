@@ -1,49 +1,77 @@
-## **map_xform_scattering**
+`Python: "map_xform_scattering"`
 
 @@
-#### Common
+## Common
 
-> ##### Node alias
-> Human-readable node alias.
+#### Node alias
+`Python: "map_alias"`
 
-> ##### Alias color
-> Identificative node color.
+Human-readable node alias.
 
-> ##### Node UUID
-> Node UUID.
+#### Alias color
+`Python: "map_alias_color"`
 
-> ##### Node metadata
-> User-set node metadata.
+Identificative node color.
 
-> ##### Node tags
-> User-set node tags.
+#### Node UUID
+`Python: "map_uuid"`
 
-#### Main
+Node UUID.
 
-> ##### Enable random offset
-> Internal use.
+#### Node metadata
+`Python: "map_metadata"`
 
-> ##### Offset U
-> Internal use.
+User-set node metadata.
 
-> ##### Offset V
-> Internal use.
+#### Node tags
+`Python: "map_tags"`
 
-> ##### Randomize
-> Internal use.
+User-set node tags.
 
-> ##### Enable random tiling
-> Internal use.
+## Main
 
-> ##### Blend
-> Internal use.
+#### Enable random offset
+`Python: "map_scattering_offset_enable"`
 
-> ##### U splits
-> Internal use.
+Internal use.
 
-> ##### V split
-> Internal use.
+#### Offset U
+`Python: "map_scattering_offset_x"`
 
-> ##### Rotate splits
-> Internal use.
+Internal use.
+
+#### Offset V
+`Python: "map_scattering_offset_y"`
+
+Internal use.
+
+#### Randomize
+`Python: "map_scattering_offset_randomize"`
+
+Internal use.
+
+#### Enable random tiling
+`Python: "map_scattering_tiling_enable"`
+
+Internal use.
+
+#### Blend
+`Python: "map_scattering_tiling_blend"`
+
+Internal use.
+
+#### U splits
+`Python: "map_scattering_tiling_x"`
+
+Internal use.
+
+#### V split
+`Python: "map_scattering_tiling_y"`
+
+Internal use.
+
+#### Rotate splits
+`Python: "map_scattering_tiling_rotate"`
+
+Internal use.
 

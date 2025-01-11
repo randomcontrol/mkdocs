@@ -1,33 +1,49 @@
-## **pro_matrix_from_ctx**
+`Python: "pro_matrix_from_ctx"`
 
 This programming node provides access to certain matrix properties available to the execution context during nodal evaluation. For example, this node can be used to retrieve the world xform of motion-controlled objects.
-#### Common
+## Common
 
-> ##### Node alias
-> Human-readable node alias.
+#### Node alias
+`Python: "pro_alias"`
 
-> ##### Alias color
-> Identificative node color.
+Human-readable node alias.
 
-> ##### Node UUID
-> Node UUID.
+#### Alias color
+`Python: "pro_alias_color"`
 
-> ##### Node metadata
-> User-set node metadata.
+Identificative node color.
 
-> ##### Node tags
-> User-set node tags.
+#### Node UUID
+`Python: "pro_uuid"`
 
-#### Main
+Node UUID.
 
-> ##### Intrinsic property
-> Selects the intrinsic property to be queried from the execution context.
+#### Node metadata
+`Python: "pro_metadata"`
 
-#### Output tuning
+User-set node metadata.
 
-> ##### Pre-mul node
-> If connected, this plug's matrix is used to pre-multiply the node's output. This comes handy when chaining consecutive matrix transforms to save one matrix_math node.
+#### Node tags
+`Python: "pro_tags"`
 
-> ##### Post-mul node
-> If connected, this plug's matrix is used to post-multiply the node's output. This comes handy when chaining consecutive matrix transforms to save one matrix_math node.
+User-set node tags.
+
+## Main
+
+#### Intrinsic property
+`Python: "pro_matrix_from_ctx_intrinsic"`
+
+Selects the intrinsic property to be queried from the execution context.
+
+## Output tuning
+
+#### Pre-mul node
+`Python: "pro_pre_mul_pro"`
+
+If connected, this plug's matrix is used to pre-multiply the node's output. This comes handy when chaining consecutive matrix transforms to save one matrix_math node.
+
+#### Post-mul node
+`Python: "pro_post_mul_pro"`
+
+If connected, this plug's matrix is used to post-multiply the node's output. This comes handy when chaining consecutive matrix transforms to save one matrix_math node.
 

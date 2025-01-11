@@ -1,73 +1,117 @@
-## **map_mux**
+`Python: "map_mux"`
 
 The mux (multiplexor) map manages up to 8 input maps and selects which one passes through with a numerical input.
-#### Common
+## Common
 
-> ##### Node alias
-> Human-readable node alias.
+#### Node alias
+`Python: "map_alias"`
 
-> ##### Alias color
-> Identificative node color.
+Human-readable node alias.
 
-> ##### Node UUID
-> Node UUID.
+#### Alias color
+`Python: "map_alias_color"`
 
-> ##### Node metadata
-> User-set node metadata.
+Identificative node color.
 
-> ##### Node tags
-> User-set node tags.
+#### Node UUID
+`Python: "map_uuid"`
 
-#### Main
+Node UUID.
 
-> ##### Input selector
-> Determines which input color/map will pass through.
+#### Node metadata
+`Python: "map_metadata"`
 
-> ##### Color 1
-> Defines the i-th input color.
+User-set node metadata.
 
-> ##### Color 1 map
-> Defines the i-th input color using a texture map.
+#### Node tags
+`Python: "map_tags"`
 
-> ##### Color 2
-> Defines the i-th input color.
+User-set node tags.
 
-> ##### Color 2 map
-> Defines the i-th input color using a texture map.
+## Main
 
-> ##### Color 3
-> Defines the i-th input color.
+#### Input selector
+`Python: "map_mux_selector"`
 
-> ##### Color 3 map
-> Defines the i-th input color using a texture map.
+Determines which input color/map will pass through.
 
-> ##### Color 4
-> Defines the i-th input color.
+#### Color 1
+`Python: "map_mux_input_color_1"`
 
-> ##### Color 4 map
-> Defines the i-th input color using a texture map.
+Defines the i-th input color.
 
-> ##### Color 5
-> Defines the i-th input color.
+#### Color 1 map
+`Python: "map_mux_input_color_1_map"`
 
-> ##### Color 5 map
-> Defines the i-th input color using a texture map.
+Defines the i-th input color using a texture map.
 
-> ##### Color 6
-> Defines the i-th input color.
+#### Color 2
+`Python: "map_mux_input_color_2"`
 
-> ##### Color 6 map
-> Defines the i-th input color using a texture map.
+Defines the i-th input color.
 
-> ##### Color 7
-> Defines the i-th input color.
+#### Color 2 map
+`Python: "map_mux_input_color_2_map"`
 
-> ##### Color 7 map
-> Defines the i-th input color using a texture map.
+Defines the i-th input color using a texture map.
 
-> ##### Color 8
-> Defines the i-th input color.
+#### Color 3
+`Python: "map_mux_input_color_3"`
 
-> ##### Color 8 map
-> Defines the i-th input color using a texture map.
+Defines the i-th input color.
+
+#### Color 3 map
+`Python: "map_mux_input_color_3_map"`
+
+Defines the i-th input color using a texture map.
+
+#### Color 4
+`Python: "map_mux_input_color_4"`
+
+Defines the i-th input color.
+
+#### Color 4 map
+`Python: "map_mux_input_color_4_map"`
+
+Defines the i-th input color using a texture map.
+
+#### Color 5
+`Python: "map_mux_input_color_5"`
+
+Defines the i-th input color.
+
+#### Color 5 map
+`Python: "map_mux_input_color_5_map"`
+
+Defines the i-th input color using a texture map.
+
+#### Color 6
+`Python: "map_mux_input_color_6"`
+
+Defines the i-th input color.
+
+#### Color 6 map
+`Python: "map_mux_input_color_6_map"`
+
+Defines the i-th input color using a texture map.
+
+#### Color 7
+`Python: "map_mux_input_color_7"`
+
+Defines the i-th input color.
+
+#### Color 7 map
+`Python: "map_mux_input_color_7_map"`
+
+Defines the i-th input color using a texture map.
+
+#### Color 8
+`Python: "map_mux_input_color_8"`
+
+Defines the i-th input color.
+
+#### Color 8 map
+`Python: "map_mux_input_color_8_map"`
+
+Defines the i-th input color using a texture map.
 
