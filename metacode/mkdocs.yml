@@ -1,9 +1,8 @@
-site_name: Maverick Render User Manual
-site_url: https://maverickrender.com/wp-content/docs/home/index.html
+site_name: Maverick Render Documentation
+site_url: https://maverickrender.com/wp-content/docs/home/
 copyright: (c) 2001-2017 Chema Guerra and (c) 2018-2025 RandomControl SL. All Rights Reserved.
 nav:
   - Home: home.md
-  - UI: ui.md
   - CLI: cli.md
   - Python: python.md
   - Nodes:
