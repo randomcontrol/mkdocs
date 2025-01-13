@@ -1,5 +1,5 @@
 site_name: Maverick Render User Manual
-site_url: https://maverickrender.com/
+site_url: https://maverickrender.com/wp-content/docs/home/index.html
 copyright: (c) 2001-2017 Chema Guerra and (c) 2018-2025 RandomControl SL. All Rights Reserved.
 nav:
   - Home: home.md
@@ -7,6 +7,13 @@ nav:
   - CLI: cli.md
   - Python: python.md
   - Nodes:
+    - Global:
+        - 'Globals':             Global/globals.md
+        - 'AOVs':                Global/aovs.md
+        - 'Tone mapping':        Global/tonemap.md
+        - 'LightMixer':          Global/lightmixer.md
+        - 'IBL':                 Global/ibl.md
+        - 'Sky':                 Global/sky.md
     - Camera:
         - 'Perspective':         Camera/cam_persp.md
         - 'VR':                  Camera/cam_vr.md
@@ -132,16 +139,10 @@ nav:
         - 'Float Profile':       Programming/Profile/pro_float_profile.md
       - Compound:
         - 'Matrix Bullet':       Programming/Compound/pro_matrix_bullet.md
-    - Global:
-        - 'Globals':             Global/globals.md
-        - 'AOVs':                Global/aovs.md
-        - 'Tone mapping':        Global/tonemap.md
-        - 'LightMixer':          Global/lightmixer.md
-        - 'IBL':                 Global/ibl.md
-        - 'Sky':                 Global/sky.md
 
 theme:
   name: material
+  logo: assets/images/favicon.png
   features:
     - header.autohide
     - navigation.instant
@@ -158,15 +159,15 @@ theme:
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
-      primary: teal
-      accent:  cyan
+      primary: red #"rgb(255, 15, 80)"
+      accent: blue #"rgb(23, 124, 223)"
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: teal
-      accent: cyan
       toggle:
         icon: material/brightness-4
         name: Switch to light mode
+      primary: red #"rgb(255, 15, 80)"
+      accent: blue #"rgb(23, 124, 223)"
 
 markdown_extensions:
   - attr_list
