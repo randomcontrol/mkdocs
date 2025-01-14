@@ -141,6 +141,8 @@ nav:
 
 theme:
   name: material
+  toc:
+    max_depth: 2
   logo: assets/images/favicon.png
   features:
     - header.autohide
