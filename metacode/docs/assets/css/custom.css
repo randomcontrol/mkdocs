@@ -1,5 +1,3 @@
-/* Force custom accent color */
-:root {
-  --md-accent-fg-color: #569cd6;
-  --md-accent-bg-color: #569cd6;
-}
+.md-nav__item--secondary > .md-nav__item--secondary                                                       { display: none; }
+.md-nav__item--secondary > .md-nav__item--secondary > .md-nav__item--secondary                            { display: none; }
+.md-nav__item--secondary > .md-nav__item--secondary > .md-nav__item--secondary > .md-nav__item--secondary { display: none; }
