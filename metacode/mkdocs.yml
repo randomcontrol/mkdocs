@@ -1,8 +1,9 @@
 site_name: Maverick Render Documentation
 site_url: https://maverickrender.com/wp-content/docs/
 copyright: (c) 2001-2017 Chema Guerra and (c) 2018-2025 RandomControl SL. All Rights Reserved.
+use_directory_urls: false
 nav:
-  - Home: home.md
+  - index.md
   - CLI: cli.md
   - Python: python.md
   - Nodes:
@@ -141,8 +142,6 @@ nav:
 
 theme:
   name: material
-  toc:
-    max_depth: 0
   logo: assets/images/favicon.png
   features:
     - header.autohide
@@ -180,9 +179,9 @@ markdown_extensions:
   - pymdownx.superfences
   - pymdownx.tabbed:
       alternate_style: true
-    - toc:
-        permalink: true
-        toc_depth: 2
+  - toc:
+      permalink: true
+      toc_depth: 2
 
 plugins:
   - search
