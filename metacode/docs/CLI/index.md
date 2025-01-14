@@ -26,7 +26,7 @@ maverick_studio.exe -i:<filename> [-still|-timeline|-turntable] [-o:<filename>] 
 - If no `-still|-timeline|-turntable` are present, the scene will be opened up but no render modality will be started.
 - The scene will be loaded and rendered as-is, except for any values overridden by `-o/-sl/...`.
 - For timeline/turntable renders, the output filename must be a `.png/.jpg/...` image like in the UI. The output video will auto-receive the `.mp4/.mov` extension as configured when the scene was saved.
-- Automation will -not- work if another instance of the application is already up and running.
+- Automation will _not_ work if another instance of the application is already up and running.
 
 #### Examples
 
@@ -49,10 +49,10 @@ maverick_studio.exe -i:<filename> [-py:<filename>]
 ```
 
 - This is functionally equivalent to:
-  - Opening the app.
-  - Loading the scene.
-  - Loading the script in the Python panel.
-  - Pressing the `Run script` button.
+    - Opening the app.
+    - Loading the scene.
+    - Loading the script in the Python panel.
+    - Pressing the `Run script` button.
 - If the scene needs any value overrides, those can be done from the script directly (see below).
 
 #### Examples
