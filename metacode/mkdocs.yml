@@ -142,7 +142,7 @@ nav:
 theme:
   name: material
   toc:
-    max_depth: 1
+    max_depth: 0
   logo: assets/images/favicon.png
   features:
     - header.autohide
