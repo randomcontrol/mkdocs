@@ -4,8 +4,8 @@ copyright: (c) 2001-2017 Chema Guerra and (c) 2018-2025 RandomControl SL. All Ri
 use_directory_urls: false
 nav:
   - index.md
-  - CLI: cli.md
-  - Python: python.md
+  - CLI: CLI/cli.md
+  - Python: Python/python.md
   - Nodes:
     - Global:
         - 'Globals':             Nodes/Global/globals.md

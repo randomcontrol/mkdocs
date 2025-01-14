@@ -1,15 +1,15 @@
 # Command-Line Interface
 
 !!! warning
-    The following instructions are exclusive to Maverick Studio.
+    Maverick Indie does not support CLI automation. The following instructions are exclusive to Maverick Studio.
 
 ## Overview
 
 - Maverick Studio provides certain degree of control via command-line arguments.
-- These can be used to build an in-house render farm, perform automated Unit Testing, etc...
+- These can be used to build an in-house render farm, manage render batching, etc...
 - CLI automation relies on the python binding internally.
 
-### Usage #1
+## Usage #1
 
 ```
 maverick_studio.exe -i:<filename> [-still|-timeline|-turntable] [-o:<filename>] [-sl:<float>] [-quit]
@@ -32,11 +32,17 @@ maverick_studio.exe -i:<filename> [-still|-timeline|-turntable] [-o:<filename>] 
 
 ```
 maverick_studio.exe -i:"Z:\scene.mks"
+```
+
+```
 maverick_studio.exe -i:"Z:\scene.mks" -still -o:"Z:\automation.png" -sl:10
+```
+
+```
 maverick_studio.exe -i:"Z:\scene.mks" -turntable -o:"Z:\video\frames\automation.png" -sl:8 -quit
 ```
 
-### Usage #2
+## Usage #2
 
 ```
 maverick_studio.exe -i:<filename> [-py:<filename>]
