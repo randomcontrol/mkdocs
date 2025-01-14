@@ -1,5 +1,5 @@
 site_name: Maverick Render Documentation
-site_url: https://maverickrender.com/wp-content/docs/home/
+site_url: https://maverickrender.com/wp-content/docs/
 copyright: (c) 2001-2017 Chema Guerra and (c) 2018-2025 RandomControl SL. All Rights Reserved.
 nav:
   - Home: home.md
@@ -146,28 +146,28 @@ theme:
   logo: assets/images/favicon.png
   features:
     - header.autohide
+    - content.code.annotate
+    - content.code.copy
     - navigation.instant
     - navigation.tracking
-    - content.code.annotate
     - navigation.path
     - navigation.top
     - navigation.tabs
     - navigation.footer
-    - content.code.copy
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
-      primary: red
+      primary: blue grey
       accent: blue
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
       toggle:
         icon: material/brightness-4
         name: Switch to light mode
-      primary: red
+      primary: blue grey
       accent: blue
 
 markdown_extensions:
@@ -180,10 +180,10 @@ markdown_extensions:
   - pymdownx.superfences
   - pymdownx.tabbed:
       alternate_style: true
+  - toc:
+      permalink: true
+      toc_depth: 2
 
 plugins:
   - search
   - glightbox
-
-extra_css:
-  - assets/css/custom.css
