@@ -22,4 +22,4 @@ This corner of the Internet provides documentation for both products in the Mave
 - Maverick Studio is the complete product with all features.
 - Maverick Indie is a streamlined version with a subset of features.
 - For a detailed comparison of the features in each product, check out the [Product comparison chart](https://maverickrender.com/studio-vs-indie/){:target="_blank"}
-- Please note that certain sections of the documentation are specific to Maverick Studio and are marked as such.
+- Note that certain sections of the documentation are specific to Maverick Studio and are marked as such.
