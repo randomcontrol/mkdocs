@@ -3,6 +3,8 @@
 !!! warning
     The following instructions are exclusive to Maverick Studio.
 
+![Python scripting in Maverick Studio](python_dice.png "Python scripting in Maverick Studio"){style="max-width: 512px;"}
+
 ## Overview
 
 - Maverick Studio provides a python binding that allows the user to:
