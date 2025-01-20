@@ -2,7 +2,7 @@
 
 This map provides a mechanism to blend normal-generating maps, such as round_edges and bump/normal.
 
-!(Icon){style="max-width: 80px;"}
+![Icon](map_bump_blend_swatch.png "Icon"){style="max-width: 80px;"}
 
 ## Common
 

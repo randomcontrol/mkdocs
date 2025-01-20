@@ -2,7 +2,7 @@
 
 The wireframe map reveals the edges of the polygons of the object(s) it is applied to. A typical use of this node is to inspect the tessellation level of the geometry in the scene.
 
-!(Icon){style="max-width: 80px;"}
+![Icon](map_wireframe_swatch.png "Icon"){style="max-width: 80px;"}
 
 ## Common
 

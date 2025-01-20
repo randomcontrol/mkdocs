@@ -2,7 +2,7 @@
 
 When applied to a surface, this material forks between two other materials. One is used for front side hits, and the other for back side hits. This can be used to control the appearance of both sides in a tree leaf independently, for example. Note that the front and back directions are determined by the surface normals.
 
-!(Icon){style="max-width: 80px;"}
+![Icon](mtl_twosided_swatch.png "Icon"){style="max-width: 80px;"}
 
 ## Common
 

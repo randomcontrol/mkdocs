@@ -2,7 +2,7 @@
 
 The assembly node is a container for objects and/or other assembly nodes. It can be used to give structure and organization to the scene in the UI, or to control groups of lights together.
 
-!(Icon){style="max-width: 80px;"}
+![Icon](obj_assembly_swatch.png "Icon"){style="max-width: 80px;"}
 
 ## Common
 

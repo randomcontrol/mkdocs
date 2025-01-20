@@ -2,7 +2,7 @@
 
 @@
 
-!(Icon){style="max-width: 80px;"}
+![Icon](pro_vector_random_swatch.png "Icon"){style="max-width: 80px;"}
 
 ## Common
 

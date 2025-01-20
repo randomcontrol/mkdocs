@@ -2,7 +2,7 @@
 
 This node performs an algebraic operation between two given programming nodes. The result of the operation is always an floating-point scalar value.
 
-!(Icon){style="max-width: 80px;"}
+![Icon](pro_float_math_swatch.png "Icon"){style="max-width: 80px;"}
 
 ## Common
 

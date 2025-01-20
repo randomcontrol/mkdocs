@@ -2,7 +2,7 @@
 
 This is a simplified standard material, suitable for human or animal skin.
 
-!(Icon){style="max-width: 80px;"}
+![Icon](mtl_skin_swatch.png "Icon"){style="max-width: 80px;"}
 
 ## Common
 

@@ -2,7 +2,7 @@
 
 This is a simplified standard material, suitable for liquids.
 
-!(Icon){style="max-width: 80px;"}
+![Icon](mtl_liquid_swatch.png "Icon"){style="max-width: 80px;"}
 
 ## Common
 

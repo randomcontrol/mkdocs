@@ -2,7 +2,7 @@
 
 This programming node provides access to certain integer properties available to the execution context during nodal evaluation.
 
-!(Icon){style="max-width: 80px;"}
+![Icon](pro_int_from_ctx_swatch.png "Icon"){style="max-width: 80px;"}
 
 ## Common
 

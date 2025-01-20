@@ -2,7 +2,7 @@
 
 This programming node takes a floating-point value and remaps its input range to a new output range. Optionally, the resulting slope can be remapped itself with a profile curve.
 
-!(Icon){style="max-width: 80px;"}
+![Icon](pro_float_remap_swatch.png "Icon"){style="max-width: 80px;"}
 
 ## Common
 

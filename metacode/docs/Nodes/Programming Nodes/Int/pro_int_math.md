@@ -2,7 +2,7 @@
 
 This node performs an algebraic operation between two given programming nodes. The result of the operation is always an integer scalar value.
 
-!(Icon){style="max-width: 80px;"}
+![Icon](pro_int_math_swatch.png "Icon"){style="max-width: 80px;"}
 
 ## Common
 

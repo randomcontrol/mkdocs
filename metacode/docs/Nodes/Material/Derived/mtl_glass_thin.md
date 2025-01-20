@@ -2,7 +2,7 @@
 
 This is a simplified standard material, suitable for windows, windshields, ...
 
-!(Icon){style="max-width: 80px;"}
+![Icon](mtl_glass_thin_swatch.png "Icon"){style="max-width: 80px;"}
 
 ## Common
 

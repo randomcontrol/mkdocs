@@ -2,7 +2,7 @@
 
 @@
 
-!(Icon){style="max-width: 80px;"}
+![Icon](globals_swatch.png "Icon"){style="max-width: 80px;"}
 
 ## IPR resolution
 

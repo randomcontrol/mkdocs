@@ -2,7 +2,7 @@
 
 This is a simplified standard material, suitable for thin translucent objects such as sheets of paper, or tree leaves.
 
-!(Icon){style="max-width: 80px;"}
+![Icon](mtl_translucent_swatch.png "Icon"){style="max-width: 80px;"}
 
 ## Common
 

@@ -2,7 +2,7 @@
 
 The user_data map issues a fixed value that can be plugged into the inputs of other nodes. A typical use of this node is to control multiple node inputs with just one centralized value.
 
-!(Icon){style="max-width: 80px;"}
+![Icon](map_user_data_swatch.png "Icon"){style="max-width: 80px;"}
 
 ## Common
 

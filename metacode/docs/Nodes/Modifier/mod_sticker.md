@@ -2,7 +2,7 @@
 
 A sticker modifier attached to an object clips the given material by the given mask, and projects the result onto the surface of the object. This node is used to place stickers or labels, to create engravings, push buttons, etc... on objects.
 
-!(Icon){style="max-width: 80px;"}
+![Icon](mod_sticker_swatch.png "Icon"){style="max-width: 80px;"}
 
 ## Common
 

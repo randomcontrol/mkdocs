@@ -2,7 +2,7 @@
 
 When engaged, the lightmixer node detaches each light source into a separate channel. Then it provides controls to modulate each channel's color and power independently, without the need to re-render the whole image.
 
-!(Icon){style="max-width: 80px;"}
+![Icon](lightmixer_swatch.png "Icon"){style="max-width: 80px;"}
 
 ## LightMixer
 

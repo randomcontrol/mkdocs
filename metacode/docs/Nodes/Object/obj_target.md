@@ -2,7 +2,7 @@
 
 The target object node defines a dummy position/orientation in space. This can be used to reorient other objects (e.g., targeted cameras), as a center of rotation for turntable animations, etc...
 
-!(Icon){style="max-width: 80px;"}
+![Icon](obj_target_swatch.png "Icon"){style="max-width: 80px;"}
 
 ## Common
 

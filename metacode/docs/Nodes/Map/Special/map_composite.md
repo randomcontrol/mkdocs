@@ -2,7 +2,7 @@
 
 The composite map provides a mechanism to combine different inputs in a way that resembles layers in Adobe Photoshop. Input layers are combined from bottom-to-top, with layer 1 being the base.
 
-!(Icon){style="max-width: 80px;"}
+![Icon](map_composite_swatch.png "Icon"){style="max-width: 80px;"}
 
 ## Common
 

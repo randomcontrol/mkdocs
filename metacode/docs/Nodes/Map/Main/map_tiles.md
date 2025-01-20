@@ -2,7 +2,7 @@
 
 with this map one can easily reproduce the appearance of a wall of bricks, or a tiled floor.
 
-!(Icon){style="max-width: 80px;"}
+![Icon](map_tiles_swatch.png "Icon"){style="max-width: 80px;"}
 
 ## Common
 

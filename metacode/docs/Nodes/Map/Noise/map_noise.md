@@ -2,7 +2,7 @@
 
 This node encapsulates the classic Perlin noise algorithm. This type of noise generates a turbulent transition between colors, useful to simulate real-world irregularities such as terrains, clouds, ...
 
-!(Icon){style="max-width: 80px;"}
+![Icon](map_noise_swatch.png "Icon"){style="max-width: 80px;"}
 
 ## Common
 

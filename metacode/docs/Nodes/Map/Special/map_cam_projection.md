@@ -2,7 +2,7 @@
 
 The cam_projection map dynamically reproduces the same projective mapping the active camera uses to view the scene. In direct vision, a camera-projected texture on a surface appears as a flat backplate.
 
-!(Icon){style="max-width: 80px;"}
+![Icon](map_cam_projection_swatch.png "Icon"){style="max-width: 80px;"}
 
 ## Common
 

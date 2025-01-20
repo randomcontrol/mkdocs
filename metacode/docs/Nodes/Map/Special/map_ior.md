@@ -2,7 +2,7 @@
 
 The (complex) IOR node controls the BSDF of the material it is attached to at the spectral level. Certain nuances in materials such as metals or gemstones can't be accurately reproduced with simple colors given in the RGB/HSV. The complex IOR mode allows the user to provide laboratory-measured (n,k) spectral curves that override the stock parameters of the material.
 
-!(Icon){style="max-width: 80px;"}
+![Icon](map_ior_swatch.png "Icon"){style="max-width: 80px;"}
 
 ## Common
 

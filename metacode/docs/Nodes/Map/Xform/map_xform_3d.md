@@ -2,7 +2,7 @@
 
 The xform_3d map node transforms (e.g., offset, scale, rotate, ...) the texture coordinates of the 3D map node(s) it is connected to.
 
-!(Icon){style="max-width: 80px;"}
+![Icon](map_xform_3d_swatch.png "Icon"){style="max-width: 80px;"}
 
 ## Common
 

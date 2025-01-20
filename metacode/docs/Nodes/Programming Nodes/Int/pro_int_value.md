@@ -2,7 +2,7 @@
 
 This programming node simply outputs an integer scalar value.
 
-!(Icon){style="max-width: 80px;"}
+![Icon](pro_int_value_swatch.png "Icon"){style="max-width: 80px;"}
 
 ## Common
 

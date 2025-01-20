@@ -2,7 +2,7 @@
 
 This node takes a grayscale height map, or an rgb-encoded normal map to control bump mapping in the surface(s) it is applied to. Note that, when available, normal maps are preferred over height maps, as they render faster, and sometimes crisper.
 
-!(Icon){style="max-width: 80px;"}
+![Icon](map_bump_swatch.png "Icon"){style="max-width: 80px;"}
 
 ## Common
 

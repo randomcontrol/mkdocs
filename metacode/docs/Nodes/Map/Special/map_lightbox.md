@@ -2,7 +2,7 @@
 
 The lightbox map provides an easy way to overlay a geometry-less box on the IBL map. IBL lightboxes can be configured parametrically. Combined with a shadow catcher floor, they generally lead to significantly faster renders compared to an equivalent room modeled with true geometry.
 
-!(Icon){style="max-width: 80px;"}
+![Icon](map_lightbox_swatch.png "Icon"){style="max-width: 80px;"}
 
 ## Common
 

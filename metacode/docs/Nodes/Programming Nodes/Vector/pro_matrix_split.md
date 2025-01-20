@@ -2,7 +2,7 @@
 
 This node unlocks access to the inner contents of an input matrix through its output plugs. The input matrix is interpreted as an xform (i.e., a pivot) defining a local coordinate space comprising an origin (O) and three axes (X/Y/Z).
 
-!(Icon){style="max-width: 80px;"}
+![Icon](pro_matrix_split_swatch.png "Icon"){style="max-width: 80px;"}
 
 ## Common
 

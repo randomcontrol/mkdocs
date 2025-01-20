@@ -2,7 +2,7 @@
 
 The glare map is a way to override the default glare/iris diffraction pipeline by providing a customizable diffraction pattern. This pattern combines a corona, flare streaks, and a lenticular halo with enough flexibility to mimic those produced by a real-life camera or the human eye.
 
-!(Icon){style="max-width: 80px;"}
+![Icon](map_glare_swatch.png "Icon"){style="max-width: 80px;"}
 
 ## Common
 

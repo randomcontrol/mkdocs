@@ -2,7 +2,7 @@
 
 The gradient map generates a point-to-point LDR color transition across a line, a polygon, or a circle. Note that for HDR gradients, the gradient_light node must be used instead.
 
-!(Icon){style="max-width: 80px;"}
+![Icon](map_gradient_swatch.png "Icon"){style="max-width: 80px;"}
 
 ## Common
 

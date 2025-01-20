@@ -2,7 +2,7 @@
 
 The uvmap modifier overrides the texture coordinates (UVs) of the object(s) it is connected to. The override is made by projecting the geometry of the object(s) onto a shape, such as a plane, a sphere, etc... Note that materials provide their own built-in UVW mapping system, which is enough for most uses. The uvmap node, however, provides some extended functionality, such as interactive positioning in the IPR.
 
-!(Icon){style="max-width: 80px;"}
+![Icon](mod_uvmap_swatch.png "Icon"){style="max-width: 80px;"}
 
 ## Common
 

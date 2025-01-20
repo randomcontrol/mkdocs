@@ -2,7 +2,7 @@
 
 This light-specific node can be used to define the shape and spread of lamps and wallwashers. Luminaire manufacturers often release (.ies) files that capture the behavior of their products. Those files can be plugged directly into light objects in Maverick, via this map.
 
-!(Icon){style="max-width: 80px;"}
+![Icon](map_photometric_swatch.png "Icon"){style="max-width: 80px;"}
 
 
 

@@ -2,7 +2,7 @@
 
 The triplanar node is similar to a box mapping texture projection, but with the ability to blend each side projection at the edges to conceal the seams. Additionally, it is possible to project a different map at each side.
 
-!(Icon){style="max-width: 80px;"}
+![Icon](map_triplanar_swatch.png "Icon"){style="max-width: 80px;"}
 
 ## Common
 

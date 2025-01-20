@@ -2,7 +2,7 @@
 
 This is a simplified standard material, suitable for matte emissive materials such as lava, embers, ...
 
-!(Icon){style="max-width: 80px;"}
+![Icon](mtl_emissive_swatch.png "Icon"){style="max-width: 80px;"}
 
 ## Common
 

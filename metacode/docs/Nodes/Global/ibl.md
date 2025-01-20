@@ -2,7 +2,7 @@
 
 IBL stands for Image-Based Lighting. The ibl node defines the environment dome that surrounds the scene. Often times, IBL is configured by providing an HDR map such as a landscape in panoramic (latitude-longitude) format.
 
-!(Icon){style="max-width: 80px;"}
+![Icon](ibl_swatch.png "Icon"){style="max-width: 80px;"}
 
 ## Image-Based Lighting
 

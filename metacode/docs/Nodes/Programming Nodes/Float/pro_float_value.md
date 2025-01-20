@@ -2,7 +2,7 @@
 
 This programming node simply outputs a floating-point scalar value.
 
-!(Icon){style="max-width: 80px;"}
+![Icon](pro_float_value_swatch.png "Icon"){style="max-width: 80px;"}
 
 ## Common
 

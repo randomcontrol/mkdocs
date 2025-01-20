@@ -2,7 +2,7 @@
 
 The xform_spherical map node warps the texture coordinates of the 2D map node(s) in a way compatible with an IBL latitude-longitude projection.
 
-!(Icon){style="max-width: 80px;"}
+![Icon](map_xform_spherical_swatch.png "Icon"){style="max-width: 80px;"}
 
 ## Common
 

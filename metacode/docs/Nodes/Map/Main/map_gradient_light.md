@@ -2,7 +2,7 @@
 
 The gradient_light map uses an HDR spline profile to define colors across a line, a polygon, or a circle. Some additional controls are provided to create a pattern over the UV plane.
 
-!(Icon){style="max-width: 80px;"}
+![Icon](map_gradient_light_swatch.png "Icon"){style="max-width: 80px;"}
 
 ## Common
 

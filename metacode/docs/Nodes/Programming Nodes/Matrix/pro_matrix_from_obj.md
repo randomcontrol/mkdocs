@@ -2,7 +2,7 @@
 
 This programming node takes an input object and extracts one of its intrinsic matrix values. For example, this node can be used to retrieve the world xform of a target object.
 
-!(Icon){style="max-width: 80px;"}
+![Icon](pro_matrix_from_obj_swatch.png "Icon"){style="max-width: 80px;"}
 
 ## Common
 

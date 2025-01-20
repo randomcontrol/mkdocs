@@ -2,7 +2,7 @@
 
 This motion controller is used to drive (animate) the position and pose of the object(s) or camera(s) it is attached to.
 
-!(Icon){style="max-width: 80px;"}
+![Icon](moc_transform_swatch.png "Icon"){style="max-width: 80px;"}
 
 ## Common
 

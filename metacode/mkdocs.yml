@@ -137,8 +137,6 @@ nav:
         - 'Matrix Math':         Nodes/Programming Nodes/Matrix/pro_matrix_math.md
       - Profile:
         - 'Float Profile':       Nodes/Programming Nodes/Profile/pro_float_profile.md
-      - Compound:
-        - 'Matrix Bullet':       Nodes/Programming Nodes/Compound/pro_matrix_bullet.md
 
 theme:
   name: material

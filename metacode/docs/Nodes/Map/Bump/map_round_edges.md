@@ -2,7 +2,7 @@
 
 The round_edges map is an extremely powerful yet easy way to automatically bevel the hard edges in your geometry. This map analyzes the curvature of contacting faces by proximity, and bends the normals of edges accordingly.
 
-!(Icon){style="max-width: 80px;"}
+![Icon](map_round_edges_swatch.png "Icon"){style="max-width: 80px;"}
 
 
 

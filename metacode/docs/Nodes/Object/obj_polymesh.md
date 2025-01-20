@@ -2,7 +2,7 @@
 
 The polymesh object node manages a soup of polygonal faces (i.e., tris, quads, ...). Regular geometry in Maverick is always encoded in polymesh nodes.
 
-!(Icon){style="max-width: 80px;"}
+![Icon](obj_polymesh_swatch.png "Icon"){style="max-width: 80px;"}
 
 ## Common
 

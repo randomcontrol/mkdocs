@@ -2,7 +2,7 @@
 
 The shadow_catcher node behaves as a see-through surface that won't occlude the IBL/backplate but will capture shadows and reflections cast by the objects placed above it. This type of material is typically used for the floor object in product shots where the object must be integrated in a photographic background, or where the backdrop must appear to be a perfectly flat color.
 
-!(Icon){style="max-width: 80px;"}
+![Icon](mtl_shadow_catcher_swatch.png "Icon"){style="max-width: 80px;"}
 
 ## Common
 

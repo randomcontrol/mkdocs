@@ -2,7 +2,7 @@
 
 This motion controller overlays a translucent color or bitmap on top of the render. This is typically used to create animatable fade in/out transitions in an animation, or to overlay a watermark or a branding element.
 
-!(Icon){style="max-width: 80px;"}
+![Icon](moc_frontplate_swatch.png "Icon"){style="max-width: 80px;"}
 
 ## Common
 

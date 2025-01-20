@@ -2,7 +2,7 @@
 
 The substance map node is a wrapper for an Adobe Substance .sbsar archive. This node reveals the attributes exposed by the .sbsar file through the Maverick Attribute Editor, and reacts to them interactively.
 
-!(Icon){style="max-width: 80px;"}
+![Icon](map_substance_swatch.png "Icon"){style="max-width: 80px;"}
 
 ## Common
 

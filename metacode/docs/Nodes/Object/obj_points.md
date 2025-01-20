@@ -2,7 +2,7 @@
 
 The points object node manages a cloud of xforms in space which are used as anchoring points for instancing.
 
-!(Icon){style="max-width: 80px;"}
+![Icon](obj_points_swatch.png "Icon"){style="max-width: 80px;"}
 
 ## Common
 

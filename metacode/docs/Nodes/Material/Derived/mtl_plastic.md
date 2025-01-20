@@ -2,7 +2,7 @@
 
 This is a simplified standard material, suitable for plastics.
 
-!(Icon){style="max-width: 80px;"}
+![Icon](mtl_plastic_swatch.png "Icon"){style="max-width: 80px;"}
 
 ## Common
 

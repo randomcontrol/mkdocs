@@ -2,7 +2,7 @@
 
 The gradient color map interpolates through a list of up to 5 colors along the U (horizontal) texture axis. This map is often used as input to the remap node for height-based coloring in materials such as wood, marble, ... or falloff-based effects such as iridiscence.
 
-!(Icon){style="max-width: 80px;"}
+![Icon](map_gradient_color_swatch.png "Icon"){style="max-width: 80px;"}
 
 ## Common
 

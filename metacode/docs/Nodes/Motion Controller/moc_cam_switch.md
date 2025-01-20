@@ -2,7 +2,7 @@
 
 This motion controller is used to switch over to a different camera. This can be used to effectively produce multi-camera videos without needing to splice video sequences in an external video-editing app.
 
-!(Icon){style="max-width: 80px;"}
+![Icon](moc_cam_switch_swatch.png "Icon"){style="max-width: 80px;"}
 
 ## Common
 

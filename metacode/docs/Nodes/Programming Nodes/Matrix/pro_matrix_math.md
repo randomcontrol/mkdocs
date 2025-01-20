@@ -2,7 +2,7 @@
 
 This node performs an algebraic operation between two given programming nodes. The result of the operation is always a 4x4 matrix value.
 
-!(Icon){style="max-width: 80px;"}
+![Icon](pro_matrix_math_swatch.png "Icon"){style="max-width: 80px;"}
 
 ## Common
 

@@ -2,7 +2,7 @@
 
 This is a simplified standard material, suitable for coated or oily metals.
 
-!(Icon){style="max-width: 80px;"}
+![Icon](mtl_metal_coated_swatch.png "Icon"){style="max-width: 80px;"}
 
 ## Common
 

@@ -2,7 +2,7 @@
 
 The standard material type captures all the features in Maverick's material system. It is the most generic material type. For this reason, standard is rather advanced, and for most common uses you may want to use simpler options such as lambert, plastic, metal, ...
 
-!(Icon){style="max-width: 80px;"}
+![Icon](mtl_standard_swatch.png "Icon"){style="max-width: 80px;"}
 
 ## Common
 
