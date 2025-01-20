@@ -1,6 +1,6 @@
 `Python: "pro_float_profile"`
 
-This gradient-type node provides an evaluable curve that is typically used as input to other programming nodes such as float_remap. Besides an editable gradient, this node offers a collection of handy easing curve presets.
+This gradient-type node provides an evaluable curve that is typically used as input to other programming nodes such as float_remap. This node is compatible with (and semantically equivalent to) the easing curve in a motion controller node.
 
 ![Icon](pro_float_profile_swatch.png "Icon"){style="max-width: 80px;"}
 
@@ -36,7 +36,7 @@ User-set node tags.
 #### Curve easing
 `Python: "pro_float_profile_type"`
 
-Defines the speed curve at which the motion happens at the beginning (in) or end (out) of the motion controller's duration. Easing helps produce transitions between consecutive motion controller blocks that look easier on the eyes.
+Defines the interpolation curve with which the motion happens between the beginning (in/left) and end (out/right) of the motion controller's duration.
 
 #### @@
 `Python: "pro_float_profile_strength"`
@@ -46,17 +46,17 @@ Defines the speed curve at which the motion happens at the beginning (in) or end
 #### Profile gradient
 `Python: "pro_float_profile_custom_profile"`
 
-Editable profile curve.
+This allows the user to manually draw a custom curve in the UI's poly-bezier gradient editor.
 
 #### Curve repeat
 `Python: "pro_float_profile_repeat"`
 
-.
+Number of times the profile curve is repeated along the duration of the motion controller.
 
 #### Curve ping-pong
 `Python: "pro_float_profile_pingpong"`
 
-.
+When the repeat count is greater than 1, this control toggles between sequential or symmetric repetitions of the profile curve.
 
 ## Output tuning
 
