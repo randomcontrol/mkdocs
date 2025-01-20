@@ -38,10 +38,10 @@ User-set node tags.
 
 Defines the speed curve at which the motion happens at the beginning (in) or end (out) of the motion controller's duration. Easing helps produce transitions between consecutive motion controller blocks that look easier on the eyes.
 
-#### Easing strength
+#### @@
 `Python: "pro_float_profile_strength"`
 
-.
+@@
 
 #### Profile gradient
 `Python: "pro_float_profile_custom_profile"`

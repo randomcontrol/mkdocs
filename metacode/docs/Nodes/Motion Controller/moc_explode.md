@@ -56,32 +56,32 @@ Timeline duration of the controller, in frames.
 #### Curve easing
 `Python: "moc_easing_type"`
 
-Defines the speed curve at which the motion happens at the beginning (in) or end (out) of the motion controller's duration. Easing helps produce transitions between consecutive motion controller blocks that look easier on the eyes.
+Defines the interpolation curve with which the motion happens between the beginning (in/left) and end (out/right) of the motion controller's duration. Easing produces transitions that look easier on the eyes. Especially when motion controllers are concatenated one after the other.
 
 #### Easing tension
 `Python: "moc_easing_tension"`
 
-.
+Defines how smoothly or abruptly the curve adapts to its in/out endpoints.
 
 #### Profile gradient
 `Python: "moc_easing_custom_profile"`
 
-.
+This allows the user to manually draw a custom curve in our poly-bezier gradient editor.
 
 #### Profile node
 `Python: "moc_easing_custom_profile_pro"`
 
-.
+This plug can be used to override the custom profile by a profile programming node.
 
 #### Curve repeat
 `Python: "moc_easing_repeat"`
 
-.
+Number of times the profile curve is repeated along the duration of the motion controller.
 
 #### Curve ping-pong
 `Python: "moc_easing_pingpong"`
 
-.
+When the repeat count is greater than 1, this control toggles between sequential or symmetric repetitions of the profile curve.
 
 ## Coordinates
 

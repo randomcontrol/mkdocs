@@ -1,6 +1,6 @@
 `Python: "pro_matrix_split"`
 
-This node unlocks access to the inner contents of an input matrix through its output plugs. The input matrix is interpreted as an xform (i.e., a pivot) defining a local coordinate space comprising an origin (O) and three axes (X/Y/Z).
+This node exposes the inner contents of an input matrix through its output plugs. The input matrix is interpreted as an xform (i.e., a pivot) defining a local coordinate space comprising an origin (O) and three axes (X/Y/Z).
 
 ![Icon](pro_matrix_split_swatch.png "Icon"){style="max-width: 80px;"}
 
