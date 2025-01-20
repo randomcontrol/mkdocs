@@ -1,57 +1,52 @@
 `Python: "pro_int_from_ctx"`
 
 This programming node provides access to certain integer properties available to the execution context during nodal evaluation.
+
+![Icon]{style="max-width: 32px;"}
+
 ## Common
 
 #### Node alias
 `Python: "pro_alias"`
 
-Human-readable node alias.![Icon](pro_int_from_ctx_swatch.png "Icon"){style="max-width: 32px;"}
-
+Human-readable node alias.
 
 #### Alias color
 `Python: "pro_alias_color"`
 
-Identificative node color.![Icon](pro_int_from_ctx_swatch.png "Icon"){style="max-width: 32px;"}
-
+Identificative node color.
 
 #### Node UUID
 `Python: "pro_uuid"`
 
-Node UUID.![Icon](pro_int_from_ctx_swatch.png "Icon"){style="max-width: 32px;"}
-
+Node UUID.
 
 #### Node metadata
 `Python: "pro_metadata"`
 
-User-set node metadata.![Icon](pro_int_from_ctx_swatch.png "Icon"){style="max-width: 32px;"}
-
+User-set node metadata.
 
 #### Node tags
 `Python: "pro_tags"`
 
-User-set node tags.![Icon](pro_int_from_ctx_swatch.png "Icon"){style="max-width: 32px;"}
-
+User-set node tags.
 
 ## Main
 
 #### Intrinsic property
 `Python: "pro_int_from_ctx_intrinsic"`
 
-Selects the intrinsic property to be queried from the execution context.![Icon](pro_int_from_ctx_swatch.png "Icon"){style="max-width: 32px;"}
-
+Selects the intrinsic property to be queried from the execution context.
 
 ## Output tuning
 
 #### Value weight
 `Python: "pro_weight"`
 
-The final value output by the node is, actually: value*weight+bias.![Icon](pro_int_from_ctx_swatch.png "Icon"){style="max-width: 32px;"}
-
+The final value output by the node is, actually: value*weight+bias.
 
 #### Value bias
 `Python: "pro_bias"`
 
-The final value output by the node is, actually: value*weight+bias.![Icon](pro_int_from_ctx_swatch.png "Icon"){style="max-width: 32px;"}
-
+The final value output by the node is, actually: value*weight+bias.
 
