@@ -41,12 +41,12 @@ Selects the operation to be performed between both operands. Note that input dat
 #### A operand node
 `Python: "pro_matrix_math_operand_a_pro"`
 
-Operation's first operand.
+First operation operand.
 
 #### B operand node
 `Python: "pro_matrix_math_operand_b_pro"`
 
-Operation's second operand.
+Second operation operand.
 
 ## Output tuning
 

@@ -1,6 +1,6 @@
 `Python: "pro_vector_split"`
 
-This node unlocks access to the (x,y,z) coordinates of an input vector through its output plugs.
+This node exposes the (x,y,z) coordinates of an input vector through its output plugs.
 
 ![Icon](pro_vector_split_swatch.png "Icon"){style="max-width: 80px;"}
 

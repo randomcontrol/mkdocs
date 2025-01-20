@@ -41,22 +41,22 @@ Selects the operation to be performed between both operands. Note that input dat
 #### A operand
 `Python: "pro_float_math_operand_a"`
 
-Operation's first operand, when no input programming node is provided.
+First operation operand, when no input programming node is provided.
 
 #### A operand node
 `Python: "pro_float_math_operand_a_pro"`
 
-Operation's first operand.
+First operation operand.
 
 #### B operand
 `Python: "pro_float_math_operand_b"`
 
-Operation's second operand, when no input programming node is provided.
+Second operation operand, when no input programming node is provided.
 
 #### B operand node
 `Python: "pro_float_math_operand_b_pro"`
 
-Operation's second operand.
+Second operation operand.
 
 ## Output tuning
 
