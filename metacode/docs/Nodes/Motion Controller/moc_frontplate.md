@@ -56,7 +56,7 @@ Defines the behavior of motion between the beginning (in/left) and end (out/righ
 #### Easing tension
 `Python: "moc_easing_tension"`
 
-Defines how smoothly or abruptly the curve adapts to its in/out endpoints. tension=1 produces a dry-looking linear interpolation. tension=0 accelerates calmly at the beginning and deccelerates calmly towards end.
+Defines how smoothly or abruptly the motion reaches its in/out endpoints. tension=1 produces a dry-looking linear interpolation. tension=0 accelerates calmly at the beginning and deccelerates calmly towards end.
 
 #### Profile gradient
 `Python: "moc_easing_custom_profile"`
@@ -66,7 +66,7 @@ This allows the user to manually draw a custom curve in the UI's poly-bezier gra
 #### Profile node
 `Python: "moc_easing_custom_profile_pro"`
 
-This plug can be used to override the custom profile with a profile programming node.
+This plug can be used to override the user-set profile with a profile programming node.
 
 #### Curve repeat
 `Python: "moc_easing_repeat"`

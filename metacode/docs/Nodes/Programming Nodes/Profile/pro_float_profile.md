@@ -1,6 +1,6 @@
 `Python: "pro_float_profile"`
 
-This gradient-type node provides an evaluable curve that is typically used as input to other programming nodes such as float_remap. This node is compatible with (and semantically equivalent to) the easing curve in a motion controller node.
+This gradient-type node provides an evaluable curve that is typically used as input to other programming nodes such as float_remap. This node is compatible with the easing curve in a motion controller node.
 
 ![Icon](pro_float_profile_swatch.png "Icon"){style="max-width: 80px;"}
 
@@ -36,22 +36,22 @@ User-set node tags.
 #### Curve easing
 `Python: "pro_float_profile_type"`
 
-Defines the interpolation curve with which the motion happens between the beginning (in/left) and end (out/right) of the motion controller's duration.
+Defines the curve with which the interpolation happens between the beginning (in/left) and end (out/right) of the profile's domain.
 
-#### @@
-`Python: "pro_float_profile_strength"`
+#### Easing tension
+`Python: "pro_float_profile_tension"`
 
-@@
+Defines how smoothly or abruptly the profile adapts to its in/out endpoints. tension=1 produces a point-to-point linear interpolation. tension=0 accelerates calmly at the beginning and deccelerates calmly towards end.
 
 #### Profile gradient
 `Python: "pro_float_profile_custom_profile"`
 
-This allows the user to manually draw a custom curve in the UI's poly-bezier gradient editor.
+This allows the user to manually draw a custom profile in the UI's poly-bezier gradient editor.
 
 #### Curve repeat
 `Python: "pro_float_profile_repeat"`
 
-Number of times the profile curve is repeated along the duration of the motion controller.
+Number of times the profile curve is repeated along the duration of the target plug it is connected to.
 
 #### Curve ping-pong
 `Python: "pro_float_profile_pingpong"`
