@@ -2,7 +2,7 @@
 
 The aovs node (Compositing panel in the UI) hosts options to produce Arbitrary Output Value render layers (a.k.a., render elements/channels). AOVs are mostly used for compositing and post-processing in an external photo-editing software such as Adobe Photoshop.
 
-![Icon]{style="max-width: 32px;"}
+!(Icon){style="max-width: 80px;"}
 
 ## HDR RGB AOVs
 

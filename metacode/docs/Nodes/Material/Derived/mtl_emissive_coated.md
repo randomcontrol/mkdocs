@@ -2,7 +2,7 @@
 
 This is a simplified standard material, suitable for glass TV screens, platsic LEDs, and such.
 
-![Icon]{style="max-width: 32px;"}
+!(Icon){style="max-width: 80px;"}
 
 ## Common
 

@@ -2,7 +2,7 @@
 
 The ray_switch map node acts as a fork so light paths arriving at the map will be rewired to another map based on the path type.
 
-![Icon]{style="max-width: 32px;"}
+!(Icon){style="max-width: 80px;"}
 
 ## Common
 

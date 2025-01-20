@@ -2,7 +2,7 @@
 
 This programming node provides access to certain matrix properties available to the execution context during nodal evaluation. For example, this node can be used to retrieve the world xform of motion-controlled objects.
 
-![Icon]{style="max-width: 32px;"}
+!(Icon){style="max-width: 80px;"}
 
 ## Common
 

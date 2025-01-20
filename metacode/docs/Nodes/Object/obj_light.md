@@ -2,7 +2,7 @@
 
 The light object node is the main mechanism to create a light source in Maverick, aside from the environment IBL and the sky/sun.
 
-![Icon]{style="max-width: 32px;"}
+!(Icon){style="max-width: 80px;"}
 
 ## Common
 

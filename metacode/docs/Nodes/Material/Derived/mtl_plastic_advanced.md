@@ -2,7 +2,7 @@
 
 This is a simplified standard material, suitable for plastics and rubbers.
 
-![Icon]{style="max-width: 32px;"}
+!(Icon){style="max-width: 80px;"}
 
 ## Common
 

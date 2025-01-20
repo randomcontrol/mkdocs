@@ -2,7 +2,7 @@
 
 This programming node outputs a 4x4 matrix value for typical uses such as translation, rotation and scaling.
 
-![Icon]{style="max-width: 32px;"}
+!(Icon){style="max-width: 80px;"}
 
 ## Common
 

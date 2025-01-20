@@ -2,7 +2,7 @@
 
 The xform_distortion map node applies certain non-linear distortions (e.g., noise, jitter blur, ...) to the texture coordinates of the map node(s) it is connected to.
 
-![Icon]{style="max-width: 32px;"}
+!(Icon){style="max-width: 80px;"}
 
 ## Common
 

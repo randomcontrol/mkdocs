@@ -2,7 +2,7 @@
 
 This gradient-type node provides an evaluable curve that is typically used as input to other programming nodes such as float_remap. Besides an editable gradient, this node offers a collection of handy easing curve presets.
 
-![Icon]{style="max-width: 32px;"}
+!(Icon){style="max-width: 80px;"}
 
 ## Common
 

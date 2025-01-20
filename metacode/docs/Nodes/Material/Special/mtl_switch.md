@@ -2,7 +2,7 @@
 
 The mtl_switch node scatters up to 8 materials among the objects it is assigned to. For instance, you might use this node to randomize the color of leaves in a plant.
 
-![Icon]{style="max-width: 32px;"}
+!(Icon){style="max-width: 80px;"}
 
 ## Common
 

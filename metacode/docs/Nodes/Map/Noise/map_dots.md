@@ -2,7 +2,7 @@
 
 The dots map node produces random spots of different shapes and sizes, such as those in popcorn ceiling, or certain types of granite surfaces.
 
-![Icon]{style="max-width: 32px;"}
+!(Icon){style="max-width: 80px;"}
 
 ## Common
 

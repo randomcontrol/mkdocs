@@ -2,7 +2,7 @@
 
 This node casts a fellow programming node to vector form. Integer and floating-point values are upcast by copying x=y=z. Matrix values are downcast by losing coordinates.
 
-![Icon]{style="max-width: 32px;"}
+!(Icon){style="max-width: 80px;"}
 
 ## Common
 

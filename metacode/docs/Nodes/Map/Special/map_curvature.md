@@ -2,7 +2,7 @@
 
 The curvature map analyzes the normals of surfaces by proximity, and outputs a brighter or darker color based on neighborhood curvature. This node is very useful to add wear and dirt either on its own or as a blend mask between two materials. A typical use of this map is to blend between paint and rust at the edges of an object.
 
-![Icon]{style="max-width: 32px;"}
+!(Icon){style="max-width: 80px;"}
 
 ## Common
 

@@ -2,7 +2,7 @@
 
 The checker map generates a checkerboard pattern with alternating colored squares.
 
-![Icon]{style="max-width: 32px;"}
+!(Icon){style="max-width: 80px;"}
 
 ## Common
 

@@ -2,7 +2,7 @@
 
 This is a simplified standard material, suitable for regular metals.
 
-![Icon]{style="max-width: 32px;"}
+!(Icon){style="max-width: 80px;"}
 
 ## Common
 

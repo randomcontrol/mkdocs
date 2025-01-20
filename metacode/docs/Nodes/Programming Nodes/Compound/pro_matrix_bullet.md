@@ -2,7 +2,7 @@
 
 This node treats whichever object it is connected to via a motion controller as a projectile. It then calculates the ballistic trajectory that governs free flight under the effect of a gravity vector. The initial barrel direction and velocity, as well as the spin axis and angular velocity can be configured.
 
-![Icon]{style="max-width: 32px;"}
+!(Icon){style="max-width: 80px;"}
 
 ## Common
 

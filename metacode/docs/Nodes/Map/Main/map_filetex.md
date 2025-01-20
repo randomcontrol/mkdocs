@@ -2,7 +2,7 @@
 
 File textures are the most common map type in Maverick. A filetex node references an image (a bitmap) that physically sits on the disk.
 
-![Icon]{style="max-width: 32px;"}
+!(Icon){style="max-width: 80px;"}
 
 ## Common
 

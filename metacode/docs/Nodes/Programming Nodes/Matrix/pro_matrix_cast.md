@@ -2,7 +2,7 @@
 
 This node casts a fellow programming node to matrix form. Non-matrix types are all upcast by duplicating their first coordinate into matrix form.
 
-![Icon]{style="max-width: 32px;"}
+!(Icon){style="max-width: 80px;"}
 
 ## Common
 

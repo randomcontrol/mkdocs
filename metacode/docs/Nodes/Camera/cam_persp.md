@@ -2,7 +2,7 @@
 
 The perspective camera node reproduces the behavior of real-life photographic camera optics.
 
-![Icon]{style="max-width: 32px;"}
+!(Icon){style="max-width: 80px;"}
 
 ## Common
 

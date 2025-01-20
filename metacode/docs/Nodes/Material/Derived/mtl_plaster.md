@@ -2,7 +2,7 @@
 
 This is a simplified standard material, suitable for rough finish surfaces, such as dry wall paint, chalk, etc...
 
-![Icon]{style="max-width: 32px;"}
+!(Icon){style="max-width: 80px;"}
 
 ## Common
 

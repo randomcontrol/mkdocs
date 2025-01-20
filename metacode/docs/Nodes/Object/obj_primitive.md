@@ -2,7 +2,7 @@
 
 The primitive object node can be used to add stock mathematical shapes to the scene, such as planes, boxes and spheres.
 
-![Icon]{style="max-width: 32px;"}
+!(Icon){style="max-width: 80px;"}
 
 ## Common
 

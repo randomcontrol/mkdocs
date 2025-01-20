@@ -2,7 +2,7 @@
 
 The 3D LUT map an be used to import a color grading Look Up Table in Adobe's .CUBE format.
 
-![Icon]{style="max-width: 32px;"}
+!(Icon){style="max-width: 80px;"}
 
 ## Common
 

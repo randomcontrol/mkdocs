@@ -2,7 +2,7 @@
 
 The profile node remaps the output of a map with a 1D gradient. To this end, the output signal (i.e., the grayscale value) of the input map is used as the horizontal UV coordinate the gradient is read at. A typical use of this node is to colorize a grayscale map using a gradient color node. Other possible uses are to manually reshape the output of a procedural map such as noise, falloff, ...
 
-![Icon]{style="max-width: 32px;"}
+!(Icon){style="max-width: 80px;"}
 
 ## Common
 

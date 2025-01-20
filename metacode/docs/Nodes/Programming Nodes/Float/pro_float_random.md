@@ -2,7 +2,7 @@
 
 This node takes an integer scalar and produces a stable [0..1] floating-point random value. The hash function used for this pseudo-random remapping can be seeded, producing different distributions. A typical use for this node is to transform object IDs into random values, so the same motion-controll trajectory can be perturbed differently per object.
 
-![Icon]{style="max-width: 32px;"}
+!(Icon){style="max-width: 80px;"}
 
 ## Common
 

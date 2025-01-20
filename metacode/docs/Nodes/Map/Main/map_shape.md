@@ -2,7 +2,7 @@
 
 The shape node creates polygonal shapes with round corners. This node is particularly well-suited to create sticker masks.
 
-![Icon]{style="max-width: 32px;"}
+!(Icon){style="max-width: 80px;"}
 
 ## Common
 

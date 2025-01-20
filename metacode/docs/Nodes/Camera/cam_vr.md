@@ -2,7 +2,7 @@
 
 The vr camera node is used for non-conventional projection types such as spherical (panoramic) views, or to generate stereoscopic content for VR.
 
-![Icon]{style="max-width: 32px;"}
+!(Icon){style="max-width: 80px;"}
 
 ## Common
 

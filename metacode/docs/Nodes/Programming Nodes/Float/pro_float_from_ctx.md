@@ -2,7 +2,7 @@
 
 This programming node provides access to certain floating-point properties available to the execution context during nodal evaluation.
 
-![Icon]{style="max-width: 32px;"}
+!(Icon){style="max-width: 80px;"}
 
 ## Common
 

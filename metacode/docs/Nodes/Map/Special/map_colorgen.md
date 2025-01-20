@@ -2,7 +2,7 @@
 
 The colorgen node issues random variations over a given color/map. The randomization is seeded by a selectable input primvar. For instance, this can be used to randomize the tonality of the leaves in a tree.
 
-![Icon]{style="max-width: 32px;"}
+!(Icon){style="max-width: 80px;"}
 
 ## Common
 

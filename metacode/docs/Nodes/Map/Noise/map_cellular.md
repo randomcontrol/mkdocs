@@ -2,7 +2,7 @@
 
 This node encapsulates the classic Worley noise algorithm. Worley noise randomly fills space cells with singular points used to anchor visual features. This type of map is ideal to simulate granular surfaces (e.g., leather, snake skin, ...).
 
-![Icon]{style="max-width: 32px;"}
+!(Icon){style="max-width: 80px;"}
 
 ## Common
 

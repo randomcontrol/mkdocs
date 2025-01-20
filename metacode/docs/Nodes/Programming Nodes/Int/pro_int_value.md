@@ -2,7 +2,7 @@
 
 This programming node simply outputs an integer scalar value.
 
-![Icon]{style="max-width: 32px;"}
+!(Icon){style="max-width: 80px;"}
 
 ## Common
 

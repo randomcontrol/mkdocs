@@ -2,7 +2,7 @@
 
 The mix map mixes two colors or maps by the given amount. The amount can be texture-mapped itself.
 
-![Icon]{style="max-width: 32px;"}
+!(Icon){style="max-width: 80px;"}
 
 ## Common
 

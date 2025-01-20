@@ -2,7 +2,7 @@
 
 The brushed map node produces long parallel grooves of different depths such as those you can find in brushed aluminium.
 
-![Icon]{style="max-width: 32px;"}
+!(Icon){style="max-width: 80px;"}
 
 ## Common
 

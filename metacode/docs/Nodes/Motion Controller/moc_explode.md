@@ -2,7 +2,7 @@
 
 This is a specialized transform motion controller, suitable for exploded views in which a compound object is animated to reveal its parts. Basically, this node applies the configured transform to each node it is connected to, modulated by an object-specific value such as a custom attribute.
 
-![Icon]{style="max-width: 32px;"}
+!(Icon){style="max-width: 80px;"}
 
 ## Common
 

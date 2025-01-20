@@ -2,7 +2,7 @@
 
 The grooves map produces parallel or concentric narrow depressions such as those found in the bottom of a frying pan, a vinyl disc, or a knob in an appliance.
 
-![Icon]{style="max-width: 32px;"}
+!(Icon){style="max-width: 80px;"}
 
 ## Common
 

@@ -2,7 +2,7 @@
 
 The primvar node allows to reveal as color certain primitive variables used internally by the core rendering engine. This can be used, for example, to visualize the normals of an object. This node is provided mostly for debugging and analysis purposes.
 
-![Icon]{style="max-width: 32px;"}
+!(Icon){style="max-width: 80px;"}
 
 ## Common
 

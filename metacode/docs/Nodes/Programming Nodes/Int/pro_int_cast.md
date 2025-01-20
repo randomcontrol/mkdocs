@@ -2,7 +2,7 @@
 
 This node casts a fellow programming node to integer form. Floating-point values are downcast to integer via rounding. Vector and matrix values are downcast by losing coordinates, plus rounding.
 
-![Icon]{style="max-width: 32px;"}
+!(Icon){style="max-width: 80px;"}
 
 ## Common
 

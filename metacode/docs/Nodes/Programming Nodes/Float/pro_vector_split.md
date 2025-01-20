@@ -2,7 +2,7 @@
 
 This node unlocks access to the (x,y,z) coordinates of an input vector through its output plugs.
 
-![Icon]{style="max-width: 32px;"}
+!(Icon){style="max-width: 80px;"}
 
 ## Common
 

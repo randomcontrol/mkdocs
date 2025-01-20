@@ -2,7 +2,7 @@
 
 The multiclone modifier is a specialized variant of the scatter feature that, once attached to an object, spawns a number of instanced clones and arranges them in a linear or polar lattice. This is ideal to elegantly showcase multiple products in a single shot, create piles of items, etc... This modifier can also be regarded as a much more feature-rich companion to the regular clone operation in Maverick.
 
-![Icon]{style="max-width: 32px;"}
+!(Icon){style="max-width: 80px;"}
 
 ## Common
 

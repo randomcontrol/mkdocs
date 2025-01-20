@@ -2,7 +2,7 @@
 
 The falloff map interpolates between two colors based on some surface property of the host object, such as its position or its orientation. A typical use of this map is to simulate the characteristic appearance of fabric, satin and velvet at grazing angles.
 
-![Icon]{style="max-width: 32px;"}
+!(Icon){style="max-width: 80px;"}
 
 ## Common
 

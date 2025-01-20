@@ -2,7 +2,7 @@
 
 @@
 
-![Icon]{style="max-width: 32px;"}
+!(Icon){style="max-width: 80px;"}
 
 ## IPR resolution
 

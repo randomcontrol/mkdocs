@@ -2,7 +2,7 @@
 
 The scratches map produces a soup of randomly oriented streaks that indent the surface with different strengths. This map is ideal to simulate scratched chrome or plastic materials.
 
-![Icon]{style="max-width: 32px;"}
+!(Icon){style="max-width: 80px;"}
 
 ## Common
 

@@ -2,7 +2,7 @@
 
 The mtl_ray_switch node acts as a fork so light paths arriving at the material will be rewired to another material based on the path type. For example, you may use one highly detailed material for direct camera rays, and a simplified one for GI bounces. Or create a reflection/refraction-only override.
 
-![Icon]{style="max-width: 32px;"}
+!(Icon){style="max-width: 80px;"}
 
 ## Common
 

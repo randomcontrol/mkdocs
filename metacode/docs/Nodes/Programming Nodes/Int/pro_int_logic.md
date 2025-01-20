@@ -2,7 +2,7 @@
 
 This node performs a logic operation between two given programming nodes. The result of the operation is always an integer scalar where the only possible values are 0 (false) or 1 (true).
 
-![Icon]{style="max-width: 32px;"}
+!(Icon){style="max-width: 80px;"}
 
 ## Common
 

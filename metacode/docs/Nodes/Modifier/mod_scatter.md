@@ -2,7 +2,7 @@
 
 The scatter modifier lays instances of one or more objects on the surface of a base polymesh object. This can be used to place droplets of water on a soda can, coffee beans on a table, glitter on a Christmas decoration ball, etc...
 
-![Icon]{style="max-width: 32px;"}
+!(Icon){style="max-width: 80px;"}
 
 ## Common
 

@@ -2,7 +2,7 @@
 
 The correction node performs color correction operations on the input map.
 
-![Icon]{style="max-width: 32px;"}
+!(Icon){style="max-width: 80px;"}
 
 ## Common
 

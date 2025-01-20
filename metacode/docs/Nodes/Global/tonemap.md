@@ -2,7 +2,7 @@
 
 The tonemap node features an impressive multi-stage toolchain for image post-processing. Exposure compression (a.k.a., tonemapping) remaps original radiances into the LDR range necessary to visualize the image through a computer screen. The color-grading and lens simulation rollups provide advanced controls for retouching, lens diffraction (e.g., glare/bloom), and more.
 
-![Icon]{style="max-width: 32px;"}
+!(Icon){style="max-width: 80px;"}
 
 ## Tone compressor
 

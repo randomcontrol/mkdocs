@@ -2,7 +2,7 @@
 
 The baketex map behaves like a filetex that is initialized by sampling the given input map at the given resolution. This is useful when using procedural maps for computationally-intensive features such as opacity or displacement mapping. The baked map loses the infinite resolution and tiling capabilities of the (procedural) input map. But in return the input map is evaluated just once, and never again during render-time.
 
-![Icon]{style="max-width: 32px;"}
+!(Icon){style="max-width: 80px;"}
 
 ## Common
 

@@ -2,7 +2,7 @@
 
 With the blend material one can create compound materials. Compound materials can be alloys, where each submaterial contributes a percentage to the total, or mask-based blends where one or more mask maps determine which parts of the object reveal which submaterial.
 
-![Icon]{style="max-width: 32px;"}
+!(Icon){style="max-width: 80px;"}
 
 ## Common
 

@@ -2,7 +2,7 @@
 
 This node casts a fellow programming node to floating-point form. Integer values are upcast to floating-point trivially. Vector and matrix values are downcast by losing coordinates.
 
-![Icon]{style="max-width: 32px;"}
+!(Icon){style="max-width: 80px;"}
 
 ## Common
 

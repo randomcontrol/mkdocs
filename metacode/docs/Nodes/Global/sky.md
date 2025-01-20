@@ -2,7 +2,7 @@
 
 Maverick provides a physically-based sky/sun/atmosphere system, coupled with an astronomical and geographical positioning system. Using the sky/sun node is a more straightforward alternative to Image-Based Lighting for exterior scenes.
 
-![Icon]{style="max-width: 32px;"}
+!(Icon){style="max-width: 80px;"}
 
 ## Sky
 
