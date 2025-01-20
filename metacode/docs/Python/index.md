@@ -1,7 +1,7 @@
 # Python automation system
 
 !!! warning
-    The following instructions are exclusive to Maverick Studio.
+    Maverick Indie does not support Python scripting. The following instructions are exclusive to Maverick Studio.
 
 ![Python scripting in Maverick Studio](python_dice.png "Python scripting in Maverick Studio"){style="max-width: 512px;"}
 

@@ -3,13 +3,13 @@
 !!! warning
     Maverick Indie does not support CLI automation. The following instructions are exclusive to Maverick Studio.
 
+![Command-line Interface in Maverick Studio](cli_cache.png "Command-line Interface in Maverick Studio"){style="max-width: 512px;"}
+
 ## Overview
 
-- Maverick Studio provides certain degree of control via command-line arguments.
-- These can be used to build an in-house render farm, manage render batching, etc...
-- CLI automation relies on the python binding internally.
+Maverick Studio provides certain degree of control via command-line arguments. These can be used to build an in-house render farm, manage render batching, etc...
 
-## Usage #1
+## CLI: Render a scene
 
 ```
 maverick_studio.exe -i:<filename> [-still|-timeline|-turntable] [-o:<filename>] [-sl:<float>] [-quit]
@@ -24,9 +24,9 @@ maverick_studio.exe -i:<filename> [-still|-timeline|-turntable] [-o:<filename>] 
 #### Remarks
 
 - If no `-still|-timeline|-turntable` are present, the scene will be opened up but no render modality will be started.
-- The scene will be loaded and rendered as-is, except for any values overridden by `-o/-sl/...`.
-- For timeline/turntable renders, the output filename must be a `.png/.jpg/...` image like in the UI. The output video will auto-receive the `.mp4/.mov` extension as configured when the scene was saved.
-- Automation will _not_ work if another instance of the application is already up and running.
+- The scene will be loaded and rendered as-is, except for any possible values overridden by `-o/-sl/...`.
+- For timeline/turntable renders, the output filename must be a `.png/.jpg/...` image like it would in the UI. The output video will auto-receive the `.mp4/.mov` extension as configured before the scene was saved.
+- CLI automation will _not_ work if another instance of the application is already up and running.
 
 #### Examples
 
@@ -42,7 +42,7 @@ maverick_studio.exe -i:"Z:\scene.mks" -still -o:"Z:\automation.png" -sl:10
 maverick_studio.exe -i:"Z:\scene.mks" -turntable -o:"Z:\video\frames\automation.png" -sl:8 -quit
 ```
 
-## Usage #2
+## CLI: Run a .py script
 
 ```
 maverick_studio.exe -i:<filename> [-py:<filename>]
