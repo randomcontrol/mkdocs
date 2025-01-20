@@ -6,32 +6,38 @@ The 3D LUT map an be used to import a color grading Look Up Table in Adobe's .CU
 #### Node alias
 `Python: "map_alias"`
 
-Human-readable node alias.
+Human-readable node alias.![Icon](map_lut_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### Alias color
 `Python: "map_alias_color"`
 
-Identificative node color.
+Identificative node color.![Icon](map_lut_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### Node UUID
 `Python: "map_uuid"`
 
-Node UUID.
+Node UUID.![Icon](map_lut_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### Node metadata
 `Python: "map_metadata"`
 
-User-set node metadata.
+User-set node metadata.![Icon](map_lut_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### Node tags
 `Python: "map_tags"`
 
-User-set node tags.
+User-set node tags.![Icon](map_lut_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 ## Main
 
 #### 3D LUT filename
 `Python: "map_lut_filename"`
 
-Defines the filename of the color grading table, pointing to its physical location in the disk.
+Defines the filename of the color grading table, pointing to its physical location in the disk.![Icon](map_lut_swatch.png "Icon"){style="max-width: 32px;"}
+
 

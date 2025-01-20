@@ -6,157 +6,188 @@ The switch map node scatters up to 8 maps among the objects it is assigned to. F
 #### Node alias
 `Python: "map_alias"`
 
-Human-readable node alias.
+Human-readable node alias.![Icon](map_switch_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### Alias color
 `Python: "map_alias_color"`
 
-Identificative node color.
+Identificative node color.![Icon](map_switch_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### Node UUID
 `Python: "map_uuid"`
 
-Node UUID.
+Node UUID.![Icon](map_switch_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### Node metadata
 `Python: "map_metadata"`
 
-User-set node metadata.
+User-set node metadata.![Icon](map_switch_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### Node tags
 `Python: "map_tags"`
 
-User-set node tags.
+User-set node tags.![Icon](map_switch_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 ## Main
 
 #### Input
 `Python: "map_switch_input"`
 
-Determines what primvar the node uses to scatter maps.
+Determines what primvar the node uses to scatter maps.![Icon](map_switch_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### Randomize
 `Python: "map_randomize"`
 
-Random number seed used to randomize the map. Each possible seed produces a distinct version of the map.
+Random number seed used to randomize the map. Each possible seed produces a distinct version of the map.![Icon](map_switch_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### Color 1
 `Python: "map_switch_color_1"`
 
-Defines the i-th input color.
+Defines the i-th input color.![Icon](map_switch_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### Color 1 map
 `Python: "map_switch_color_1_map"`
 
-Defines the i-th input color using a texture map.
+Defines the i-th input color using a texture map.![Icon](map_switch_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### Enable color/map 1
 `Python: "map_switch_color_1_enable"`
 
-Enables of disables the i-th input color/map. Disabled inputs are not scattered.
+Enables of disables the i-th input color/map. Disabled inputs are not scattered.![Icon](map_switch_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### Color 2
 `Python: "map_switch_color_2"`
 
-Defines the i-th input color.
+Defines the i-th input color.![Icon](map_switch_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### Color 2 map
 `Python: "map_switch_color_2_map"`
 
-Defines the i-th input color using a texture map.
+Defines the i-th input color using a texture map.![Icon](map_switch_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### Enable color/map 2
 `Python: "map_switch_color_2_enable"`
 
-Enables of disables the i-th input color/map. Disabled inputs are not scattered.
+Enables of disables the i-th input color/map. Disabled inputs are not scattered.![Icon](map_switch_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### Color 3
 `Python: "map_switch_color_3"`
 
-Defines the i-th input color.
+Defines the i-th input color.![Icon](map_switch_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### Color 3 map
 `Python: "map_switch_color_3_map"`
 
-Defines the i-th input color using a texture map.
+Defines the i-th input color using a texture map.![Icon](map_switch_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### Enable color/map 3
 `Python: "map_switch_color_3_enable"`
 
-Enables of disables the i-th input color/map. Disabled inputs are not scattered.
+Enables of disables the i-th input color/map. Disabled inputs are not scattered.![Icon](map_switch_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### Color 4
 `Python: "map_switch_color_4"`
 
-Defines the i-th input color.
+Defines the i-th input color.![Icon](map_switch_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### Color 4 map
 `Python: "map_switch_color_4_map"`
 
-Defines the i-th input color using a texture map.
+Defines the i-th input color using a texture map.![Icon](map_switch_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### Enable color/map 4
 `Python: "map_switch_color_4_enable"`
 
-Enables of disables the i-th input color/map. Disabled inputs are not scattered.
+Enables of disables the i-th input color/map. Disabled inputs are not scattered.![Icon](map_switch_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### Color 5
 `Python: "map_switch_color_5"`
 
-Defines the i-th input color.
+Defines the i-th input color.![Icon](map_switch_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### Color 5 map
 `Python: "map_switch_color_5_map"`
 
-Defines the i-th input color using a texture map.
+Defines the i-th input color using a texture map.![Icon](map_switch_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### Enable color/map 5
 `Python: "map_switch_color_5_enable"`
 
-Enables of disables the i-th input color/map. Disabled inputs are not scattered.
+Enables of disables the i-th input color/map. Disabled inputs are not scattered.![Icon](map_switch_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### Color 6
 `Python: "map_switch_color_6"`
 
-Defines the i-th input color.
+Defines the i-th input color.![Icon](map_switch_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### Color 6 map
 `Python: "map_switch_color_6_map"`
 
-Defines the i-th input color using a texture map.
+Defines the i-th input color using a texture map.![Icon](map_switch_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### Enable color/map 6
 `Python: "map_switch_color_6_enable"`
 
-Enables of disables the i-th input color/map. Disabled inputs are not scattered.
+Enables of disables the i-th input color/map. Disabled inputs are not scattered.![Icon](map_switch_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### Color 7
 `Python: "map_switch_color_7"`
 
-Defines the i-th input color.
+Defines the i-th input color.![Icon](map_switch_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### Color 7 map
 `Python: "map_switch_color_7_map"`
 
-Defines the i-th input color using a texture map.
+Defines the i-th input color using a texture map.![Icon](map_switch_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### Enable color/map 7
 `Python: "map_switch_color_7_enable"`
 
-Enables of disables the i-th input color/map. Disabled inputs are not scattered.
+Enables of disables the i-th input color/map. Disabled inputs are not scattered.![Icon](map_switch_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### Color 8
 `Python: "map_switch_color_8"`
 
-Defines the i-th input color.
+Defines the i-th input color.![Icon](map_switch_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### Color 8 map
 `Python: "map_switch_color_8_map"`
 
-Defines the i-th input color using a texture map.
+Defines the i-th input color using a texture map.![Icon](map_switch_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### Enable color/map 8
 `Python: "map_switch_color_8_enable"`
 
-Enables of disables the i-th input color/map. Disabled inputs are not scattered.
+Enables of disables the i-th input color/map. Disabled inputs are not scattered.![Icon](map_switch_swatch.png "Icon"){style="max-width: 32px;"}
+
 

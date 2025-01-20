@@ -108,37 +108,37 @@ nav:
         - 'Explode':             Nodes/Motion Controller/moc_explode.md
         - 'Frontplate':          Nodes/Motion Controller/moc_frontplate.md
         - 'Transform':           Nodes/Motion Controller/moc_transform.md
-    - Programming:
+    - Programming Nodes:
       - Int:
-        - 'Int':                 Nodes/Programming/Int/pro_int_value.md
-        - 'Int Cast':            Nodes/Programming/Int/pro_int_cast.md
-        - 'Int (Context)':       Nodes/Programming/Int/pro_int_from_ctx.md
-        - 'Int Logic':           Nodes/Programming/Int/pro_int_logic.md
-        - 'Int Math':            Nodes/Programming/Int/pro_int_math.md
+        - 'Int':                 Nodes/Programming Nodes/Int/pro_int_value.md
+        - 'Int Cast':            Nodes/Programming Nodes/Int/pro_int_cast.md
+        - 'Int (Context)':       Nodes/Programming Nodes/Int/pro_int_from_ctx.md
+        - 'Int Logic':           Nodes/Programming Nodes/Int/pro_int_logic.md
+        - 'Int Math':            Nodes/Programming Nodes/Int/pro_int_math.md
       - Float:
-        - 'Float':               Nodes/Programming/Float/pro_float_value.md
-        - 'Float Cast':          Nodes/Programming/Float/pro_float_cast.md
-        - 'Float (Context)':     Nodes/Programming/Float/pro_float_from_ctx.md
-        - 'Float Math':          Nodes/Programming/Float/pro_float_math.md
-        - 'Float Random':        Nodes/Programming/Float/pro_float_random.md
-        - 'Float Remap':         Nodes/Programming/Float/pro_float_remap.md
-        - 'Vector Split':        Nodes/Programming/Float/pro_vector_split.md
+        - 'Float':               Nodes/Programming Nodes/Float/pro_float_value.md
+        - 'Float Cast':          Nodes/Programming Nodes/Float/pro_float_cast.md
+        - 'Float (Context)':     Nodes/Programming Nodes/Float/pro_float_from_ctx.md
+        - 'Float Math':          Nodes/Programming Nodes/Float/pro_float_math.md
+        - 'Float Random':        Nodes/Programming Nodes/Float/pro_float_random.md
+        - 'Float Remap':         Nodes/Programming Nodes/Float/pro_float_remap.md
+        - 'Vector Split':        Nodes/Programming Nodes/Float/pro_vector_split.md
       - Vector:
-        - 'Vector':              Nodes/Programming/Vector/pro_vector_value.md
-        - 'Vector Cast':         Nodes/Programming/Vector/pro_vector_cast.md
-        - 'Vector Math':         Nodes/Programming/Vector/pro_vector_math.md
-        - 'Vector Random':       Nodes/Programming/Vector/pro_vector_random.md
-        - 'Matrix Split':        Nodes/Programming/Vector/pro_matrix_split.md
+        - 'Vector':              Nodes/Programming Nodes/Vector/pro_vector_value.md
+        - 'Vector Cast':         Nodes/Programming Nodes/Vector/pro_vector_cast.md
+        - 'Vector Math':         Nodes/Programming Nodes/Vector/pro_vector_math.md
+        - 'Vector Random':       Nodes/Programming Nodes/Vector/pro_vector_random.md
+        - 'Matrix Split':        Nodes/Programming Nodes/Vector/pro_matrix_split.md
       - Matrix:
-        - 'Matrix':              Nodes/Programming/Matrix/pro_matrix_value.md
-        - 'Matrix Cast':         Nodes/Programming/Matrix/pro_matrix_cast.md
-        - 'Matrix (Context)':    Nodes/Programming/Matrix/pro_matrix_from_ctx.md
-        - 'Matrix (Object)':     Nodes/Programming/Matrix/pro_matrix_from_obj.md
-        - 'Matrix Math':         Nodes/Programming/Matrix/pro_matrix_math.md
+        - 'Matrix':              Nodes/Programming Nodes/Matrix/pro_matrix_value.md
+        - 'Matrix Cast':         Nodes/Programming Nodes/Matrix/pro_matrix_cast.md
+        - 'Matrix (Context)':    Nodes/Programming Nodes/Matrix/pro_matrix_from_ctx.md
+        - 'Matrix (Object)':     Nodes/Programming Nodes/Matrix/pro_matrix_from_obj.md
+        - 'Matrix Math':         Nodes/Programming Nodes/Matrix/pro_matrix_math.md
       - Profile:
-        - 'Float Profile':       Nodes/Programming/Profile/pro_float_profile.md
+        - 'Float Profile':       Nodes/Programming Nodes/Profile/pro_float_profile.md
       - Compound:
-        - 'Matrix Bullet':       Nodes/Programming/Compound/pro_matrix_bullet.md
+        - 'Matrix Bullet':       Nodes/Programming Nodes/Compound/pro_matrix_bullet.md
 
 theme:
   name: material

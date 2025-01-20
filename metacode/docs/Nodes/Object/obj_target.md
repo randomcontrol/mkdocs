@@ -6,77 +6,92 @@ The target object node defines a dummy position/orientation in space. This can b
 #### Node alias
 `Python: "obj_alias"`
 
-Human-readable node alias.
+Human-readable node alias.![Icon](obj_target_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### Alias color
 `Python: "obj_alias_color"`
 
-Identificative node color.
+Identificative node color.![Icon](obj_target_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### Node UUID
 `Python: "obj_uuid"`
 
-Node UUID.
+Node UUID.![Icon](obj_target_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### Node metadata
 `Python: "obj_metadata"`
 
-User-set node metadata.
+User-set node metadata.![Icon](obj_target_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### Node tags
 `Python: "obj_tags"`
 
-User-set node tags.
+User-set node tags.![Icon](obj_target_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### Object visibility
 `Python: "obj_visibility"`
 
-Determines whether the object is visible, hidden from the camera, or hidden completely (invisible).
+Determines whether the object is visible, hidden from the camera, or hidden completely (invisible).![Icon](obj_target_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### Show viewport gizmo
 `Python: "obj_show_gizmo"`
 
-Shows or hides this node's gizmo in the IPR/views. The gizmo is always visible when the node is selected, regardless of this toggle.
+Shows or hides this node's gizmo in the IPR/views. The gizmo is always visible when the node is selected, regardless of this toggle.![Icon](obj_target_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 ## Custom attributes
 
 #### Custom attrib 1
 `Python: "obj_custom_attribute_1"`
 
-Custom attribute 1. Typically used as input to a context programming node in a nodal tree.
+Custom attribute 1. Typically used as input to a context programming node in a nodal tree.![Icon](obj_target_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### Custom attrib 2
 `Python: "obj_custom_attribute_2"`
 
-Custom attribute 2. Typically used as input to a context programming node in a nodal tree.
+Custom attribute 2. Typically used as input to a context programming node in a nodal tree.![Icon](obj_target_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### Custom attrib 3
 `Python: "obj_custom_attribute_3"`
 
-Custom attribute 3. Typically used as input to a context programming node in a nodal tree.
+Custom attribute 3. Typically used as input to a context programming node in a nodal tree.![Icon](obj_target_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### Custom attrib 4
 `Python: "obj_custom_attribute_4"`
 
-Custom attribute 4. Typically used as input to a context programming node in a nodal tree.
+Custom attribute 4. Typically used as input to a context programming node in a nodal tree.![Icon](obj_target_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### Custom attrib 5
 `Python: "obj_custom_attribute_5"`
 
-Custom attribute 5. Typically used as input to a context programming node in a nodal tree.
+Custom attribute 5. Typically used as input to a context programming node in a nodal tree.![Icon](obj_target_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### Custom attrib 6
 `Python: "obj_custom_attribute_6"`
 
-Custom attribute 6. Typically used as input to a context programming node in a nodal tree.
+Custom attribute 6. Typically used as input to a context programming node in a nodal tree.![Icon](obj_target_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### Custom attrib 7
 `Python: "obj_custom_attribute_7"`
 
-Custom attribute 7. Typically used as input to a context programming node in a nodal tree.
+Custom attribute 7. Typically used as input to a context programming node in a nodal tree.![Icon](obj_target_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### Custom attrib 8
 `Python: "obj_custom_attribute_8"`
 
-Custom attribute 8. Typically used as input to a context programming node in a nodal tree.
+Custom attribute 8. Typically used as input to a context programming node in a nodal tree.![Icon](obj_target_swatch.png "Icon"){style="max-width: 32px;"}
+
 

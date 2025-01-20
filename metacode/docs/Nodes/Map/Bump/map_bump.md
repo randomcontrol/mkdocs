@@ -6,77 +6,92 @@ This node takes a grayscale height map, or an rgb-encoded normal map to control 
 #### Node alias
 `Python: "map_alias"`
 
-Human-readable node alias.
+Human-readable node alias.![Icon](map_bump_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### Alias color
 `Python: "map_alias_color"`
 
-Identificative node color.
+Identificative node color.![Icon](map_bump_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### Node UUID
 `Python: "map_uuid"`
 
-Node UUID.
+Node UUID.![Icon](map_bump_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### Node metadata
 `Python: "map_metadata"`
 
-User-set node metadata.
+User-set node metadata.![Icon](map_bump_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### Node tags
 `Python: "map_tags"`
 
-User-set node tags.
+User-set node tags.![Icon](map_bump_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 ## Main
 
 #### Bypass
 `Python: "map_bypass"`
 
-When this option is on, the map attributes are dismissed altogether and the input is passed-through to the output.
+When this option is on, the map attributes are dismissed altogether and the input is passed-through to the output.![Icon](map_bump_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### Input map
 `Python: "map_bump_input_map"`
 
-Selects a bump input texture. This is often done through a filetex map.
+Selects a bump input texture. This is often done through a filetex map.![Icon](map_bump_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### Mode
 `Python: "map_bump_mode"`
 
-Establishes whether the bump texture must be interpreted as a height map (gray levels) or a normal map (rgb-encoded normals).
+Establishes whether the bump texture must be interpreted as a height map (gray levels) or a normal map (rgb-encoded normals).![Icon](map_bump_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### Height map epsilon
 `Python: "map_bump_epsilon"`
 
-When a procedural (non-filetex) height map is used, normals are computed on the fly by taking enough map samples to estimate the surface slope on the neighborhood of the pixel being shaded. Bump mapping crispness and proper capture of detail is very sensitive to this value.
+When a procedural (non-filetex) height map is used, normals are computed on the fly by taking enough map samples to estimate the surface slope on the neighborhood of the pixel being shaded. Bump mapping crispness and proper capture of detail is very sensitive to this value.![Icon](map_bump_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### Strength
 `Python: "map_bump_strength"`
 
-Defines the bump strength. A value of 1 in a normal map renders the actual normals as they are represented in the texture. This is particularly relevant for maps that were baked in sculpting software. On the other hand, strength in grayscale height maps is somewhat resolution-dependent and must be adjusted manually.
+Defines the bump strength. A value of 1 in a normal map renders the actual normals as they are represented in the texture. This is particularly relevant for maps that were baked in sculpting software. On the other hand, strength in grayscale height maps is somewhat resolution-dependent and must be adjusted manually.![Icon](map_bump_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### Strength map
 `Python: "map_bump_strength_map"`
 
-Defines the strength value using a grayscale map.
+Defines the strength value using a grayscale map.![Icon](map_bump_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### Invert direction
 `Python: "map_bump_invert"`
 
-Flips inwards-and-outwards the resulting normals, which is equivalent to negating the strength value. In the case of a height map, this is also equivalent to inverting black-and-white in the input map.
+Flips inwards-and-outwards the resulting normals, which is equivalent to negating the strength value. In the case of a height map, this is also equivalent to inverting black-and-white in the input map.![Icon](map_bump_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### Flip X
 `Python: "map_bump_flip_x"`
 
-Flips the X (U) direction of the input normal map.
+Flips the X (U) direction of the input normal map.![Icon](map_bump_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### Swap X/Y
 `Python: "map_bump_swap_xy"`
 
-Swaps the X/Y (U/V) directions of the input normal map.
+Swaps the X/Y (U/V) directions of the input normal map.![Icon](map_bump_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### Flip Y
 `Python: "map_bump_flip_y"`
 
-Flips the Y (V) direction of the input normal map.
+Flips the Y (V) direction of the input normal map.![Icon](map_bump_swatch.png "Icon"){style="max-width: 32px;"}
+
 

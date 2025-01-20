@@ -6,87 +6,104 @@ The curvature map analyzes the normals of surfaces by proximity, and outputs a b
 #### Node alias
 `Python: "map_alias"`
 
-Human-readable node alias.
+Human-readable node alias.![Icon](map_curvature_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### Alias color
 `Python: "map_alias_color"`
 
-Identificative node color.
+Identificative node color.![Icon](map_curvature_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### Node UUID
 `Python: "map_uuid"`
 
-Node UUID.
+Node UUID.![Icon](map_curvature_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### Node metadata
 `Python: "map_metadata"`
 
-User-set node metadata.
+User-set node metadata.![Icon](map_curvature_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### Node tags
 `Python: "map_tags"`
 
-User-set node tags.
+User-set node tags.![Icon](map_curvature_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 ## Main
 
 #### Bypass
 `Python: "map_bypass"`
 
-When this option is on, the map attributes are dismissed altogether and the input is passed-through to the output.
+When this option is on, the map attributes are dismissed altogether and the input is passed-through to the output.![Icon](map_curvature_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### Direction
 `Python: "map_curvature_direction"`
 
-Specifies whether the curvature node must work on the convex (+) side, concave (-) side, or on both sides of the surface.
+Specifies whether the curvature node must work on the convex (+) side, concave (-) side, or on both sides of the surface.![Icon](map_curvature_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### Samples
 `Python: "map_curvature_samples"`
 
-Number of samples used to evaluate the curvature. Higher values produce a more accurate result, but come at a price in performance.
+Number of samples used to evaluate the curvature. Higher values produce a more accurate result, but come at a price in performance.![Icon](map_curvature_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### Radius
 `Python: "map_curvature_radius"`
 
-Controls the proximity range where the node looks for adjacent faces.
+Controls the proximity range where the node looks for adjacent faces.![Icon](map_curvature_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### Scale
 `Python: "map_curvature_scale"`
 
-This value acts as a radius multiplier.
+This value acts as a radius multiplier.![Icon](map_curvature_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### Scale map
 `Python: "map_curvature_scale_map"`
 
-Controls the radius scale multiplier grayscale map. This is an excelent way to add irregularities and variation to the evaluated curvature.
+Controls the radius scale multiplier grayscale map. This is an excelent way to add irregularities and variation to the evaluated curvature.![Icon](map_curvature_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### Include in calculations
 `Python: "map_curvature_include"`
 
-Defines whether curvature is detected across different objects sharing the same material or not.
+Defines whether curvature is detected across different objects sharing the same material or not.![Icon](map_curvature_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### Threshold
 `Python: "map_curvature_threshold"`
 
-This value widens or narrows down the spread with which nearby surfaces are taken into account during curvature evaluation.
+This value widens or narrows down the spread with which nearby surfaces are taken into account during curvature evaluation.![Icon](map_curvature_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### Bias
 `Python: "map_curvature_bias"`
 
-Changes the curvature falloff, softening or hardening the transition between high and low curvature values.
+Changes the curvature falloff, softening or hardening the transition between high and low curvature values.![Icon](map_curvature_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### Strength
 `Python: "map_curvature_strength"`
 
-This is a multiplier that amplifies or diminishes the output curvature value.
+This is a multiplier that amplifies or diminishes the output curvature value.![Icon](map_curvature_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### Red/Green
 `Python: "map_curvature_red_green"`
 
-Displays convex and concave as red and green for easier visualization of the curvature effect. This feature is meant for debugging purposes.
+Displays convex and concave as red and green for easier visualization of the curvature effect. This feature is meant for debugging purposes.![Icon](map_curvature_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### Invert
 `Python: "map_curvature_invert"`
 
-Inverts the curvature coloring. White becomes black and vice-versa.
+Inverts the curvature coloring. White becomes black and vice-versa.![Icon](map_curvature_swatch.png "Icon"){style="max-width: 32px;"}
+
 

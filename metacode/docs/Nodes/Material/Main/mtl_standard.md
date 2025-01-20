@@ -6,171 +6,204 @@ The standard material type captures all the features in Maverick's material syst
 #### Node alias
 `Python: "mtl_alias"`
 
-Human-readable node alias.
+Human-readable node alias.![Icon](mtl_standard_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### Alias color
 `Python: "mtl_alias_color"`
 
-Identificative node color.
+Identificative node color.![Icon](mtl_standard_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### Node UUID
 `Python: "mtl_uuid"`
 
-Node UUID.
+Node UUID.![Icon](mtl_standard_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### Node metadata
 `Python: "mtl_metadata"`
 
-User-set node metadata.
+User-set node metadata.![Icon](mtl_standard_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### Node tags
 `Python: "mtl_tags"`
 
-User-set node tags.
+User-set node tags.![Icon](mtl_standard_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 ## UV mapping
 
 #### Projection mode
 `Python: "mtl_uvmap_projection"`
 
-Defines the UVW mapping projection mode.
+Defines the UVW mapping projection mode.![Icon](mtl_standard_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### Override uvmap
 `Python: "mtl_uvmap_override"`
 
-Uses the inner material UVW mapping controls, overriding the uvmap modifier(s) of the host object, if any.
+Uses the inner material UVW mapping controls, overriding the uvmap modifier(s) of the host object, if any.![Icon](mtl_standard_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### Triplanar blend
 `Python: "mtl_uvmap_triplanar_blend"`
 
-If the projection is triplanar, defines how much the three planar projections are blended onto each other.
+If the projection is triplanar, defines how much the three planar projections are blended onto each other.![Icon](mtl_standard_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### Width
 `Python: "mtl_uvmap_real_size_x"`
 
-Real world size of the material along the X axis.
+Real world size of the material along the X axis.![Icon](mtl_standard_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### Height
 `Python: "mtl_uvmap_real_size_y"`
 
-Real world size of the material along the Y axis.
+Real world size of the material along the Y axis.![Icon](mtl_standard_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### Depth
 `Python: "mtl_uvmap_real_size_z"`
 
-Real world size of the material along the Z axis.
+Real world size of the material along the Z axis.![Icon](mtl_standard_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### Real size link
 `Python: "mtl_uvmap_real_size_link"`
 
-Links the three real world dimensions so they are edited together.
+Links the three real world dimensions so they are edited together.![Icon](mtl_standard_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### Width repeat
 `Python: "mtl_uvmap_real_size_repeat_x"`
 
-Repeats (i.e., tiles) the UVW mapping along the X axis the given number of times within the defined width.
+Repeats (i.e., tiles) the UVW mapping along the X axis the given number of times within the defined width.![Icon](mtl_standard_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### Height repeat
 `Python: "mtl_uvmap_real_size_repeat_y"`
 
-Repeats (i.e., tiles) the UVW mapping along the Y axis the given number of times within the defined height.
+Repeats (i.e., tiles) the UVW mapping along the Y axis the given number of times within the defined height.![Icon](mtl_standard_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### Depth repeat
 `Python: "mtl_uvmap_real_size_repeat_z"`
 
-Repeats (i.e., tiles) the UVW mapping along the Z axis the given number of times within the defined depth.
+Repeats (i.e., tiles) the UVW mapping along the Z axis the given number of times within the defined depth.![Icon](mtl_standard_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### Repeat link
 `Python: "mtl_uvmap_real_size_repeat_link"`
 
-Links the three real size repeat values so they are edited together.
+Links the three real size repeat values so they are edited together.![Icon](mtl_standard_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### Axis alignment
 `Python: "mtl_uvmap_axis_alignment"`
 
-Reorients the projection towards the selected axis.
+Reorients the projection towards the selected axis.![Icon](mtl_standard_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### Convert to uvmap modifier
 `Python: "mtl_uvmap_convert"`
 
-Creates a uvmap modifier node and transfers the material's UVW mapping attributes. The new uvmap node is applied to the host object.
+Creates a uvmap modifier node and transfers the material's UVW mapping attributes. The new uvmap node is applied to the host object.![Icon](mtl_standard_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### Repeat X
 `Python: "mtl_uvmap_xform_repeat_x"`
 
-Repeats the projected UVW space along the X/U axis. Increasing this value increases repetition.
+Repeats the projected UVW space along the X/U axis. Increasing this value increases repetition.![Icon](mtl_standard_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### Repeat Y
 `Python: "mtl_uvmap_xform_repeat_y"`
 
-Repeats the projected UVW space along the Y/V axis. Increasing this value increases repetition.
+Repeats the projected UVW space along the Y/V axis. Increasing this value increases repetition.![Icon](mtl_standard_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### Translate X
 `Python: "mtl_uvmap_xform_translate_x"`
 
-Offsets the projected UVW space along the X/U axis.
+Offsets the projected UVW space along the X/U axis.![Icon](mtl_standard_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### Translate Y
 `Python: "mtl_uvmap_xform_translate_y"`
 
-Offsets the projected UVW space along the Y/V axis.
+Offsets the projected UVW space along the Y/V axis.![Icon](mtl_standard_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### Rotate
 `Python: "mtl_uvmap_xform_rotate_z"`
 
-Rotates the projected UVW space about the Z/W axis. Positive values rotate counter-clockwise.
+Rotates the projected UVW space about the Z/W axis. Positive values rotate counter-clockwise.![Icon](mtl_standard_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 ## Coating
 
 #### Coating weight
 `Python: "mtl_standard_coating_weight"`
 
-Controls the weight of the coating component. The coating component sits on top of the rest of the material. Rays reflected at the coating do not get to hit the underlying material. A good example of coatings is varnish in wood.
+Controls the weight of the coating component. The coating component sits on top of the rest of the material. Rays reflected at the coating do not get to hit the underlying material. A good example of coatings is varnish in wood.![Icon](mtl_standard_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### Coating weight map
 `Python: "mtl_standard_coating_weight_map"`
 
-Controls the weight of the coating component using a grayscale map.
+Controls the weight of the coating component using a grayscale map.![Icon](mtl_standard_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### Coating roughness
 `Python: "mtl_standard_coating_roughness"`
 
-Controls the roughness of the coating.
+Controls the roughness of the coating.![Icon](mtl_standard_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### Coating roughness map
 `Python: "mtl_standard_coating_roughness_map"`
 
-Controls the roughness of the coating using a texture map. White parts of the texture represent full roughness. Black parts of the texture represent mirror-like reflections.
+Controls the roughness of the coating using a texture map. White parts of the texture represent full roughness. Black parts of the texture represent mirror-like reflections.![Icon](mtl_standard_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### Bump strength
 `Python: "mtl_standard_coating_bump_strength"`
 
-Determines how much of the substrate's bump mapping gets to affect the coating layer. For example, this can be used to make a layer of varnish dim the bumps at the underlying wood.
+Determines how much of the substrate's bump mapping gets to affect the coating layer. For example, this can be used to make a layer of varnish dim the bumps at the underlying wood.![Icon](mtl_standard_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### Bump strength map
 `Python: "mtl_standard_coating_bump_strength_map"`
 
-Controls the bump strength with a map.
+Controls the bump strength with a map.![Icon](mtl_standard_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### Coating color
 `Python: "mtl_standard_coating_color"`
 
-Defines the reflection color of the coating.
+Defines the reflection color of the coating.![Icon](mtl_standard_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### Coating color map
 `Python: "mtl_standard_coating_color_map"`
 
-Defines the reflection color of the coating using a texture map.
+Defines the reflection color of the coating using a texture map.![Icon](mtl_standard_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### Coating IOR
 `Python: "mtl_standard_coating_ior"`
 
-Controls the Index Of Refraction of the coating. High values cause more reflection and also occlude the material substrate accordingly. Excessively high values will make the reflection look metallic.
+Controls the Index Of Refraction of the coating. High values cause more reflection and also occlude the material substrate accordingly. Excessively high values will make the reflection look metallic.![Icon](mtl_standard_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### Enable coating thin-film
 `Python: "mtl_standard_coating_film_enable"`
 
-Enables thin-film interference coating, responsible for the rainbow-like iridescence in some materials such as soap bubbles, pearls, spilled gasoline on a rainy road, etc...
+Enables thin-film interference coating, responsible for the rainbow-like iridescence in some materials such as soap bubbles, pearls, spilled gasoline on a rainy road, etc...![Icon](mtl_standard_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 
 ![Standard example](mtl_standard_coating_film_enable.png "Standard example"){style="max-width: 320px;"}
@@ -180,183 +213,218 @@ Enables thin-film interference coating, responsible for the rainbow-like iridesc
 #### Min coating thickness
 `Python: "mtl_standard_coating_film_thickness_min"`
 
-Defines the thin-film minimum thickness in nanometers. This value is only used if a thickness map is present.
+Defines the thin-film minimum thickness in nanometers. This value is only used if a thickness map is present.![Icon](mtl_standard_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### Coating thickness map
 `Python: "mtl_standard_coating_film_thickness_map"`
 
-Controls the transition between minimum and maximum thin-film thickness using a grayscale map. Bright values represent the maximum thickness and dark values represent the minimum thickness. For example, a noise map can be used to produces interesting patterns for soap bubbles or oily surfaces.
+Controls the transition between minimum and maximum thin-film thickness using a grayscale map. Bright values represent the maximum thickness and dark values represent the minimum thickness. For example, a noise map can be used to produces interesting patterns for soap bubbles or oily surfaces.![Icon](mtl_standard_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### Max coating thickness
 `Python: "mtl_standard_coating_film_thickness_max"`
 
-Defines the thin-film maximum thickness in nanometers.
+Defines the thin-film maximum thickness in nanometers.![Icon](mtl_standard_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### Coating tint thickness
 `Python: "mtl_standard_coating_tint_thickness"`
 
-Controls the thickness of the coating used to simulate internal absorption. Higher values will give a higher chance for light to get tinted by the coating.
+Controls the thickness of the coating used to simulate internal absorption. Higher values will give a higher chance for light to get tinted by the coating.![Icon](mtl_standard_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### Coating tint thickness map
 `Python: "mtl_standard_coating_tint_thickness_map"`
 
-Controls the thickness of the coating used to simulate internal absorption using a texture map.
+Controls the thickness of the coating used to simulate internal absorption using a texture map.![Icon](mtl_standard_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### Coating tint color
 `Python: "mtl_standard_coating_tint_color"`
 
-Controls the color of the internal coating tint. This simulates absorption within the extremely thin thickness of the coating.
+Controls the color of the internal coating tint. This simulates absorption within the extremely thin thickness of the coating.![Icon](mtl_standard_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### Coating tint color map
 `Python: "mtl_standard_coating_tint_color_map"`
 
-Controls the color of the internal coating tint using a texture map.
+Controls the color of the internal coating tint using a texture map.![Icon](mtl_standard_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 ## Diffuse
 
 #### Diffuse weight
 `Python: "mtl_standard_diffuse_weight"`
 
-Controls the weight of the diffuse component.
+Controls the weight of the diffuse component.![Icon](mtl_standard_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### Diffuse weight map
 `Python: "mtl_standard_diffuse_weight_map"`
 
-Controls the weight of the diffuse component using a grayscale map where black represents 0 and white 1.0.
+Controls the weight of the diffuse component using a grayscale map where black represents 0 and white 1.0.![Icon](mtl_standard_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### Diffuse roughness
 `Python: "mtl_standard_diffuse_roughness"`
 
-Controls the diffuse roughness. Using roughness values below 0.7-0.8 will make the material appear less diffuse and progressively more specular.
+Controls the diffuse roughness. Using roughness values below 0.7-0.8 will make the material appear less diffuse and progressively more specular.![Icon](mtl_standard_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### Diffuse roughness map
 `Python: "mtl_standard_diffuse_roughness_map"`
 
-Controls the diffuse roughness using a texture map. White parts of the texture represent full roughness. Black parts of the texture represent mirror-like reflections.
+Controls the diffuse roughness using a texture map. White parts of the texture represent full roughness. Black parts of the texture represent mirror-like reflections.![Icon](mtl_standard_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### Diffuse color
 `Python: "mtl_standard_diffuse_color"`
 
-Controls the diffuse color.
+Controls the diffuse color.![Icon](mtl_standard_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### Diffuse color map
 `Python: "mtl_standard_diffuse_color_map"`
 
-Controls the diffuse color using a texture map.
+Controls the diffuse color using a texture map.![Icon](mtl_standard_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 ## Specular
 
 #### Specular weight
 `Python: "mtl_standard_specular_weight"`
 
-Controls the weight of the specular component.
+Controls the weight of the specular component.![Icon](mtl_standard_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### Specular weight map
 `Python: "mtl_standard_specular_weight_map"`
 
-Controls the weight of the specular component using a grayscale where black represents 0 and white 1.0.
+Controls the weight of the specular component using a grayscale where black represents 0 and white 1.0.![Icon](mtl_standard_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### Specular roughness
 `Python: "mtl_standard_specular_roughness"`
 
-Controls the specular roughness amount.
+Controls the specular roughness amount.![Icon](mtl_standard_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### Specular roughness map
 `Python: "mtl_standard_specular_roughness_map"`
 
-Controls the specular roughness amount with a texture map. White parts of the texture represent full roughness. Black parts of the texture represent mirror-like reflections.
+Controls the specular roughness amount with a texture map. White parts of the texture represent full roughness. Black parts of the texture represent mirror-like reflections.![Icon](mtl_standard_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### Specular color
 `Python: "mtl_standard_specular_color"`
 
-Controls the specular color which will tint reflections.
+Controls the specular color which will tint reflections.![Icon](mtl_standard_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### Specular color map
 `Python: "mtl_standard_specular_color_map"`
 
-Controls the specular color using a texture map to tint reflections.
+Controls the specular color using a texture map to tint reflections.![Icon](mtl_standard_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### Specular IOR
 `Python: "mtl_standard_specular_ior"`
 
-Controls the IOR of the specular component, which controls Fresnel reflection. High values will progressively increase the reflection strength. Too high values will start to occlude the underlying material components and look metallic.
+Controls the IOR of the specular component, which controls Fresnel reflection. High values will progressively increase the reflection strength. Too high values will start to occlude the underlying material components and look metallic.![Icon](mtl_standard_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### Specular IOR file (.IOR)
 `Python: "mtl_standard_specular_ior_map"`
 
-IOR (or complex IOR) files represent lab-measured data for various type of materials. Maverick provides a collection of these in its maps library.
+IOR (or complex IOR) files represent lab-measured data for various type of materials. Maverick provides a collection of these in its maps library.![Icon](mtl_standard_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### Specular anisotropy
 `Python: "mtl_standard_specular_anisotropy"`
 
-Controls the amount of specular anisotropy. Anisotropy is the stretching of reflections due to highly directional surface micro imperfections or grooves such as those seen in brushed metals. This value controls how much specular reflections will be stretched.
+Controls the amount of specular anisotropy. Anisotropy is the stretching of reflections due to highly directional surface micro imperfections or grooves such as those seen in brushed metals. This value controls how much specular reflections will be stretched.![Icon](mtl_standard_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### Specular anisotropy map
 `Python: "mtl_standard_specular_anisotropy_map"`
 
-Controls the amount of specular anisotropy using a texture map. White in the texture represents an anisotropy value of 1 (full). Black represents an anisotropy value of 0 (none).
+Controls the amount of specular anisotropy using a texture map. White in the texture represents an anisotropy value of 1 (full). Black represents an anisotropy value of 0 (none).![Icon](mtl_standard_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### Specular anisotropy rotation
 `Python: "mtl_standard_specular_rotation"`
 
-Controls the specular anisotropy stretch direction.
+Controls the specular anisotropy stretch direction.![Icon](mtl_standard_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### Specular anisotropy rotation map
 `Python: "mtl_standard_specular_rotation_map"`
 
-Controls the specular anisotropy stretch direction using a texture map.
+Controls the specular anisotropy stretch direction using a texture map.![Icon](mtl_standard_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### Metalness
 `Python: "mtl_standard_metalness"`
 
-Controls the amount of metalness. Metalness uses the diffuse color or diffuse color map (if set) to produce the metal color.
+Controls the amount of metalness. Metalness uses the diffuse color or diffuse color map (if set) to produce the metal color.![Icon](mtl_standard_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### Metalness map
 `Python: "mtl_standard_metalness_map"`
 
-Controls the amount of metalness using a texture map. White represents full metalness while black represents no metalness.
+Controls the amount of metalness using a texture map. White represents full metalness while black represents no metalness.![Icon](mtl_standard_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 ## Transmission
 
 #### Transmission weight
 `Python: "mtl_standard_transmission_weight"`
 
-Controls the weight of the transmission component. Transmission is the technical name for refracted light that travels through a media. Water, glass, diamond, ... are all transmissive materials.
+Controls the weight of the transmission component. Transmission is the technical name for refracted light that travels through a media. Water, glass, diamond, ... are all transmissive materials.![Icon](mtl_standard_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### Transmission weight map
 `Python: "mtl_standard_transmission_weight_map"`
 
-Controls the weight of the transmission component using a grayscale map.
+Controls the weight of the transmission component using a grayscale map.![Icon](mtl_standard_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### Transmission depth
 `Python: "mtl_standard_transmission_depth"`
 
-Controls the transmission depth. A value of 0 disables physically-correct absorption and produces constant color modulation. This may come handy to easily simulate stained glass for example.
+Controls the transmission depth. A value of 0 disables physically-correct absorption and produces constant color modulation. This may come handy to easily simulate stained glass for example.![Icon](mtl_standard_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### Transmission color
 `Python: "mtl_standard_transmission_color"`
 
-Controls the transmission color. Transmission color is used to tint transparent objects as light travels through them. The longer the distance traveled, the more intense the tint.
+Controls the transmission color. Transmission color is used to tint transparent objects as light travels through them. The longer the distance traveled, the more intense the tint.![Icon](mtl_standard_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### Transmission color map
 `Python: "mtl_standard_transmission_color_map"`
 
-Controls the transmission color using a texture map. Note that color information is sampled at the surface of the object (i.e., not in a volumetric manner).
+Controls the transmission color using a texture map. Note that color information is sampled at the surface of the object (i.e., not in a volumetric manner).![Icon](mtl_standard_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### Abbe value
 `Python: "mtl_standard_transmission_abbe"`
 
-Controls the amount of chromatic dispersion. Lower values will result in more dispersion while higher values will produce less dispersion. The default value is typical of crown glass. Gemstones typically exhibit lower values.
+Controls the amount of chromatic dispersion. Lower values will result in more dispersion while higher values will produce less dispersion. The default value is typical of crown glass. Gemstones typically exhibit lower values.![Icon](mtl_standard_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### Enable dispersion
 `Python: "mtl_standard_transmission_abbe_enable"`
 
-Enables chromatic dispersion. Note that dispersion is very computationally-intensive.
+Enables chromatic dispersion. Note that dispersion is very computationally-intensive.![Icon](mtl_standard_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### Thin-walled
 `Python: "mtl_standard_transmission_thin_enable"`
 
-Makes the surface cause no refraction and appear like an infinitely thin sheet of matter. This option is really convenient for architectural or automotive glass, such as windows, windshields, etc...
+Makes the surface cause no refraction and appear like an infinitely thin sheet of matter. This option is really convenient for architectural or automotive glass, such as windows, windshields, etc...![Icon](mtl_standard_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 
 ![Standard example](mtl_standard_transmission_thin_enable.png "Standard example"){style="max-width: 320px;"}
@@ -366,96 +434,114 @@ Makes the surface cause no refraction and appear like an infinitely thin sheet o
 #### Enable interior roughness
 `Python: "mtl_standard_transmission_roughness_enable"`
 
-Enables independent roughness control for the interior side of the object. When disabled, transmission stays linked to specular roughness.
+Enables independent roughness control for the interior side of the object. When disabled, transmission stays linked to specular roughness.![Icon](mtl_standard_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### Interior roughness
 `Python: "mtl_standard_transmission_roughness"`
 
-Controls the transmission roughness amount.
+Controls the transmission roughness amount.![Icon](mtl_standard_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### Interior roughness map
 `Python: "mtl_standard_transmission_roughness_map"`
 
-Controls the transmission roughness amount with a texture map. This map is interpreted the same as the specular roughness map.
+Controls the transmission roughness amount with a texture map. This map is interpreted the same as the specular roughness map.![Icon](mtl_standard_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### Specular anisotropy
 `Python: "mtl_standard_transmission_anisotropy"`
 
-Controls the amount of transmission anisotropy.
+Controls the amount of transmission anisotropy.![Icon](mtl_standard_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### Specular anisotropy map
 `Python: "mtl_standard_transmission_anisotropy_map"`
 
-Controls the amount of transmission anisotropy using a texture map. This map is interpreted the same as the specular anisotropy map.
+Controls the amount of transmission anisotropy using a texture map. This map is interpreted the same as the specular anisotropy map.![Icon](mtl_standard_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### Specular anisotropy rotation
 `Python: "mtl_standard_transmission_rotation"`
 
-Controls the transmission anisotropy stretch direction.
+Controls the transmission anisotropy stretch direction.![Icon](mtl_standard_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### Specular anisotropy rotation map
 `Python: "mtl_standard_transmission_rotation_map"`
 
-Controls the transmission anisotropy stretch direction using a texture map. This map is interpreted the same as the specular anisotropy rotation map.
+Controls the transmission anisotropy stretch direction using a texture map. This map is interpreted the same as the specular anisotropy rotation map.![Icon](mtl_standard_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 ## Sub-Surface Scattering
 
 #### SSS weight
 `Python: "mtl_standard_sss_weight"`
 
-Controls the weight of the scattering component.
+Controls the weight of the scattering component.![Icon](mtl_standard_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### SSS weight map
 `Python: "mtl_standard_sss_weight_map"`
 
-Controls the weight of the scattering component using a grayscale where black represents 0 and white 1.0.
+Controls the weight of the scattering component using a grayscale where black represents 0 and white 1.0.![Icon](mtl_standard_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### SSS scale
 `Python: "mtl_standard_sss_scale"`
 
-Controls how far Sub-Surface Scattering can reach inside an object. High values produces soft and creamy materials like soap or juice while low values produce harder, denser-looking materials like plastics.
+Controls how far Sub-Surface Scattering can reach inside an object. High values produces soft and creamy materials like soap or juice while low values produce harder, denser-looking materials like plastics.![Icon](mtl_standard_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### SSS color
 `Python: "mtl_standard_sss_color"`
 
-Controls the Sub-Surface Scattering color.
+Controls the Sub-Surface Scattering color.![Icon](mtl_standard_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### SSS color map
 `Python: "mtl_standard_sss_color_map"`
 
-Controls the Sub-Surface Scattering color using a texture map. The color information is taken at the object's surface and is not volumetric.
+Controls the Sub-Surface Scattering color using a texture map. The color information is taken at the object's surface and is not volumetric.![Icon](mtl_standard_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### SSS anisotropy
 `Python: "mtl_standard_sss_anisotropy"`
 
-Sub-Surface Scattering effect is achieved by randomly bouncing light rays inside an object's volume without any dominating direction. Anisotropy on the other hand forces some directionality. Positive anisotropy values will give rays a higher chance of bouncing forward compared to their incoming direction, while negative values will increase the chances of a ray bouncing backward. This is often referred to as forward/backward scattering. A value of 0 is referred to as isotropic scattering.
+Sub-Surface Scattering effect is achieved by randomly bouncing light rays inside an object's volume without any dominating direction. Anisotropy on the other hand forces some directionality. Positive anisotropy values will give rays a higher chance of bouncing forward compared to their incoming direction, while negative values will increase the chances of a ray bouncing backward. This is often referred to as forward/backward scattering. A value of 0 is referred to as isotropic scattering.![Icon](mtl_standard_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### SSS radius (X/R)
 `Python: "mtl_standard_sss_radius_x"`
 
-Controls how far deep the red color scattering can reach. This is often used to accurately simulate materials made of different elements that absorb the light spectrum differently, like human skin. This parameter multiplies the information provided by the radius texture.
+Controls how far deep the red color scattering can reach. This is often used to accurately simulate materials made of different elements that absorb the light spectrum differently, like human skin. This parameter multiplies the information provided by the radius texture.![Icon](mtl_standard_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### SSS radius (Y/G)
 `Python: "mtl_standard_sss_radius_y"`
 
-Controls how far deep the green color scattering can reach. This is often used to accurately simulate materials made of different elements that absorb the light spectrum differently, like human skin. This parameter multiplies the information provided by the radius texture.
+Controls how far deep the green color scattering can reach. This is often used to accurately simulate materials made of different elements that absorb the light spectrum differently, like human skin. This parameter multiplies the information provided by the radius texture.![Icon](mtl_standard_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### SSS radius map
 `Python: "mtl_standard_sss_radius_map"`
 
-Controls how far deep the red/green/blue color scattering can reach using a texture. A solid R=255 G=128 B=0 color texture means that the red component can reach the full scale, green half the scale and blue doesn't scatter at all. It is possible to increase or lower the effect produced by the texture by increasing or reducing the individual radii values.
+Controls how far deep the red/green/blue color scattering can reach using a texture. A solid R=255 G=128 B=0 color texture means that the red component can reach the full scale, green half the scale and blue doesn't scatter at all. It is possible to increase or lower the effect produced by the texture by increasing or reducing the individual radii values.![Icon](mtl_standard_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### SSS radius (Z/B)
 `Python: "mtl_standard_sss_radius_z"`
 
-Controls how far deep the blue color scattering can reach. This is often used to accurately simulate materials made of different elements that absorb the light spectrum differently, like human skin. This parameter multiplies the information provided by the radius texture.
+Controls how far deep the blue color scattering can reach. This is often used to accurately simulate materials made of different elements that absorb the light spectrum differently, like human skin. This parameter multiplies the information provided by the radius texture.![Icon](mtl_standard_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 ## Translucency
 
 #### Translucency weight
 `Python: "mtl_standard_translucency_weight"`
 
-Controls the weight of the translucency component. Translucency is when light bleeds to the other side of a very thin material, such as in a sheet of paper or in a tree leaf.
+Controls the weight of the translucency component. Translucency is when light bleeds to the other side of a very thin material, such as in a sheet of paper or in a tree leaf.![Icon](mtl_standard_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 
 ![Standard example](mtl_standard_translucency_weight.png "Standard example"){style="max-width: 320px;"}
@@ -465,66 +551,78 @@ Controls the weight of the translucency component. Translucency is when light bl
 #### Translucency weight map
 `Python: "mtl_standard_translucency_weight_map"`
 
-Controls the weight of the translucency component using a grayscale map.
+Controls the weight of the translucency component using a grayscale map.![Icon](mtl_standard_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### Translucency roughness
 `Python: "mtl_standard_translucency_roughness"`
 
-Controls the roughness of the translucency component. Low roughness values are suitable to simulate materials such as translucent paper or japanese shoji walls.
+Controls the roughness of the translucency component. Low roughness values are suitable to simulate materials such as translucent paper or japanese shoji walls.![Icon](mtl_standard_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### Translucency roughness map
 `Python: "mtl_standard_translucency_roughness_map"`
 
-Controls the roughness of the translucency component using a grayscale map.
+Controls the roughness of the translucency component using a grayscale map.![Icon](mtl_standard_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### Translucency color
 `Python: "mtl_standard_translucency_color"`
 
-Controls the translucency color.
+Controls the translucency color.![Icon](mtl_standard_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### Translucency color map
 `Python: "mtl_standard_translucency_color_map"`
 
-Controls the translucency color using a texture map.
+Controls the translucency color using a texture map.![Icon](mtl_standard_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 ## Sheen
 
 #### Sheen weight
 `Python: "mtl_standard_sheen_weight"`
 
-Controls the weight of the sheen component. Sheen simulates the very thin strands of fibers often found in fabric. These are generally so small that they are not worth modeling with geometry, yet produce a characteristic falloff effect at the edges of the surface.
+Controls the weight of the sheen component. Sheen simulates the very thin strands of fibers often found in fabric. These are generally so small that they are not worth modeling with geometry, yet produce a characteristic falloff effect at the edges of the surface.![Icon](mtl_standard_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### Sheen weight map
 `Python: "mtl_standard_sheen_weight_map"`
 
-Controls the weight of the sheen component using a grayscale map.
+Controls the weight of the sheen component using a grayscale map.![Icon](mtl_standard_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### Sheen roughness
 `Python: "mtl_standard_sheen_roughness"`
 
-Controls the roughness of the sheen component. Low roughness values tend to produce a velvet/satin appearance while high values are suitable for generic soft fabrics.
+Controls the roughness of the sheen component. Low roughness values tend to produce a velvet/satin appearance while high values are suitable for generic soft fabrics.![Icon](mtl_standard_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### Sheen roughness map
 `Python: "mtl_standard_sheen_roughness_map"`
 
-Controls the roughness of the sheen component using a grayscale map.
+Controls the roughness of the sheen component using a grayscale map.![Icon](mtl_standard_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### Sheen color
 `Python: "mtl_standard_sheen_color"`
 
-Controls the color of the sheen component.
+Controls the color of the sheen component.![Icon](mtl_standard_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### Sheen color map
 `Python: "mtl_standard_sheen_color_map"`
 
-Controls the color of the sheen component using texture map.
+Controls the color of the sheen component using texture map.![Icon](mtl_standard_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 ## Emission
 
 #### Emission intensity
 `Python: "mtl_standard_emission_intensity"`
 
-Controls the intensity of the emission component. Note that standard emission must be preferably used for dim self-illuminating surfaces. For true light sources casting significant light into the scene, light or mesh objects are the correct option.
+Controls the intensity of the emission component. Note that standard emission must be preferably used for dim self-illuminating surfaces. For true light sources casting significant light into the scene, light or mesh objects are the correct option.![Icon](mtl_standard_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 
 ![Standard example](mtl_standard_emission_intensity.png "Standard example"){style="max-width: 320px;"}
@@ -534,123 +632,146 @@ Controls the intensity of the emission component. Note that standard emission mu
 #### Emission intensity map
 `Python: "mtl_standard_emission_intensity_map"`
 
-Controls the intensity of the emission component using a texture map.
+Controls the intensity of the emission component using a texture map.![Icon](mtl_standard_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### Emission exposure
 `Python: "mtl_standard_emission_exposure"`
 
-Exposure (EV) is a logarithmic multiplier. An increment of 1 unit doubles the amount of light emitted and viceversa.
+Exposure (EV) is a logarithmic multiplier. An increment of 1 unit doubles the amount of light emitted and viceversa.![Icon](mtl_standard_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### Emission color
 `Python: "mtl_standard_emission_color"`
 
-Controls the color of the emission component.
+Controls the color of the emission component.![Icon](mtl_standard_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### Emission color map
 `Python: "mtl_standard_emission_color_map"`
 
-Controls the color of the emission component using a texture map.
+Controls the color of the emission component using a texture map.![Icon](mtl_standard_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### Input colorspace
 `Python: "mtl_standard_emission_color_inv_gamma"`
 
-Interprets the input emission color/image as regular sRGB (gamma=2.2), as linear (no gamma), or as raw (gamma=1/2.2). e.g., most images are in sRGB, but .hdr/.exr images generally expect to be interpreted as linear. When in doubt, cycle through the options, as one will clearly look good and the other two will look washed out or burned out in direct vision.
+Interprets the input emission color/image as regular sRGB (gamma=2.2), as linear (no gamma), or as raw (gamma=1/2.2). e.g., most images are in sRGB, but .hdr/.exr images generally expect to be interpreted as linear. When in doubt, cycle through the options, as one will clearly look good and the other two will look washed out or burned out in direct vision.![Icon](mtl_standard_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 ## Bump (Normal/Height)
 
 #### Enable bump mapping
 `Python: "mtl_normal_enable"`
 
-Enables bump mapping, which can be controlled with a normal map or a height map.
+Enables bump mapping, which can be controlled with a normal map or a height map.![Icon](mtl_standard_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### Strength
 `Python: "mtl_normal_strength"`
 
-Defines the bump strength. A value of 1 in a normal map renders the actual normals as they are represented in the texture. This is particularly relevant for maps that were baked in sculpting software. On the other hand, strength in grayscale height maps is somewhat resolution-dependent and must be adjusted manually.
+Defines the bump strength. A value of 1 in a normal map renders the actual normals as they are represented in the texture. This is particularly relevant for maps that were baked in sculpting software. On the other hand, strength in grayscale height maps is somewhat resolution-dependent and must be adjusted manually.![Icon](mtl_standard_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### Normal/Height map
 `Python: "mtl_normal_map"`
 
-Perturbs the surface normals with a bump (normal or height) map. Bump mapping is universally much cheaper than displacement mapping, and often looks as visually convincing. For extreme relief details, or close ups, displacement may be better suited.
+Perturbs the surface normals with a bump (normal or height) map. Bump mapping is universally much cheaper than displacement mapping, and often looks as visually convincing. For extreme relief details, or close ups, displacement may be better suited.![Icon](mtl_standard_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### Mode
 `Python: "mtl_normal_mode"`
 
-Establishes whether the texture must be interpreted as a height map (gray levels) or a normal map (rgb-encoded normals).
+Establishes whether the texture must be interpreted as a height map (gray levels) or a normal map (rgb-encoded normals).![Icon](mtl_standard_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### Height map epsilon
 `Python: "mtl_normal_epsilon"`
 
-When a procedural (non-filetex) height map is used, normals are computed on the fly by taking enough map samples to estimate the surface slope on the neighborhood of the pixel being shaded. Bump mapping crispness and proper capture of detail is very sensitive to this value.
+When a procedural (non-filetex) height map is used, normals are computed on the fly by taking enough map samples to estimate the surface slope on the neighborhood of the pixel being shaded. Bump mapping crispness and proper capture of detail is very sensitive to this value.![Icon](mtl_standard_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### Invert direction
 `Python: "mtl_normal_invert"`
 
-Flips inwards-and-outwards the resulting normals, which is equivalent to negating the strength value. In the case of a height map, this is also equivalent to inverting black-and-white in the input map.
+Flips inwards-and-outwards the resulting normals, which is equivalent to negating the strength value. In the case of a height map, this is also equivalent to inverting black-and-white in the input map.![Icon](mtl_standard_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### Flip X
 `Python: "mtl_normal_flip_x"`
 
-Flips the X (U) direction of the input normal map.
+Flips the X (U) direction of the input normal map.![Icon](mtl_standard_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### Swap X/Y
 `Python: "mtl_normal_swap_xy"`
 
-Swaps the X/Y (U/V) directions of the input normal map.
+Swaps the X/Y (U/V) directions of the input normal map.![Icon](mtl_standard_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### Flip Y
 `Python: "mtl_normal_flip_y"`
 
-Flips the Y (V) direction of the input normal map.
+Flips the Y (V) direction of the input normal map.![Icon](mtl_standard_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### Add round_edges
 `Python: "mtl_add_round_edges"`
 
-Adds a round_edges map to this material. If the material does not have a bump map yet, a round_edges map is trivially applied. If the material already has a bump map, then this button creates a bump_blend with a round_edges node plugged at its base.
+Adds a round_edges map to this material. If the material does not have a bump map yet, a round_edges map is trivially applied. If the material already has a bump map, then this button creates a bump_blend with a round_edges node plugged at its base.![Icon](mtl_standard_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 ## Displacement (Micro-Patch)
 
 #### Enable displacement
 `Python: "mtl_mpdm_enable"`
 
-Enables micro-polygon (micro-patch) displacement mapping (a.k.a., MPDM) in the object the material is applied to. Unlike brute-force subdiv+displacement, MPDM spawns micro-geometry on path-tracing time only, and hence is capable of delivering virtually unlimited amounts of detail with a negligible memory footprint.
+Enables micro-polygon (micro-patch) displacement mapping (a.k.a., MPDM) in the object the material is applied to. Unlike brute-force subdiv+displacement, MPDM spawns micro-geometry on path-tracing time only, and hence is capable of delivering virtually unlimited amounts of detail with a negligible memory footprint.![Icon](mtl_standard_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### Displacement height
 `Python: "mtl_mpdm_height"`
 
-Determines, in real world units, how high the spawned micro-geometry will be pushed away from the base mesh. This value acts as a multiplier for the height map.
+Determines, in real world units, how high the spawned micro-geometry will be pushed away from the base mesh. This value acts as a multiplier for the height map.![Icon](mtl_standard_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### Displacement height map
 `Python: "mtl_mpdm_height_map"`
 
-Sets the displacement height texture map. Every single texel in the height map will spawn a virtual micro-patch (a bilinear quad patch) in path-tracing time.
+Sets the displacement height texture map. Every single texel in the height map will spawn a virtual micro-patch (a bilinear quad patch) in path-tracing time.![Icon](mtl_standard_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### Midpoint
 `Python: "mtl_mpdm_midpoint"`
 
-Defines the displacement baseline. Setting this value to 0.5 will displace half the height inwards and half outwards. The right setting for this value depends on the DCC app used to produce the displacement map. e.g., 32-bit .exr maps exported from ZBrush expect a midpoint value of 0.0.
+Defines the displacement baseline. Setting this value to 0.5 will displace half the height inwards and half outwards. The right setting for this value depends on the DCC app used to produce the displacement map. e.g., 32-bit .exr maps exported from ZBrush expect a midpoint value of 0.0.![Icon](mtl_standard_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### Waterlevel (lo)
 `Python: "mtl_mpdm_waterlevel_lo"`
 
-Defines a height map value below which displaced geometry is clipped out. The default value (0) clips no geometry at all.
+Defines a height map value below which displaced geometry is clipped out. The default value (0) clips no geometry at all.![Icon](mtl_standard_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### Waterlevel (hi)
 `Python: "mtl_mpdm_waterlevel_hi"`
 
-Defines a height map value above which displaced geometry is clipped out. The default value (1) clips no geometry at all.
+Defines a height map value above which displaced geometry is clipped out. The default value (1) clips no geometry at all.![Icon](mtl_standard_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 ## Opacity
 
 #### Enable opacity
 `Python: "mtl_opacity_enable"`
 
-Enables opacity mapping in the geometry the material is applied to. Note that opacity mapping is computationally-intensive.
+Enables opacity mapping in the geometry the material is applied to. Note that opacity mapping is computationally-intensive.![Icon](mtl_standard_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### Opacity
 `Python: "mtl_opacity"`
 
-Defines the percentage of light rays that will be allowed to pass through the object not being affected by it in any way.
+Defines the percentage of light rays that will be allowed to pass through the object not being affected by it in any way.![Icon](mtl_standard_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 
 ![Standard example](mtl_opacity.png "Standard example"){style="max-width: 320px;"}
@@ -660,84 +781,100 @@ Defines the percentage of light rays that will be allowed to pass through the ob
 #### Opacity map
 `Python: "mtl_opacity_map"`
 
-Defines the opacity level of the object with a grayscale texture map. Opacity maps are interpreted so dark colors make the surface more translucent; i.e., black completely clips the geometry away, whereas white produces fully solid geometry. This map gets multiplied by the numerical opacity value.
+Defines the opacity level of the object with a grayscale texture map. Opacity maps are interpreted so dark colors make the surface more translucent; i.e., black completely clips the geometry away, whereas white produces fully solid geometry. This map gets multiplied by the numerical opacity value.![Icon](mtl_standard_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### Single-sided geometry
 `Python: "mtl_single_sided"`
 
-When enabled, object(s) this material is applied to will be visible from their front side, but invisible from their back side.
+When enabled, object(s) this material is applied to will be visible from their front side, but invisible from their back side.![Icon](mtl_standard_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 ## Trace sets
 
 #### Include list
 `Python: "mtl_trace_set_include"`
 
-List of comma or space-separated trace set IDs. If the list starts by - then the list is inverted (i.e., all IDs except for the listed ones). Light paths bouncing at the material will interact with (at least) the objects or lights that belong to the listed trace sets. For example, you can use this list to re-include a trace set that was excluded at a previous GI bounce.
+List of comma or space-separated trace set IDs. If the list starts by - then the list is inverted (i.e., all IDs except for the listed ones). Light paths bouncing at the material will interact with (at least) the objects or lights that belong to the listed trace sets. For example, you can use this list to re-include a trace set that was excluded at a previous GI bounce.![Icon](mtl_standard_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### Enable include list
 `Python: "mtl_trace_set_include_enable"`
 
-Enables or disables the trace sets include list. If enabled, the list is appended to the include list at the object(s) the material is applied to.
+Enables or disables the trace sets include list. If enabled, the list is appended to the include list at the object(s) the material is applied to.![Icon](mtl_standard_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### Exclude list
 `Python: "mtl_trace_set_exclude"`
 
-List of comma or space-separated trace set IDs. If the list starts by - then the list is inverted (i.e., all IDs except for the listed ones). Light paths bouncing at the material will not interact with the objects or lights that belong to the listed trace sets. For example, you can use this to make an object exclude the shadows produced by other particular object.
+List of comma or space-separated trace set IDs. If the list starts by - then the list is inverted (i.e., all IDs except for the listed ones). Light paths bouncing at the material will not interact with the objects or lights that belong to the listed trace sets. For example, you can use this to make an object exclude the shadows produced by other particular object.![Icon](mtl_standard_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### Enable exclude list
 `Python: "mtl_trace_set_exclude_enable"`
 
-Enables or disables the trace sets exclude list. If enabled, the list is appended to the exclude list at the object(s) the material is applied to.
+Enables or disables the trace sets exclude list. If enabled, the list is appended to the exclude list at the object(s) the material is applied to.![Icon](mtl_standard_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### Affect diffuse
 `Python: "mtl_trace_set_affect_dif"`
 
-Makes the include/exclude lists be used for bounces at the diffuse component(s) of the material.
+Makes the include/exclude lists be used for bounces at the diffuse component(s) of the material.![Icon](mtl_standard_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### Affect specular
 `Python: "mtl_trace_set_affect_spc"`
 
-Makes the include/exclude lists be used for bounces at the reflective component(s) of the material.
+Makes the include/exclude lists be used for bounces at the reflective component(s) of the material.![Icon](mtl_standard_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### Affect transmission
 `Python: "mtl_trace_set_affect_trm"`
 
-Makes the include/exclude lists be used for bounces at the refractive component(s) of the material.
+Makes the include/exclude lists be used for bounces at the refractive component(s) of the material.![Icon](mtl_standard_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### Include IBL refl/refr overrides
 `Python: "mtl_include_ibl_overrides"`
 
-Flags the material in the trace sets system to include the IBL refl/refr overrides regardless of the constraints set in the IBL node.
+Flags the material in the trace sets system to include the IBL refl/refr overrides regardless of the constraints set in the IBL node.![Icon](mtl_standard_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### Cull interior geometry
 `Python: "mtl_cull_interior"`
 
-When enabled, any geometry intersecting the object(s) this material is applied to will be removed. This is particularly useful to remove geometry that wrongly intersects other objects due to modeling inaccuracies. Metallic prongs intersecting gemstones in jewelry are a classic example.
+When enabled, any geometry intersecting the object(s) this material is applied to will be removed. This is particularly useful to remove geometry that wrongly intersects other objects due to modeling inaccuracies. Metallic prongs intersecting gemstones in jewelry are a classic example.![Icon](mtl_standard_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### Disable direct lighting
 `Python: "mtl_no_direct"`
 
-When enabled the material will not receive any direct lighting.
+When enabled the material will not receive any direct lighting.![Icon](mtl_standard_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### Disable indirect lighting
 `Python: "mtl_no_indirect"`
 
-When enabled the material will not receive any indirect lighting.
+When enabled the material will not receive any indirect lighting.![Icon](mtl_standard_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 ## Compositing
 
 #### Material ID color
 `Python: "mtl_mask_color"`
 
-Choose a custom color for the material ID AOV.
+Choose a custom color for the material ID AOV.![Icon](mtl_standard_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### Enable material ID color
 `Python: "mtl_mask_color_enable"`
 
-Allows to choose a custom color for the material ID AOV. This color is used when the material AOV is set to custom color mode.
+Allows to choose a custom color for the material ID AOV. This color is used when the material AOV is set to custom color mode.![Icon](mtl_standard_swatch.png "Icon"){style="max-width: 32px;"}
+
 
 #### Render set ID
 `Python: "mtl_render_set_id"`
 
-Defines what render set objects using this material will be render in. The list of render sets to be rendered can be enabled and defined in the Render panel.
+Defines what render set objects using this material will be render in. The list of render sets to be rendered can be enabled and defined in the Render panel.![Icon](mtl_standard_swatch.png "Icon"){style="max-width: 32px;"}
+
 
