@@ -58,10 +58,10 @@ Upper bound of the output value range.
 #### Value weight
 `Python: "pro_weight"`
 
-The final value output by the node is, actually: value*weight+bias.
+The final value output by the node is computed as: value*weight+bias.
 
 #### Value bias
 `Python: "pro_bias"`
 
-The final value output by the node is, actually: value*weight+bias.
+The final value output by the node is computed as: value*weight+bias.
 

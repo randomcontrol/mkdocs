@@ -68,10 +68,10 @@ Z component of the vector value output by the node.
 #### Value weight
 `Python: "pro_weight"`
 
-The final value output by the node is, actually: value*weight+bias.
+The final value output by the node is computed as: value*weight+bias.
 
 #### Value bias
 `Python: "pro_bias"`
 
-The final value output by the node is, actually: value*weight+bias.
+The final value output by the node is computed as: value*weight+bias.
 
