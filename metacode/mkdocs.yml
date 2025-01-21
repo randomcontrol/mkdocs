@@ -7,13 +7,13 @@ nav:
   - CLI: CLI/index.md
   - Python: Python/index.md
   - Nodes:
-    - Global:
-        - 'Globals':             Nodes/Global/globals.md
-        - 'AOVs':                Nodes/Global/aovs.md
-        - 'Tone mapping':        Nodes/Global/tonemap.md
-        - 'LightMixer':          Nodes/Global/lightmixer.md
-        - 'IBL':                 Nodes/Global/ibl.md
-        - 'Sky':                 Nodes/Global/sky.md
+    - Global Nodes:
+        - 'Globals':             Nodes/Global Nodes/globals.md
+        - 'AOVs':                Nodes/Global Nodes/aovs.md
+        - 'Tone mapping':        Nodes/Global Nodes/tonemap.md
+        - 'LightMixer':          Nodes/Global Nodes/lightmixer.md
+        - 'IBL':                 Nodes/Global Nodes/ibl.md
+        - 'Sky':                 Nodes/Global Nodes/sky.md
     - Camera:
         - 'Perspective':         Nodes/Camera/cam_persp.md
         - 'VR':                  Nodes/Camera/cam_vr.md

@@ -291,5 +291,5 @@ Controls the end slope of a trapezoidal camera shutter.
 #### Minimize divergence
 `Python: "globals_no_divergence"`
 
-INTERNAL: Reorganizes the random number generation system so all pixels attempt to explore parallel light paths in sync. This produces memory access patterns that maximize cache hits and may lead to a significant performance gain. However, noise is turned into a visible pattern that may be hard to get rid of.
+INTERNAL: Reorganizes the random number generation system so all pixels attempt to explore parallel light paths in sync. This produces a memory access pattern that maximizes cache hits and may lead to a significant performance gain. However, noise is turned into a visible pattern that may be hard to get rid of.
 
