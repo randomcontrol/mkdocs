@@ -1,6 +1,6 @@
 `Python: "globals"`
 
-Globals
+The globals node controls the general behavior of the path tracing engine, such as the amount of GI bounces. Certain features such as caustics or motion blur can be toggled on/off from this node as well.
 
 ![Icon](globals_swatch.png "Icon"){style="max-width: 80px;"}
 
