@@ -1,6 +1,6 @@
 `Python: "globals"`
 
-@@
+Globals
 
 ![Icon](globals_swatch.png "Icon"){style="max-width: 80px;"}
 

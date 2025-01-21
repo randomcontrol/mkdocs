@@ -127,7 +127,6 @@ nav:
         - 'Vector':              Nodes/Programming Nodes/Vector/pro_vector_value.md
         - 'Vector Cast':         Nodes/Programming Nodes/Vector/pro_vector_cast.md
         - 'Vector Math':         Nodes/Programming Nodes/Vector/pro_vector_math.md
-        - 'Vector Random':       Nodes/Programming Nodes/Vector/pro_vector_random.md
         - 'Matrix Split':        Nodes/Programming Nodes/Vector/pro_matrix_split.md
       - Matrix:
         - 'Matrix':              Nodes/Programming Nodes/Matrix/pro_matrix_value.md
