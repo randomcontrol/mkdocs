@@ -1,4 +1,3 @@
-# MK_api module
 # MK_api.mks
 
 The scene container class can be used to manipulate .mks files.

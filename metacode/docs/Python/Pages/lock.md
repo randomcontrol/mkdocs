@@ -7,6 +7,8 @@
   connections, etc... may require that you notify the app to let
   the render engine be aware of the changes made.
 
+Pseudo-code:
+
 ```
 lock = MK_api.scoped_lock()
 if ( lock.is_safe() ):
@@ -15,5 +17,5 @@ if ( lock.is_safe() ):
   # Safely RD/WR the DAG here...
   # ...
   reload_all()  # Optionally call this if changes were made.
-lock.unlock()   # Call this unless the current scope ends here.
+lock.unlock()   # Call this to release the scene/DAG.
 ```
