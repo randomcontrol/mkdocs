@@ -1,5 +1,4 @@
-# How to access the document's scene:
------------------------------------
+# How to access the scene
 
 - The document currently open is a resource shared by the UI, the
   rendering core, and the python scripting system.
