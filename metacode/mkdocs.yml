@@ -8,18 +8,18 @@ nav:
   - Python:
     - Python/index.md
     - MK_api Module:
-        - 'The Basics':          Python/Pages/basics.md
-        - 'Scene Access':        Python/Pages/access.md
-        - 'UI Actions':          Python/Pages/actions.md
-        - 'Functions':           Python/Pages/global.md
+        - 'The Basics':          Python/Pages/python_basics.md
+        - 'Scene Access':        Python/Pages/python_access.md
+        - 'UI Actions':          Python/Pages/python_actions.md
+        - 'Global Functions':    Python/Pages/python_global.md
     - MK_api Classes:
-        - 'MK_api.mks':          Python/Pages/mks.md
-        - 'MK_api.mtl':          Python/Pages/mtl.md
-        - 'MK_api.map':          Python/Pages/map.md
-        - 'MK_api.dag':          Python/Pages/dag.md
-        - 'MK_api.node':         Python/Pages/node.md
-        - 'MK_api.img':          Python/Pages/img.md
-        - 'MK_api.mp4':          Python/Pages/mp4.md
+        - 'MK_api.mks':          Python/Pages/MK_api_mks.md
+        - 'MK_api.mtl':          Python/Pages/MK_api_mtl.md
+        - 'MK_api.map':          Python/Pages/MK_api_map.md
+        - 'MK_api.dag':          Python/Pages/MK_api_dag.md
+        - 'MK_api.node':         Python/Pages/MK_api_node.md
+        - 'MK_api.img':          Python/Pages/MK_api_img.md
+        - 'MK_api.mp4':          Python/Pages/MK_api_mp4.md
   - Nodes:
     - Global Nodes:
         - 'Globals':             Nodes/Global Nodes/globals.md
