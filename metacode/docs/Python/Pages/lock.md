@@ -8,12 +8,14 @@ How to access the document's scene:
   connections, etc... may require that you notify the app in order
   to pick up the changes made.
 
-      lock = MK_api.scoped_lock()
-      if ( lock.is_safe() ):
-        dag = lock.get_dag()
-        # ...
-        # Safely RD/WR the DAG here...
-        # ...
-        reload_all()  # Optionally call this if changes were made.
-      lock.unlock()   # Call this unless the current scope ends here.
+```
+lock = MK_api.scoped_lock()
+if ( lock.is_safe() ):
+  dag = lock.get_dag()
+  # ...
+  # Safely RD/WR the DAG here...
+  # ...
+  reload_all()  # Optionally call this if changes were made.
+lock.unlock()   # Call this unless the current scope ends here.
+```
 
