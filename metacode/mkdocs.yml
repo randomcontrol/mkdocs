@@ -5,7 +5,21 @@ use_directory_urls: false
 nav:
   - index.md
   - CLI: CLI/index.md
-  - Python: Python/index.md
+  - Python:
+    - Python/index.md
+    - Contents:
+        - 'Overview':            Python/Pages/overview.md
+        - 'UI Actions':          Python/Pages/actions.md
+        - 'Global Functions':    Python/Pages/global.md
+        - 'Scene Access':        Python/Pages/lock.md
+    - Classes:
+        - 'MK_api.mks':          Python/Pages/mks.md
+        - 'MK_api.mtl':          Python/Pages/mtl.md
+        - 'MK_api.map':          Python/Pages/map.md
+        - 'MK_api.dag':          Python/Pages/dag.md
+        - 'MK_api.node':         Python/Pages/node.md
+        - 'MK_api.img':          Python/Pages/img.md
+        - 'MK_api.mp4':          Python/Pages/mp4.md
   - Nodes:
     - Global Nodes:
         - 'Globals':             Nodes/Global Nodes/globals.md
