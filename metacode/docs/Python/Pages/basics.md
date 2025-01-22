@@ -1,5 +1,5 @@
 
-# Basics
+# The basics
 
 - Maverick Render represents scenes as a Directed Acyclic Graph (DAG).
 - A DAG is a collection of nodes and the connections between them.

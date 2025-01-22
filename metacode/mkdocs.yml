@@ -8,7 +8,7 @@ nav:
   - Python:
     - Python/index.md
     - MK_api Module:
-        - 'Basics':              Python/Pages/basics.md
+        - 'The Basics':          Python/Pages/basics.md
         - 'Scene Access':        Python/Pages/access.md
         - 'UI Actions':          Python/Pages/actions.md
         - 'Functions':           Python/Pages/global.md
