@@ -1,7 +1,4 @@
-
-MK_api module (classes):
-------------------------
-
+# MK_api module
 - MK_api.mks
   ----------
 

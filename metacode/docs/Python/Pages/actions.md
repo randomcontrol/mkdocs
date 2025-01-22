@@ -1,5 +1,4 @@
-MK_api module (UI actions):
----------------------------
+# UI actions
 
 - `MK_api.clone_nodes( cuid )`
 - `MK_api.clone_nodes( vcuid )`

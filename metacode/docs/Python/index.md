@@ -21,7 +21,7 @@
 
 ## Remarks
 
-- While fairly _complete for run-of-the-mill use cases_, the python binding is generally _very terse_.
+- Our python binding is fairly _complete for run-of-the-mill use cases_, and generally _very terse_.
 - The python binding does not allow to extend the application's UI in any way.
 - Built-in documentation for the python binding can be accessed within Maverick Studio:
     - Via the command `MK_api.help()` in the python panel.
