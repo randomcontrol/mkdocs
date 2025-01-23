@@ -8,7 +8,7 @@ nav:
   - Python:
     - Python/index.md
     - MK_api Module:
-        - 'The Basics':            Python/Pages/python_basics.md
+        - 'Fundamentals':          Python/Pages/python_fundamentals.md
         - 'Scene Access':          Python/Pages/python_access.md
         - 'UI Actions':            Python/Pages/python_actions.md
         - 'Global Functions':      Python/Pages/python_global.md
@@ -22,10 +22,16 @@ nav:
         - 'MK_api.mp4':            Python/Pages/MK_api_mp4.md
   - Tutorials:
     - Tutorials/index.md
+    - Fundamentals:
+        - 'Round Edges':           Tutorials/Other/02_round_edges.md
+    - Materials:
+        - 'Round Edges':           Tutorials/Other/02_round_edges.md
+    - Lighting:
+        - 'MOCs with Objects':     Tutorials/Animation/01_something.md
     - Animation:
         - 'MOCs with Objects':     Tutorials/Animation/01_something.md
-    - Other:
-        - 'Round Edges':           Tutorials/Other/02_round_edges.md
+    - Showcases:
+        - 'MOCs with Objects':     Tutorials/Animation/01_something.md
   - Nodes:
     - Global Nodes:
         - 'Globals':               Nodes/Global Nodes/globals.md
@@ -91,38 +97,38 @@ nav:
         - 'Flakes':                Nodes/Maps/Noise/map_flakes.md
         - 'Noise':                 Nodes/Maps/Noise/map_noise.md
         - 'Scratches':             Nodes/Maps/Noise/map_scratches.md
-      - Bump:
-        - 'Bump':                  Nodes/Maps/Bump/map_bump.md
-        - 'Bump Blend':            Nodes/Maps/Bump/map_bump_blend.md
-        - 'Round Edges':           Nodes/Maps/Bump/map_round_edges.md
       - Special:
-        - 'Camera Projection':     Nodes/Maps/Special/map_cam_projection.md
-        - 'Color Generator':       Nodes/Maps/Special/map_colorgen.md
-        - 'Composite':             Nodes/Maps/Special/map_composite.md
-        - 'Color Correction':      Nodes/Maps/Special/map_correction.md
-        - 'Curvature':             Nodes/Maps/Special/map_curvature.md
-        - 'Custom IOR':            Nodes/Maps/Special/map_ior.md
-        - 'Lightbox':              Nodes/Maps/Special/map_lightbox.md
-        - 'Mix':                   Nodes/Maps/Special/map_mix.md
-        - 'Photometric':           Nodes/Maps/Special/map_photometric.md
-        - 'Primvar':               Nodes/Maps/Special/map_primvar.md
-        - 'Ray Switch':            Nodes/Maps/Special/map_ray_switch.md
-        - 'Remap':                 Nodes/Maps/Special/map_remap.md
-        - 'Switch':                Nodes/Maps/Special/map_switch.md
-        - 'Triplanar':             Nodes/Maps/Special/map_triplanar.md
-        - 'User Data':             Nodes/Maps/Special/map_user_data.md
-        - 'Wireframe':             Nodes/Maps/Special/map_wireframe.md
+        - 'Bump':                  Nodes/Maps/Special/map_bump.md
+        - 'Bump Blend':            Nodes/Maps/Special/map_bump_blend.md
+        - 'Round Edges':           Nodes/Maps/Special/map_round_edges.md
       - Xform:
-        - '2D Xform':              Nodes/Maps/Xform/map_xform_2d.md
-        - '3D Xform':              Nodes/Maps/Xform/map_xform_3d.md
-        - 'Distortion Xform':      Nodes/Maps/Xform/map_xform_distortion.md
-        - 'Spherical Xform':       Nodes/Maps/Xform/map_xform_spherical.md
+        - 'Camera Projection':     Nodes/Maps/Xform/map_cam_projection.md
+        - 'Color Generator':       Nodes/Maps/Xform/map_colorgen.md
+        - 'Composite':             Nodes/Maps/Xform/map_composite.md
+        - 'Color Correction':      Nodes/Maps/Xform/map_correction.md
+        - 'Curvature':             Nodes/Maps/Xform/map_curvature.md
+        - 'Custom IOR':            Nodes/Maps/Xform/map_ior.md
+        - 'Lightbox':              Nodes/Maps/Xform/map_lightbox.md
+        - 'Mix':                   Nodes/Maps/Xform/map_mix.md
+        - 'Photometric':           Nodes/Maps/Xform/map_photometric.md
+        - 'Primvar':               Nodes/Maps/Xform/map_primvar.md
+        - 'Ray Switch':            Nodes/Maps/Xform/map_ray_switch.md
+        - 'Remap':                 Nodes/Maps/Xform/map_remap.md
+        - 'Switch':                Nodes/Maps/Xform/map_switch.md
+        - 'Triplanar':             Nodes/Maps/Xform/map_triplanar.md
+        - 'User Data':             Nodes/Maps/Xform/map_user_data.md
+        - 'Wireframe':             Nodes/Maps/Xform/map_wireframe.md
       - Baked:
-        - 'Baked Texture':         Nodes/Maps/Baked/map_baketex.md
-        - 'Substance':             Nodes/Maps/Baked/map_substance.md
+        - '2D Xform':              Nodes/Maps/Baked/map_xform_2d.md
+        - '3D Xform':              Nodes/Maps/Baked/map_xform_3d.md
+        - 'Distortion Xform':      Nodes/Maps/Baked/map_xform_distortion.md
+        - 'Spherical Xform':       Nodes/Maps/Baked/map_xform_spherical.md
       - Tonemap:
-        - 'Glare Pattern':         Nodes/Maps/Tonemap/map_glare.md
-        - 'LUT':                   Nodes/Maps/Tonemap/map_lut.md
+        - 'Baked Texture':         Nodes/Maps/Tonemap/map_baketex.md
+        - 'Substance':             Nodes/Maps/Tonemap/map_substance.md
+      - @@:
+        - 'Glare Pattern':         Nodes/Maps/@@/map_glare.md
+        - 'LUT':                   Nodes/Maps/@@/map_lut.md
     - Motion Controllers:
         - 'Cam Switch':            Nodes/Motion Controllers/moc_cam_switch.md
         - 'Explode':               Nodes/Motion Controllers/moc_explode.md

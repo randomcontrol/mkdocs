@@ -1,8 +1,8 @@
-`Python: "map_noise"`
+`Python: "map_xform_3d"`
 
-This node encapsulates the classic Perlin noise algorithm. This type of noise generates a turbulent transition between colors, useful to simulate real-world irregularities such as terrains, clouds, ...
+The xform_3d map node transforms (e.g., offset, scale, rotate, ...) the texture coordinates of the 3D map node(s) it is connected to.
 
-![Icon](map_noise_swatch.png "Icon"){style="max-width: 80px;"}
+![Icon](map_xform_3d_swatch.png "Icon"){style="max-width: 80px;"}
 
 ## Common
 
@@ -16,86 +16,7 @@ Human-readable node alias.
 
 Identificative node color.
 
-#### Swap colors
-`Python: "map_color_swap"`
-
-Swaps the primary and secondary colors.
-
-#### Primary color
-`Python: "map_color_1"`
-
-Defines the primary (background) color. The lower end of the output signal range is remapped to this color.
-
-#### Primary color map
-`Python: "map_color_1_map"`
-
-Defines the primary color using a texture map.
-
-#### Secondary color
-`Python: "map_color_2"`
-
-Defines the secondary (foreground) color. The upper end of the output signal range is remapped to this color.
-
-#### Secondary color map
-`Python: "map_color_2_map"`
-
-Defines the secondary color using a texture map.
-
 ## Main
-
-#### Mode
-`Python: "map_noise_mode"`
-
-Defines how homogeneously or heterogeneously the noise octaves stack on top of each other.
-
-#### Signal
-`Python: "map_noise_signal"`
-
-Defines the remapping performed on the raw noise signal at each octave.
-
-#### Octaves
-`Python: "map_noise_octaves"`
-
-Number of times the noise algorithm overlaps onto itself to add higher frequency details. Be aware that a high number of octaves is taxing on performance.
-
-#### Decay
-`Python: "map_noise_decay"`
-
-Power decay from one octave to the next. Higher values diminish fine details, while lower values make high-frequency details more evident. The effect of decay is more noticeable the higher the number of octaves.
-
-#### Randomize
-`Python: "map_randomize"`
-
-Random number seed used to randomize the map. Each possible seed produces a distinct version of the map.
-
-## Signal profile
-
-#### Signal gamma
-`Python: "map_profile_gamma"`
-
-Gamma curve applied to the raw map signal before it is remapped to the final output color.
-
-#### Signal gamma start
-`Python: "map_profile_start"`
-
-Left crop margin for the gamma curve applied to the raw map signal.
-
-#### Signal gamma end
-`Python: "map_profile_end"`
-
-Right crop margin for the gamma curve applied to the raw map signal.
-
-#### Signal gamma low
-`Python: "map_profile_lo"`
-
-Lower crop margin for the gamma curve applied to the raw map signal.
-
-#### Signal gamma high
-`Python: "map_profile_hi"`
-
-Upper crop margin for the gamma curve applied to the raw map signal.
-
-## UV transform
 
 #### Crop U (low)
 `Python: "map_xform_crop_x_lo"`
