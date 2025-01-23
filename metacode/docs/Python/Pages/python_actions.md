@@ -1,16 +1,6 @@
 # UI actions
 
 ```
-MK_api.ai()
-MK_api.ai( str )
-```
-Asynchronously fires up an AI generation from the AI Panel.
-The optional string argument determines which panel page to use:
-`"imagine"`, 
-`"upscale"`, 
-`"relight"`, 
-`"..."`
-```
 MK_api.clone_nodes( cuid )
 MK_api.clone_nodes( vcuid )
 ```
@@ -52,10 +42,6 @@ MK_api.do_modal( str )
 MK_api.do_modal( object )
 ```
 Pops up an XML-based UI dialog.
-```
-MK_api.fuckcito( str )
-```
-Opens the 'Save Project' dialog.
 ```
 MK_api.keep_ui_alive()
 ```
@@ -108,11 +94,6 @@ The optional string argument determines which panel page to use:
 MK_api.render_mtl_swatch( cuid )
 ```
 Synchronously renders the swatch for a mtl given its cuid.
-```
-MK_api.save_mai()
-MK_api.save_mai( str )
-```
-Triggers the 'Save Project' UI action.
 ```
 MK_api.save_mks()
 MK_api.save_mks( str )
