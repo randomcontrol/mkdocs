@@ -1,6 +1,6 @@
 # Tutorials
 
-![Command-line Interface in Maverick Studio](tutorials.png "Command-line Interface in Maverick Studio"){style="max-width: 512px;"}
+![Learning Material](tutorials.png "Learning Material"){style="max-width: 512px;"}
 
 ## Overview
 
