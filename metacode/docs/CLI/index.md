@@ -3,7 +3,7 @@
 !!! warning
     Maverick Indie does not support CLI automation. The following instructions are exclusive to Maverick Studio.
 
-![Command-line Interface in Maverick Studio](cli_cache.png "Command-line Interface in Maverick Studio"){style="max-width: 512px;"}
+![Command-line Interface in Maverick Studio](cli.png "Command-line Interface in Maverick Studio"){style="max-width: 512px;"}
 
 ## Overview
 

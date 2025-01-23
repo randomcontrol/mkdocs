@@ -1,9 +1,6 @@
-# Command-Line Interface
+# Tutorials
 
-!!! warning
-    Maverick Indie does not support CLI automation. The following instructions are exclusive to Maverick Studio.
-
-![Command-line Interface in Maverick Studio](cli_cache.png "Command-line Interface in Maverick Studio"){style="max-width: 512px;"}
+![Command-line Interface in Maverick Studio](tutorials.png "Command-line Interface in Maverick Studio"){style="max-width: 512px;"}
 
 ## Overview
 
@@ -40,38 +37,4 @@ maverick_studio.exe -i:"Z:\scene.mks" -still -o:"Z:\automation.png" -sl:10
 
 ```
 maverick_studio.exe -i:"Z:\scene.mks" -turntable -o:"Z:\video\frames\automation.png" -sl:8 -quit
-```
-
-## CLI: Run a .py script
-
-```
-maverick_studio.exe -i:<filename> [-py:<filename>]
-```
-
-- This is functionally equivalent to:
-    - Opening the app.
-    - Loading the scene.
-    - Loading the script in the Python panel.
-    - Pressing the `Run script` button.
-- If the scene needs any value overrides, those can be done from the script directly (see below).
-
-#### Examples
-
-- The following python script is equivalent to the arguments `-still -o:"Z:\automation.png" -sl:4`:
-
-```
-import MK_api
-
-lock = MK_api.scoped_lock()
-if ( lock.is_safe() ):
-  dag = lock.get_dag()
-  node_batcher = lookup_by_cstr( dag, "batcher" )
-  if ( node_batcher ):
-    node_batcher.set_float( "still_target_sl", 4.0 )
-    node_batcher.set_string( "still_output_filename", "Z:\\automation.png" )
-  lock.unlock()
-
-MK_api.render( "still" )
-
-print( "Done!" )
 ```

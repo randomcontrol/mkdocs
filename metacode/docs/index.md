@@ -1,6 +1,6 @@
 Welcome to the Maverick Render Documentation!
 
-![Welcome to Maverick Render](index_welcome.png "Welcome to Maverick Render"){style="max-width: 512px;"}
+![Welcome to Maverick Render](welcome.png "Welcome to Maverick Render"){style="max-width: 512px;"}
 
 This corner of the Internet provides documentation for both products in the Maverick Render suite:
 
