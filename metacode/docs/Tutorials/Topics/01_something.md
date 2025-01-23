@@ -1,77 +1,49 @@
-# Command-Line Interface
+# Motion Controllers
 
-!!! warning
-    Maverick Indie does not support CLI automation. The following instructions are exclusive to Maverick Studio.
+- **What are the key changes to the UI for animation in Maverick Render compared to previous versions?**
+The most significant UI change is the unification of all scene objects-lights, cameras, and objects-into a single panel. Additionally, the animation layout is recommended for users who intend to animate, providing a more focused workspace. The timeline remains at the bottom of the interface.
 
-![Command-line Interface in Maverick Studio](cli_cache.png "Command-line Interface in Maverick Studio"){style="max-width: 512px;"}
+- **How do I begin animating an object in Maverick Render?**
+To start, you need to create a transform motion controller from the toolbar and then drop it onto the object you wish to animate. This controller allows you to animate translation, rotation, and scaling options by defining initial and final values for each parameter.
 
-## Overview
+- **What is a transform motion controller and how does it work?**
+A transform motion controller is a node that allows you to animate the movement of objects. It has options for translation (movement along axes), rotation, and scaling. For each parameter, you set an initial value and a final value, and the animation interpolates smoothly between these values as the timeline progresses.
 
-Maverick Studio provides certain degree of control via command-line arguments. These can be used to build an in-house render farm, manage render batching, etc...
+- **Can multiple animations be applied to the same object, and how are they managed?**
+Yes, you can apply multiple motion controllers to the same object, allowing for complex, layered animations. The order of these controllers in the timeline affects how they combine, so careful sequencing is important. You can also adjust the length and position of each controller on the timeline.
 
-## CLI: Render a scene
+- **How can I make an object rotate around a specific point or target other than its own center?**
+You can achieve this in a few ways. One way is to create a target object, and then activate the "pivot" option within the motion controller. Another method is to place the object inside an assembly and animate the assembly, allowing the object to rotate around the assembly's origin.
 
-```
-maverick_studio.exe -i:<filename> [-still|-timeline|-turntable] [-o:<filename>] [-sl:<float>] [-quit]
-```
+- **What are easing options and how do they affect animation?**
+Easing options control the speed and acceleration of an animation. Instead of moving at a constant rate, easing can create a more natural motion, allowing an animation to start slow and speed up or start fast and slow down. Various types of easing are available (ease in, ease out, ease in-out, etc.), and a custom curve editor allows you to fine-tune easing to your liking. Additional options like repeat and pingpong are available to further customize your animations.
 
-- `-i` designates what scene to start the app with.
-- `-still|-timeline|-turntable` determine what type of render will be started.
-- `-o` optionally overrides the output filename in the Render panel.
-- `-sl` optionally overrides the Sampling Level in the Render panel.
-- `-quit` terminates the app (instead of going idle) as soon as the render process is complete.
+- **How can I preview an animation if the scene is too heavy for real-time playback?**
+If your scene is complex, you can use the preview animation button, which will generate a preview MP4 video in your snapshots folder, allowing you to see the animation at full speed without the resource limitations of the viewport.
 
-#### Remarks
+- **How do I render an animation and what rendering settings should I consider?**
+To render an animation, go to the render panel and select the timeline tab. Ensure the resolution is correct and set in the globals combo box, if needed. Configure your desired rendering settings (like denoiser and sampling levels). Then, choose the timeline option of "full animation timeline", set your output path and then start your render. You will want to select between 7 and 9 for your sampling levels, and you will want to enable the denoiser for best results.
 
-- If no `-still|-timeline|-turntable` are present, the scene will be opened up but no render modality will be started.
-- The scene will be loaded and rendered as-is, except for any possible values overridden by `-o/-sl/...`.
-- For timeline/turntable renders, the output filename must be a `.png/.jpg/...` image like it would in the UI. The output video will auto-receive the `.mp4/.mov` extension as configured before the scene was saved.
-- CLI automation will _not_ work if another instance of the application is already up and running.
+- **How can I animate a camera's position in Maverick Render?**
+To animate a camera's position, you can add a transform motion controller to the camera within the timeline. By adjusting the camera's position on the X, Y, or Z axes at different keyframes, you can create movements like a camera pullback or push in. These initial and final positions set the camera's trajectory over the timeline's duration.
 
-#### Examples
+- **How can I rotate a camera around a specific object as a pivot?**
+To rotate a camera around a pivot point (like a teapot), you need to activate the pivot option in the coordinates rollup of the motion controller and then select the desired object as the pivot. After that, configure the rotation (e.g., on the Z-axis) of the camera and the rotation will occur around the chosen object instead of the camera's origin.
 
-```
-maverick_studio.exe -i:"Z:\scene.mks"
-```
+- **Why is it recommended to animate a camera within an assembly?**
+Animating a camera within an assembly allows for easier management and more complex animations. By dropping the camera into an assembly, you can then add motion controllers to the assembly itself, which affects the camera's movement as a whole, making transformations and rotations more intuitive to control.
 
-```
-maverick_studio.exe -i:"Z:\scene.mks" -still -o:"Z:\automation.png" -sl:10
-```
+- **What is the 'ping pong' option and how is it used for camera animation?**
+The 'ping pong' option in a motion controller allows the camera to move back and forth smoothly along its animated path. This is useful for creating cyclical effects, such as a camera that moves up and then down repeatedly. By adjusting the tension and ease-out options, you can further refine how smooth and continuous the back-and-forth transitions appear.
 
-```
-maverick_studio.exe -i:"Z:\scene.mks" -turntable -o:"Z:\video\frames\automation.png" -sl:8 -quit
-```
+- **How can you create a camera 'nodding' effect?**
+To create a 'nodding' effect, you can simultaneously rotate the camera on its X axis while moving it up and down. This can be achieved by adding two motion controllers to the assembly, one for the rotation on the X axis and another to use the ping-pong effect for the up and down movement.
 
-## CLI: Run a .py script
+- **How do you switch between multiple cameras during an animation?**
+To switch between cameras in an animation, you need to use a 'cam switch' motion controller. Place the 'cam switch 1' controller on the timeline corresponding to the duration of use for the first camera and position the 'cam switch 2' controller where the second camera is to take over. Remember to select the initial camera in the IPR combo box. This will smoothly transition the viewpoint from one camera to another.
 
-```
-maverick_studio.exe -i:<filename> [-py:<filename>]
-```
+- **What does the yellow icon in the IPR indicate during camera animation playback?**
+If you see a yellow icon during camera animation playback within the IPR, it indicates you're viewing the scene from a non-actual position. To view the animation correctly, press the "home" icon, which will reset the viewpoint to the active camera perspective being animated and display the proper animation.
 
-- This is functionally equivalent to:
-    - Opening the app.
-    - Loading the scene.
-    - Loading the script in the Python panel.
-    - Pressing the `Run script` button.
-- If the scene needs any value overrides, those can be done from the script directly (see below).
-
-#### Examples
-
-- The following python script is equivalent to the arguments `-still -o:"Z:\automation.png" -sl:4`:
-
-```
-import MK_api
-
-lock = MK_api.scoped_lock()
-if ( lock.is_safe() ):
-  dag = lock.get_dag()
-  node_batcher = lookup_by_cstr( dag, "batcher" )
-  if ( node_batcher ):
-    node_batcher.set_float( "still_target_sl", 4.0 )
-    node_batcher.set_string( "still_output_filename", "Z:\\automation.png" )
-  lock.unlock()
-
-MK_api.render( "still" )
-
-print( "Done!" )
-```
+- **What are some ways to fine tune camera animations?**
+Fine tuning animation includes adjusting motion controller timing, and manipulating keyframe placement to create the desired look and feel for the animations. For example, lengthening motion controllers to adjust speed and adjusting ease-out types and tension to smooth transitions.
