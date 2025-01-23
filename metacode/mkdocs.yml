@@ -20,6 +20,11 @@ nav:
         - 'MK_api.node':         Python/Pages/MK_api_node.md
         - 'MK_api.img':          Python/Pages/MK_api_img.md
         - 'MK_api.mp4':          Python/Pages/MK_api_mp4.md
+  - Tutorials:
+    - Tutorials/index.md
+    - Index:
+        - 'Something':           Tutorials/Videos/01_something.md
+        - 'Round Edges':         Tutorials/Videos/02_round_edges.md
   - Nodes:
     - Global Nodes:
         - 'Globals':             Nodes/Global Nodes/globals.md
