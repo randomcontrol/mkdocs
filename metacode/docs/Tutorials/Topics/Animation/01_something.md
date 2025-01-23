@@ -1,12 +1,14 @@
 # Motion Controllers with Objects
 
+## Overview
+
 This YouTube tutorial introduces animation features in the Maverick Render software. It explains how to use motion controllers to animate object translation, rotation, and scaling, showing how to adjust parameters, manipulate timelines, and combine different animations. The video also covers using pivots and assemblies for complex rotations and experimenting with easing options for varied animation effects. Finally, it details how to render the completed animation within the software.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/MBi8a_BmKPY?si=_4hLMGcCDpbpqSe_" title="Motion Controller with Objects" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ---
 
-# F.A.Q.
+## F.A.Q.
 
 - **What are the key changes to the UI for animation in Maverick Render compared to previous versions?**
 The most significant UI change is the unification of all scene objects-lights, cameras, and objects-into a single panel. Additionally, the animation layout is recommended for users who intend to animate, providing a more focused workspace. The timeline remains at the bottom of the interface.
