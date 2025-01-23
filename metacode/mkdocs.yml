@@ -8,154 +8,153 @@ nav:
   - Python:
     - Python/index.md
     - MK_api Module:
-        - 'The Basics':           Python/Pages/python_basics.md
-        - 'Scene Access':         Python/Pages/python_access.md
-        - 'UI Actions':           Python/Pages/python_actions.md
-        - 'Global Functions':     Python/Pages/python_global.md
+        - 'The Basics':            Python/Pages/python_basics.md
+        - 'Scene Access':          Python/Pages/python_access.md
+        - 'UI Actions':            Python/Pages/python_actions.md
+        - 'Global Functions':      Python/Pages/python_global.md
     - MK_api Classes:
-        - 'MK_api.mks':           Python/Pages/MK_api_mks.md
-        - 'MK_api.mtl':           Python/Pages/MK_api_mtl.md
-        - 'MK_api.map':           Python/Pages/MK_api_map.md
-        - 'MK_api.dag':           Python/Pages/MK_api_dag.md
-        - 'MK_api.node':          Python/Pages/MK_api_node.md
-        - 'MK_api.img':           Python/Pages/MK_api_img.md
-        - 'MK_api.mp4':           Python/Pages/MK_api_mp4.md
+        - 'MK_api.mks':            Python/Pages/MK_api_mks.md
+        - 'MK_api.mtl':            Python/Pages/MK_api_mtl.md
+        - 'MK_api.map':            Python/Pages/MK_api_map.md
+        - 'MK_api.dag':            Python/Pages/MK_api_dag.md
+        - 'MK_api.node':           Python/Pages/MK_api_node.md
+        - 'MK_api.img':            Python/Pages/MK_api_img.md
+        - 'MK_api.mp4':            Python/Pages/MK_api_mp4.md
   - Tutorials:
     - Tutorials/index.md
     - Topics:
-      - Animation:
-          - 'Motion Controllers': Tutorials/Topics/01_something.md
-        - 'Round Edges':          Tutorials/Topics/02_round_edges.md
+        - 'Something':             Tutorials/Topics/01_something.md
+        - 'Round Edges':           Tutorials/Topics/02_round_edges.md
   - Nodes:
     - Global Nodes:
-        - 'Globals':              Nodes/Global Nodes/globals.md
-        - 'AOVs':                 Nodes/Global Nodes/aovs.md
-        - 'Tone mapping':         Nodes/Global Nodes/tonemap.md
-        - 'LightMixer':           Nodes/Global Nodes/lightmixer.md
-        - 'IBL':                  Nodes/Global Nodes/ibl.md
-        - 'Sky':                  Nodes/Global Nodes/sky.md
+        - 'Globals':               Nodes/Global Nodes/globals.md
+        - 'AOVs':                  Nodes/Global Nodes/aovs.md
+        - 'Tone mapping':          Nodes/Global Nodes/tonemap.md
+        - 'LightMixer':            Nodes/Global Nodes/lightmixer.md
+        - 'IBL':                   Nodes/Global Nodes/ibl.md
+        - 'Sky':                   Nodes/Global Nodes/sky.md
     - Camera:
-        - 'Perspective':          Nodes/Camera/cam_persp.md
-        - 'VR':                   Nodes/Camera/cam_vr.md
+        - 'Perspective':           Nodes/Camera/cam_persp.md
+        - 'VR':                    Nodes/Camera/cam_vr.md
     - Object:
-        - 'Assembly':             Nodes/Object/obj_assembly.md
-        - 'Light':                Nodes/Object/obj_light.md
-        - 'Point Cloud':          Nodes/Object/obj_points.md
-        - 'Polygon Mesh':         Nodes/Object/obj_polymesh.md
-        - 'Primitive':            Nodes/Object/obj_primitive.md
-        - 'Target':               Nodes/Object/obj_target.md
+        - 'Assembly':              Nodes/Object/obj_assembly.md
+        - 'Light':                 Nodes/Object/obj_light.md
+        - 'Point Cloud':           Nodes/Object/obj_points.md
+        - 'Polygon Mesh':          Nodes/Object/obj_polymesh.md
+        - 'Primitive':             Nodes/Object/obj_primitive.md
+        - 'Target':                Nodes/Object/obj_target.md
     - Modifier:
-        - 'Multi-Clone':          Nodes/Modifier/mod_multiclone.md
-        - 'Scatter':              Nodes/Modifier/mod_scatter.md
-        - 'Sticker':              Nodes/Modifier/mod_sticker.md
-        - 'UV Map':               Nodes/Modifier/mod_uvmap.md
+        - 'Multi-Clone':           Nodes/Modifier/mod_multiclone.md
+        - 'Scatter':               Nodes/Modifier/mod_scatter.md
+        - 'Sticker':               Nodes/Modifier/mod_sticker.md
+        - 'UV Map':                Nodes/Modifier/mod_uvmap.md
     - Material:
       - Main:
-        - 'Standard':             Nodes/Material/Main/mtl_standard.md
-        - 'Blend':                Nodes/Material/Main/mtl_blend.md
-        - 'Shadow Catcher':       Nodes/Material/Main/mtl_shadow_catcher.md
+        - 'Standard':              Nodes/Material/Main/mtl_standard.md
+        - 'Blend':                 Nodes/Material/Main/mtl_blend.md
+        - 'Shadow Catcher':        Nodes/Material/Main/mtl_shadow_catcher.md
       - Derived:
-        - 'Emissive':             Nodes/Material/Derived/mtl_emissive.md
-        - 'Emissive (Coated)':    Nodes/Material/Derived/mtl_emissive_coated.md
-        - 'Gemstone':             Nodes/Material/Derived/mtl_gemstone.md
-        - 'Glass':                Nodes/Material/Derived/mtl_glass.md
-        - 'Thin Glass':           Nodes/Material/Derived/mtl_glass_thin.md
-        - 'Liquid':               Nodes/Material/Derived/mtl_liquid.md
-        - 'Metal':                Nodes/Material/Derived/mtl_metal.md
-        - 'Metal (Coated)':       Nodes/Material/Derived/mtl_metal_coated.md
-        - 'Plaster':              Nodes/Material/Derived/mtl_plaster.md
-        - 'Plastic':              Nodes/Material/Derived/mtl_plastic.md
-        - 'Plastic (Advanced)':   Nodes/Material/Derived/mtl_plastic_advanced.md
-        - 'Plastic (Coated)':     Nodes/Material/Derived/mtl_plastic_coated.md
-        - 'Skin':                 Nodes/Material/Derived/mtl_skin.md
-        - 'Translucent':          Nodes/Material/Derived/mtl_translucent.md
+        - 'Emissive':              Nodes/Material/Derived/mtl_emissive.md
+        - 'Emissive (Coated)':     Nodes/Material/Derived/mtl_emissive_coated.md
+        - 'Gemstone':              Nodes/Material/Derived/mtl_gemstone.md
+        - 'Glass':                 Nodes/Material/Derived/mtl_glass.md
+        - 'Thin Glass':            Nodes/Material/Derived/mtl_glass_thin.md
+        - 'Liquid':                Nodes/Material/Derived/mtl_liquid.md
+        - 'Metal':                 Nodes/Material/Derived/mtl_metal.md
+        - 'Metal (Coated)':        Nodes/Material/Derived/mtl_metal_coated.md
+        - 'Plaster':               Nodes/Material/Derived/mtl_plaster.md
+        - 'Plastic':               Nodes/Material/Derived/mtl_plastic.md
+        - 'Plastic (Advanced)':    Nodes/Material/Derived/mtl_plastic_advanced.md
+        - 'Plastic (Coated)':      Nodes/Material/Derived/mtl_plastic_coated.md
+        - 'Skin':                  Nodes/Material/Derived/mtl_skin.md
+        - 'Translucent':           Nodes/Material/Derived/mtl_translucent.md
       - Special:
-        - 'Ray Switch':           Nodes/Material/Special/mtl_ray_switch.md
-        - 'Switch':               Nodes/Material/Special/mtl_switch.md
-        - '2-Sided':              Nodes/Material/Special/mtl_twosided.md
+        - 'Ray Switch':            Nodes/Material/Special/mtl_ray_switch.md
+        - 'Switch':                Nodes/Material/Special/mtl_switch.md
+        - '2-Sided':               Nodes/Material/Special/mtl_twosided.md
     - Map:
       - Main:
-        - 'Bitmap (Filetex)':     Nodes/Map/Main/map_filetex.md
-        - 'Checker':              Nodes/Map/Main/map_checker.md
-        - 'Falloff':              Nodes/Map/Main/map_falloff.md
-        - 'Gradient':             Nodes/Map/Main/map_gradient.md
-        - 'Gradient (Color)':     Nodes/Map/Main/map_gradient_color.md
-        - 'Gradient (Light)':     Nodes/Map/Main/map_gradient_light.md
-        - 'Grooves':              Nodes/Map/Main/map_grooves.md
-        - 'Shape':                Nodes/Map/Main/map_shape.md
-        - 'Tiles':                Nodes/Map/Main/map_tiles.md
+        - 'Bitmap (Filetex)':      Nodes/Map/Main/map_filetex.md
+        - 'Checker':               Nodes/Map/Main/map_checker.md
+        - 'Falloff':               Nodes/Map/Main/map_falloff.md
+        - 'Gradient':              Nodes/Map/Main/map_gradient.md
+        - 'Gradient (Color)':      Nodes/Map/Main/map_gradient_color.md
+        - 'Gradient (Light)':      Nodes/Map/Main/map_gradient_light.md
+        - 'Grooves':               Nodes/Map/Main/map_grooves.md
+        - 'Shape':                 Nodes/Map/Main/map_shape.md
+        - 'Tiles':                 Nodes/Map/Main/map_tiles.md
       - Noise:
-        - 'Brushed':              Nodes/Map/Noise/map_brushed.md
-        - 'Cellular':             Nodes/Map/Noise/map_cellular.md
-        - 'Dots':                 Nodes/Map/Noise/map_dots.md
-        - 'Flakes':               Nodes/Map/Noise/map_flakes.md
-        - 'Noise':                Nodes/Map/Noise/map_noise.md
-        - 'Scratches':            Nodes/Map/Noise/map_scratches.md
-      - Bump:
-        - 'Bump':                 Nodes/Map/Bump/map_bump.md
-        - 'Bump Blend':           Nodes/Map/Bump/map_bump_blend.md
-        - 'Round Edges':          Nodes/Map/Bump/map_round_edges.md
+        - 'Brushed':               Nodes/Map/Noise/map_brushed.md
+        - 'Cellular':              Nodes/Map/Noise/map_cellular.md
+        - 'Dots':                  Nodes/Map/Noise/map_dots.md
+        - 'Flakes':                Nodes/Map/Noise/map_flakes.md
+        - 'Noise':                 Nodes/Map/Noise/map_noise.md
+        - 'Scratches':             Nodes/Map/Noise/map_scratches.md
       - Special:
-        - 'Camera Projection':    Nodes/Map/Special/map_cam_projection.md
-        - 'Color Generator':      Nodes/Map/Special/map_colorgen.md
-        - 'Composite':            Nodes/Map/Special/map_composite.md
-        - 'Color Correction':     Nodes/Map/Special/map_correction.md
-        - 'Curvature':            Nodes/Map/Special/map_curvature.md
-        - 'Custom IOR':           Nodes/Map/Special/map_ior.md
-        - 'Lightbox':             Nodes/Map/Special/map_lightbox.md
-        - 'Mix':                  Nodes/Map/Special/map_mix.md
-        - 'Photometric':          Nodes/Map/Special/map_photometric.md
-        - 'Primvar':              Nodes/Map/Special/map_primvar.md
-        - 'Ray Switch':           Nodes/Map/Special/map_ray_switch.md
-        - 'Remap':                Nodes/Map/Special/map_remap.md
-        - 'Switch':               Nodes/Map/Special/map_switch.md
-        - 'Triplanar':            Nodes/Map/Special/map_triplanar.md
-        - 'User Data':            Nodes/Map/Special/map_user_data.md
-        - 'Wireframe':            Nodes/Map/Special/map_wireframe.md
+        - 'Bump':                  Nodes/Map/Special/map_bump.md
+        - 'Bump Blend':            Nodes/Map/Special/map_bump_blend.md
+        - 'Round Edges':           Nodes/Map/Special/map_round_edges.md
       - Xform:
-        - '2D Xform':             Nodes/Map/Xform/map_xform_2d.md
-        - '3D Xform':             Nodes/Map/Xform/map_xform_3d.md
-        - 'Distortion Xform':     Nodes/Map/Xform/map_xform_distortion.md
-        - 'Spherical Xform':      Nodes/Map/Xform/map_xform_spherical.md
+        - 'Camera Projection':     Nodes/Map/Xform/map_cam_projection.md
+        - 'Color Generator':       Nodes/Map/Xform/map_colorgen.md
+        - 'Composite':             Nodes/Map/Xform/map_composite.md
+        - 'Color Correction':      Nodes/Map/Xform/map_correction.md
+        - 'Curvature':             Nodes/Map/Xform/map_curvature.md
+        - 'Custom IOR':            Nodes/Map/Xform/map_ior.md
+        - 'Lightbox':              Nodes/Map/Xform/map_lightbox.md
+        - 'Mix':                   Nodes/Map/Xform/map_mix.md
+        - 'Photometric':           Nodes/Map/Xform/map_photometric.md
+        - 'Primvar':               Nodes/Map/Xform/map_primvar.md
+        - 'Ray Switch':            Nodes/Map/Xform/map_ray_switch.md
+        - 'Remap':                 Nodes/Map/Xform/map_remap.md
+        - 'Switch':                Nodes/Map/Xform/map_switch.md
+        - 'Triplanar':             Nodes/Map/Xform/map_triplanar.md
+        - 'User Data':             Nodes/Map/Xform/map_user_data.md
+        - 'Wireframe':             Nodes/Map/Xform/map_wireframe.md
       - Baked:
-        - 'Baked Texture':        Nodes/Map/Baked/map_baketex.md
-        - 'Substance':            Nodes/Map/Baked/map_substance.md
+        - '2D Xform':              Nodes/Map/Baked/map_xform_2d.md
+        - '3D Xform':              Nodes/Map/Baked/map_xform_3d.md
+        - 'Distortion Xform':      Nodes/Map/Baked/map_xform_distortion.md
+        - 'Spherical Xform':       Nodes/Map/Baked/map_xform_spherical.md
       - Tonemap:
-        - 'Glare Pattern':        Nodes/Map/Tonemap/map_glare.md
-        - 'LUT':                  Nodes/Map/Tonemap/map_lut.md
+        - 'Baked Texture':         Nodes/Map/Tonemap/map_baketex.md
+        - 'Substance':             Nodes/Map/Tonemap/map_substance.md
+      - @@:
+        - 'Glare Pattern':         Nodes/Map/@@/map_glare.md
+        - 'LUT':                   Nodes/Map/@@/map_lut.md
     - Motion Controller:
-        - 'Cam Switch':           Nodes/Motion Controller/moc_cam_switch.md
-        - 'Explode':              Nodes/Motion Controller/moc_explode.md
-        - 'Frontplate':           Nodes/Motion Controller/moc_frontplate.md
-        - 'Transform':            Nodes/Motion Controller/moc_transform.md
+        - 'Cam Switch':            Nodes/Motion Controller/moc_cam_switch.md
+        - 'Explode':               Nodes/Motion Controller/moc_explode.md
+        - 'Frontplate':            Nodes/Motion Controller/moc_frontplate.md
+        - 'Transform':             Nodes/Motion Controller/moc_transform.md
     - Programming Nodes:
       - Int:
-        - 'Int':                  Nodes/Programming Nodes/Int/pro_int_value.md
-        - 'Int Cast':             Nodes/Programming Nodes/Int/pro_int_cast.md
-        - 'Int (Context)':        Nodes/Programming Nodes/Int/pro_int_from_ctx.md
-        - 'Int Logic':            Nodes/Programming Nodes/Int/pro_int_logic.md
-        - 'Int Math':             Nodes/Programming Nodes/Int/pro_int_math.md
+        - 'Int':                   Nodes/Programming Nodes/Int/pro_int_value.md
+        - 'Int Cast':              Nodes/Programming Nodes/Int/pro_int_cast.md
+        - 'Int (Context)':         Nodes/Programming Nodes/Int/pro_int_from_ctx.md
+        - 'Int Logic':             Nodes/Programming Nodes/Int/pro_int_logic.md
+        - 'Int Math':              Nodes/Programming Nodes/Int/pro_int_math.md
       - Float:
-        - 'Float':                Nodes/Programming Nodes/Float/pro_float_value.md
-        - 'Float Cast':           Nodes/Programming Nodes/Float/pro_float_cast.md
-        - 'Float (Context)':      Nodes/Programming Nodes/Float/pro_float_from_ctx.md
-        - 'Float Math':           Nodes/Programming Nodes/Float/pro_float_math.md
-        - 'Float Random':         Nodes/Programming Nodes/Float/pro_float_random.md
-        - 'Float Remap':          Nodes/Programming Nodes/Float/pro_float_remap.md
-        - 'Vector Split':         Nodes/Programming Nodes/Float/pro_vector_split.md
+        - 'Float':                 Nodes/Programming Nodes/Float/pro_float_value.md
+        - 'Float Cast':            Nodes/Programming Nodes/Float/pro_float_cast.md
+        - 'Float (Context)':       Nodes/Programming Nodes/Float/pro_float_from_ctx.md
+        - 'Float Math':            Nodes/Programming Nodes/Float/pro_float_math.md
+        - 'Float Random':          Nodes/Programming Nodes/Float/pro_float_random.md
+        - 'Float Remap':           Nodes/Programming Nodes/Float/pro_float_remap.md
+        - 'Vector Split':          Nodes/Programming Nodes/Float/pro_vector_split.md
       - Vector:
-        - 'Vector':               Nodes/Programming Nodes/Vector/pro_vector_value.md
-        - 'Vector Cast':          Nodes/Programming Nodes/Vector/pro_vector_cast.md
-        - 'Vector Math':          Nodes/Programming Nodes/Vector/pro_vector_math.md
-        - 'Matrix Split':         Nodes/Programming Nodes/Vector/pro_matrix_split.md
+        - 'Vector':                Nodes/Programming Nodes/Vector/pro_vector_value.md
+        - 'Vector Cast':           Nodes/Programming Nodes/Vector/pro_vector_cast.md
+        - 'Vector Math':           Nodes/Programming Nodes/Vector/pro_vector_math.md
+        - 'Matrix Split':          Nodes/Programming Nodes/Vector/pro_matrix_split.md
       - Matrix:
-        - 'Matrix':               Nodes/Programming Nodes/Matrix/pro_matrix_value.md
-        - 'Matrix Cast':          Nodes/Programming Nodes/Matrix/pro_matrix_cast.md
-        - 'Matrix (Context)':     Nodes/Programming Nodes/Matrix/pro_matrix_from_ctx.md
-        - 'Matrix (Object)':      Nodes/Programming Nodes/Matrix/pro_matrix_from_obj.md
-        - 'Matrix Math':          Nodes/Programming Nodes/Matrix/pro_matrix_math.md
+        - 'Matrix':                Nodes/Programming Nodes/Matrix/pro_matrix_value.md
+        - 'Matrix Cast':           Nodes/Programming Nodes/Matrix/pro_matrix_cast.md
+        - 'Matrix (Context)':      Nodes/Programming Nodes/Matrix/pro_matrix_from_ctx.md
+        - 'Matrix (Object)':       Nodes/Programming Nodes/Matrix/pro_matrix_from_obj.md
+        - 'Matrix Math':           Nodes/Programming Nodes/Matrix/pro_matrix_math.md
       - Profile:
-        - 'Float Profile':        Nodes/Programming Nodes/Profile/pro_float_profile.md
+        - 'Float Profile':         Nodes/Programming Nodes/Profile/pro_float_profile.md
 
 theme:
   name: material
