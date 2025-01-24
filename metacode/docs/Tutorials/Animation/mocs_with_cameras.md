@@ -1,4 +1,4 @@
-# Motion Controllers with Objects
+# Motion Controllers with Cameras
 
 ## Summary
 

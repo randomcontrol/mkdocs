@@ -1,4 +1,4 @@
-# Motion Controllers with Objects
+# Exploded View
 
 ## Summary
 
