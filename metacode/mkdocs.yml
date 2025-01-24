@@ -23,24 +23,19 @@ nav:
   - Tutorials:
     - Tutorials/index.md
     - Fundamentals:
-        - 'Round Edges':           Tutorials/Other/02_round_edges.md
-    - Materials:
-        - 'Round Edges':           Tutorials/Other/02_round_edges.md
-    - Lighting:
-        - 'MOCs with Objects':     Tutorials/Animation/01_something.md
+        - 'Round Edges':              Tutorials/Animation/mocs_with_objects.md
     - Animation:
-        - 'MOCs with Objects':         Tutorials/Animation/mocs_with_objects.md
-        - 'MOCs with Cameras':         Tutorials/Animation/mocs_with_cameras.md
-        - 'Exploded View':             Tutorials/Animation/exploded_view.md
-        - 'Frontplate':                Tutorials/Animation/frontplate.md
-        - 'Keyframes with Materials':  Tutorials/Animation/keyframes_materials.md
-        - 'Keyframes with Env':        Tutorials/Animation/keyframes_environment.md
-        - 'Showcase Fuji Camera Lens': Tutorials/Animation/showcase_fuji.md
-        - 'Showcase Blaster':          Tutorials/Animation/showcase_blaster.md
-        - 'Showcase Drone':            Tutorials/Animation/showcase_drone.md
-        - 'Showcase Cosmetics':        Tutorials/Animation/showcase_cosmetics.md
-    - Showcases:
-        - 'MOCs with Objects':     Tutorials/Animation/01_something.md
+        - 'MOCs with Objects':        Tutorials/Animation/mocs_with_objects.md
+        - 'MOCs with Cameras':        Tutorials/Animation/mocs_with_cameras.md
+        - 'Exploded View':            Tutorials/Animation/exploded_view.md
+        - 'Frontplate':               Tutorials/Animation/frontplate.md
+        - 'Keyframes with Materials': Tutorials/Animation/keyframes_materials.md
+        - 'Keyframes with Env':       Tutorials/Animation/keyframes_environment.md
+        - Showcases:
+            - 'Fuji Camera Lens':     Tutorials/Animation/Showcases/fuji.md
+            - 'Blaster':              Tutorials/Animation/Showcases/blaster.md
+            - 'Drone':                Tutorials/Animation/Showcases/drone.md
+            - 'Cosmetics':            Tutorials/Animation/Showcases/cosmetics.md
   - Nodes:
     - Global Nodes:
         - 'Globals':               Nodes/Global Nodes/globals.md
