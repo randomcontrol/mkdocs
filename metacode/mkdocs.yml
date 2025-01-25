@@ -20,64 +20,64 @@ nav:
         - 'MK_api.node':               Python/Pages/MK_api_node.md
         - 'MK_api.img':                Python/Pages/MK_api_img.md
         - 'MK_api.mp4':                Python/Pages/MK_api_mp4.md
-  - Tutorials:
-      - Tutorials/index.md
-      - Fundamentals:
-          - 'Round Edges':             Tutorials/Animation/round_edges.md
-      - Rhino to Maverick:
-          - 'Workflow I':              Tutorials/Rhino_to_Maverick/workflow_1.md
-          - 'Workflow II':             Tutorials/Rhino_to_Maverick/workflow_2.md
-          - 'Jewelry':                 Tutorials/Rhino_to_Maverick/jewelry.md
-      - Render Sets:
-          - 'Introduction':            Tutorials/Render_Sets/introduction.md
-          - 'Update and Turntables':   Tutorials/Render_Sets/update.md
-          - 'Maverick Indie':          Tutorials/Render_Sets/maverick_indie.md
-          - Showcases:
-              - 'Example 01':          Tutorials/Render_Sets/Showcases/example_01.md
-              - 'Example 02':          Tutorials/Render_Sets/Showcases/example_02.md
-              - 'Jewelry 01':          Tutorials/Render_Sets/Showcases/jewelry_01.md
-              - 'Jewelry 02':          Tutorials/Render_Sets/Showcases/jewelry_02.md
-      - Trace Sets:
-          - 'Introduction':            Tutorials/Trace_Sets/introduction.md
-          - Showcases:
-              - 'Bottles of wine':     Tutorials/Trace_Sets/Showcases/bottles.md
-      - Stickers:
-          - 'Introduction':            Tutorials/Stickers/introduction.md
-          - Showcases:
-              - 'Beats Headphones':     Tutorials/Stickers/Showcases/beats_headphones.md
-              - 'Bath Bottles':         Tutorials/Stickers/Showcases/bath_bottles.md
-              - 'JBL Charge3 Speakers': Tutorials/Stickers/Showcases/speakers.md
-              - 'LG Xboom Go PK7':      Tutorials/Stickers/Showcases/xboom.md
-      - Clone:
-          - 'Introduction':            Tutorials/Clone/introduction.md
-          - Showcases:
-              - 'MI Band 6':           Tutorials/Clone/Showcases/mi_band.md
-      - Scatter:
-          - 'Introduction':            Tutorials/Scatter/introduction.md
-          - 'Pattern':                 Tutorials/Scatter/pattern.md
-          - Showcases:
-              - 'Floating Apples':     Tutorials/Scatter/Showcases/floating_apples.md
-              - 'Cosmetics':           Tutorials/Scatter/Showcases/cosmetics.md
-              - 'Ganesha':             Tutorials/Scatter/Showcases/ganesha.md
-              - 'Abstract Art':        Tutorials/Scatter/Showcases/abstract_art.md
-      - Multi-Clone:
-          - 'Introduction':            Tutorials/Multi-Clone/introduction.md
-          - Showcases:
-              - 'Monitor':             Tutorials/Multi-Clone/Showcases/monitor.md
-              - 'Stemma Brewing':      Tutorials/Multi-Clone/Showcases/stemma_brewing.md
-              - 'Lipstick':            Tutorials/Multi-Clone/Showcases/lipstick.md
-      - Animation:
-          - 'MOCs with Objects':       Tutorials/Animation/mocs_with_objects.md
-          - 'MOCs with Cameras':       Tutorials/Animation/mocs_with_cameras.md
-          - 'Exploded View':           Tutorials/Animation/exploded_view.md
-          - 'Frontplate':              Tutorials/Animation/frontplate.md
-          - 'Keying Materials':        Tutorials/Animation/keyframes_materials.md
-          - 'Keying the Environment':  Tutorials/Animation/keyframes_environment.md
-          - Showcases:
-              - 'Fuji Camera Lens':    Tutorials/Animation/Showcases/fuji.md
-              - 'Blaster':             Tutorials/Animation/Showcases/blaster.md
-              - 'Drone':               Tutorials/Animation/Showcases/drone.md
-              - 'Cosmetics':           Tutorials/Animation/Showcases/cosmetics.md
+    - Tutorials:
+        - Tutorials/index.md
+        - Fundamentals:
+            - 'Round Edges':             Tutorials/Animation/round_edges.md
+        - Rhino to Maverick:
+            - 'Workflow I':              Tutorials/Rhino_to_Maverick/workflow_1.md
+            - 'Workflow II':             Tutorials/Rhino_to_Maverick/workflow_2.md
+            - 'Jewelry':                 Tutorials/Rhino_to_Maverick/jewelry.md
+        - Render Sets:
+            - 'Introduction':            Tutorials/Render_Sets/introduction.md
+            - 'Update and Turntables':   Tutorials/Render_Sets/update.md
+            - 'Maverick Indie':          Tutorials/Render_Sets/maverick_indie.md
+            - Showcases:
+                - 'Example 01':          Tutorials/Render_Sets/Showcases/example_01.md
+                - 'Example 02':          Tutorials/Render_Sets/Showcases/example_02.md
+                - 'Jewelry 01':          Tutorials/Render_Sets/Showcases/jewelry_01.md
+                - 'Jewelry 02':          Tutorials/Render_Sets/Showcases/jewelry_02.md
+        - Trace Sets:
+            - 'Introduction':            Tutorials/Trace_Sets/introduction.md
+            - Showcases:
+                - 'Bottles of wine':     Tutorials/Trace_Sets/Showcases/bottles.md
+        - Stickers:
+            - 'Introduction':            Tutorials/Stickers/introduction.md
+            - Showcases:
+                - 'Beats Headphones':     Tutorials/Stickers/Showcases/beats_headphones.md
+                - 'Bath Bottles':         Tutorials/Stickers/Showcases/bath_bottles.md
+                - 'JBL Charge3 Speakers': Tutorials/Stickers/Showcases/speakers.md
+                - 'LG Xboom Go PK7':      Tutorials/Stickers/Showcases/xboom.md
+        - Clone:
+            - 'Introduction':            Tutorials/Clone/introduction.md
+            - Showcases:
+                - 'MI Band 6':           Tutorials/Clone/Showcases/mi_band.md
+        - Scatter:
+            - 'Introduction':            Tutorials/Scatter/introduction.md
+            - 'Pattern':                 Tutorials/Scatter/pattern.md
+            - Showcases:
+                - 'Floating Apples':     Tutorials/Scatter/Showcases/floating_apples.md
+                - 'Cosmetics':           Tutorials/Scatter/Showcases/cosmetics.md
+                - 'Ganesha':             Tutorials/Scatter/Showcases/ganesha.md
+                - 'Abstract Art':        Tutorials/Scatter/Showcases/abstract_art.md
+        - Multi-Clone:
+            - 'Introduction':            Tutorials/Multi-Clone/introduction.md
+            - Showcases:
+                - 'Monitor':             Tutorials/Multi-Clone/Showcases/monitor.md
+                - 'Stemma Brewing':      Tutorials/Multi-Clone/Showcases/stemma_brewing.md
+                - 'Lipstick':            Tutorials/Multi-Clone/Showcases/lipstick.md
+        - Animation:
+            - 'MOCs with Objects':       Tutorials/Animation/mocs_with_objects.md
+            - 'MOCs with Cameras':       Tutorials/Animation/mocs_with_cameras.md
+            - 'Exploded View':           Tutorials/Animation/exploded_view.md
+            - 'Frontplate':              Tutorials/Animation/frontplate.md
+            - 'Keying Materials':        Tutorials/Animation/keyframes_materials.md
+            - 'Keying the Environment':  Tutorials/Animation/keyframes_environment.md
+            - Showcases:
+                - 'Fuji Camera Lens':    Tutorials/Animation/Showcases/fuji.md
+                - 'Blaster':             Tutorials/Animation/Showcases/blaster.md
+                - 'Drone':               Tutorials/Animation/Showcases/drone.md
+                - 'Cosmetics':           Tutorials/Animation/Showcases/cosmetics.md
   - Nodes:
     - Global Nodes:
         - 'Globals':                   Nodes/Global Nodes/globals.md
