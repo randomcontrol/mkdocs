@@ -26,6 +26,20 @@ nav:
           - 'Workflow I':               Tutorials/Rhino_to_Maverick/workflow_1.md
           - 'Workflow II':              Tutorials/Rhino_to_Maverick/workflow_2.md
           - 'Jewelry':                  Tutorials/Rhino_to_Maverick/jewelry.md
+      - Substance to Maverick:
+          - 'Substance Designer':       Tutorials/Substance_to_Maverick/substance_designer.md
+          - 'Substance Painter':        Tutorials/Substance_to_Maverick/substance_painter.md
+          - SBSAR:
+              - 'Presentation':         Tutorials/Substance_to_Maverick/SBSAR/presentation.md
+              - 'Introduction':         Tutorials/Substance_to_Maverick/SBSAR/introduction.md
+              - 'Example Rings':        Tutorials/Substance_to_Maverick/SBSAR/example_rings.md
+      - Zbrush to Maverick:
+          - 'Workflow':                 Tutorials/Zbrush_to_Maverick/workflow.md
+      - Sketchfab to Maverick:
+          - 'Presentation':             Tutorials/Sketchfab_to_Maverick/presentation.md
+          - 'Workflow':                 Tutorials/Sketchfab_to_Maverick/workflow.md
+      - ZW3D and JCD to Maverick:
+          - 'Workflow':                 Tutorials/ZW3D_and_JCD_to_Maverick/workflow.md
       - Render Sets:
           - 'Introduction':             Tutorials/Render_Sets/introduction.md
           - 'Update and Turntables':    Tutorials/Render_Sets/update.md
