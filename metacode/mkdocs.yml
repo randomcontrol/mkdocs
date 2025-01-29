@@ -22,6 +22,34 @@ nav:
         - 'MK_api.mp4':                 Python/Pages/MK_api_mp4.md
   - Tutorials:
       - Tutorials/index.md
+      - Materials:
+          - 'Introduction':             Tutorials/Materials/introduction.md
+          - 'Proxy Materials':          Tutorials/Materials/proxy_materials.md
+          - 'PBR':                      Tutorials/Materials/pbr.md
+          - 'Round Edges':              Tutorials/Materials/round_edges.md
+          - 'Shadow Catcher':           Tutorials/Materials/shadow_catcher.md
+          - 'Uvmaps':                   Tutorials/Materials/uvmaps.md
+          - 'Dirty/Worn':               Tutorials/Materials/dirty_worn.md
+          - 'Metal Gradient Color':     Tutorials/Materials/metal_gradient_color.md
+          - Displacement:
+              - 'Introduction':         Tutorials/Materials/Displacement/introduction.md
+              - 'Uvmaps':               Tutorials/Materials/Displacement/uvmaps.md
+              - 'Zbrush':               Tutorials/Materials/Displacement/zbrush.md
+              - 'Old to New':           Tutorials/Materials/Displacement/old_to_new.md
+              - 'Micro-Patch':          Tutorials/Materials/Displacement/micro_patch.md
+      - Lighting:
+          - 'Introduction':             Tutorials/Lighting/introduction.md
+          - 'Ambiences/Environments':   Tutorials/Lighting/ambiences_environments.md
+          - 'Lightmixer':               Tutorials/Lighting/lightmixer.md
+          - 'Projectors':               Tutorials/Lighting/projectors.md
+          - 'Gradient Lights':          Tutorials/Lighting/gradient_lights.md
+          - 'Lightbox':                 Tutorials/Lighting/lightbox.md
+          - 'Ambiences composer':       Tutorials/Lighting/ambience_composer.md
+      - Tonemap:
+          - 'Introduction':             Tutorials/Tonemap/introduction.md
+          - 'Lens Effects':             Tutorials/Tonemap/lens_effects.md
+          - 'Custom LUTs':              Tutorials/Tonemap/custom_luts.md
+          - 'Lens Improvements':        Tutorials/Tonemap/lens_improvements.md
       - Rhino-to-Maverick:
           - 'Workflow I':               Tutorials/Rhino_to_Maverick/workflow_1.md
           - 'Workflow II':              Tutorials/Rhino_to_Maverick/workflow_2.md
@@ -38,6 +66,7 @@ nav:
       - Sketchfab-to-Maverick:
           - 'Presentation':             Tutorials/Sketchfab_to_Maverick/presentation.md
           - 'Workflow':                 Tutorials/Sketchfab_to_Maverick/workflow.md
+          - 'Turntables':               Tutorials/Sketchfab_to_Maverick/turntables.md
       - ZW3D/JCD-to-Maverick:
           - 'Workflow':                 Tutorials/ZW3D_and_JCD_to_Maverick/workflow.md
       - Render Sets:
