@@ -21,7 +21,22 @@ nav:
         - 'MK_api.img':                 Python/Pages/MK_api_img.md
         - 'MK_api.mp4':                 Python/Pages/MK_api_mp4.md
   - Tutorials:
-      - Tutorials/index.md
+      - UI:
+          - 'UI and Layouts':           Tutorials/UI/ui_and_layout.md
+          - 'UI Changes':               Tutorials/UI/ui_changes.md
+          - 'IPR and Render Panel':     Tutorials/UI/ipr_render_panel.md
+          - 'Attribute Editor':         Tutorials/UI/attribute_editor.md
+          - 'Orbit Modes':              Tutorials/UI/orbit_modes.md
+          - 'Start Page':               Tutorials/UI/start_page.md
+      - Import and Objects:
+          - 'Introduction':             Tutorials/Import_and_Objects/introduction.md
+          - 'Import FBX Files':         Tutorials/Import_and_Objects/import_fbx_files.md
+          - 'Import OBJ Files':         Tutorials/Import_and_Objects/import_obj_files.md
+          - 'Merge Options':            Tutorials/Import_and_Objects/merge_options.md
+          - 'Target Object':            Tutorials/Import_and_Objects/target.md
+      - Cameras:
+          - 'Introduction':             Tutorials/Cameras/introduction.md
+          - 'Depth of Field':           Tutorials/Cameras/depth_of_field.md
       - Materials:
           - 'Introduction':             Tutorials/Materials/introduction.md
           - 'Proxy Materials':          Tutorials/Materials/proxy_materials.md
@@ -50,25 +65,10 @@ nav:
           - 'Lens Effects':             Tutorials/Tonemap/lens_effects.md
           - 'Custom LUTs':              Tutorials/Tonemap/custom_luts.md
           - 'Lens Improvements':        Tutorials/Tonemap/lens_improvements.md
-      - Rhino-to-Maverick:
-          - 'Workflow I':               Tutorials/Rhino_to_Maverick/workflow_1.md
-          - 'Workflow II':              Tutorials/Rhino_to_Maverick/workflow_2.md
-          - 'Jewelry':                  Tutorials/Rhino_to_Maverick/jewelry.md
-      - Substance-to-Maverick:
-          - 'Substance Designer':       Tutorials/Substance_to_Maverick/substance_designer.md
-          - 'Substance Painter':        Tutorials/Substance_to_Maverick/substance_painter.md
-          - SBSAR:
-              - 'Presentation':         Tutorials/Substance_to_Maverick/SBSAR/presentation.md
-              - 'Introduction':         Tutorials/Substance_to_Maverick/SBSAR/introduction.md
-              - 'Example Rings':        Tutorials/Substance_to_Maverick/SBSAR/example_rings.md
-      - Zbrush-to-Maverick:
-          - 'Workflow':                 Tutorials/Zbrush_to_Maverick/workflow.md
-      - Sketchfab-to-Maverick:
-          - 'Presentation':             Tutorials/Sketchfab_to_Maverick/presentation.md
-          - 'Workflow':                 Tutorials/Sketchfab_to_Maverick/workflow.md
-          - 'Turntables':               Tutorials/Sketchfab_to_Maverick/turntables.md
-      - ZW3D/JCD-to-Maverick:
-          - 'Workflow':                 Tutorials/ZW3D_and_JCD_to_Maverick/workflow.md
+      - Render:
+          - 'Python and Batch Render':  Tutorials/Render/python_batch.md
+          - 'Backplate Resolution':     Tutorials/Render/backplate_resolution.md
+          - 'AOVs and Masks':           Tutorials/Render/aovs_and_masks.md
       - Render Sets:
           - 'Introduction':             Tutorials/Render_Sets/introduction.md
           - 'Update and Turntables':    Tutorials/Render_Sets/update.md
@@ -78,6 +78,14 @@ nav:
               - 'Example 02':           Tutorials/Render_Sets/Showcases/example_02.md
               - 'Jewelry 01':           Tutorials/Render_Sets/Showcases/jewelry_01.md
               - 'Jewelry 02':           Tutorials/Render_Sets/Showcases/jewelry_02.md
+      - Utils:
+          - 'Surface Mode':             Tutorials/Utils/surface_mode.md
+          - 'Optical Zoom':             Tutorials/Utils/optical_zoom.md
+          - 'Dof Previsualization':     Tutorials/Utils/dof_previsualization.md
+          - 'Lock Selection':           Tutorials/Utils/lock_selection.md
+          - 'Purge':                    Tutorials/Utils/purge.md
+          - 'Composition Guides':       Tutorials/Utils/composition_guides.md
+          - 'IPR Canvas Overlay':       Tutorials/Utils/ipr_canvas_overlay.md
       - Trace Sets:
           - 'Introduction':             Tutorials/Trace_Sets/introduction.md
           - Showcases:
@@ -107,6 +115,26 @@ nav:
               - 'Monitor':              Tutorials/Multi-Clone/Showcases/monitor.md
               - 'Stemma Brewing':       Tutorials/Multi-Clone/Showcases/stemma_brewing.md
               - 'Lipstick':             Tutorials/Multi-Clone/Showcases/lipstick.md
+      - Rhino-to-Maverick:
+          - 'Workflow I':               Tutorials/Rhino_to_Maverick/workflow_1.md
+          - 'Workflow II':              Tutorials/Rhino_to_Maverick/workflow_2.md
+          - 'Jewelry':                  Tutorials/Rhino_to_Maverick/jewelry.md
+          - 'Jewelry White Background': Tutorials/Rhino_to_Maverick/jewelry_white_background.md
+      - Substance-to-Maverick:
+          - 'Substance Designer':       Tutorials/Substance_to_Maverick/substance_designer.md
+          - 'Substance Painter':        Tutorials/Substance_to_Maverick/substance_painter.md
+          - SBSAR:
+              - 'Presentation':         Tutorials/Substance_to_Maverick/SBSAR/presentation.md
+              - 'Introduction':         Tutorials/Substance_to_Maverick/SBSAR/introduction.md
+              - 'Example Rings':        Tutorials/Substance_to_Maverick/SBSAR/example_rings.md
+      - Zbrush-to-Maverick:
+          - 'Workflow':                 Tutorials/Zbrush_to_Maverick/workflow.md
+      - Sketchfab-to-Maverick:
+          - 'Presentation':             Tutorials/Sketchfab_to_Maverick/presentation.md
+          - 'Workflow':                 Tutorials/Sketchfab_to_Maverick/workflow.md
+          - 'Turntables':               Tutorials/Sketchfab_to_Maverick/turntables.md
+      - ZW3D/JCD-to-Maverick:
+          - 'Workflow':                 Tutorials/ZW3D_and_JCD_to_Maverick/workflow.md
       - Animation:
           - 'MOCs with Objects':        Tutorials/Animation/mocs_with_objects.md
           - 'MOCs with Cameras':        Tutorials/Animation/mocs_with_cameras.md

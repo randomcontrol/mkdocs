@@ -1,5 +1,17 @@
 # Lightmixer
 
+## Presentation
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/63l0JY5VgNQ?si=P1GRp_JbQ1Di7Wmr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+---
+
+## Practical Example
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/GqantQnOlS8?si=RK9od-lt32yYkejp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+---
+
 ## Summary
 
 This YouTube tutorial demonstrates Maverick Render's Light Mixer, a real-time interactive relighting tool. The tool allows users to adjust lighting parameters, such as color and intensity, without requiring scene rerenders. Changes are made using intuitive sliders and are instantly reflected. The tutorial shows how to enable Light Mixer, adjust multiple light channels, and finally "bake" the changes into the scene for permanent application. The process is illustrated using example scenes and concludes by highlighting the time-saving benefits of this feature.

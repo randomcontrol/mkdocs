@@ -1,5 +1,11 @@
 # Lens Effects
 
+## Presentation
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/0hWVFihEGXo?si=7_j-SxHEMCqcKbHf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+---
+
 ## Summary
 
 This YouTube video tutorial demonstrates how to use new lens effects features in Maverick Studio and Indie rendering software. The tutorial provides multiple examples showcasing how to utilize vignetting, diffraction, bloom, and glare effects. It emphasizes using threshold settings within the software to precisely control the application of these effects to specific areas of a scene. The video stresses that adjustments to lens effects don't necessitate re-rendering, encouraging users to experiment freely. Finally, the tutorial aims to help users create realistic and artistic photographic lens effects in their renders.
