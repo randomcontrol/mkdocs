@@ -1,3 +1,6 @@
+Maverick Render 2025.1
+
+Python API: version 650926
 
 # Fundamentals
 

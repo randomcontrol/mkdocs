@@ -24,7 +24,7 @@ MK_api.create_light( cuid )
 ```
 Creates a light in cam/AABB space:
 `"top"`, `"bottom"`, `"front"`, `"back"`, `"left"`, `"right"`,
-`"spotlight"`, `"hard spotlight"`, `"gradient light`" and `"camera light"`.
+`"spot_soft"`, `"spot_hard"`, `"gradient"` and `"cam"`.
 ```
 MK_api.do_alert_ask( str )
 ```
@@ -109,5 +109,6 @@ MK_api.set_timevalue( cuid )
 Sets the active position (t) in the animation timeline.
 ```
 MK_api.update_camlight()
+MK_api.update_camlight( str )
 ```
 To be documented.
