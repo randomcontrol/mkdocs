@@ -10,8 +10,8 @@ nav:
     - MK_api Module:
         - 'Fundamentals':               Python/Pages/python_fundamentals.md
         - 'Scene Access':               Python/Pages/python_access.md
-        - 'UI Actions':                 Python/Pages/python_actions.md
         - 'Global Functions':           Python/Pages/python_global.md
+        - 'UI Actions':                 Python/Pages/python_actions.md
     - MK_api Classes:
         - 'MK_api.mks':                 Python/Pages/MK_api_mks.md
         - 'MK_api.mtl':                 Python/Pages/MK_api_mtl.md
@@ -153,6 +153,7 @@ nav:
         - 'AOVs':                      Nodes/Global Nodes/aovs.md
         - 'Tone mapping':              Nodes/Global Nodes/tonemap.md
         - 'LightMixer':                Nodes/Global Nodes/lightmixer.md
+        - 'Render batcher':            Nodes/Global Nodes/batcher.md
         - 'IBL':                       Nodes/Global Nodes/ibl.md
         - 'Sky':                       Nodes/Global Nodes/sky.md
     - Cameras:
